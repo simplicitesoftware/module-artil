@@ -35,4 +35,36 @@ public class ArtPiece extends ObjectDB {
 			AppLog.error(getClass(), "postSave", e.getMessage(), e, getGrant());
 		}		
 	}
+	
+	@Override
+	public List<String[]> postSearch(List<String[]> rows) {
+		Map<String, String> results = (LinkedHashMap<String, String>) getObjectParameter("AIR_ARTPIECE_RESULTS");
+		ObjectField sco = getField("artPicScore");
+		int scoIndex = sco.getIndex(this);
+		if("air_ArtPiece".equals(getInstanceName()) && results!=null){
+			sco.setVisibility(ObjectField.VIS_BOTH);
+			for(int i=0; i<rows.size(); i++){
+				rows.get(i)[scoIndex] = results.get(rows.get(i)[0]);
+			}
+			Collections.sort(rows, new ScoredPieceComparator(scoIndex));
+		}
+		else{
+			sco.setVisibility(ObjectField.VIS_NOT);
+		}
+		return rows;
+	}
+	
+	public class ScoredPieceComparator implements Comparator<String[]> {
+		int sco;
+		
+		public ScoredPieceComparator(int scoreFieldIndex){
+			sco = scoreFieldIndex;
+		}
+		
+		public int compare(String[] row1, String[] row2) {
+			double sco1 = Tool.parseDouble(row1[sco]);
+			double sco2 = Tool.parseDouble(row2[sco]);
+			return sco2-sco1<0?1:-1;
+		}
+	}
 }

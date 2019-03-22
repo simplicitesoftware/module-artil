@@ -72,7 +72,7 @@ public class ArtLireHelper implements java.io.Serializable {
 	private static final String lireIndex = "lireIndex";
 	private static final String classLogName = "-------------ArtLireHelper--------------";
 	
-	public static void testIndex(Grant g){
+/*	public static void testIndex(Grant g){
 		ObjectDB prd = g.getTmpObject("DemoProduct");
 		prd.resetFilters();
 		List<String[]> rslt = prd.search();
@@ -96,7 +96,7 @@ public class ArtLireHelper implements java.io.Serializable {
 			}
 		}
 		catch(Exception e){err(e);}
-	}
+	}*/
 	
 	// ========= INDEX ===========
 	public static void indexImage(InputStream img, String identifier) throws Exception{
@@ -126,12 +126,12 @@ public class ArtLireHelper implements java.io.Serializable {
 	}
 	
 	// =========SEARCH===========
-	public static List<String[]> searchImage(InputStream img) throws Exception{
+	public static LinkedHashMap<String, String> searchImage(InputStream img) throws Exception{
 		return searchImage(ImageIO.read(img));
 	}
 	
-	public static List<String[]> searchImage(BufferedImage img) throws Exception{
-		List<String[]> results = new ArrayList();
+	public static LinkedHashMap<String, String> searchImage(BufferedImage img) throws Exception{
+		LinkedHashMap<String, String> results = new LinkedHashMap();
 		IndexReader ir = getLuceneIndexReader();
 		
         ImageSearcher searcher = new GenericFastImageSearcher(30, CEDD.class);
@@ -141,7 +141,7 @@ public class ArtLireHelper implements java.io.Serializable {
 		ImageSearchHits hits = searcher.search(img, getLuceneIndexReader());
         for (int i = 0; i < hits.length(); i++) {
             String identifier = ir.document(hits.documentID(i)).getValues(DocumentBuilder.FIELD_NAME_IDENTIFIER)[0];
-            results.add(new String[]{"ID #"+identifier, ""+hits.score(i)});
+            results.put(""+identifier, ""+hits.score(i));
         }
         
 		return results;

@@ -24,11 +24,31 @@ public class ArtImageRecognition extends ExternalObject {
 			if(params.isPost()){
 				File img = params.getDocument("air-file").getTmpFile();
 				
-				List<String[]> rslt = ArtLireHelper.searchImage(ImageIO.read(img));
-				
+				LinkedHashMap<String, String> rslt = ArtLireHelper.searchImage(ImageIO.read(img));
 				JSONObject data = new JSONObject();
-				for(int i=0; i<rslt.size(); i++){
-					data.put(rslt.get(i)[0], rslt.get(i)[1]);
+				
+				if(rslt.size()>0){
+					String sql = "t.row_id in (";
+					for (Map.Entry<String, String> entry : rslt.entrySet()) {
+					    String id = entry.getKey();
+					    String score = entry.getValue();
+					    AppLog.info(getClass(), "---------------------------", "Row id "+id+" = "+score, getGrant());
+					    sql += id+",";
+					}
+					sql = sql.substring(0,sql.lastIndexOf(","))+")";
+
+					
+					ObjectDB pic = getGrant().getObject("air_ArtPiece", "ArtPiece");
+					pic.resetValues();
+					pic.resetFilters();
+					pic.resetOrders();
+					pic.setSearchSpec(sql);
+					pic.setParameter("AIR_ARTPIECE_RESULTS", rslt);
+					
+					data.put("success", true);
+				}
+				else{
+					data.put("success", false);
 				}
 				
 				setJSONMIMEType();

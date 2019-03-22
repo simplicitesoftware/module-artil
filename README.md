@@ -57,6 +57,7 @@ Piece of art
 | `artPicDocument`                                             | document                                 |          | yes       |          | -                                                                                |
 | `artPicSigned`                                               | enum(7) using `ART_ENUM_BOOL` list       | yes      | yes       |          | -                                                                                |
 | `artPicTagVirtual` link to **`ArtTag`**                      | id                                       |          | yes       |          | -                                                                                |
+| `artPicScore`                                                | float(5, 2)                              |          |           |          | -                                                                                |
 
 ### Lists
 
