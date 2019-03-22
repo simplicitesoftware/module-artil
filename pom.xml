@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.simplicite.modules</groupId>
   <artifactId>Artil</artifactId>
-  <version>1.1</version>
+  <version>1.2</version>
   <name>Artil</name>
   <url>https://artil.dev.simplicite.io</url>
   <properties>

@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: Artil 1.1
+#             |_| Module: Artil 1.2
 components:
   schemas:
     Error404:
@@ -103,8 +103,8 @@ components:
           type: string
           enum:
           - 'NULL'
-          - LIN
           - PINTEX
+          - LIN
           - OIL
           - LUNGI
         artPicArtistId__artArtLastname:
@@ -113,14 +113,14 @@ components:
         artPicComment:
           description: Commentaire
           type: string
+        artPicTagVirtual:
+          description: Œuvres d'art
+          type: string
         artPicDocument:
           description: Document
           type: object
         artPicPlaceId:
           description: Lieu|Lieux
-          type: string
-        artPicTagId:
-          description: Oeuvres d'art
           type: string
         artPicWidth:
           description: Largeur
@@ -890,8 +890,8 @@ paths:
           type: string
           enum:
           - 'NULL'
-          - LIN
           - PINTEX
+          - LIN
           - OIL
           - LUNGI
         in: query
@@ -971,8 +971,8 @@ paths:
       - schema:
           type: string
         in: query
-        name: artPicTagId
-        description: Search filter for Oeuvres d'art
+        name: artPicTagVirtual
+        description: Search filter for Œuvres d'art
         required: false
       tags:
       - ArtPiece
@@ -1707,7 +1707,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module Artil
   title: Artil
-  version: '1.1'
+  version: '1.2'
 tags:
 - name: ArtArtist
   description: Artiste

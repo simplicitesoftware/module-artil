@@ -5,7 +5,7 @@
 	<action>upsert</action>
 	<data>
 		<mdl_name>Artil</mdl_name>
-		<mdl_version>1.1</mdl_version>
+		<mdl_version>1.2</mdl_version>
 		<mdl_url><![CDATA[{
 	"type": "git",
 	"origin": {
@@ -14,7 +14,7 @@
 		"password": "d101a0337297a63a8d25"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2019-03-22 16:21:46</mdl_lastupd>
+		<mdl_lastupd>2019-03-22 16:40:57</mdl_lastupd>
 		<mdl_comment/>
 	</data>
 </object>
@@ -811,10 +811,10 @@
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
-		<fld_name>artPicTagId</fld_name>
+		<fld_name>artPicTagVirtual</fld_name>
 		<fld_dbname/>
-		<fld_visible>3</fld_visible>
-		<fld_updatable>0</fld_updatable>
+		<fld_visible>0</fld_visible>
+		<fld_updatable>1</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
@@ -826,7 +826,7 @@
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
 		<fld_list_id.lov_name/>
-		<fld_copy>1</fld_copy>
+		<fld_copy>0</fld_copy>
 		<fld_size>11</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
@@ -2160,7 +2160,7 @@
 	</data>
 	<data>
 		<obf_object_id.obo_name>ArtPiece</obf_object_id.obo_name>
-		<obf_field_id.fld_name>artPicTagId</obf_field_id.fld_name>
+		<obf_field_id.fld_name>artPicTagVirtual</obf_field_id.fld_name>
 		<obf_field_id.fld_type>0</obf_field_id.fld_type>
 		<obf_order>270</obf_order>
 		<obf_group_by/>
@@ -2171,7 +2171,7 @@
 		<obf_cascad>Z</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_visible>1</obf_visible>
-		<obf_ref_export>1</obf_ref_export>
+		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
 		<obf_ref_order/>
 		<obf_fld_visible/>
@@ -2318,7 +2318,7 @@
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
-		<obf_ref_order/>
+		<obf_ref_order>10</obf_ref_order>
 		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
@@ -2391,7 +2391,7 @@
 	<data>
 		<obf_ref_object_id.obo_name>ArtPiece</obf_ref_object_id.obo_name>
 		<obf_order>200</obf_order>
-		<obf_ref_order/>
+		<obf_ref_order>10</obf_ref_order>
 		<obf_object_id.obj_name>ArtTagPiece</obf_object_id.obj_name>
 		<obf_field_id.fld_name>artTpPieceId</obf_field_id.fld_name>
 		<obf_field_id.fld_dbname>tp_piece_id</obf_field_id.fld_dbname>
@@ -2400,11 +2400,7 @@
 		<obf_field_id.fld_fonctid>1</obf_field_id.fld_fonctid>
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
-		<obf_query><![CDATA[t.row_id in (
-	select tp_piece_id
-	from art_tag_piece
-	where tp_tag_id=[row_id]
-)]]></obf_query>
+		<obf_query/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -2466,16 +2462,20 @@
 		<obf_order>270</obf_order>
 		<obf_ref_order/>
 		<obf_object_id.obj_name>ArtPiece</obf_object_id.obj_name>
-		<obf_field_id.fld_name>artPicTagId</obf_field_id.fld_name>
+		<obf_field_id.fld_name>artPicTagVirtual</obf_field_id.fld_name>
 		<obf_field_id.fld_dbname/>
-		<obf_field_id.fld_updatable>0</obf_field_id.fld_updatable>
+		<obf_field_id.fld_updatable>1</obf_field_id.fld_updatable>
 		<obf_field_id.fld_required>0</obf_field_id.fld_required>
 		<obf_field_id.fld_fonctid>0</obf_field_id.fld_fonctid>
 		<obf_cascad>Z</obf_cascad>
 		<obf_card>0,n</obf_card>
-		<obf_query/>
+		<obf_query><![CDATA[t.row_id in (
+	select tp_piece_id
+	from art_tag_piece
+	where tp_tag_id=[row_id]
+)]]></obf_query>
 		<obf_visible>1</obf_visible>
-		<obf_ref_export>1</obf_ref_export>
+		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
 		<obf_associate/>
 		<obf_inline>0</obf_inline>
@@ -3038,9 +3038,9 @@
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
-		<tsl_id.fld_name>artPicTagId</tsl_id.fld_name>
+		<tsl_id.fld_name>artPicTagVirtual</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>art pic tag id</tsl_value>
+		<tsl_value>art pic tag virtual</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -3280,9 +3280,9 @@
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
-		<tsl_id.fld_name>artPicTagId</tsl_id.fld_name>
+		<tsl_id.fld_name>artPicTagVirtual</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Oeuvres d'art</tsl_value>
+		<tsl_value>Œuvres d'art</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
