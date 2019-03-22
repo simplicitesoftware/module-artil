@@ -5,9 +5,16 @@
 	<action>upsert</action>
 	<data>
 		<mdl_name>Artil</mdl_name>
-		<mdl_version>1</mdl_version>
-		<mdl_url/>
-		<mdl_lastupd>2019-03-20 16:01:07</mdl_lastupd>
+		<mdl_version>1.1</mdl_version>
+		<mdl_url><![CDATA[{
+	"type": "git",
+	"origin": {
+		"uri": "https://artil.dev.simplicite.io/git/Artil",
+		"username": "designer",
+		"password": "d101a0337297a63a8d25"
+	}
+}]]></mdl_url>
+		<mdl_lastupd>2019-03-22 16:21:46</mdl_lastupd>
 		<mdl_comment/>
 	</data>
 </object>
