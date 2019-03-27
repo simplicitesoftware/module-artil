@@ -7,6 +7,7 @@ var Air = (function() {
 		/*var r = $(Mustache.render($('#tmplAir').html(), data));
 		$('#air').html(r);*/
 		dragAndDropForm($("#air-form"));
+		$("#result-container").hide();
 	}
 	
 	function dispResults(){
@@ -17,6 +18,7 @@ var Air = (function() {
 			minified: true,
 			minifiable: false
 		});
+		$("#result-container").show();
 	}
 	
 	function dragAndDropForm($form){
@@ -100,6 +102,7 @@ var Air = (function() {
 						
 						if(data.success ){
 							dispResults();
+							$form.removeClass( 'is-error is-success' );
 						}
 						else{
 							$errorMsg.text( data.error );

@@ -5,7 +5,7 @@
 	<action>upsert</action>
 	<data>
 		<mdl_name>Artil</mdl_name>
-		<mdl_version>1.3</mdl_version>
+		<mdl_version>1.4</mdl_version>
 		<mdl_url><![CDATA[{
 	"type": "git",
 	"origin": {
@@ -14,7 +14,7 @@
 		"password": "d101a0337297a63a8d25"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2019-03-22 20:51:16</mdl_lastupd>
+		<mdl_lastupd>2019-03-27 19:40:34</mdl_lastupd>
 		<mdl_comment/>
 	</data>
 </object>
@@ -1701,6 +1701,35 @@
 	</data>
 	<data>
 		<obf_object_id.obo_name>ArtPiece</obf_object_id.obo_name>
+		<obf_field_id.fld_name>artPicScore</obf_field_id.fld_name>
+		<obf_field_id.fld_type>2</obf_field_id.fld_type>
+		<obf_order>5</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>ArtPiece-Extra</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>ArtPiece</obf_object_id.obo_name>
 		<obf_field_id.fld_name>artPicArtistId</obf_field_id.fld_name>
 		<obf_field_id.fld_type>0</obf_field_id.fld_type>
 		<obf_order>10</obf_order>
@@ -2222,35 +2251,6 @@
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
-		<obf_object_id.obo_name>ArtPiece</obf_object_id.obo_name>
-		<obf_field_id.fld_name>artPicScore</obf_field_id.fld_name>
-		<obf_field_id.fld_type>2</obf_field_id.fld_type>
-		<obf_order>280</obf_order>
-		<obf_group_by/>
-		<obf_dfault_order/>
-		<obf_input/>
-		<obf_ref_field_id.fld_name/>
-		<obf_ref_object_id.obo_name/>
-		<obf_cascad/>
-		<obf_card/>
-		<obf_visible/>
-		<obf_ref_export>1</obf_ref_export>
-		<obf_copy/>
-		<obf_ref_order/>
-		<obf_fld_visible/>
-		<obf_fld_required/>
-		<obf_fld_updatable/>
-		<obf_fld_research/>
-		<obf_fld_more/>
-		<obf_fld_listmore/>
-		<obf_fld_researchreq/>
-		<obf_fld_dfault/>
-		<obf_field_id.fld_dfault/>
-		<obf_area_id.ofa_name>ArtPiece-Extra</obf_area_id.ofa_name>
-		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
 		<obf_object_id.obo_name>ArtPlace</obf_object_id.obo_name>
 		<obf_field_id.fld_name>artPlcName</obf_field_id.fld_name>
 		<obf_field_id.fld_type>3</obf_field_id.fld_type>
@@ -2549,6 +2549,29 @@
 	</data>
 </object>
 <object>
+	<name>Action</name>
+	<action>upsert</action>
+	<data>
+		<act_name>reIndexAll</act_name>
+		<act_type>L</act_type>
+		<act_async>0</act_async>
+		<act_job_depth/>
+		<act_method>reIndexAll</act_method>
+		<act_script/>
+		<act_url/>
+		<act_image/>
+		<act_confirm>1</act_confirm>
+		<act_confirm_expr/>
+		<act_confirm_ui/>
+		<act_plus>0</act_plus>
+		<act_comment/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<act_exec>BCK</act_exec>
+		<act_count>0</act_count>
+		<act_order/>
+	</data>
+</object>
+<object>
 	<name>Function</name>
 	<action>upsert</action>
 	<data>
@@ -2593,6 +2616,15 @@
 		<fct_object_id.obj_name>ArtPiece</fct_object_id.obj_name>
 		<fct_function>L</fct_function>
 		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fct_name>ART_PIC_RE_INDEX_ALL_A</fct_name>
+		<fct_object_id.obj_type>O</fct_object_id.obj_type>
+		<fct_object_id.obj_name>ArtPiece</fct_object_id.obj_name>
+		<fct_function>A</fct_function>
+		<fct_action_id.act_name>reIndexAll</fct_action_id.act_name>
 		<fct_view_id.viw_name/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -2700,6 +2732,16 @@
 		<grt_function_id.fct_object_id.obj_name>ArtPiece</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>CMS</grt_function_id.fct_function>
+		<grt_activ>1</grt_activ>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<grt_group_id.grp_name>ART_ADMIN</grt_group_id.grp_name>
+		<grt_function_id.fct_name>ART_PIC_RE_INDEX_ALL_A</grt_function_id.fct_name>
+		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>ArtPiece</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name>reIndexAll</grt_function_id.fct_action_id.act_name>
+		<grt_function_id.fct_function>A</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -3004,6 +3046,26 @@
 		<scr_code>ArtLireHelper</scr_code>
 		<scr_file>src/com/simplicite/commons/Artil/ArtLireHelper.java</scr_file>
 		<scr_type>JSR</scr_type>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>TranslateAction</name>
+	<action>upsert</action>
+	<data>
+		<tsl_typeAction>A</tsl_typeAction>
+		<tsl_id.act_name>reIndexAll</tsl_id.act_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Re-index everythind</tsl_value>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeAction>A</tsl_typeAction>
+		<tsl_id.act_name>reIndexAll</tsl_id.act_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Tout ré-indéxer</tsl_value>
+		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 </object>

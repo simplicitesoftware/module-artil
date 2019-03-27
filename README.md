@@ -39,6 +39,7 @@ Piece of art
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
 | ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `artPicScore`                                                | float(5, 2)                              |          |           |          | -                                                                                |
 | `artPicArtistId` link to **`ArtArtist`**                     | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `artPicArtistId.artArtFirstname`_                      | _char(50)_                               |          |           |          | -                                                                                |
 | _Ref. `artPicArtistId.artArtLastname`_                       | _char(50)_                               |          |           |          | -                                                                                |
@@ -57,7 +58,6 @@ Piece of art
 | `artPicDocument`                                             | document                                 |          | yes       |          | -                                                                                |
 | `artPicSigned`                                               | enum(7) using `ART_ENUM_BOOL` list       | yes      | yes       |          | -                                                                                |
 | `artPicTagVirtual` link to **`ArtTag`**                      | id                                       |          | yes       |          | -                                                                                |
-| `artPicScore`                                                | float(5, 2)                              |          |           |          | -                                                                                |
 
 ### Lists
 
@@ -74,7 +74,7 @@ Piece of art
 
 ### Custom actions
 
-No custom action
+* `reIndexAll`: 
 
 `ArtPlace` business object definition
 -------------------------------------

@@ -15,6 +15,7 @@ import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.index.Term;
 
 import net.semanticmetadata.lire.builders.DocumentBuilder;
 import net.semanticmetadata.lire.imageanalysis.features.global.CEDD;
@@ -106,7 +107,25 @@ public class ArtLireHelper implements java.io.Serializable {
 	private static void indexImage(BufferedImage img, String identifier) throws Exception{
 		Document document = getLireDocumentBuilder().createDocument(img, identifier);
 		IndexWriter iw = getLuceneIndexWriter();
+		deleteFromIndex(iw, identifier);
 		iw.addDocument(document);
+		iw.close();
+	}
+	
+	public static void deleteFromIndex(String identifier) throws Exception{
+		IndexWriter iw = getLuceneIndexWriter();
+		deleteFromIndex(iw, identifier);
+		iw.close();
+	}
+	
+	public static void deleteFromIndex(IndexWriter iw, String identifier) throws Exception{
+		iw.deleteDocuments(new Term(DocumentBuilder.FIELD_NAME_IDENTIFIER, identifier));
+	}
+	
+	public static void deleteAllIndex() throws Exception{
+		IndexWriter iw = getLuceneIndexWriter();
+		iw.deleteAll();
+		iw.commit();
 		iw.close();
 	}
 	
