@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: Artil 1.4
+#             |_| Module: Artil 1.6
 components:
   schemas:
     Error404:
@@ -106,8 +106,8 @@ components:
           type: string
           enum:
           - 'NULL'
-          - PINTEX
           - LIN
+          - PINTEX
           - OIL
           - LUNGI
         artPicArtistId__artArtLastname:
@@ -177,6 +177,9 @@ components:
         artPlcName:
           description: Nom
           type: string
+        artPlcPublic:
+          description: Public
+          type: boolean
         row_id:
           description: Id
           type: string
@@ -600,6 +603,12 @@ paths:
         name: artPlcName
         description: Search filter for Nom
         required: false
+      - schema:
+          type: boolean
+        in: query
+        name: artPlcPublic
+        description: Search filter for Public
+        required: false
       tags:
       - ArtPlace
   /rest/ArtTagPiece/{row_id}:
@@ -908,8 +917,8 @@ paths:
           type: string
           enum:
           - 'NULL'
-          - PINTEX
           - LIN
+          - PINTEX
           - OIL
           - LUNGI
         in: query
@@ -1725,7 +1734,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module Artil
   title: Artil
-  version: '1.4'
+  version: '1.6'
 tags:
 - name: ArtArtist
   description: Artiste

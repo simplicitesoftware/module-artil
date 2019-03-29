@@ -24,6 +24,7 @@ public class ArtPiece extends ObjectDB {
 		if(!getGrant().hasResponsibility("ART_ADMIN")){
 			getField("artPicPrice").setVisibility(ObjectField.VIS_FORBIDDEN);
 			getField("artPicDocument").setVisibility(ObjectField.VIS_FORBIDDEN);
+			getField("artPicPlaceId").setVisibility(ObjectField.VIS_FORBIDDEN);
 		}
 	}
 	
