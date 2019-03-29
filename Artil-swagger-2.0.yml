@@ -53,6 +53,11 @@ paths:
         description: Search filter for Label
         type: string
         required: false
+      - in: query
+        name: artTagPublic
+        description: Search filter for Public
+        type: boolean
+        required: false
       tags:
       - ArtTag
   /login:
@@ -566,8 +571,8 @@ paths:
         required: false
         enum:
         - 'NULL'
-        - LIN
         - PINTEX
+        - LIN
         - OIL
         - LUNGI
       - in: query
@@ -1297,6 +1302,9 @@ definitions:
       artTagLabel:
         description: Label
         type: string
+      artTagPublic:
+        description: Public
+        type: boolean
       row_id:
         description: Id
         type: string
@@ -1346,8 +1354,8 @@ definitions:
         type: string
         enum:
         - 'NULL'
-        - LIN
         - PINTEX
+        - LIN
         - OIL
         - LUNGI
       artPicArtistId__artArtLastname:

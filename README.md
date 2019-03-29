@@ -101,6 +101,7 @@ No custom action
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
 | ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
 | `artTagLabel`                                                | char(20)                                 | yes*     | yes       |          | -                                                                                |
+| `artTagPublic`                                               | boolean                                  |          | yes       |          | -                                                                                |
 
 ### Custom actions
 
