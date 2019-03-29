@@ -28,6 +28,10 @@ public class ArtPiece extends ObjectDB {
 		}
 	}
 	
+	public boolean canExport(){
+		return getGrant().hasResponsibility("ART_ADMIN");
+	}
+	
 	/*@Override
 	public String postSave() {
 		tryLireIndexing();
