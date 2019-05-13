@@ -5,7 +5,7 @@
 	<action>upsert</action>
 	<data>
 		<mdl_name>Artil</mdl_name>
-		<mdl_version>1.6</mdl_version>
+		<mdl_version>1.7</mdl_version>
 		<mdl_url><![CDATA[{
 	"type": "git",
 	"origin": {
@@ -14,7 +14,7 @@
 		"password": "d101a0337297a63a8d25"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2019-05-13 10:51:07</mdl_lastupd>
+		<mdl_lastupd>2019-05-13 12:10:23</mdl_lastupd>
 		<mdl_comment/>
 	</data>
 </object>
