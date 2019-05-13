@@ -4,8 +4,8 @@ import java.util.*;
 import com.simplicite.util.*;
 import com.simplicite.util.tools.*;
 
-/*import com.simplicite.commons.Artil.ArtLireHelper;
-import java.io.InputStream;*/
+import com.simplicite.commons.Artil.ArtLireHelper;
+import java.io.InputStream;
 
 /**
  * Business object ArtPiece
@@ -32,7 +32,7 @@ public class ArtPiece extends ObjectDB {
 		return getGrant().hasResponsibility("ART_ADMIN");
 	}
 	
-	/*@Override
+	@Override
 	public String postSave() {
 		tryLireIndexing();
 		return null;
@@ -116,5 +116,5 @@ public class ArtPiece extends ObjectDB {
 			double sco2 = Tool.parseDouble(row2[sco]);
 			return sco2-sco1<0?1:-1;
 		}
-	}*/
+	}
 }

@@ -1,6 +1,6 @@
 package com.simplicite.commons.Artil;
 
-/*import java.awt.image.BufferedImage;
+import java.awt.image.BufferedImage;
 import java.io.InputStream;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
@@ -18,15 +18,16 @@ import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.store.FSDirectory;
 
-import com.simplicite.util.AppLog;
-import com.simplicite.util.Grant;
+import java.util.*;
+import com.simplicite.util.*;
+import com.simplicite.util.tools.*;
 
 import net.semanticmetadata.lire.builders.DocumentBuilder;
 import net.semanticmetadata.lire.builders.GlobalDocumentBuilder;
 import net.semanticmetadata.lire.imageanalysis.features.global.CEDD;
 import net.semanticmetadata.lire.searchers.GenericFastImageSearcher;
 import net.semanticmetadata.lire.searchers.ImageSearchHits;
-import net.semanticmetadata.lire.searchers.ImageSearcher;*/
+import net.semanticmetadata.lire.searchers.ImageSearcher;
 
 /**
  * Shared code ArtLireHelper
@@ -50,8 +51,7 @@ import net.semanticmetadata.lire.searchers.ImageSearcher;*/
  *
  *
  */
- public class ArtLireHelper{}
-/*public class ArtLireHelper implements java.io.Serializable {
+public class ArtLireHelper implements java.io.Serializable {
 	private static final long serialVersionUID = 1L;
 	private static final String lireIndex = "lireIndex";
 	private static final String classLogName = "-------------ArtLireHelper--------------";
@@ -70,17 +70,17 @@ import net.semanticmetadata.lire.searchers.ImageSearcher;*/
 		}catch(Exception e){err(e);}
 	}
 
-	public static void testSearch(Grant g){
+	/*public static void testSearch(Grant g){
 		ObjectDB prd = g.getTmpObject("DemoProduct");
 		prd.select("2");
 		try{
-			List<String[]> rslt = searchImage(prd.getField("demoPrdPicture").getDocument(g).getInputStream());
+			LinkedHashMap rslt = searchImage(prd.getField("demoPrdPicture").getDocument(g).getInputStream());
 			for(int i=0; i<rslt.size(); i++){
 				disp(rslt.get(i)[0]+" : "+rslt.get(i)[1]);
 			}
 		}
 		catch(Exception e){err(e);}
-	}
+	}*/
 
 	// ========= INDEX ===========
 	public static void indexImage(InputStream img, String identifier) throws Exception{
@@ -176,4 +176,4 @@ import net.semanticmetadata.lire.searchers.ImageSearcher;*/
 	private static void err(String e){
     	AppLog.error(ArtLireHelper.class, classLogName, e, null, Grant.getSystemAdmin());
     }
-}*/
+}

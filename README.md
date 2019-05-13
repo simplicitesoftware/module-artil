@@ -30,6 +30,60 @@
 
 No custom action
 
+`ArtDocument` business object definition
+----------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `artDocPicId` link to **`ArtPiece`**                         | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `artDocPicId.artPicCode`_                              | _char(20)_                               |          |           |          | -                                                                                |
+| _Ref. `artDocPicId.artPicTitle`_                             | _char(200)_                              |          |           |          | -                                                                                |
+| `artDocDescription`                                          | char(200)                                | yes*     | yes       |          | -                                                                                |
+| `artDocFile`                                                 | extfile(100)                             | yes      | yes       |          | -                                                                                |
+
+### Custom actions
+
+No custom action
+
+`ArtExbPic` business object definition
+--------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `artExbpicExbId` link to **`ArtExhibition`**                 | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `artExbpicExbId.artExbDate`_                           | _date_                                   |          |           |          | -                                                                                |
+| `artExbpicPicId` link to **`ArtPiece`**                      | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `artExbpicPicId.artPicCode`_                           | _char(20)_                               |          |           |          | -                                                                                |
+
+### Custom actions
+
+No custom action
+
+`ArtExhibition` business object definition
+------------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `artExbDate`                                                 | date                                     | yes*     | yes       |          | -                                                                                |
+| `artExbPlcId` link to **`ArtPlace`**                         | id                                       |          | yes       |          | -                                                                                |
+| _Ref. `artExbPlcId.artPlcName`_                              | _char(50)_                               |          |           |          | -                                                                                |
+
+### Custom actions
+
+No custom action
+
 `ArtPiece` business object definition
 -------------------------------------
 
@@ -58,6 +112,7 @@ Piece of art
 | `artPicDocument`                                             | document                                 |          | yes       |          | -                                                                                |
 | `artPicSigned`                                               | enum(7) using `ART_ENUM_BOOL` list       | yes      | yes       |          | -                                                                                |
 | `artPicTagVirtual` link to **`ArtTag`**                      | id                                       |          | yes       |          | -                                                                                |
+| `artPicExbVirtual` link to **`ArtExhibition`**               | id                                       |          | yes       |          | -                                                                                |
 
 ### Lists
 

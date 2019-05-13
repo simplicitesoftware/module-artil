@@ -5,7 +5,7 @@ import com.simplicite.util.*;
 import com.simplicite.util.tools.*;
 import java.io.File;
 import javax.imageio.ImageIO;
-//import com.simplicite.commons.Artil.ArtLireHelper;
+import com.simplicite.commons.Artil.ArtLireHelper;
 import org.json.JSONObject;
 
 /**
@@ -21,8 +21,7 @@ public class ArtImageRecognition extends ExternalObject {
 	@Override
 	public Object display(Parameters params) {
 		try {
-			return"";
-			/*if(params.isPost()){
+			if(params.isPost()){
 				File img = params.getDocument("air-file").getTmpFile();
 				
 				LinkedHashMap<String, String> rslt = ArtLireHelper.searchImage(ImageIO.read(img));
@@ -58,7 +57,7 @@ public class ArtImageRecognition extends ExternalObject {
 			else{
 				//addMustache();
 				return javascript("Air.fire()");
-			}*/
+			}
 		} catch (Exception e) {
 			AppLog.error(getClass(), "display", null, e, getGrant());
 			return e.getMessage();

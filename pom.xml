@@ -2,38 +2,53 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.simplicite.modules</groupId>
+  <version>1.6-SNAPSHOT</version>
   <artifactId>Artil</artifactId>
-  <version>1.6</version>
   <name>Artil</name>
-  <url>https://artil.dev.simplicite.io</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <simplicite.url>https://artil.dev.simplicite.io</simplicite.url>
+    <simplicite.version>4.0.P24b-SNAPSHOT</simplicite.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <sonar.sources>.</sonar.sources>
-    <sonar.exclusions>test/**,data/**,**.min.js,**.min.css</sonar.exclusions>
-    <sonar.coverage.exclusions>**.js,src/**.java</sonar.coverage.exclusions>
+    <sonar.sources>src,resources</sonar.sources>
+    <sonar.exclusions>**.min.js,**.min.css</sonar.exclusions>
+    <sonar.coverage.exclusions>resources/**.js,src/**.java</sonar.coverage.exclusions>
   </properties>
+  <packaging>jar</packaging>
+  <url>${simplicite.url}</url>
   <build>
     <sourceDirectory>${project.basedir}/src</sourceDirectory>
     <testSourceDirectory>${project.basedir}/test/src</testSourceDirectory>
+    <resources>
+      <resource><directory>${project.basedir}/resources</directory></resource>
+    </resources>
+    <testResources>
+      <testResource><directory>${project.basedir}/test/resources</directory></testResource>
+    </testResources>
   </build>
   <repositories>
     <repository>
       <id>simplicite</id>
-      <url>https://artil.dev.simplicite.io/maven</url>
+      <url>${simplicite.url}/maven</url>
       <releases><enabled>true</enabled></releases>
       <snapshots><enabled>true</enabled></snapshots>
     </repository>
   </repositories>
   <scm>
-    <url>https://artil.dev.simplicite.io/git/Artil</url>
+    <url>${simplicite.url}/git/Artil</url>
   </scm>
   <dependencies>
     <dependency>
       <groupId>com.simplicite</groupId>
       <artifactId>simplicite-api</artifactId>
-      <version>4.0.P23b-SNAPSHOT</version>
+      <version>${simplicite.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.simplicite</groupId>
+      <artifactId>simplicite-api</artifactId>
+      <version>${simplicite.version}</version>
+      <classifier>javadoc</classifier>
     </dependency>
   </dependencies>
 </project>
