@@ -6,12 +6,18 @@ import com.simplicite.util.tools.*;
 
 import com.simplicite.commons.Artil.ArtLireHelper;
 import java.io.InputStream;
+import com.simplicite.commons.Artil.ArtilCommons;
 
 /**
  * Business object ArtPiece
  */
 public class ArtPiece extends ObjectDB {
 	private static final long serialVersionUID = 1L;
+	private static final String[] adminOnlyFields = new String[]{
+		"artPicPrice", 
+		"artPicDocument", 
+		"artPicPlaceId"
+	};
 	
 	@Override
 	public String getUserKeyLabel(String[] row) {
@@ -21,15 +27,15 @@ public class ArtPiece extends ObjectDB {
 	
 	@Override
 	public void postLoad() {
-		if(!getGrant().hasResponsibility("ART_ADMIN")){
-			getField("artPicPrice").setVisibility(ObjectField.VIS_FORBIDDEN);
-			getField("artPicDocument").setVisibility(ObjectField.VIS_FORBIDDEN);
-			getField("artPicPlaceId").setVisibility(ObjectField.VIS_FORBIDDEN);
-		}
+		boolean isAdmin = ArtilCommons.isAdmin(getGrant());
+		Arrays.stream(adminOnlyFields).forEach(fieldName -> {
+			ObjectField f = getField(fieldName);
+			f.setVisibility(isAdmin ? f.getVisibilityDefault() : ObjectField.VIS_FORBIDDEN);
+		});
 	}
 	
 	public boolean canExport(){
-		return getGrant().hasResponsibility("ART_ADMIN");
+		return ArtilCommons.isAdmin(getGrant());
 	}
 	
 	@Override
@@ -68,21 +74,17 @@ public class ArtPiece extends ObjectDB {
 			return "Could not empty index";
 		}
 		
-		AppLog.info(getClass(), "reIndexAll", "====================", getGrant());
-		
 		ArtPiece pic = (ArtPiece) getGrant().getTmpObject("ArtPiece");
-		int i;
+		long c = 0;
 		synchronized(pic){
 			pic.resetFilters();
-			List<String[]> rslt = pic.search();
-			for(i=0; i<rslt.size(); i++){
-				pic.setValues(rslt.get(i));
-				
-				AppLog.info(getClass(), "reIndexAll", "Indexing ArtPiece #"+pic.getRowId(), getGrant());
+			pic.search().forEach(row -> {
+				pic.setValues(row);
 				pic.tryLireIndexing();
-			}
+			});
+			c = pic.getCount();
 		}
-		return i+" objects indexed.";
+		return c+" objects indexed.";
 	}
 	
 	@Override
@@ -93,9 +95,7 @@ public class ArtPiece extends ObjectDB {
 		if("air_ArtPiece".equals(getInstanceName()) && results!=null){
 			int scoIndex = sco.getIndex(this);
 			sco.setVisibility(ObjectField.VIS_BOTH);
-			for(int i=0; i<rows.size(); i++){
-				rows.get(i)[scoIndex] = results.get(rows.get(i)[0]);
-			}
+			rows.forEach(row -> row[scoIndex] = results.get(row[0]));
 			Collections.sort(rows, new ScoredPieceComparator(scoIndex));
 		}
 		else{

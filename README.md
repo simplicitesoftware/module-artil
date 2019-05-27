@@ -43,7 +43,7 @@ No custom action
 | _Ref. `artDocPicId.artPicCode`_                              | _char(20)_                               |          |           |          | -                                                                                |
 | _Ref. `artDocPicId.artPicTitle`_                             | _char(200)_                              |          |           |          | -                                                                                |
 | `artDocDescription`                                          | char(200)                                | yes*     | yes       |          | -                                                                                |
-| `artDocFile`                                                 | extfile(100)                             | yes      | yes       |          | -                                                                                |
+| `artDocFile`                                                 | document                                 | yes      | yes       |          | -                                                                                |
 
 ### Custom actions
 

@@ -58,29 +58,32 @@ public class ArtLireHelper implements java.io.Serializable {
 
 	public static void testIndex(Grant g){
 		ObjectDB prd = g.getTmpObject("DemoProduct");
-		prd.resetFilters();
-		List<String[]> rslt = prd.search();
-
-		try{
-			for(int i=0; i<rslt.size(); i++){
-				prd.setValues(rslt.get(i));
-				InputStream img = prd.getField("demoPrdPicture").getDocument(g).getInputStream();
-				indexImage(img, prd.getRowId());
-			}
-		}catch(Exception e){err(e);}
+		synchronized(prd){
+			prd.resetFilters();
+			prd.search().forEach(row->{
+				prd.setValues(row);
+				try{
+					indexImage(
+						prd.getField("demoPrdPicture").getDocument(g).getInputStream(),
+						prd.getRowId()
+					);
+				}catch(Exception e){
+					err(e);
+				}
+			});
+		}
 	}
 
-	/*public static void testSearch(Grant g){
+	public static void testSearch(Grant g){
 		ObjectDB prd = g.getTmpObject("DemoProduct");
 		prd.select("2");
 		try{
-			LinkedHashMap rslt = searchImage(prd.getField("demoPrdPicture").getDocument(g).getInputStream());
-			for(int i=0; i<rslt.size(); i++){
-				disp(rslt.get(i)[0]+" : "+rslt.get(i)[1]);
-			}
+			searchImage(prd.getField("demoPrdPicture").getDocument(g).getInputStream()).forEach((id, score)->disp(id+" : "+score));
 		}
-		catch(Exception e){err(e);}
-	}*/
+		catch(Exception e){
+			err(e);
+		}
+	}
 
 	// ========= INDEX ===========
 	public static void indexImage(InputStream img, String identifier) throws Exception{
