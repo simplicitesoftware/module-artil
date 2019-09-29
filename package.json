@@ -1,5 +1,5 @@
 {
-    "date": "Mon May 27 17:14:22 CEST 2019",
+    "date": "Sun Sep 29 10:26:00 CEST 2019",
     "name": "Artil",
     "format": "xml",
     "description": "",
@@ -11,6 +11,6 @@
         },
         "type": "git"
     },
-    "version": "1.8",
+    "version": "1.9",
     "dependencies": [{"Simplicite": "4.0"}]
 }

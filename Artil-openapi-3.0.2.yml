@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: Artil 1.8
+#             |_| Module: Artil 1.9
 components:
   schemas:
     Error404:
@@ -78,8 +78,14 @@ components:
         artExbPlcId:
           description: Lieu
           type: string
+        artExbCommissaire:
+          description: Commissaire
+          type: string
         row_id:
           description: Id
+          type: string
+        artExbDescrition:
+          description: Descrition
           type: string
         artExbPlcId__artPlcName:
           description: Nom Lieu
@@ -389,6 +395,47 @@ paths:
         required: false
       tags:
       - ArtDocument
+  /rest/ArtPiece/{row_id}/publication:ArtPiecePrintable:
+    get:
+      summary: Call a custom publication for a ArtPiece business object record or
+        for all records
+      security:
+      - bearerAuth: []
+      operationId: obj-artpiece-publication-artpieceprintable
+      responses:
+        '200':
+          description: Success in calling the custom publication
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicationResult'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ArtPiece
   /rest/ArtTag:
     get:
       summary: Search ArtTag business object records or get contextualized metadata
@@ -2064,6 +2111,18 @@ paths:
         name: artExbPlcId__artPlcName
         description: Search filter for Nom Lieu
         required: false
+      - schema:
+          type: string
+        in: query
+        name: artExbCommissaire
+        description: Search filter for Commissaire
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artExbDescrition
+        description: Search filter for Descrition
+        required: false
       tags:
       - ArtExhibition
   /rest/ArtPiece/{row_id}:
@@ -2608,7 +2667,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module Artil
   title: Artil
-  version: '1.8'
+  version: '1.9'
 tags:
 - name: ArtArtist
   description: Artiste

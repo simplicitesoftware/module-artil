@@ -5,7 +5,7 @@
 	<action>upsert</action>
 	<data>
 		<mdl_name>Artil</mdl_name>
-		<mdl_version>1.8</mdl_version>
+		<mdl_version>1.9</mdl_version>
 		<mdl_url><![CDATA[{
 	"type": "git",
 	"origin": {
@@ -14,7 +14,7 @@
 		"password": "d101a0337297a63a8d25"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2019-05-27 17:14:22</mdl_lastupd>
+		<mdl_lastupd>2019-09-29 10:26:00</mdl_lastupd>
 		<mdl_comment/>
 	</data>
 </object>
@@ -249,7 +249,7 @@
 		<lov_code_id.lov_code>1</lov_code_id.lov_code>
 		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
-		<lov_value><![CDATA[Yes]]></lov_value>
+		<lov_value><![CDATA[Signed]]></lov_value>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -257,7 +257,7 @@
 		<lov_code_id.lov_code>0</lov_code_id.lov_code>
 		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>ENU</lov_lang>
-		<lov_value><![CDATA[No]]></lov_value>
+		<lov_value><![CDATA[Not signed]]></lov_value>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -273,7 +273,7 @@
 		<lov_code_id.lov_code>1</lov_code_id.lov_code>
 		<lov_code_id.lov_order_by>2</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[Oui]]></lov_value>
+		<lov_value><![CDATA[Signé]]></lov_value>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -281,7 +281,7 @@
 		<lov_code_id.lov_code>0</lov_code_id.lov_code>
 		<lov_code_id.lov_order_by>3</lov_code_id.lov_order_by>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[Non]]></lov_value>
+		<lov_value><![CDATA[Non signé]]></lov_value>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -579,6 +579,41 @@
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
+		<fld_name>artExbCommissaire</fld_name>
+		<fld_dbname>art_exb_commissaire</fld_dbname>
+		<fld_visible>3</fld_visible>
+		<fld_updatable>1</fld_updatable>
+		<fld_required>0</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research>1</fld_research>
+		<fld_researchreq>0</fld_researchreq>
+		<fld_more>0</fld_more>
+		<fld_listmore>0</fld_listmore>
+		<fld_listsum/>
+		<fld_type>3</fld_type>
+		<fld_type_id.flt_code/>
+		<fld_enumlist/>
+		<fld_list_id.lov_name/>
+		<fld_copy>1</fld_copy>
+		<fld_size>100</fld_size>
+		<fld_minsize/>
+		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
+		<fld_dfault/>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
+		<fld_updall>1</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering/>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment/>
+		<fld_classification/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
 		<fld_name>artExbDate</fld_name>
 		<fld_dbname>art_exb_date</fld_dbname>
 		<fld_visible>3</fld_visible>
@@ -596,6 +631,41 @@
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
 		<fld_size>10</fld_size>
+		<fld_minsize/>
+		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
+		<fld_dfault/>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
+		<fld_updall>1</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering/>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment/>
+		<fld_classification/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fld_name>artExbDescrition</fld_name>
+		<fld_dbname>art_exb_descrition</fld_dbname>
+		<fld_visible>2</fld_visible>
+		<fld_updatable>1</fld_updatable>
+		<fld_required>0</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research/>
+		<fld_researchreq/>
+		<fld_more>0</fld_more>
+		<fld_listmore>0</fld_listmore>
+		<fld_listsum/>
+		<fld_type>11</fld_type>
+		<fld_type_id.flt_code/>
+		<fld_enumlist/>
+		<fld_list_id.lov_name/>
+		<fld_copy>1</fld_copy>
+		<fld_size>10000</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
 		<fld_fromdate_id.fld_name/>
@@ -933,7 +1003,7 @@
 		<fld_dbname>pic_height</fld_dbname>
 		<fld_visible>3</fld_visible>
 		<fld_updatable>1</fld_updatable>
-		<fld_required>1</fld_required>
+		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
@@ -1124,7 +1194,7 @@
 		<fld_minsize/>
 		<fld_precision/>
 		<fld_fromdate_id.fld_name/>
-		<fld_dfault/>
+		<fld_dfault><![CDATA[2]]></fld_dfault>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
 		<fld_groupby>0</fld_groupby>
@@ -1194,7 +1264,7 @@
 		<fld_minsize/>
 		<fld_precision/>
 		<fld_fromdate_id.fld_name/>
-		<fld_dfault><![CDATA[NUL]]></fld_dfault>
+		<fld_dfault><![CDATA[NULL]]></fld_dfault>
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
 		<fld_groupby>0</fld_groupby>
@@ -1248,7 +1318,7 @@
 		<fld_dbname>pic_width</fld_dbname>
 		<fld_visible>3</fld_visible>
 		<fld_updatable>1</fld_updatable>
-		<fld_required>1</fld_required>
+		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
@@ -1597,6 +1667,41 @@
 		<tpl_image/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
+	<data>
+		<tpl_name>ArtPiecePrintable</tpl_name>
+		<tpl_form><![CDATA[<html>
+	<head>
+		<link href="/scripts/jquery/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			.thmb{
+				text-align: center;
+			}
+			.thmb img{
+				max-width:300px;
+				max-height: 200px;
+			}
+		</style>
+	</head>
+	<div class="container">
+		<table class="table table-bordered">
+			[BEGIN]
+			<tr>
+				<td>[VALUE:artPicCode]</td>
+				<td>[VALUE:artPicTitle]</td>
+				<td>[VALUE:artPicHeight]x[VALUE:artPicWidth]</td>
+				<td>[VALUE:artPicSigned]</td>
+				<td>[VALUE:artPicYear]</td>
+				<td class="thmb"><img src="[VALUE:artPicPicture]"/></td>
+			</tr>
+			[END]
+		</table>
+	</div>
+</html>]]></tpl_form>
+		<tpl_ui/>
+		<tpl_min/>
+		<tpl_image/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>ObjectFieldArea</name>
@@ -1642,19 +1747,19 @@
 		<ofa_position>1</ofa_position>
 		<ofa_title>0</ofa_title>
 		<ofa_template/>
-		<ofa_ui><![CDATA[<div class="field" data-field="artExbDate"></div>
+		<ofa_ui><![CDATA[<div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="artExbDate"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="field" data-field="artExbCommissaire"></div>
+    </div>
+  </div>
+  <div class="field" data-field="artExbDescrition"></div>
+</div>
 ]]></ofa_ui>
 		<ofa_icon/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<ofa_name>ArtPiece-5</ofa_name>
-		<ofa_position>5</ofa_position>
-		<ofa_title>1</ofa_title>
-		<ofa_template/>
-		<ofa_ui><![CDATA[<div class="field" data-field="artPicPicture"></div>
-]]></ofa_ui>
-		<ofa_icon>gly/camera</ofa_icon>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1734,6 +1839,16 @@
 </div>
 ]]></ofa_ui>
 		<ofa_icon>img/color/panorama</ofa_icon>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<ofa_name>ArtPiece-Picture</ofa_name>
+		<ofa_position>5</ofa_position>
+		<ofa_title>1</ofa_title>
+		<ofa_template/>
+		<ofa_ui><![CDATA[<div class="field" data-field="artPicPicture"></div>
+]]></ofa_ui>
+		<ofa_icon>gly/camera</ofa_icon>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -2698,6 +2813,64 @@
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
+		<obf_object_id.obo_name>ArtExhibition</obf_object_id.obo_name>
+		<obf_field_id.fld_name>artExbCommissaire</obf_field_id.fld_name>
+		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_order>120</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>ArtExhibition-Main</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>ArtExhibition</obf_object_id.obo_name>
+		<obf_field_id.fld_name>artExbDescrition</obf_field_id.fld_name>
+		<obf_field_id.fld_type>11</obf_field_id.fld_type>
+		<obf_order>130</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>ArtExhibition-Main</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
 		<obf_object_id.obo_name>ArtPiece</obf_object_id.obo_name>
 		<obf_field_id.fld_name>artPicScore</obf_field_id.fld_name>
 		<obf_field_id.fld_type>2</obf_field_id.fld_type>
@@ -2895,7 +3068,7 @@
 		<obf_fld_listmore/>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
-		<obf_field_id.fld_dfault><![CDATA[NUL]]></obf_field_id.fld_dfault>
+		<obf_field_id.fld_dfault><![CDATA[NULL]]></obf_field_id.fld_dfault>
 		<obf_area_id.ofa_name>ArtPiece-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -3157,7 +3330,7 @@
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
-		<obf_area_id.ofa_name>ArtPiece-5</obf_area_id.ofa_name>
+		<obf_area_id.ofa_name>ArtPiece-Picture</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>5</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -3214,7 +3387,7 @@
 		<obf_fld_listmore/>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
-		<obf_field_id.fld_dfault/>
+		<obf_field_id.fld_dfault><![CDATA[2]]></obf_field_id.fld_dfault>
 		<obf_area_id.ofa_name>ArtPiece-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4175,6 +4348,26 @@
 	</data>
 </object>
 <object>
+	<name>PrintTemplate</name>
+	<action>upsert</action>
+	<data>
+		<prt_object_id.obo_name>ArtPiece</prt_object_id.obo_name>
+		<prt_name>ArtPiecePrintable</prt_name>
+		<prt_usage>L</prt_usage>
+		<prt_visible>1</prt_visible>
+		<prt_grantable>0</prt_grantable>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<prt_lang>ANY</prt_lang>
+		<prt_translation>Print</prt_translation>
+		<prt_filename/>
+		<prt_mimetype>html</prt_mimetype>
+		<prt_type>TMPL</prt_type>
+		<prt_method/>
+		<prt_file/>
+		<prt_template_id.tpl_name>ArtPiecePrintable</prt_template_id.tpl_name>
+	</data>
+</object>
+<object>
 	<name>Map</name>
 	<action>upsert</action>
 	<data>
@@ -4464,9 +4657,31 @@
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>artExbCommissaire</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>art exb commissaire</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>artExbDate</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>art exb date</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>artExbDescrition</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>art exb descrition</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -4827,9 +5042,31 @@
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>artExbCommissaire</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Commissaire</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>artExbDate</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Date</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>artExbDescrition</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Descrition</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -5149,13 +5386,6 @@
 	</data>
 	<data>
 		<tsl_typeFieldArea>Z</tsl_typeFieldArea>
-		<tsl_id.ofa_name>ArtPiece-5</tsl_id.ofa_name>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>ArtPiece-5</tsl_value>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_typeFieldArea>Z</tsl_typeFieldArea>
 		<tsl_id.ofa_name>ArtPiece-Artist</tsl_id.ofa_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Artist</tsl_value>
@@ -5177,9 +5407,16 @@
 	</data>
 	<data>
 		<tsl_typeFieldArea>Z</tsl_typeFieldArea>
+		<tsl_id.ofa_name>ArtPiece-Picture</tsl_id.ofa_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Picture</tsl_value>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeFieldArea>Z</tsl_typeFieldArea>
 		<tsl_id.ofa_name>ArtPiece-Place</tsl_id.ofa_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>ArtPiece-3</tsl_value>
+		<tsl_value>Place</tsl_value>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -5205,13 +5442,6 @@
 	</data>
 	<data>
 		<tsl_typeFieldArea>Z</tsl_typeFieldArea>
-		<tsl_id.ofa_name>ArtPiece-5</tsl_id.ofa_name>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Photo</tsl_value>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_typeFieldArea>Z</tsl_typeFieldArea>
 		<tsl_id.ofa_name>ArtPiece-Artist</tsl_id.ofa_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Artiste</tsl_value>
@@ -5229,6 +5459,13 @@
 		<tsl_id.ofa_name>ArtPiece-Main</tsl_id.ofa_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Œuvre</tsl_value>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeFieldArea>Z</tsl_typeFieldArea>
+		<tsl_id.ofa_name>ArtPiece-Picture</tsl_id.ofa_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Photo</tsl_value>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>

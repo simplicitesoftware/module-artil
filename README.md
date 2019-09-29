@@ -79,6 +79,8 @@ No custom action
 | `artExbDate`                                                 | date                                     | yes*     | yes       |          | -                                                                                |
 | `artExbPlcId` link to **`ArtPlace`**                         | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `artExbPlcId.artPlcName`_                              | _char(50)_                               |          |           |          | -                                                                                |
+| `artExbCommissaire`                                          | char(100)                                |          | yes       |          | -                                                                                |
+| `artExbDescrition`                                           | html(10000)                              |          | yes       |          | -                                                                                |
 
 ### Custom actions
 
@@ -100,8 +102,8 @@ Piece of art
 | `artPicCode`                                                 | char(20)                                 | yes*     | yes       |          | -                                                                                |
 | `artPicTitle`                                                | char(200)                                |          | yes       |          | -                                                                                |
 | `artPicTechnique`                                            | enum(7) using `ARTPICTECHNIQUE` list     | yes      | yes       |          | -                                                                                |
-| `artPicHeight`                                               | float(7, 2)                              | yes      | yes       |          | -                                                                                |
-| `artPicWidth`                                                | float(7, 2)                              | yes      | yes       |          | -                                                                                |
+| `artPicHeight`                                               | float(7, 2)                              |          | yes       |          | -                                                                                |
+| `artPicWidth`                                                | float(7, 2)                              |          | yes       |          | -                                                                                |
 | `artPicYear`                                                 | int(4)                                   |          | yes       |          | -                                                                                |
 | `artPicPrice`                                                | float(9, 2)                              |          | yes       |          | Estimated price                                                                  |
 | `artPicPlaceId` link to **`ArtPlace`**                       | id                                       |          | yes       |          | -                                                                                |
