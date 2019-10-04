@@ -19,6 +19,11 @@ public class ArtPiece extends ObjectDB {
 		"artPicPlaceId"
 	};
 	
+	private void reGenerateThumbnails(){
+		ObjectField pic = getField("artPicPicture");
+		DocTool.buildThumbImage(pic.getValue(), pic.getDocument().getName(), pic.getName());
+	}
+	
 	@Override
 	public String getUserKeyLabel(String[] row) {
 		String label = row!=null ? row[getFieldIndex("artPicTitle")] : getFieldValue("artPicTitle");

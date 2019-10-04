@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: Artil 1.9
+#             |_| Module: Artil 1.10
 components:
   schemas:
     Error404:
@@ -314,8 +314,6 @@ components:
       bearerFormat: Simplicite token
       scheme: bearer
       type: http
-servers:
-- url: https://artil.dev.simplicite.io/api
 openapi: 3.0.2
 paths:
   /rest/ArtDocument:
@@ -525,6 +523,7 @@ paths:
           enum:
           - json
           - oauth2
+          - token
         in: query
         name: _output
         description: Optional output format
@@ -2667,7 +2666,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module Artil
   title: Artil
-  version: '1.9'
+  version: '1.10'
 tags:
 - name: ArtArtist
   description: Artiste

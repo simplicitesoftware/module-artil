@@ -1,5 +1,8 @@
-![](https://www.simplicite.io/resources//logos/logo250.png)
+![](https://docs.simplicite.io//logos/logo250.png)
 * * *
+
+Apache Maven
+============
 
 Build:
 
@@ -13,6 +16,17 @@ Analyse:
 
 ``` text
 mvn sonar:sonar
+```
+
+
+
+Gradle
+======
+
+Build:
+
+``` text
+gradle --refresh-dependencies clean compileJava
 ```
 
 

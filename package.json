@@ -1,16 +1,14 @@
 {
-    "date": "Sun Sep 29 10:26:00 CEST 2019",
+    "date": "Fri Oct 04 17:02:34 CEST 2019",
     "name": "Artil",
     "format": "xml",
     "description": "",
-    "repository": {
-        "origin": {
-            "password": "d101a0337297a63a8d25",
-            "uri": "https://artil.dev.simplicite.io/git/Artil",
-            "username": "designer"
-        },
-        "type": "git"
-    },
-    "version": "1.9",
+    "files": ["Artil.xml"],
+    "repository": {"origin": {
+        "password": "d101a0337297a63a8d25",
+        "uri": "https://artil.dev.simplicite.io/git/Artil",
+        "username": "designer"
+    }},
+    "version": "1.10",
     "dependencies": [{"Simplicite": "4.0"}]
 }

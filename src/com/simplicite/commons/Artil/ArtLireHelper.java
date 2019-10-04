@@ -8,7 +8,14 @@ import java.util.LinkedHashMap;
 
 import javax.imageio.ImageIO;
 
-import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.*;
+import org.apache.lucene.index.*;
+import org.apache.lucene.analysis.*;
+import org.apache.lucene.store.*;
+import org.apache.lucene.document.*;
+import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
+
+/*import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
@@ -16,7 +23,7 @@ import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.index.Term;
-import org.apache.lucene.store.FSDirectory;
+import org.apache.lucene.store.FSDirectory;*/
 
 import java.util.*;
 import com.simplicite.util.*;
@@ -33,18 +40,20 @@ import net.semanticmetadata.lire.searchers.ImageSearcher;
  * Shared code ArtLireHelper
  *
  *
- * wget http://archive.apache.org/dist/lucene/java/7.7.1/lucene-7.7.1.tgz
- * tar -xvf lucene-7.7.1.tgz && rm -f lucene-7.7.1.tgz
- * cp lucene-7.7.1/queryparser/lucene-queryparser-7.7.1.jar tomcat/webapps/ROOT/WEB-INF/lib/
- * cp lucene-7.7.1/analysis/common/lucene-analyzers-common-7.7.1.jar tomcat/webapps/ROOT/WEB-INF/lib/
- * cp lucene-7.7.1/codecs/lucene-codecs-7.7.1.jar tomcat/webapps/ROOT/WEB-INF/lib/
- * cp lucene-7.7.1/backward-codecs/lucene-backward-codecs-7.7.1.jar tomcat/webapps/ROOT/WEB-INF/lib/
- * rm -rf lucene-7.7.1
+ * wget http://archive.apache.org/dist/lucene/java/8.0.0/lucene-8.0.0.tgz
+ * tar -xvf lucene-8.0.0.tgz && rm -f lucene-8.0.0.tgz
+ * //cp lucene-8.0.0/queryparser/lucene-queryparser-8.0.0.jar tomcat/webapps/ROOT/WEB-INF/lib/
+ * cp lucene-8.0.0/analysis/common/lucene-analyzers-common-8.0.0.jar tomcat/webapps/ROOT/WEB-INF/lib/
+ * //cp lucene-8.0.0/codecs/lucene-codecs-8.0.0.jar tomcat/webapps/ROOT/WEB-INF/lib/
+ * //cp lucene-8.0.0/backward-codecs/lucene-backward-codecs-8.0.0.jar tomcat/webapps/ROOT/WEB-INF/lib/
+ * rm -rf lucene-8.0.0
  *
- * wget https://github.com/dermotte/LIRE/releases/download/gradle/simpleapplication-2016-11-24.zip
- * unzip -d lire simpleapplication-2016-11-24.zip && rm -f simpleapplication-2016-11-24.zip
- * cp lire/lib/lire.jar tomcat/webapps/ROOT/WEB-INF/lib/
- * rm -rf lire
+ * git clone https://github.com/dermotte/LIRE.git
+ * cd LIRE
+ * gradle jar
+ * cd ..
+ * cp LIRE/build/libs/LIRE-1.0_b05.jar tomcat/webapps/ROOT/WEB-INF/lib/
+ * rm -rf LIRE/
  *
  * sim tomcat-stop
  * sim tomcat-start

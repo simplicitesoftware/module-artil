@@ -2,8 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: Artil 1.9
-basePath: /api
+#             |_| Module: Artil 1.10
 paths:
   /rest/ArtDocument:
     get:
@@ -184,6 +183,7 @@ paths:
         enum:
         - json
         - oauth2
+        - token
       tags:
       - session
   /rest/ArtTag/{row_id}:
@@ -1963,9 +1963,6 @@ paths:
         required: false
       tags:
       - ArtTagPiece
-host: artil.dev.simplicite.io
-schemes:
-- https
 securityDefinitions:
   basicAuth:
     type: basic
@@ -2286,7 +2283,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module Artil
   title: Artil
-  version: '1.9'
+  version: '1.10'
 tags:
 - name: ArtArtist
   description: Artiste

@@ -5,7 +5,8 @@
 	<action>upsert</action>
 	<data>
 		<mdl_name>Artil</mdl_name>
-		<mdl_version>1.9</mdl_version>
+		<mdl_version>1.10</mdl_version>
+		<mdl_prefix>art</mdl_prefix>
 		<mdl_url><![CDATA[{
 	"type": "git",
 	"origin": {
@@ -14,20 +15,13 @@
 		"password": "d101a0337297a63a8d25"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2019-09-29 10:26:00</mdl_lastupd>
+		<mdl_lastupd>2019-10-04 17:02:34</mdl_lastupd>
 		<mdl_comment/>
 	</data>
 </object>
 <object>
 	<name>SystemParam</name>
 	<action>upsert</action>
-	<data>
-		<sys_code>SYNTAX</sys_code>
-		<sys_value><![CDATA[true]]></sys_value>
-		<sys_type>APP</sys_type>
-		<sys_desc/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
 	<data>
 		<sys_code>WINDOW_TITLE</sys_code>
 		<sys_value><![CDATA[Artil]]></sys_value>
@@ -75,7 +69,6 @@
 	<action>upsert</action>
 	<data>
 		<viw_name>ArtScopeAdmin</viw_name>
-		<viw_template/>
 		<viw_ui/>
 		<viw_order>1</viw_order>
 		<viw_icon>img/color/panorama</viw_icon>
@@ -86,7 +79,6 @@
 	</data>
 	<data>
 		<viw_name>ArtScopeReadonly</viw_name>
-		<viw_template/>
 		<viw_ui/>
 		<viw_order>2</viw_order>
 		<viw_icon>fas/paint-brush</viw_icon>
@@ -97,13 +89,6 @@
 	</data>
 	<data>
 		<viw_name>ArtViewHome</viw_name>
-		<viw_template><![CDATA[<table class="area">
-	<tbody>
-		<tr>
-			<td class="area">[AREA:1:=]</td>
-		</tr>
-	</tbody>
-</table>]]></viw_template>
 		<viw_ui><![CDATA[<div class="area" data-area="1"></div>]]></viw_ui>
 		<viw_order>10</viw_order>
 		<viw_icon/>
@@ -182,6 +167,10 @@
 		<lov_order_by>1</lov_order_by>
 		<lov_label>NULL</lov_label>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>ART_ENUM_BOOL</lov_list_id.lov_name>
@@ -189,6 +178,10 @@
 		<lov_order_by>2</lov_order_by>
 		<lov_label>TRUE</lov_label>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>ART_ENUM_BOOL</lov_list_id.lov_name>
@@ -196,6 +189,10 @@
 		<lov_order_by>3</lov_order_by>
 		<lov_label>FALSE</lov_label>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>ARTPICTECHNIQUE</lov_list_id.lov_name>
@@ -203,6 +200,10 @@
 		<lov_order_by>0</lov_order_by>
 		<lov_label>Unknown</lov_label>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>ARTPICTECHNIQUE</lov_list_id.lov_name>
@@ -210,6 +211,10 @@
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Óleo sobre tela y lino</lov_label>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>ARTPICTECHNIQUE</lov_list_id.lov_name>
@@ -217,6 +222,10 @@
 		<lov_order_by>1</lov_order_by>
 		<lov_label>Pintura Textil</lov_label>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>ARTPICTECHNIQUE</lov_list_id.lov_name>
@@ -224,6 +233,10 @@
 		<lov_order_by>10</lov_order_by>
 		<lov_label>Oil on canvas</lov_label>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 	<data>
 		<lov_list_id.lov_name>ARTPICTECHNIQUE</lov_list_id.lov_name>
@@ -231,6 +244,10 @@
 		<lov_order_by>20</lov_order_by>
 		<lov_label>Técnica Mixta (y óleo) sobre tela (Lungi)</lov_label>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
 	</data>
 </object>
 <object>
@@ -377,6 +394,7 @@
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -412,6 +430,7 @@
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -447,6 +466,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -482,6 +502,7 @@
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -517,6 +538,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
 		<fld_researchreq/>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -552,6 +574,7 @@
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research/>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -587,6 +610,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -622,6 +646,7 @@
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -657,6 +682,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
 		<fld_researchreq/>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -692,6 +718,7 @@
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -727,6 +754,7 @@
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -762,6 +790,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -797,6 +826,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -832,6 +862,7 @@
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -867,6 +898,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -902,6 +934,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
 		<fld_researchreq/>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -937,6 +970,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>4</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -972,6 +1006,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1007,6 +1042,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1042,6 +1078,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
 		<fld_researchreq/>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1049,10 +1086,10 @@
 		<fld_type_id.flt_code/>
 		<fld_enumlist/>
 		<fld_list_id.lov_name/>
-		<fld_copy>1</fld_copy>
+		<fld_copy>0</fld_copy>
 		<fld_size>11</fld_size>
 		<fld_minsize/>
-		<fld_precision/>
+		<fld_precision>200</fld_precision>
 		<fld_fromdate_id.fld_name/>
 		<fld_dfault/>
 		<fld_indexable>0</fld_indexable>
@@ -1075,8 +1112,9 @@
 		<fld_updatable>1</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
-		<fld_research/>
+		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1112,6 +1150,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>1</fld_listsum>
@@ -1147,6 +1186,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1182,6 +1222,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1217,6 +1258,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1252,6 +1294,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1287,6 +1330,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1322,6 +1366,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1357,6 +1402,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1392,6 +1438,7 @@
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1427,6 +1474,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1462,6 +1510,7 @@
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1497,6 +1546,7 @@
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research/>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1532,6 +1582,7 @@
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1567,6 +1618,7 @@
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
@@ -1599,13 +1651,6 @@
 	<action>upsert</action>
 	<data>
 		<tpl_name>ArtArtist</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-	<tbody>
-		<tr>
-			<td class="area">[AREA:1:=]</td>
-		</tr>
-	</tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div class="area" data-area="1"></div>
 ]]></tpl_ui>
 		<tpl_min/>
@@ -1614,13 +1659,6 @@
 	</data>
 	<data>
 		<tpl_name>ArtDocument</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-	<tbody>
-		<tr>
-			<td class="area">[AREA:1:=]</td>
-		</tr>
-	</tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div class="area" data-area="1:="></div>
 ]]></tpl_ui>
 		<tpl_min/>
@@ -1629,13 +1667,6 @@
 	</data>
 	<data>
 		<tpl_name>ArtExhibition</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-	<tbody>
-		<tr>
-			<td class="area">[AREA:1:=]</td>
-		</tr>
-	</tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div class="area" data-area="1"></div>
 ]]></tpl_ui>
 		<tpl_min/>
@@ -1644,13 +1675,6 @@
 	</data>
 	<data>
 		<tpl_name>ArtPiece</tpl_name>
-		<tpl_form><![CDATA[<table class="area">
-	<tbody>
-		<tr>
-			<td class="area">[AREA:1:=]</td>
-		</tr>
-	</tbody>
-</table>]]></tpl_form>
 		<tpl_ui><![CDATA[<div class="row">
   <div class="col-sm-6">
     <div class="area" data-area="2"></div>
@@ -1669,7 +1693,7 @@
 	</data>
 	<data>
 		<tpl_name>ArtPiecePrintable</tpl_name>
-		<tpl_form><![CDATA[<html>
+		<tpl_ui><![CDATA[<html>
 	<head>
 		<link href="/scripts/jquery/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<style>
@@ -1691,13 +1715,14 @@
 				<td>[VALUE:artPicHeight]x[VALUE:artPicWidth]</td>
 				<td>[VALUE:artPicSigned]</td>
 				<td>[VALUE:artPicYear]</td>
-				<td class="thmb"><img src="[VALUE:artPicPicture]"/></td>
+				<td>[VALUE:artPicComment]</td>
+				<!--<td class="thmb"><img src="[VALUE:artPicPicture]"/></td>-->
+				<td class="thmb"><img src="[EXPR:obj.getField('artPicPicture').getDocument().getThumbnailURL('inline')]"/></td>
 			</tr>
 			[END]
 		</table>
 	</div>
-</html>]]></tpl_form>
-		<tpl_ui/>
+</html>]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -1710,7 +1735,6 @@
 		<ofa_name>ArtArtist-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>0</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div class="row">
   <div class="col-sm-4">
     <div class="field" data-field="artArtFirstname"></div>
@@ -1730,7 +1754,6 @@
 		<ofa_name>ArtDocument-1</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="field" data-field="artDocPicId"></div>
   <div class="field" data-field="artDocPicId__artPicCode"></div>
@@ -1746,7 +1769,6 @@
 		<ofa_name>ArtExhibition-Main</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>0</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-6">
@@ -1766,7 +1788,6 @@
 		<ofa_name>ArtPiece-Artist</ofa_name>
 		<ofa_position>2</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div class="row">
   <div class="col-sm-6">
     <div class="field" data-field="artPicArtistId__artArtFirstname"></div>
@@ -1783,7 +1804,6 @@
 		<ofa_name>ArtPiece-Extra</ofa_name>
 		<ofa_position>4</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="area" data-area="ArtTagPiece;artTpPieceId"></div>
   <div class="area" data-area="ArtExbPic;artExbpicPicId"></div>
@@ -1798,7 +1818,6 @@
 		<ofa_name>ArtPiece-Main</ofa_name>
 		<ofa_position>1</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div>
   <div class="row">
     <div class="col-sm-4">
@@ -1845,7 +1864,6 @@
 		<ofa_name>ArtPiece-Picture</ofa_name>
 		<ofa_position>5</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div class="field" data-field="artPicPicture"></div>
 ]]></ofa_ui>
 		<ofa_icon>gly/camera</ofa_icon>
@@ -1855,7 +1873,6 @@
 		<ofa_name>ArtPiece-Place</ofa_name>
 		<ofa_position>3</ofa_position>
 		<ofa_title>1</ofa_title>
-		<ofa_template/>
 		<ofa_ui><![CDATA[<div class="field" data-field="artPicPlaceId__artPlcName"></div>
 ]]></ofa_ui>
 		<ofa_icon>img/color/map</ofa_icon>
@@ -1872,6 +1889,8 @@
 		<obd_view_id.viw_name>ArtViewHome</obd_view_id.viw_name>
 		<obd_nohome>0</obd_nohome>
 		<obd_icon>fas/paint-brush</obd_icon>
+		<obd_order>1000</obd_order>
+		<obd_domain_id.obd_name/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 </object>
@@ -4599,6 +4618,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4610,6 +4630,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4621,6 +4642,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4632,6 +4654,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4643,6 +4666,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4654,6 +4678,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4665,6 +4690,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4676,6 +4702,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4687,6 +4714,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4698,6 +4726,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4709,6 +4738,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4720,6 +4750,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4731,6 +4762,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4742,6 +4774,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4753,6 +4786,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4764,6 +4798,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4775,6 +4810,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4786,6 +4822,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4797,6 +4834,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4808,6 +4846,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4819,6 +4858,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4830,6 +4870,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4841,6 +4882,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4852,6 +4894,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4863,6 +4906,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4874,6 +4918,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4885,6 +4930,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4896,6 +4942,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4907,6 +4954,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4918,6 +4966,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4929,6 +4978,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4940,6 +4990,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4951,6 +5002,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4962,6 +5014,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4973,6 +5026,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4984,6 +5038,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -4995,6 +5050,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5006,6 +5062,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5017,6 +5074,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5028,6 +5086,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5039,6 +5098,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5050,6 +5110,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5061,6 +5122,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5072,6 +5134,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5083,6 +5146,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5094,6 +5158,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5105,6 +5170,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5116,6 +5182,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5127,6 +5194,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5138,6 +5206,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5149,6 +5218,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5160,6 +5230,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5171,6 +5242,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5182,6 +5254,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5193,6 +5266,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5204,6 +5278,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5215,6 +5290,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5226,6 +5302,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5237,6 +5314,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5248,6 +5326,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5259,6 +5338,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5270,6 +5350,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5281,6 +5362,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5292,6 +5374,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5303,6 +5386,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5314,6 +5398,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5325,6 +5410,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5336,6 +5422,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5347,6 +5434,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
@@ -5358,6 +5446,7 @@
 		<tsl_placeholder/>
 		<tsl_listhelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
 	</data>
 </object>
 <object>

@@ -2,13 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.simplicite.modules</groupId>
-  <version>1.9-SNAPSHOT</version>
+  <version>1.10-SNAPSHOT</version>
   <artifactId>Artil</artifactId>
   <name>Artil</name>
+  <description>Simplicite module: Artil</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <simplicite.url>https://artil.dev.simplicite.io</simplicite.url>
-    <simplicite.version>4.0.P24b-SNAPSHOT</simplicite.version>
+    <simplicite.version>4.0.P25a-SNAPSHOT</simplicite.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <sonar.sources>src,resources</sonar.sources>
