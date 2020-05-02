@@ -910,6 +910,11 @@ paths:
         description: Search filter for Œuvres d'art
         type: string
         required: false
+      - in: query
+        name: artPicCodeBis
+        description: Search filter for Code Bis
+        type: string
+        required: false
       tags:
       - ArtPiece
   /rest/ArtPlace/{row_id}:
@@ -1995,7 +2000,7 @@ definitions:
         description: Fichier
         type: object
       row_id:
-        description: Id
+        description: Unique technical row ID
         type: string
       artDocPicId__artPicTitle:
         description: Titre Œuvre
@@ -2029,7 +2034,7 @@ definitions:
         description: Nom
         type: string
       row_id:
-        description: Id
+        description: Unique technical row ID
         type: string
   ArrayOfArtArtist:
     type: array
@@ -2048,7 +2053,7 @@ definitions:
         description: Commissaire
         type: string
       row_id:
-        description: Id
+        description: Unique technical row ID
         type: string
       artExbDescrition:
         description: Descrition
@@ -2066,7 +2071,7 @@ definitions:
         description: Public
         type: boolean
       row_id:
-        description: Id
+        description: Unique technical row ID
         type: string
   ArrayOfArtExhibition:
     type: array
@@ -2102,7 +2107,7 @@ definitions:
         description: app art tag fk
         type: string
       row_id:
-        description: Id
+        description: Unique technical row ID
         type: string
   TreeviewData:
     type: object
@@ -2150,6 +2155,9 @@ definitions:
       artPicExbVirtual:
         description: art pic exb virtual
         type: string
+      artPicCodeBis:
+        description: Code Bis
+        type: string
       artPicScore:
         description: Score
         type: number
@@ -2178,7 +2186,7 @@ definitions:
         description: Artiste|Artistes
         type: string
       row_id:
-        description: Id
+        description: Unique technical row ID
         type: string
       artPicCode:
         description: Identifiant
@@ -2196,7 +2204,7 @@ definitions:
         description: Public
         type: boolean
       row_id:
-        description: Id
+        description: Unique technical row ID
         type: string
   ArrayOfArtExbPic:
     type: array
@@ -2255,7 +2263,7 @@ definitions:
         description: art exbpic pic id
         type: string
       row_id:
-        description: Id
+        description: Unique technical row ID
         type: string
   Error403:
     type: object

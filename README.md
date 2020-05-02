@@ -115,6 +115,7 @@ Piece of art
 | `artPicSigned`                                               | enum(7) using `ART_ENUM_BOOL` list       | yes      | yes       |          | -                                                                                |
 | `artPicTagVirtual` link to **`ArtTag`**                      | id                                       |          | yes       |          | -                                                                                |
 | `artPicExbVirtual` link to **`ArtExhibition`**               | id                                       |          | yes       |          | -                                                                                |
+| `artPicCodeBis`                                              | char(20)                                 |          | yes       |          | -                                                                                |
 
 ### Lists
 
