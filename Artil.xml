@@ -1980,7 +1980,7 @@ sim tomcat-star
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
 		<obo_delspec/>
-		<obo_exportorder/>
+		<obo_exportorder>10</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -2040,7 +2040,7 @@ sim tomcat-star
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
 		<obo_delspec/>
-		<obo_exportorder/>
+		<obo_exportorder>80</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>0</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -2100,7 +2100,7 @@ sim tomcat-star
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
 		<obo_delspec/>
-		<obo_exportorder/>
+		<obo_exportorder>50</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>0</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -2160,7 +2160,7 @@ sim tomcat-star
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
 		<obo_delspec/>
-		<obo_exportorder/>
+		<obo_exportorder>40</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>0</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -2220,7 +2220,7 @@ sim tomcat-star
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
 		<obo_delspec/>
-		<obo_exportorder/>
+		<obo_exportorder>30</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -2280,7 +2280,7 @@ sim tomcat-star
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
 		<obo_delspec/>
-		<obo_exportorder/>
+		<obo_exportorder>20</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -2340,7 +2340,7 @@ sim tomcat-star
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
 		<obo_delspec/>
-		<obo_exportorder/>
+		<obo_exportorder>60</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>1</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -2400,7 +2400,7 @@ sim tomcat-star
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
 		<obo_delspec/>
-		<obo_exportorder/>
+		<obo_exportorder>70</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>0</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -5990,6 +5990,16 @@ sim tomcat-star
 		<tsl_value>ArtHome</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Dataset</name>
+	<action>upsert</action>
+	<data>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<dt_name>Test Data</dt_name>
+		<dt_file>data/Test Data.zip</dt_file>
+		<dt_desc><![CDATA[Created by module's data export on 2021-04-20 00:52:48]]></dt_desc>
 	</data>
 </object>
 </simplicite>
