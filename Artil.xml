@@ -5,7 +5,7 @@
 	<action>upsert</action>
 	<data>
 		<mdl_name>Artil</mdl_name>
-		<mdl_version>1.10</mdl_version>
+		<mdl_version>1.11</mdl_version>
 		<mdl_prefix>art</mdl_prefix>
 		<mdl_url><![CDATA[{
 	"type": "git",
@@ -13,7 +13,7 @@
 		"uri": "https://github.com/simplicitesoftware/module-artil.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2021-04-20 00:02:22</mdl_lastupd>
+		<mdl_lastupd>2021-04-20 00:53:56</mdl_lastupd>
 		<mdl_comment><![CDATA[TODO : Clarify Build jar process
 ====================
 

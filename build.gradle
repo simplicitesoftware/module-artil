@@ -21,7 +21,7 @@ repositories {
 }
 
 group = 'com.simplicite.modules'
-version = '1.10'
+version = '1.11'
 description = 'Simplicite module: Artil'
 sourceCompatibility = '1.8'
 
