@@ -10,12 +10,10 @@
 		<mdl_url><![CDATA[{
 	"type": "git",
 	"origin": {
-		"uri": "https://artil.dev.simplicite.io/git/Artil",
-		"username": "designer",
-		"password": "d101a0337297a63a8d25"
+		"uri": "https://github.com/simplicitesoftware/module-artil.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2019-10-04 17:02:34</mdl_lastupd>
+		<mdl_lastupd>2021-04-19 20:59:05</mdl_lastupd>
 		<mdl_comment/>
 	</data>
 </object>

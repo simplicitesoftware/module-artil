@@ -152,8 +152,8 @@ components:
           type: string
           enum:
           - 'NULL'
-          - LIN
           - PINTEX
+          - LIN
           - OIL
           - LUNGI
         artPicArtistId__artArtLastname:
@@ -1307,8 +1307,8 @@ paths:
           type: string
           enum:
           - 'NULL'
-          - LIN
           - PINTEX
+          - LIN
           - OIL
           - LUNGI
         in: query
