@@ -36,63 +36,10 @@ import net.semanticmetadata.lire.searchers.GenericFastImageSearcher;
 import net.semanticmetadata.lire.searchers.ImageSearchHits;
 import net.semanticmetadata.lire.searchers.ImageSearcher;
 
-/**
- * Shared code ArtLireHelper
- *
- *
- * wget http://archive.apache.org/dist/lucene/java/8.0.0/lucene-8.0.0.tgz
- * tar -xvf lucene-8.0.0.tgz && rm -f lucene-8.0.0.tgz
- * //cp lucene-8.0.0/queryparser/lucene-queryparser-8.0.0.jar tomcat/webapps/ROOT/WEB-INF/lib/
- * cp lucene-8.0.0/analysis/common/lucene-analyzers-common-8.0.0.jar tomcat/webapps/ROOT/WEB-INF/lib/
- * //cp lucene-8.0.0/codecs/lucene-codecs-8.0.0.jar tomcat/webapps/ROOT/WEB-INF/lib/
- * //cp lucene-8.0.0/backward-codecs/lucene-backward-codecs-8.0.0.jar tomcat/webapps/ROOT/WEB-INF/lib/
- * rm -rf lucene-8.0.0
- *
- * git clone https://github.com/dermotte/LIRE.git
- * cd LIRE
- * gradle jar
- * cd ..
- * cp LIRE/build/libs/LIRE-1.0_b05.jar tomcat/webapps/ROOT/WEB-INF/lib/
- * rm -rf LIRE/
- *
- * sim tomcat-stop
- * sim tomcat-start
- *
- *
- */
 public class ArtLireHelper implements java.io.Serializable {
 	private static final long serialVersionUID = 1L;
 	private static final String lireIndex = "lireIndex";
 	private static final String classLogName = "-------------ArtLireHelper--------------";
-
-	public static void testIndex(Grant g){
-		ObjectDB prd = g.getTmpObject("DemoProduct");
-		synchronized(prd){
-			prd.resetFilters();
-			prd.search().forEach(row->{
-				prd.setValues(row);
-				try{
-					indexImage(
-						prd.getField("demoPrdPicture").getDocument(g).getInputStream(),
-						prd.getRowId()
-					);
-				}catch(Exception e){
-					err(e);
-				}
-			});
-		}
-	}
-
-	public static void testSearch(Grant g){
-		ObjectDB prd = g.getTmpObject("DemoProduct");
-		prd.select("2");
-		try{
-			searchImage(prd.getField("demoPrdPicture").getDocument(g).getInputStream()).forEach((id, score)->disp(id+" : "+score));
-		}
-		catch(Exception e){
-			err(e);
-		}
-	}
 
 	// ========= INDEX ===========
 	public static void indexImage(InputStream img, String identifier) throws Exception{
