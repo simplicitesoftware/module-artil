@@ -232,7 +232,7 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
-		<lov_icon/>
+		<lov_icon>icon/color/btn_blue</lov_icon>
 		<lov_display>L</lov_display>
 	</data>
 	<data>
@@ -243,7 +243,7 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
-		<lov_icon/>
+		<lov_icon>icon/color/btn_grey</lov_icon>
 		<lov_display>L</lov_display>
 	</data>
 	<data>
@@ -254,7 +254,7 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
-		<lov_icon/>
+		<lov_icon>icon/color/btn_orange</lov_icon>
 		<lov_display>L</lov_display>
 	</data>
 	<data>
@@ -1876,6 +1876,26 @@ sim tomcat-star
 		<sty_vmin/>
 		<sty_vmax/>
 		<sty_style>bluebg</sty_style>
+		<sty_image/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<sty_object>ArtPiece</sty_object>
+		<sty_field>artPicState</sty_field>
+		<sty_value>SOLD</sty_value>
+		<sty_vmin/>
+		<sty_vmax/>
+		<sty_style>greybg</sty_style>
+		<sty_image/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<sty_object>ArtPiece</sty_object>
+		<sty_field>artPicState</sty_field>
+		<sty_value>STORED</sty_value>
+		<sty_vmin/>
+		<sty_vmax/>
+		<sty_style>orangebg</sty_style>
 		<sty_image/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
