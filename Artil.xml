@@ -2528,7 +2528,7 @@ sim tomcat-star
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
 		<obo_delspec/>
-		<obo_exportorder/>
+		<obo_exportorder>15</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>0</obo_indexable>
 		<obo_groupby>0</obo_groupby>
