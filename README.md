@@ -47,10 +47,6 @@ sim tomcat-star
 | `artArtLastname`                                             | char(50)                                 | yes*     | yes       |          | -                                                                                |
 | `artArtYear`                                                 | int(4)                                   | yes      | yes       |          | Year of birth                                                                    |
 
-### Custom actions
-
-No custom action
-
 `ArtDocument` business object definition
 ----------------------------------------
 
@@ -66,10 +62,6 @@ No custom action
 | `artDocDescription`                                          | char(200)                                | yes*     | yes       |          | -                                                                                |
 | `artDocFile`                                                 | document                                 | yes      | yes       |          | -                                                                                |
 
-### Custom actions
-
-No custom action
-
 `ArtExbPic` business object definition
 --------------------------------------
 
@@ -83,10 +75,6 @@ No custom action
 | _Ref. `artExbpicExbId.artExbDate`_                           | _date_                                   |          |           |          | -                                                                                |
 | `artExbpicPicId` link to **`ArtPiece`**                      | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `artExbpicPicId.artPicCode`_                           | _char(20)_                               |          |           |          | -                                                                                |
-
-### Custom actions
-
-No custom action
 
 `ArtExhibition` business object definition
 ------------------------------------------
@@ -103,10 +91,6 @@ No custom action
 | `artExbCommissaire`                                          | char(100)                                |          | yes       |          | -                                                                                |
 | `artExbDescrition`                                           | html(10000)                              |          | yes       |          | -                                                                                |
 
-### Custom actions
-
-No custom action
-
 `ArtPiece` business object definition
 -------------------------------------
 
@@ -116,30 +100,35 @@ Piece of art
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
 | ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
-| `artPicScore`                                                | float(5, 2)                              |          |           |          | -                                                                                |
-| `artPicArtistId` link to **`ArtArtist`**                     | id                                       |          | yes       |          | -                                                                                |
-| _Ref. `artPicArtistId.artArtFirstname`_                      | _char(50)_                               |          |           |          | -                                                                                |
-| _Ref. `artPicArtistId.artArtLastname`_                       | _char(50)_                               |          |           |          | -                                                                                |
+| `artPicState`                                                | enum(30) using `ARTPICSTATE` list        | yes*     | yes       |          | -                                                                                |
 | `artPicCode`                                                 | char(20)                                 | yes*     | yes       |          | -                                                                                |
+| `artPicCodeBis`                                              | char(20)                                 |          | yes       |          | -                                                                                |
 | `artPicTitle`                                                | char(200)                                |          | yes       |          | -                                                                                |
-| `artPicTechnique`                                            | enum(7) using `ARTPICTECHNIQUE` list     | yes      | yes       |          | -                                                                                |
+| `artPicTechnique`                                            | enum(20) using `ARTPICTECHNIQUE` list    | yes      | yes       |          | -                                                                                |
 | `artPicHeight`                                               | float(7, 2)                              |          | yes       |          | -                                                                                |
 | `artPicWidth`                                                | float(7, 2)                              |          | yes       |          | -                                                                                |
 | `artPicYear`                                                 | int(4)                                   |          | yes       |          | -                                                                                |
 | `artPicPrice`                                                | float(9, 2)                              |          | yes       |          | Estimated price                                                                  |
+| `artPicEntry`                                                | date                                     |          | yes       |          | -                                                                                |
+| `artPicSigned`                                               | enum(1) using `ART_ENUM_BOOL` list       | yes      | yes       |          | -                                                                                |
+| `artPicArtistId` link to **`ArtArtist`**                     | id                                       |          | yes       |          | -                                                                                |
+| _Ref. `artPicArtistId.artArtFirstname`_                      | _char(50)_                               |          |           |          | -                                                                                |
+| _Ref. `artPicArtistId.artArtLastname`_                       | _char(50)_                               |          |           |          | -                                                                                |
 | `artPicPlaceId` link to **`ArtPlace`**                       | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `artPicPlaceId.artPlcName`_                            | _char(50)_                               |          |           |          | -                                                                                |
-| `artPicEntry`                                                | date                                     |          | yes       |          | -                                                                                |
 | `artPicComment`                                              | text(1000)                               |          | yes       |          | -                                                                                |
-| `artPicPicture`                                              | image                                    |          | yes       |          | -                                                                                |
 | `artPicDocument`                                             | document                                 |          | yes       |          | -                                                                                |
-| `artPicSigned`                                               | enum(7) using `ART_ENUM_BOOL` list       | yes      | yes       |          | -                                                                                |
-| `artPicTagVirtual` link to **`ArtTag`**                      | id                                       |          | yes       |          | -                                                                                |
+| `artPicScore`                                                | float(5, 2)                              |          |           |          | -                                                                                |
 | `artPicExbVirtual` link to **`ArtExhibition`**               | id                                       |          | yes       |          | -                                                                                |
-| `artPicCodeBis`                                              | char(20)                                 |          | yes       |          | -                                                                                |
+| `artPicTagVirtual` link to **`ArtTag`**                      | id                                       |          | yes       |          | -                                                                                |
+| `artPicPicture`                                              | image                                    |          | yes       |          | -                                                                                |
 
 ### Lists
 
+* `ARTPICSTATE`
+    - `SELLING` En vente
+    - `SOLD` Vendu
+    - `STORED` Stocké
 * `ARTPICTECHNIQUE`
     - `NULL` Unknown
     - `LIN` Óleo sobre tela y lino
@@ -167,10 +156,6 @@ Piece of art
 | `artPlcName`                                                 | char(50)                                 | yes*     | yes       |          | -                                                                                |
 | `artPlcPublic`                                               | boolean                                  |          | yes       |          | -                                                                                |
 
-### Custom actions
-
-No custom action
-
 `ArtTag` business object definition
 -----------------------------------
 
@@ -182,10 +167,6 @@ No custom action
 | ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
 | `artTagLabel`                                                | char(20)                                 | yes*     | yes       |          | -                                                                                |
 | `artTagPublic`                                               | boolean                                  |          | yes       |          | -                                                                                |
-
-### Custom actions
-
-No custom action
 
 `ArtTagPiece` business object definition
 ----------------------------------------
@@ -200,10 +181,6 @@ No custom action
 | _Ref. `artTpTagId.artTagLabel`_                              | _char(20)_                               |          |           |          | -                                                                                |
 | `artTpPieceId` link to **`ArtPiece`**                        | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `artTpPieceId.artPicCode`_                             | _char(20)_                               |          |           |          | -                                                                                |
-
-### Custom actions
-
-No custom action
 
 `ArtImageRecognition` external object definition
 ------------------------------------------------
