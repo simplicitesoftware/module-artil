@@ -41,6 +41,15 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/ArtTag'
+    ArtOwner:
+      type: object
+      properties:
+        artOwnName:
+          description: Nom
+          type: string
+        row_id:
+          description: Unique technical row ID
+          type: string
     PublicationResult:
       type: object
       properties:
@@ -65,6 +74,196 @@ components:
         row_id:
           description: Unique technical row ID
           type: string
+    ArrayOfArtExhibition:
+      type: array
+      items:
+        $ref: '#/components/schemas/ArtExhibition'
+    ArrayOfArtPlace:
+      type: array
+      items:
+        $ref: '#/components/schemas/ArtPlace'
+    ArtTagPiece:
+      type: object
+      properties:
+        artTpTagId__artTagLabel:
+          description: Label app art tag fk
+          type: string
+        artTpPieceId__artPicCode:
+          description: Code app art piece fk
+          type: string
+        artTpPieceId:
+          description: app art piece fk
+          type: string
+        artTpTagId:
+          description: app art tag fk
+          type: string
+        row_id:
+          description: Unique technical row ID
+          type: string
+    ArtPiece:
+      type: object
+      properties:
+        artPicArtistId__artArtLastname:
+          description: Nom
+          type: string
+        artPicTagVirtual:
+          description: Œuvres d'art
+          type: string
+        artPicDocument:
+          description: Document
+          type: object
+        artPicState:
+          description: State
+          type: string
+          enum:
+          - SELLING
+          - SOLD
+          - STORED
+        artPicWidth:
+          description: Largeur
+          type: number
+        artPicExbVirtual:
+          description: art pic exb virtual
+          type: string
+        artPicEntry:
+          description: Date d'entrée
+          type: string
+          example: yyyy-MM-dd
+        artPicPicture:
+          description: Photo
+          type: object
+        artPicPrice:
+          description: Estimated price
+          type: number
+        artPicYear:
+          description: Année
+          type: integer
+        artPicTitle:
+          description: Titre
+          type: string
+        artPicArtistId:
+          description: Artiste|Artistes
+          type: string
+        artPicTechnique:
+          description: Technique
+          type: string
+          enum:
+          - 'NULL'
+          - LIN
+          - PINTEX
+          - OIL
+          - LUNGI
+        artPicComment:
+          description: Commentaire
+          type: string
+        artPicPlaceId:
+          description: Lieu|Lieux
+          type: string
+        artPicSigned:
+          description: Signé
+          type: string
+          enum:
+          - '2'
+          - '1'
+          - '0'
+        artPicOwnId__artOwnName:
+          description: Nom Propriétaire
+          type: string
+        artPicCodeBis:
+          description: Code 2
+          type: string
+        artPicScore:
+          description: Score
+          type: number
+        artPicOwnId:
+          description: Propriétaire
+          type: string
+        artPicPlaceId__artPlcName:
+          description: Nom
+          type: string
+        artPicArtistId__artArtFirstname:
+          description: Prénom
+          type: string
+        row_id:
+          description: Unique technical row ID
+          type: string
+        artPicCode:
+          description: Code
+          type: string
+        artPicHeight:
+          description: Hauteur
+          type: number
+    ArrayOfArtExbPic:
+      type: array
+      items:
+        $ref: '#/components/schemas/ArtExbPic'
+    Error400:
+      type: object
+      properties:
+        error:
+          description: Error message
+          type: string
+        status:
+          description: Error status
+          type: integer
+          enum:
+          - 400
+    Error401:
+      type: object
+      properties:
+        error:
+          description: Error message
+          type: string
+        status:
+          description: Error status
+          type: integer
+          enum:
+          - 401
+    Error500:
+      type: object
+      properties:
+        error:
+          description: Error message
+          type: string
+        status:
+          description: Error status
+          type: integer
+          enum:
+          - 500
+    ArtExbPic:
+      type: object
+      properties:
+        artExbpicPicId__artPicCode:
+          description: Code art exbpic pic id
+          type: string
+        artExbpicExbId__artExbDate:
+          description: Date art exbpic exb id
+          type: string
+          example: yyyy-MM-dd
+        artExbpicExbId:
+          description: art exbpic exb id
+          type: string
+        artExbpicPicId:
+          description: art exbpic pic id
+          type: string
+        row_id:
+          description: Unique technical row ID
+          type: string
+    Error403:
+      type: object
+      properties:
+        error:
+          description: Error message
+          type: string
+        status:
+          description: Error status
+          type: integer
+          enum:
+          - 403
+    ArrayOfArtDocument:
+      type: array
+      items:
+        $ref: '#/components/schemas/ArtDocument'
     ArrayOfArtArtist:
       type: array
       items:
@@ -103,41 +302,15 @@ components:
         row_id:
           description: Unique technical row ID
           type: string
-    ArrayOfArtExhibition:
-      type: array
-      items:
-        $ref: '#/components/schemas/ArtExhibition'
     ArrayOfArtTagPiece:
       type: array
       items:
         $ref: '#/components/schemas/ArtTagPiece'
-    ArrayOfArtPlace:
-      type: array
-      items:
-        $ref: '#/components/schemas/ArtPlace'
     ActionResult:
       type: object
       properties:
         result:
           description: Action result
-          type: string
-    ArtTagPiece:
-      type: object
-      properties:
-        artTpTagId__artTagLabel:
-          description: Label app art tag fk
-          type: string
-        artTpPieceId__artPicCode:
-          description: Code app art piece fk
-          type: string
-        artTpPieceId:
-          description: app art piece fk
-          type: string
-        artTpTagId:
-          description: app art tag fk
-          type: string
-        row_id:
-          description: Unique technical row ID
           type: string
     TreeviewData:
       type: object
@@ -145,93 +318,6 @@ components:
         item:
           description: Object item with lists of linked objects' items
           type: object
-    ArtPiece:
-      type: object
-      properties:
-        artPicTechnique:
-          description: Technique
-          type: string
-          enum:
-          - 'NULL'
-          - LIN
-          - PINTEX
-          - OIL
-          - LUNGI
-        artPicArtistId__artArtLastname:
-          description: Nom
-          type: string
-        artPicComment:
-          description: Commentaire
-          type: string
-        artPicTagVirtual:
-          description: Œuvres d'art
-          type: string
-        artPicDocument:
-          description: Document
-          type: object
-        artPicPlaceId:
-          description: Lieu|Lieux
-          type: string
-        artPicState:
-          description: State
-          type: string
-          enum:
-          - SELLING
-          - SOLD
-          - STORED
-        artPicWidth:
-          description: Largeur
-          type: number
-        artPicSigned:
-          description: Signé
-          type: string
-          enum:
-          - '2'
-          - '1'
-          - '0'
-        artPicExbVirtual:
-          description: art pic exb virtual
-          type: string
-        artPicCodeBis:
-          description: Code 2
-          type: string
-        artPicEntry:
-          description: Date d'entrée
-          type: string
-          example: yyyy-MM-dd
-        artPicScore:
-          description: Score
-          type: number
-        artPicPlaceId__artPlcName:
-          description: Nom
-          type: string
-        artPicPicture:
-          description: Photo
-          type: object
-        artPicPrice:
-          description: Estimated price
-          type: number
-        artPicYear:
-          description: Année
-          type: integer
-        artPicArtistId__artArtFirstname:
-          description: Prénom
-          type: string
-        artPicTitle:
-          description: Titre
-          type: string
-        artPicArtistId:
-          description: Artiste|Artistes
-          type: string
-        row_id:
-          description: Unique technical row ID
-          type: string
-        artPicCode:
-          description: Code
-          type: string
-        artPicHeight:
-          description: Hauteur
-          type: number
     ArtPlace:
       type: object
       properties:
@@ -244,81 +330,14 @@ components:
         row_id:
           description: Unique technical row ID
           type: string
-    ArrayOfArtExbPic:
-      type: array
-      items:
-        $ref: '#/components/schemas/ArtExbPic'
-    Error400:
-      type: object
-      properties:
-        error:
-          description: Error message
-          type: string
-        status:
-          description: Error status
-          type: integer
-          enum:
-          - 400
-    Error401:
-      type: object
-      properties:
-        error:
-          description: Error message
-          type: string
-        status:
-          description: Error status
-          type: integer
-          enum:
-          - 401
-    Error500:
-      type: object
-      properties:
-        error:
-          description: Error message
-          type: string
-        status:
-          description: Error status
-          type: integer
-          enum:
-          - 500
     ArrayOfArtPiece:
       type: array
       items:
         $ref: '#/components/schemas/ArtPiece'
-    ArtExbPic:
-      type: object
-      properties:
-        artExbpicPicId__artPicCode:
-          description: Code art exbpic pic id
-          type: string
-        artExbpicExbId__artExbDate:
-          description: Date art exbpic exb id
-          type: string
-          example: yyyy-MM-dd
-        artExbpicExbId:
-          description: art exbpic exb id
-          type: string
-        artExbpicPicId:
-          description: art exbpic pic id
-          type: string
-        row_id:
-          description: Unique technical row ID
-          type: string
-    Error403:
-      type: object
-      properties:
-        error:
-          description: Error message
-          type: string
-        status:
-          description: Error status
-          type: integer
-          enum:
-          - 403
-    ArrayOfArtDocument:
+    ArrayOfArtOwner:
       type: array
       items:
-        $ref: '#/components/schemas/ArtDocument'
+        $ref: '#/components/schemas/ArtOwner'
   securitySchemes:
     basicAuth:
       scheme: basic
@@ -1206,6 +1225,254 @@ paths:
         required: true
       tags:
       - ArtTagPiece
+  /rest/ArtOwner:
+    get:
+      summary: Search ArtOwner business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      operationId: obj-artowner-search
+      responses:
+        '200':
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfArtOwner'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artOwnName
+        description: Search filter for Nom
+        required: false
+      tags:
+      - ArtOwner
+  /rest/ArtOwner/{row_id}:
+    post:
+      summary: Create a new ArtOwnerbusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ArtOwner'
+      operationId: obj-artowner-create
+      responses:
+        '200':
+          description: Success in creating a new business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtOwner'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ArtOwner
+    get:
+      summary: Get a ArtOwner business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-artowner-get
+      responses:
+        '200':
+          description: Success in getting a single business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtOwner'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+      tags:
+      - ArtOwner
+    delete:
+      summary: Delete a ArtOwner business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-artowner-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+          content:
+            application/json: {}
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ArtOwner
+    put:
+      summary: Update a ArtOwnerbusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ArtOwner'
+      operationId: obj-artowner-update
+      responses:
+        '200':
+          description: Success in updating a business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtOwner'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ArtOwner
   /:
     get:
       summary: Get user session information
@@ -1422,6 +1689,18 @@ paths:
         in: query
         name: artPicPicture
         description: Search filter for Photo
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artPicOwnId
+        description: Search filter for Propriétaire
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artPicOwnId__artOwnName
+        description: Search filter for Nom Propriétaire
         required: false
       tags:
       - ArtPiece
@@ -2705,6 +2984,8 @@ tags:
   description: Expositions
 - name: ArtExhibition
   description: Exposition
+- name: ArtOwner
+  description: Propriétaire
 - name: ArtPiece
   description: Œuvre
 - name: ArtPlace

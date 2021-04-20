@@ -91,6 +91,17 @@ sim tomcat-star
 | `artExbCommissaire`                                          | char(100)                                |          | yes       |          | -                                                                                |
 | `artExbDescrition`                                           | html(10000)                              |          | yes       |          | -                                                                                |
 
+`ArtOwner` business object definition
+-------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      | 
+| ------------------------------------------------------------ | ---------------------------------------- | -------- | --------- | -------- | -------------------------------------------------------------------------------- |
+| `artOwnName`                                                 | char(255)                                | yes*     | yes       |          | -                                                                                |
+
 `ArtPiece` business object definition
 -------------------------------------
 
@@ -122,6 +133,8 @@ Piece of art
 | `artPicExbVirtual` link to **`ArtExhibition`**               | id                                       |          | yes       |          | -                                                                                |
 | `artPicTagVirtual` link to **`ArtTag`**                      | id                                       |          | yes       |          | -                                                                                |
 | `artPicPicture`                                              | image                                    |          | yes       |          | -                                                                                |
+| `artPicOwnId` link to **`ArtOwner`**                         | id                                       | yes      | yes       |          | -                                                                                |
+| _Ref. `artPicOwnId.artOwnName`_                              | _char(255)_                              |          |           |          | -                                                                                |
 
 ### Lists
 
