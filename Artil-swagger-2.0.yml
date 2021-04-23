@@ -44,27 +44,27 @@ paths:
         required: false
       - in: query
         name: artDocPicId
-        description: Search filter for Œuvre
+        description: Search filter for Art piece
         type: string
         required: false
       - in: query
         name: artDocPicId__artPicCode
-        description: Search filter for Code Œuvre
+        description: Search filter for Art piece Code
         type: string
         required: false
       - in: query
         name: artDocPicId__artPicTitle
-        description: Search filter for Titre Œuvre
+        description: Search filter for Art piece Title
         type: string
         required: false
       - in: query
         name: artDocDescription
-        description: Search filter for Description
+        description: Search filter for art doc description
         type: string
         required: false
       - in: query
         name: artDocFile
-        description: Search filter for Fichier
+        description: Search filter for art doc file
         type: string
         required: false
       tags:
@@ -567,7 +567,7 @@ paths:
         required: false
       - in: query
         name: artPlcName
-        description: Search filter for Nom
+        description: Search filter for Name
         type: string
         required: false
       - in: query
@@ -779,7 +779,7 @@ paths:
         required: false
       - in: query
         name: artOwnName
-        description: Search filter for Nom
+        description: Search filter for Name
         type: string
         required: false
       tags:
@@ -1028,7 +1028,7 @@ paths:
         required: false
       - in: query
         name: artPicTitle
-        description: Search filter for Titre
+        description: Search filter for Title
         type: string
         required: false
       - in: query
@@ -1044,17 +1044,17 @@ paths:
         - LUNGI
       - in: query
         name: artPicHeight
-        description: Search filter for Hauteur
+        description: Search filter for Height
         type: number
         required: false
       - in: query
         name: artPicWidth
-        description: Search filter for Largeur
+        description: Search filter for Width
         type: number
         required: false
       - in: query
         name: artPicYear
-        description: Search filter for Année
+        description: Search filter for Year
         type: integer
         required: false
       - in: query
@@ -1064,12 +1064,12 @@ paths:
         required: false
       - in: query
         name: artPicEntry
-        description: Search filter for Date d'entrée
+        description: Search filter for Entry date
         type: string
         required: false
       - in: query
         name: artPicSigned
-        description: Search filter for Signé
+        description: Search filter for Signed
         type: string
         required: false
         enum:
@@ -1078,37 +1078,37 @@ paths:
         - '0'
       - in: query
         name: artPicArtistId
-        description: Search filter for Artiste|Artistes
+        description: Search filter for Artist|Artists
         type: string
         required: false
       - in: query
         name: artPicArtistId__artArtFirstname
-        description: Search filter for Prénom
+        description: Search filter for First name
         type: string
         required: false
       - in: query
         name: artPicArtistId__artArtLastname
-        description: Search filter for Nom
+        description: Search filter for Last name
         type: string
         required: false
       - in: query
         name: artPicPlaceId
-        description: Search filter for Lieu|Lieux
+        description: Search filter for Place|Places
         type: string
         required: false
       - in: query
         name: artPicPlaceId__artPlcName
-        description: Search filter for Nom
+        description: Search filter for Name
         type: string
         required: false
       - in: query
         name: artPicComment
-        description: Search filter for Commentaire
+        description: Search filter for Comment
         type: string
         required: false
       - in: query
         name: artPicDocument
-        description: Search filter for Document
+        description: Search filter for File
         type: string
         required: false
       - in: query
@@ -1123,22 +1123,22 @@ paths:
         required: false
       - in: query
         name: artPicTagVirtual
-        description: Search filter for Œuvres d'art
+        description: Search filter for art pic tag virtual
         type: string
         required: false
       - in: query
         name: artPicPicture
-        description: Search filter for Photo
+        description: Search filter for Picture
         type: string
         required: false
       - in: query
         name: artPicOwnId
-        description: Search filter for Propriétaire
+        description: Search filter for Owner
         type: string
         required: false
       - in: query
         name: artPicOwnId__artOwnName
-        description: Search filter for Nom Propriétaire
+        description: Search filter for Owner Name
         type: string
         required: false
       tags:
@@ -1669,12 +1669,12 @@ paths:
         required: false
       - in: query
         name: artArtFirstname
-        description: Search filter for Prénom
+        description: Search filter for First name
         type: string
         required: false
       - in: query
         name: artArtLastname
-        description: Search filter for Nom
+        description: Search filter for Last name
         type: string
         required: false
       - in: query
@@ -1725,27 +1725,27 @@ paths:
         required: false
       - in: query
         name: artExbDate
-        description: Search filter for Date
+        description: Search filter for art exb date
         type: string
         required: false
       - in: query
         name: artExbPlcId
-        description: Search filter for Lieu
+        description: Search filter for Place
         type: string
         required: false
       - in: query
         name: artExbPlcId__artPlcName
-        description: Search filter for Nom Lieu
+        description: Search filter for Place Name
         type: string
         required: false
       - in: query
         name: artExbCommissaire
-        description: Search filter for Commissaire
+        description: Search filter for art exb commissaire
         type: string
         required: false
       - in: query
         name: artExbDescrition
-        description: Search filter for Descrition
+        description: Search filter for art exb descrition
         type: string
         required: false
       tags:
@@ -1957,7 +1957,7 @@ paths:
         required: false
       - in: query
         name: artExbpicExbId__artExbDate
-        description: Search filter for Date art exbpic exb id
+        description: Search filter for art exbpic exb id art exb date
         type: string
         required: false
       - in: query
@@ -1967,7 +1967,7 @@ paths:
         required: false
       - in: query
         name: artExbpicPicId__artPicCode
-        description: Search filter for Code art exbpic pic id
+        description: Search filter for art exbpic pic id Code
         type: string
         required: false
       tags:
@@ -2179,7 +2179,7 @@ paths:
         required: false
       - in: query
         name: artTpTagId__artTagLabel
-        description: Search filter for Label app art tag fk
+        description: Search filter for app art tag fk Label
         type: string
         required: false
       - in: query
@@ -2189,7 +2189,7 @@ paths:
         required: false
       - in: query
         name: artTpPieceId__artPicCode
-        description: Search filter for Code app art piece fk
+        description: Search filter for app art piece fk Code
         type: string
         required: false
       tags:
@@ -2217,22 +2217,22 @@ definitions:
     type: object
     properties:
       artDocPicId__artPicCode:
-        description: Code Œuvre
+        description: Art piece Code
         type: string
       artDocPicId:
-        description: Œuvre
+        description: Art piece
         type: string
       artDocFile:
-        description: Fichier
+        description: art doc file
         type: object
       row_id:
         description: Unique technical row ID
         type: string
       artDocPicId__artPicTitle:
-        description: Titre Œuvre
+        description: Art piece Title
         type: string
       artDocDescription:
-        description: Description
+        description: art doc description
         type: string
   ArrayOfArtTag:
     type: array
@@ -2242,7 +2242,7 @@ definitions:
     type: object
     properties:
       artOwnName:
-        description: Nom
+        description: Name
         type: string
       row_id:
         description: Unique technical row ID
@@ -2260,13 +2260,13 @@ definitions:
     type: object
     properties:
       artArtFirstname:
-        description: Prénom
+        description: First name
         type: string
       artArtYear:
         description: Year of birth
         type: integer
       artArtLastname:
-        description: Nom
+        description: Last name
         type: string
       row_id:
         description: Unique technical row ID
@@ -2283,10 +2283,10 @@ definitions:
     type: object
     properties:
       artTpTagId__artTagLabel:
-        description: Label app art tag fk
+        description: app art tag fk Label
         type: string
       artTpPieceId__artPicCode:
-        description: Code app art piece fk
+        description: app art piece fk Code
         type: string
       artTpPieceId:
         description: app art piece fk
@@ -2301,13 +2301,13 @@ definitions:
     type: object
     properties:
       artPicArtistId__artArtLastname:
-        description: Nom
+        description: Last name
         type: string
       artPicTagVirtual:
-        description: Œuvres d'art
+        description: art pic tag virtual
         type: string
       artPicDocument:
-        description: Document
+        description: File
         type: object
       artPicState:
         description: State
@@ -2317,29 +2317,29 @@ definitions:
         - SOLD
         - STORED
       artPicWidth:
-        description: Largeur
+        description: Width
         type: number
       artPicExbVirtual:
         description: art pic exb virtual
         type: string
       artPicEntry:
-        description: Date d'entrée
+        description: Entry date
         type: string
         example: yyyy-MM-dd
       artPicPicture:
-        description: Photo
+        description: Picture
         type: object
       artPicPrice:
         description: Estimated price
         type: number
       artPicYear:
-        description: Année
+        description: Year
         type: integer
       artPicTitle:
-        description: Titre
+        description: Title
         type: string
       artPicArtistId:
-        description: Artiste|Artistes
+        description: Artist|Artists
         type: string
       artPicTechnique:
         description: Technique
@@ -2351,20 +2351,20 @@ definitions:
         - OIL
         - LUNGI
       artPicComment:
-        description: Commentaire
+        description: Comment
         type: string
       artPicPlaceId:
-        description: Lieu|Lieux
+        description: Place|Places
         type: string
       artPicSigned:
-        description: Signé
+        description: Signed
         type: string
         enum:
         - '2'
         - '1'
         - '0'
       artPicOwnId__artOwnName:
-        description: Nom Propriétaire
+        description: Owner Name
         type: string
       artPicCodeBis:
         description: Code 2
@@ -2373,13 +2373,13 @@ definitions:
         description: Score
         type: number
       artPicOwnId:
-        description: Propriétaire
+        description: Owner
         type: string
       artPicPlaceId__artPlcName:
-        description: Nom
+        description: Name
         type: string
       artPicArtistId__artArtFirstname:
-        description: Prénom
+        description: First name
         type: string
       row_id:
         description: Unique technical row ID
@@ -2388,7 +2388,7 @@ definitions:
         description: Code
         type: string
       artPicHeight:
-        description: Hauteur
+        description: Height
         type: number
   ArrayOfArtExbPic:
     type: array
@@ -2431,10 +2431,10 @@ definitions:
     type: object
     properties:
       artExbpicPicId__artPicCode:
-        description: Code art exbpic pic id
+        description: art exbpic pic id Code
         type: string
       artExbpicExbId__artExbDate:
-        description: Date art exbpic exb id
+        description: art exbpic exb id art exb date
         type: string
         example: yyyy-MM-dd
       artExbpicExbId:
@@ -2469,23 +2469,23 @@ definitions:
     type: object
     properties:
       artExbDate:
-        description: Date
+        description: art exb date
         type: string
         example: yyyy-MM-dd
       artExbPlcId:
-        description: Lieu
+        description: Place
         type: string
       artExbCommissaire:
-        description: Commissaire
+        description: art exb commissaire
         type: string
       row_id:
         description: Unique technical row ID
         type: string
       artExbDescrition:
-        description: Descrition
+        description: art exb descrition
         type: string
       artExbPlcId__artPlcName:
-        description: Nom Lieu
+        description: Place Name
         type: string
   ArtTag:
     type: object
@@ -2519,7 +2519,7 @@ definitions:
     type: object
     properties:
       artPlcName:
-        description: Nom
+        description: Name
         type: string
       artPlcPublic:
         description: Public
@@ -2549,19 +2549,19 @@ info:
   version: '1.11'
 tags:
 - name: ArtArtist
-  description: Artiste
+  description: Artist
 - name: ArtDocument
   description: Document
 - name: ArtExbPic
-  description: Expositions
+  description: Exhibitions
 - name: ArtExhibition
-  description: Exposition
+  description: Exhibition
 - name: ArtOwner
-  description: Propriétaire
+  description: Owner
 - name: ArtPiece
-  description: Œuvre
+  description: Art piece
 - name: ArtPlace
-  description: Lieu
+  description: Place
 - name: ArtTag
   description: Tag
 - name: ArtTagPiece
