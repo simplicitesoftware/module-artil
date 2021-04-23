@@ -7051,9 +7051,9 @@ sim tomcat-star
 	<action>upsert</action>
 	<data>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-		<dt_name>Test Data</dt_name>
-		<dt_file>data/Test Data.zip</dt_file>
-		<dt_desc><![CDATA[Created by module's data export on 2021-04-20 00:52:48]]></dt_desc>
+		<dt_name>Test data</dt_name>
+		<dt_file>data/Test data.zip</dt_file>
+		<dt_desc><![CDATA[Created by module's data export on 2021-04-23 10:25:01]]></dt_desc>
 	</data>
 </object>
 </simplicite>
