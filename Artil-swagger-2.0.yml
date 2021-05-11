@@ -1038,8 +1038,8 @@ paths:
         required: false
         enum:
         - 'NULL'
-        - LIN
         - PINTEX
+        - LIN
         - OIL
         - LUNGI
       - in: query
@@ -2346,8 +2346,8 @@ definitions:
         type: string
         enum:
         - 'NULL'
-        - LIN
         - PINTEX
+        - LIN
         - OIL
         - LUNGI
       artPicComment:
