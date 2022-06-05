@@ -199,8 +199,8 @@ components:
           type: string
           enum:
           - 'NULL'
-          - PINTEX
           - LIN
+          - PINTEX
           - OIL
           - LUNGI
         artPicComment:
@@ -1540,8 +1540,8 @@ paths:
           type: string
           enum:
           - 'NULL'
-          - PINTEX
           - LIN
+          - PINTEX
           - OIL
           - LUNGI
         in: query

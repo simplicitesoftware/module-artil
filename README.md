@@ -34,17 +34,6 @@ sim tomcat-stop
 sim tomcat-star
 ```
 
-`ArtTechnique` business object definition
------------------------------------------
-
-
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `artTecName`                                                 | char(250)                                | yes*     | yes       |          | -                                                                                |
-
 `ArtArtist` business object definition
 --------------------------------------
 
@@ -82,6 +71,17 @@ sim tomcat-star
 | `artPlcName`                                                 | char(50)                                 | yes*     | yes       |          | -                                                                                |
 | `artPlcPublic`                                               | boolean                                  |          | yes       |          | -                                                                                |
 
+`ArtTechnique` business object definition
+-----------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `artTecName`                                                 | char(250)                                | yes*     | yes       |          | -                                                                                |
+
 `ArtPiece` business object definition
 -------------------------------------
 
@@ -104,7 +104,7 @@ Piece of art
 | `artPicWidth`                                                | float(7, 2)                              |          | yes       |          | -                                                                                |
 | `artPicSigned`                                               | enum(1) using `ART_ENUM_BOOL` list       | yes      | yes       |          | -                                                                                |
 | `artPicPicture`                                              | image                                    |          | yes       |          | -                                                                                |
-| `artPicState`                                                | enum(30) using `ARTPICSTATE` list        | yes*     | yes       |          | -                                                                                |
+| `artPicState`                                                | enum(30) using `ARTPICSTATE` list        | yes      | yes       |          | -                                                                                |
 | `artPicCode`                                                 | char(20)                                 | yes*     | yes       |          | -                                                                                |
 | `artPicCodeBis`                                              | char(20)                                 |          | yes       |          | -                                                                                |
 | `artPicEntry`                                                | date                                     |          | yes       |          | -                                                                                |
