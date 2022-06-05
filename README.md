@@ -99,7 +99,6 @@ Piece of art
 | `artPicYear`                                                 | int(4)                                   |          | yes       |          | -                                                                                |
 | `artPicTecId` link to **`ArtTechnique`**                     | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `artPicTecId.artTecName`_                              | _char(250)_                              |          |           |          | -                                                                                |
-| `artPicTechnique`                                            | enum(20) using `ARTPICTECHNIQUE` list    | yes      |           |          | -                                                                                |
 | `artPicHeight`                                               | float(7, 2)                              |          | yes       |          | -                                                                                |
 | `artPicWidth`                                                | float(7, 2)                              |          | yes       |          | -                                                                                |
 | `artPicSigned`                                               | enum(1) using `ART_ENUM_BOOL` list       | yes      | yes       |          | -                                                                                |
@@ -122,12 +121,6 @@ Piece of art
 
 ### Lists
 
-* `ARTPICTECHNIQUE`
-    - `NULL` Unknown
-    - `LIN` Óleo sobre tela y lino
-    - `PINTEX` Pintura Textil
-    - `OIL` Oil on canvas
-    - `LUNGI` Técnica Mixta (y óleo) sobre tela (Lungi)
 * `ART_ENUM_BOOL`
     - `2` NULL
     - `1` TRUE
@@ -196,21 +189,6 @@ Piece of art
 | _Ref. `artTpTagId.artTagLabel`_                              | _char(20)_                               |          |           |          | -                                                                                |
 | `artTpPieceId` link to **`ArtPiece`**                        | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `artTpPieceId.artPicCode`_                             | _char(20)_                               |          |           |          | -                                                                                |
-
-`ArtDocument` business object definition
-----------------------------------------
-
-
-
-### Fields
-
-| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
-|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `artDocPicId` link to **`ArtPiece`**                         | id                                       | yes*     | yes       |          | -                                                                                |
-| _Ref. `artDocPicId.artPicCode`_                              | _char(20)_                               |          |           |          | -                                                                                |
-| _Ref. `artDocPicId.artPicTitle`_                             | _char(200)_                              |          |           |          | -                                                                                |
-| `artDocDescription`                                          | char(200)                                | yes*     | yes       |          | -                                                                                |
-| `artDocFile`                                                 | document                                 | yes      | yes       |          | -                                                                                |
 
 `ArtImageRecognition` external object definition
 ------------------------------------------------
