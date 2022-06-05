@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: Artil 1.11
+#             |_| Module: Artil 1.12
 components:
   schemas:
     Error404:
@@ -26,7 +26,7 @@ components:
           description: Art piece
           type: string
         artDocFile:
-          description: art doc file
+          description: File
           type: object
         row_id:
           description: Unique technical row ID
@@ -35,7 +35,7 @@ components:
           description: Art piece Title
           type: string
         artDocDescription:
-          description: art doc description
+          description: Description
           type: string
     ArrayOfArtTag:
       type: array
@@ -45,6 +45,15 @@ components:
       type: object
       properties:
         artOwnName:
+          description: Name
+          type: string
+        row_id:
+          description: Unique technical row ID
+          type: string
+    ArtTechnique:
+      type: object
+      properties:
+        artTecName:
           description: Name
           type: string
         row_id:
@@ -71,8 +80,43 @@ components:
         artArtLastname:
           description: Last name
           type: string
+        artArtRatingFormula:
+          description: Art art value formula
+          type: string
         row_id:
           description: Unique technical row ID
+          type: string
+    PlaceData:
+      type: object
+      properties:
+        coord:
+          description: Geographical coordinates
+          type: string
+        address:
+          description: Address
+          type: string
+        row_id:
+          description: Row ID
+          type: string
+        label1:
+          description: 'Label #1'
+          type: string
+        label2:
+          description: 'Label #2'
+          type: string
+        label3:
+          description: 'Label #3'
+          type: string
+    PlaceMapData:
+      type: object
+      properties:
+        places:
+          description: Places
+          type: array
+          items:
+            $ref: '#/components/schemas/PlaceData'
+        name:
+          description: Name
           type: string
     ArrayOfArtExhibition:
       type: array
@@ -104,13 +148,13 @@ components:
       type: object
       properties:
         artPicArtistId__artArtLastname:
-          description: Last name
+          description: Artist
           type: string
         artPicTagVirtual:
           description: art pic tag virtual
           type: string
         artPicDocument:
-          description: File
+          description: Files
           type: object
         artPicState:
           description: State
@@ -125,6 +169,9 @@ components:
         artPicExbVirtual:
           description: art pic exb virtual
           type: string
+        artPicTecId:
+          description: Technique
+          type: string
         artPicEntry:
           description: Entry date
           type: string
@@ -132,6 +179,9 @@ components:
         artPicPicture:
           description: Picture
           type: object
+        artPicTecId__artTecName:
+          description: Technique
+          type: string
         artPicPrice:
           description: Estimated price
           type: number
@@ -145,7 +195,7 @@ components:
           description: Artist|Artists
           type: string
         artPicTechnique:
-          description: Technique
+          description: Technique (decrec)
           type: string
           enum:
           - 'NULL'
@@ -154,11 +204,14 @@ components:
           - OIL
           - LUNGI
         artPicComment:
-          description: Comment
+          description: Comments
           type: string
         artPicPlaceId:
           description: Place|Places
           type: string
+        artPicEstimatedPrice:
+          description: Estimated Price
+          type: number
         artPicSigned:
           description: Signed
           type: string
@@ -172,17 +225,20 @@ components:
         artPicCodeBis:
           description: Code 2
           type: string
-        artPicScore:
-          description: Score
-          type: number
+        artPicArtistId__artArtRatingFormula:
+          description: Artist|Artists Art art value formula
+          type: string
         artPicOwnId:
           description: Owner
           type: string
+        artPicScore:
+          description: Score
+          type: number
         artPicPlaceId__artPlcName:
-          description: Name
+          description: Place
           type: string
         artPicArtistId__artArtFirstname:
-          description: First name
+          description: Artist's first name
           type: string
         row_id:
           description: Unique technical row ID
@@ -237,7 +293,7 @@ components:
           description: art exbpic pic id Code
           type: string
         artExbpicExbId__artExbDate:
-          description: art exbpic exb id art exb date
+          description: art exbpic exb id Date
           type: string
           example: yyyy-MM-dd
         artExbpicExbId:
@@ -272,14 +328,14 @@ components:
       type: object
       properties:
         artExbDate:
-          description: art exb date
+          description: Date
           type: string
           example: yyyy-MM-dd
         artExbPlcId:
           description: Place
           type: string
         artExbCommissaire:
-          description: art exb commissaire
+          description: Commissaire
           type: string
         row_id:
           description: Unique technical row ID
@@ -338,6 +394,10 @@ components:
       type: array
       items:
         $ref: '#/components/schemas/ArtOwner'
+    ArrayOfArtTechnique:
+      type: array
+      items:
+        $ref: '#/components/schemas/ArtTechnique'
   securitySchemes:
     basicAuth:
       scheme: basic
@@ -348,124 +408,6 @@ components:
       type: http
 openapi: 3.0.2
 paths:
-  /rest/ArtDocument:
-    get:
-      summary: Search ArtDocument business object records or get contextualized metadata
-      security:
-      - bearerAuth: []
-      operationId: obj-artdocument-search
-      responses:
-        '200':
-          description: Success in searching business object records (or in getting
-            contextualized business object metadata, documentation, ...)
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ArrayOfArtDocument'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-      parameters:
-      - schema:
-          type: boolean
-        in: query
-        name: _metadata
-        description: Metadata?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _count
-        description: Count?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _doc
-        description: Documentation?
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artDocPicId
-        description: Search filter for Art piece
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artDocPicId__artPicCode
-        description: Search filter for Art piece Code
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artDocPicId__artPicTitle
-        description: Search filter for Art piece Title
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artDocDescription
-        description: Search filter for art doc description
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artDocFile
-        description: Search filter for art doc file
-        required: false
-      tags:
-      - ArtDocument
-  /rest/ArtPiece/{row_id}/publication:ArtPiecePrintable:
-    get:
-      summary: Call a custom publication for a ArtPiece business object record or
-        for all records
-      security:
-      - bearerAuth: []
-      operationId: obj-artpiece-publication-artpieceprintable
-      responses:
-        '200':
-          description: Success in calling the custom publication
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PublicationResult'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-        '404':
-          description: Not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error404'
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        required: true
-      tags:
-      - ArtPiece
   /rest/ArtTag:
     get:
       summary: Search ArtTag business object records or get contextualized metadata
@@ -757,25 +699,59 @@ paths:
         required: true
       tags:
       - ArtTag
-  /logout:
+  /rest/ArtTechnique:
     get:
-      summary: Logout (revoke bearer token)
+      summary: Search ArtTechnique business object records or get contextualized metadata
       security:
       - bearerAuth: []
-      operationId: logout
+      operationId: obj-arttechnique-search
       responses:
         '200':
-          description: Successfull logout
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
           content:
-            application/json: {}
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfArtTechnique'
         '401':
           description: Unauthorized
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artTecName
+        description: Search filter for Name
+        required: false
       tags:
-      - session
+      - ArtTechnique
   /rest/ArtDocument/{row_id}:
     post:
       summary: Create a new ArtDocumentbusiness object record
@@ -971,20 +947,26 @@ paths:
         required: true
       tags:
       - ArtDocument
-  /rest/ArtPlace:
+  /rest/ArtPiece/{row_id}/action:reIndexAll:
     get:
-      summary: Search ArtPlace business object records or get contextualized metadata
+      summary: Call a custom action for a ArtPiece business object record or for all
+        records
       security:
       - bearerAuth: []
-      operationId: obj-artplace-search
+      operationId: obj-artpiece-action-reindexall
       responses:
         '200':
-          description: Success in searching business object records (or in getting
-            contextualized business object metadata, documentation, ...)
+          description: Success in calling the custom action
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/ArrayOfArtPlace'
+                $ref: '#/components/schemas/ActionResult'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
         '401':
           description: Unauthorized
           content:
@@ -997,39 +979,21 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
       parameters:
       - schema:
-          type: boolean
-        in: query
-        name: _metadata
-        description: Metadata?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _count
-        description: Count?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _doc
-        description: Documentation?
-        required: false
-      - schema:
           type: string
-        in: query
-        name: artPlcName
-        description: Search filter for Name
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: artPlcPublic
-        description: Search filter for Public
-        required: false
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
       tags:
-      - ArtPlace
+      - ArtPiece
   /rest/ArtTagPiece/{row_id}:
     post:
       summary: Create a new ArtTagPiecebusiness object record
@@ -1473,32 +1437,6 @@ paths:
         required: true
       tags:
       - ArtOwner
-  /:
-    get:
-      summary: Get user session information
-      security:
-      - bearerAuth: []
-      operationId: info
-      responses:
-        '200':
-          description: Success in getting user session information
-          content:
-            application/json: {}
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-      parameters:
-      - schema:
-          type: boolean
-        in: query
-        name: texts
-        description: Texts?
-        required: false
-      tags:
-      - session
   /rest/ArtPiece:
     get:
       summary: Search ArtPiece business object records or get contextualized metadata
@@ -1546,6 +1484,100 @@ paths:
         required: false
       - schema:
           type: string
+        in: query
+        name: _indexsearch
+        description: Index search query
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artPicTitle
+        description: Search filter for Title
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artPicArtistId
+        description: Search filter for Artist|Artists
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artPicArtistId__artArtFirstname
+        description: Search filter for Artist's first name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artPicArtistId__artArtLastname
+        description: Search filter for Artist
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artPicArtistId__artArtRatingFormula
+        description: Search filter for Artist|Artists Art art value formula
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: artPicYear
+        description: Search filter for Year
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artPicTecId
+        description: Search filter for Technique
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artPicTecId__artTecName
+        description: Search filter for Technique
+        required: false
+      - schema:
+          type: string
+          enum:
+          - 'NULL'
+          - PINTEX
+          - LIN
+          - OIL
+          - LUNGI
+        in: query
+        name: artPicTechnique
+        description: Search filter for Technique (decrec)
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: artPicHeight
+        description: Search filter for Height
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: artPicWidth
+        description: Search filter for Width
+        required: false
+      - schema:
+          type: string
+          enum:
+          - '2'
+          - '1'
+          - '0'
+        in: query
+        name: artPicSigned
+        description: Search filter for Signed
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artPicPicture
+        description: Search filter for Picture
+        required: false
+      - schema:
+          type: string
           enum:
           - SELLING
           - SOLD
@@ -1569,78 +1601,8 @@ paths:
       - schema:
           type: string
         in: query
-        name: artPicTitle
-        description: Search filter for Title
-        required: false
-      - schema:
-          type: string
-          enum:
-          - 'NULL'
-          - PINTEX
-          - LIN
-          - OIL
-          - LUNGI
-        in: query
-        name: artPicTechnique
-        description: Search filter for Technique
-        required: false
-      - schema:
-          type: number
-        in: query
-        name: artPicHeight
-        description: Search filter for Height
-        required: false
-      - schema:
-          type: number
-        in: query
-        name: artPicWidth
-        description: Search filter for Width
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: artPicYear
-        description: Search filter for Year
-        required: false
-      - schema:
-          type: number
-        in: query
-        name: artPicPrice
-        description: Search filter for Estimated price
-        required: false
-      - schema:
-          type: string
-        in: query
         name: artPicEntry
         description: Search filter for Entry date
-        required: false
-      - schema:
-          type: string
-          enum:
-          - '2'
-          - '1'
-          - '0'
-        in: query
-        name: artPicSigned
-        description: Search filter for Signed
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artPicArtistId
-        description: Search filter for Artist|Artists
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artPicArtistId__artArtFirstname
-        description: Search filter for First name
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artPicArtistId__artArtLastname
-        description: Search filter for Last name
         required: false
       - schema:
           type: string
@@ -1652,19 +1614,43 @@ paths:
           type: string
         in: query
         name: artPicPlaceId__artPlcName
-        description: Search filter for Name
+        description: Search filter for Place
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artPicOwnId
+        description: Search filter for Owner
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artPicOwnId__artOwnName
+        description: Search filter for Owner Name
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: artPicPrice
+        description: Search filter for Estimated price
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: artPicEstimatedPrice
+        description: Search filter for Estimated Price
         required: false
       - schema:
           type: string
         in: query
         name: artPicComment
-        description: Search filter for Comment
+        description: Search filter for Comments
         required: false
       - schema:
           type: string
         in: query
         name: artPicDocument
-        description: Search filter for File
+        description: Search filter for Files
         required: false
       - schema:
           type: number
@@ -1683,24 +1669,6 @@ paths:
         in: query
         name: artPicTagVirtual
         description: Search filter for art pic tag virtual
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artPicPicture
-        description: Search filter for Picture
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artPicOwnId
-        description: Search filter for Owner
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artPicOwnId__artOwnName
-        description: Search filter for Owner Name
         required: false
       tags:
       - ArtPiece
@@ -2094,6 +2062,690 @@ paths:
         required: true
       tags:
       - ArtExhibition
+  /rest/ArtArtist:
+    get:
+      summary: Search ArtArtist business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      operationId: obj-artartist-search
+      responses:
+        '200':
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfArtArtist'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artArtFirstname
+        description: Search filter for First name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artArtLastname
+        description: Search filter for Last name
+        required: false
+      - schema:
+          type: integer
+        in: query
+        name: artArtYear
+        description: Search filter for Year of birth
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artArtRatingFormula
+        description: Search filter for Art art value formula
+        required: false
+      tags:
+      - ArtArtist
+  /rest/ArtExhibition:
+    get:
+      summary: Search ArtExhibition business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      operationId: obj-artexhibition-search
+      responses:
+        '200':
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfArtExhibition'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artExbDate
+        description: Search filter for Date
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artExbPlcId
+        description: Search filter for Place
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artExbPlcId__artPlcName
+        description: Search filter for Place Name
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artExbCommissaire
+        description: Search filter for Commissaire
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artExbDescrition
+        description: Search filter for art exb descrition
+        required: false
+      tags:
+      - ArtExhibition
+  /rest/ArtPiece/{row_id}/action:calculateEstimatedPrice:
+    get:
+      summary: Call a custom action for a ArtPiece business object record or for all
+        records
+      security:
+      - bearerAuth: []
+      operationId: obj-artpiece-action-calculateestimatedprice
+      responses:
+        '200':
+          description: Success in calling the custom action
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ActionResult'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ArtPiece
+  /rest/ArtTagPiece:
+    get:
+      summary: Search ArtTagPiece business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      operationId: obj-arttagpiece-search
+      responses:
+        '200':
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfArtTagPiece'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artTpTagId
+        description: Search filter for app art tag fk
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artTpTagId__artTagLabel
+        description: Search filter for app art tag fk Label
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artTpPieceId
+        description: Search filter for app art piece fk
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artTpPieceId__artPicCode
+        description: Search filter for app art piece fk Code
+        required: false
+      tags:
+      - ArtTagPiece
+  /rest/ArtDocument:
+    get:
+      summary: Search ArtDocument business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      operationId: obj-artdocument-search
+      responses:
+        '200':
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfArtDocument'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artDocPicId
+        description: Search filter for Art piece
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artDocPicId__artPicCode
+        description: Search filter for Art piece Code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artDocPicId__artPicTitle
+        description: Search filter for Art piece Title
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artDocDescription
+        description: Search filter for Description
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artDocFile
+        description: Search filter for File
+        required: false
+      tags:
+      - ArtDocument
+  /rest/ArtPiece/{row_id}/publication:ArtPiecePrintable:
+    get:
+      summary: Call a custom publication for a ArtPiece business object record or
+        for all records
+      security:
+      - bearerAuth: []
+      operationId: obj-artpiece-publication-artpieceprintable
+      responses:
+        '200':
+          description: Success in calling the custom publication
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicationResult'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ArtPiece
+  /rest/ArtTechnique/{row_id}:
+    post:
+      summary: Create a new ArtTechniquebusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ArtTechnique'
+      operationId: obj-arttechnique-create
+      responses:
+        '200':
+          description: Success in creating a new business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtTechnique'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ArtTechnique
+    get:
+      summary: Get a ArtTechnique business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-arttechnique-get
+      responses:
+        '200':
+          description: Success in getting a single business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtTechnique'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_documents
+        description: Inline documents?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _inline_objects
+        description: Inline objects?
+        required: false
+      tags:
+      - ArtTechnique
+    delete:
+      summary: Delete a ArtTechnique business object record
+      security:
+      - bearerAuth: []
+      operationId: obj-arttechnique-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+          content:
+            application/json: {}
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ArtTechnique
+    put:
+      summary: Update a ArtTechniquebusiness object record
+      security:
+      - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ArtTechnique'
+      operationId: obj-arttechnique-update
+      responses:
+        '200':
+          description: Success in updating a business object record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtTechnique'
+        '400':
+          description: Bad request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error400'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ArtTechnique
+  /logout:
+    get:
+      summary: Logout (revoke bearer token)
+      security:
+      - bearerAuth: []
+      operationId: logout
+      responses:
+        '200':
+          description: Successfull logout
+          content:
+            application/json: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+      tags:
+      - session
+  /rest/ArtPlace:
+    get:
+      summary: Search ArtPlace business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      operationId: obj-artplace-search
+      responses:
+        '200':
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrayOfArtPlace'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: _metadata
+        description: Metadata?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _count
+        description: Count?
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: _doc
+        description: Documentation?
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artPlcName
+        description: Search filter for Name
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: artPlcPublic
+        description: Search filter for Public
+        required: false
+      tags:
+      - ArtPlace
+  /:
+    get:
+      summary: Get user session information
+      security:
+      - bearerAuth: []
+      operationId: info
+      responses:
+        '200':
+          description: Success in getting user session information
+          content:
+            application/json: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+      parameters:
+      - schema:
+          type: boolean
+        in: query
+        name: texts
+        description: Texts?
+        required: false
+      tags:
+      - session
   /rest/ArtArtist/{row_id}:
     post:
       summary: Create a new ArtArtistbusiness object record
@@ -2289,149 +2941,6 @@ paths:
         required: true
       tags:
       - ArtArtist
-  /rest/ArtArtist:
-    get:
-      summary: Search ArtArtist business object records or get contextualized metadata
-      security:
-      - bearerAuth: []
-      operationId: obj-artartist-search
-      responses:
-        '200':
-          description: Success in searching business object records (or in getting
-            contextualized business object metadata, documentation, ...)
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ArrayOfArtArtist'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-      parameters:
-      - schema:
-          type: boolean
-        in: query
-        name: _metadata
-        description: Metadata?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _count
-        description: Count?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _doc
-        description: Documentation?
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artArtFirstname
-        description: Search filter for First name
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artArtLastname
-        description: Search filter for Last name
-        required: false
-      - schema:
-          type: integer
-        in: query
-        name: artArtYear
-        description: Search filter for Year of birth
-        required: false
-      tags:
-      - ArtArtist
-  /rest/ArtExhibition:
-    get:
-      summary: Search ArtExhibition business object records or get contextualized
-        metadata
-      security:
-      - bearerAuth: []
-      operationId: obj-artexhibition-search
-      responses:
-        '200':
-          description: Success in searching business object records (or in getting
-            contextualized business object metadata, documentation, ...)
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ArrayOfArtExhibition'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-      parameters:
-      - schema:
-          type: boolean
-        in: query
-        name: _metadata
-        description: Metadata?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _count
-        description: Count?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _doc
-        description: Documentation?
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artExbDate
-        description: Search filter for art exb date
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artExbPlcId
-        description: Search filter for Place
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artExbPlcId__artPlcName
-        description: Search filter for Place Name
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artExbCommissaire
-        description: Search filter for art exb commissaire
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artExbDescrition
-        description: Search filter for art exb descrition
-        required: false
-      tags:
-      - ArtExhibition
   /rest/ArtPiece/{row_id}:
     post:
       summary: Create a new ArtPiecebusiness object record
@@ -2682,7 +3191,7 @@ paths:
           type: string
         in: query
         name: artExbpicExbId__artExbDate
-        description: Search filter for art exbpic exb id art exb date
+        description: Search filter for art exbpic exb id Date
         required: false
       - schema:
           type: string
@@ -2893,77 +3402,6 @@ paths:
         required: true
       tags:
       - ArtExbPic
-  /rest/ArtTagPiece:
-    get:
-      summary: Search ArtTagPiece business object records or get contextualized metadata
-      security:
-      - bearerAuth: []
-      operationId: obj-arttagpiece-search
-      responses:
-        '200':
-          description: Success in searching business object records (or in getting
-            contextualized business object metadata, documentation, ...)
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ArrayOfArtTagPiece'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-      parameters:
-      - schema:
-          type: boolean
-        in: query
-        name: _metadata
-        description: Metadata?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _count
-        description: Count?
-        required: false
-      - schema:
-          type: boolean
-        in: query
-        name: _doc
-        description: Documentation?
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artTpTagId
-        description: Search filter for app art tag fk
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artTpTagId__artTagLabel
-        description: Search filter for app art tag fk Label
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artTpPieceId
-        description: Search filter for app art piece fk
-        required: false
-      - schema:
-          type: string
-        in: query
-        name: artTpPieceId__artPicCode
-        description: Search filter for app art piece fk Code
-        required: false
-      tags:
-      - ArtTagPiece
 info:
   license:
     name: Simplicite license
@@ -2974,7 +3412,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module Artil
   title: Artil
-  version: '1.11'
+  version: '1.12'
 tags:
 - name: ArtArtist
   description: Artist
@@ -2994,3 +3432,5 @@ tags:
   description: Tag
 - name: ArtTagPiece
   description: Tags
+- name: ArtTechnique
+  description: Technique

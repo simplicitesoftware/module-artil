@@ -2,107 +2,8 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: Artil 1.11
+#             |_| Module: Artil 1.12
 paths:
-  /rest/ArtDocument:
-    get:
-      summary: Search ArtDocument business object records or get contextualized metadata
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-artdocument-search
-      responses:
-        '200':
-          schema:
-            $ref: '#/definitions/ArrayOfArtDocument'
-          description: Success in searching business object records (or in getting
-            contextualized business object metadata, documentation, ...)
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-        '500':
-          schema:
-            $ref: '#/definitions/Error500'
-          description: Internal server error
-      parameters:
-      - in: query
-        name: _metadata
-        description: Metadata?
-        type: boolean
-        required: false
-      - in: query
-        name: _count
-        description: Count?
-        type: boolean
-        required: false
-      - in: query
-        name: _doc
-        description: Documentation?
-        type: boolean
-        required: false
-      - in: query
-        name: artDocPicId
-        description: Search filter for Art piece
-        type: string
-        required: false
-      - in: query
-        name: artDocPicId__artPicCode
-        description: Search filter for Art piece Code
-        type: string
-        required: false
-      - in: query
-        name: artDocPicId__artPicTitle
-        description: Search filter for Art piece Title
-        type: string
-        required: false
-      - in: query
-        name: artDocDescription
-        description: Search filter for art doc description
-        type: string
-        required: false
-      - in: query
-        name: artDocFile
-        description: Search filter for art doc file
-        type: string
-        required: false
-      tags:
-      - ArtDocument
-  /rest/ArtPiece/{row_id}/publication:ArtPiecePrintable:
-    get:
-      summary: Call a custom publication for a ArtPiece business object record or
-        for all records
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-artpiece-publication-artpieceprintable
-      responses:
-        '200':
-          schema:
-            $ref: '#/definitions/PublicationResult'
-          description: Success in calling the custom publication
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-        '500':
-          schema:
-            $ref: '#/definitions/Error500'
-          description: Internal server error
-        '404':
-          schema:
-            $ref: '#/definitions/Error404'
-          description: Not found
-      parameters:
-      - in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        type: string
-        required: true
-      tags:
-      - ArtPiece
   /rest/ArtTag:
     get:
       summary: Search ArtTag business object records or get contextualized metadata
@@ -348,23 +249,51 @@ paths:
       - ArtTag
       consumes:
       - application/json
-  /logout:
+  /rest/ArtTechnique:
     get:
-      summary: Logout (revoke bearer token)
+      summary: Search ArtTechnique business object records or get contextualized metadata
       security:
       - bearerAuth: []
       produces:
       - application/json
-      operationId: logout
+      operationId: obj-arttechnique-search
       responses:
         '200':
-          description: Successfull logout
+          schema:
+            $ref: '#/definitions/ArrayOfArtTechnique'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
         '401':
           schema:
             $ref: '#/definitions/Error401'
           description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: artTecName
+        description: Search filter for Name
+        type: string
+        required: false
       tags:
-      - session
+      - ArtTechnique
   /rest/ArtDocument/{row_id}:
     post:
       summary: Create a new ArtDocumentbusiness object record
@@ -527,20 +456,24 @@ paths:
       - ArtDocument
       consumes:
       - application/json
-  /rest/ArtPlace:
+  /rest/ArtPiece/{row_id}/action:reIndexAll:
     get:
-      summary: Search ArtPlace business object records or get contextualized metadata
+      summary: Call a custom action for a ArtPiece business object record or for all
+        records
       security:
       - bearerAuth: []
       produces:
       - application/json
-      operationId: obj-artplace-search
+      operationId: obj-artpiece-action-reindexall
       responses:
         '200':
           schema:
-            $ref: '#/definitions/ArrayOfArtPlace'
-          description: Success in searching business object records (or in getting
-            contextualized business object metadata, documentation, ...)
+            $ref: '#/definitions/ActionResult'
+          description: Success in calling the custom action
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
         '401':
           schema:
             $ref: '#/definitions/Error401'
@@ -549,34 +482,18 @@ paths:
           schema:
             $ref: '#/definitions/Error500'
           description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
       parameters:
-      - in: query
-        name: _metadata
-        description: Metadata?
-        type: boolean
-        required: false
-      - in: query
-        name: _count
-        description: Count?
-        type: boolean
-        required: false
-      - in: query
-        name: _doc
-        description: Documentation?
-        type: boolean
-        required: false
-      - in: query
-        name: artPlcName
-        description: Search filter for Name
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
         type: string
-        required: false
-      - in: query
-        name: artPlcPublic
-        description: Search filter for Public
-        type: boolean
-        required: false
+        required: true
       tags:
-      - ArtPlace
+      - ArtPiece
   /rest/ArtTagPiece/{row_id}:
     post:
       summary: Create a new ArtTagPiecebusiness object record
@@ -946,29 +863,6 @@ paths:
       - ArtOwner
       consumes:
       - application/json
-  /:
-    get:
-      summary: Get user session information
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: info
-      responses:
-        '200':
-          description: Success in getting user session information
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-      parameters:
-      - in: query
-        name: texts
-        description: Texts?
-        type: boolean
-        required: false
-      tags:
-      - session
   /rest/ArtPiece:
     get:
       summary: Search ArtPiece business object records or get contextualized metadata
@@ -1008,22 +902,8 @@ paths:
         type: boolean
         required: false
       - in: query
-        name: artPicState
-        description: Search filter for State
-        type: string
-        required: false
-        enum:
-        - SELLING
-        - SOLD
-        - STORED
-      - in: query
-        name: artPicCode
-        description: Search filter for Code
-        type: string
-        required: false
-      - in: query
-        name: artPicCodeBis
-        description: Search filter for Code 2
+        name: _indexsearch
+        description: Index search query
         type: string
         required: false
       - in: query
@@ -1032,8 +912,43 @@ paths:
         type: string
         required: false
       - in: query
-        name: artPicTechnique
+        name: artPicArtistId
+        description: Search filter for Artist|Artists
+        type: string
+        required: false
+      - in: query
+        name: artPicArtistId__artArtFirstname
+        description: Search filter for Artist's first name
+        type: string
+        required: false
+      - in: query
+        name: artPicArtistId__artArtLastname
+        description: Search filter for Artist
+        type: string
+        required: false
+      - in: query
+        name: artPicArtistId__artArtRatingFormula
+        description: Search filter for Artist|Artists Art art value formula
+        type: string
+        required: false
+      - in: query
+        name: artPicYear
+        description: Search filter for Year
+        type: integer
+        required: false
+      - in: query
+        name: artPicTecId
         description: Search filter for Technique
+        type: string
+        required: false
+      - in: query
+        name: artPicTecId__artTecName
+        description: Search filter for Technique
+        type: string
+        required: false
+      - in: query
+        name: artPicTechnique
+        description: Search filter for Technique (decrec)
         type: string
         required: false
         enum:
@@ -1053,21 +968,6 @@ paths:
         type: number
         required: false
       - in: query
-        name: artPicYear
-        description: Search filter for Year
-        type: integer
-        required: false
-      - in: query
-        name: artPicPrice
-        description: Search filter for Estimated price
-        type: number
-        required: false
-      - in: query
-        name: artPicEntry
-        description: Search filter for Entry date
-        type: string
-        required: false
-      - in: query
         name: artPicSigned
         description: Search filter for Signed
         type: string
@@ -1077,18 +977,32 @@ paths:
         - '1'
         - '0'
       - in: query
-        name: artPicArtistId
-        description: Search filter for Artist|Artists
+        name: artPicPicture
+        description: Search filter for Picture
         type: string
         required: false
       - in: query
-        name: artPicArtistId__artArtFirstname
-        description: Search filter for First name
+        name: artPicState
+        description: Search filter for State
+        type: string
+        required: false
+        enum:
+        - SELLING
+        - SOLD
+        - STORED
+      - in: query
+        name: artPicCode
+        description: Search filter for Code
         type: string
         required: false
       - in: query
-        name: artPicArtistId__artArtLastname
-        description: Search filter for Last name
+        name: artPicCodeBis
+        description: Search filter for Code 2
+        type: string
+        required: false
+      - in: query
+        name: artPicEntry
+        description: Search filter for Entry date
         type: string
         required: false
       - in: query
@@ -1098,17 +1012,37 @@ paths:
         required: false
       - in: query
         name: artPicPlaceId__artPlcName
-        description: Search filter for Name
+        description: Search filter for Place
         type: string
         required: false
       - in: query
+        name: artPicOwnId
+        description: Search filter for Owner
+        type: string
+        required: false
+      - in: query
+        name: artPicOwnId__artOwnName
+        description: Search filter for Owner Name
+        type: string
+        required: false
+      - in: query
+        name: artPicPrice
+        description: Search filter for Estimated price
+        type: number
+        required: false
+      - in: query
+        name: artPicEstimatedPrice
+        description: Search filter for Estimated Price
+        type: number
+        required: false
+      - in: query
         name: artPicComment
-        description: Search filter for Comment
+        description: Search filter for Comments
         type: string
         required: false
       - in: query
         name: artPicDocument
-        description: Search filter for File
+        description: Search filter for Files
         type: string
         required: false
       - in: query
@@ -1124,21 +1058,6 @@ paths:
       - in: query
         name: artPicTagVirtual
         description: Search filter for art pic tag virtual
-        type: string
-        required: false
-      - in: query
-        name: artPicPicture
-        description: Search filter for Picture
-        type: string
-        required: false
-      - in: query
-        name: artPicOwnId
-        description: Search filter for Owner
-        type: string
-        required: false
-      - in: query
-        name: artPicOwnId__artOwnName
-        description: Search filter for Owner Name
         type: string
         required: false
       tags:
@@ -1467,6 +1386,581 @@ paths:
       - ArtExhibition
       consumes:
       - application/json
+  /rest/ArtArtist:
+    get:
+      summary: Search ArtArtist business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artartist-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfArtArtist'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: artArtFirstname
+        description: Search filter for First name
+        type: string
+        required: false
+      - in: query
+        name: artArtLastname
+        description: Search filter for Last name
+        type: string
+        required: false
+      - in: query
+        name: artArtYear
+        description: Search filter for Year of birth
+        type: integer
+        required: false
+      - in: query
+        name: artArtRatingFormula
+        description: Search filter for Art art value formula
+        type: string
+        required: false
+      tags:
+      - ArtArtist
+  /rest/ArtExhibition:
+    get:
+      summary: Search ArtExhibition business object records or get contextualized
+        metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artexhibition-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfArtExhibition'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: artExbDate
+        description: Search filter for Date
+        type: string
+        required: false
+      - in: query
+        name: artExbPlcId
+        description: Search filter for Place
+        type: string
+        required: false
+      - in: query
+        name: artExbPlcId__artPlcName
+        description: Search filter for Place Name
+        type: string
+        required: false
+      - in: query
+        name: artExbCommissaire
+        description: Search filter for Commissaire
+        type: string
+        required: false
+      - in: query
+        name: artExbDescrition
+        description: Search filter for art exb descrition
+        type: string
+        required: false
+      tags:
+      - ArtExhibition
+  /rest/ArtPiece/{row_id}/action:calculateEstimatedPrice:
+    get:
+      summary: Call a custom action for a ArtPiece business object record or for all
+        records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artpiece-action-calculateestimatedprice
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ActionResult'
+          description: Success in calling the custom action
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - ArtPiece
+  /rest/ArtTagPiece:
+    get:
+      summary: Search ArtTagPiece business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-arttagpiece-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfArtTagPiece'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: artTpTagId
+        description: Search filter for app art tag fk
+        type: string
+        required: false
+      - in: query
+        name: artTpTagId__artTagLabel
+        description: Search filter for app art tag fk Label
+        type: string
+        required: false
+      - in: query
+        name: artTpPieceId
+        description: Search filter for app art piece fk
+        type: string
+        required: false
+      - in: query
+        name: artTpPieceId__artPicCode
+        description: Search filter for app art piece fk Code
+        type: string
+        required: false
+      tags:
+      - ArtTagPiece
+  /rest/ArtDocument:
+    get:
+      summary: Search ArtDocument business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artdocument-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfArtDocument'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: artDocPicId
+        description: Search filter for Art piece
+        type: string
+        required: false
+      - in: query
+        name: artDocPicId__artPicCode
+        description: Search filter for Art piece Code
+        type: string
+        required: false
+      - in: query
+        name: artDocPicId__artPicTitle
+        description: Search filter for Art piece Title
+        type: string
+        required: false
+      - in: query
+        name: artDocDescription
+        description: Search filter for Description
+        type: string
+        required: false
+      - in: query
+        name: artDocFile
+        description: Search filter for File
+        type: string
+        required: false
+      tags:
+      - ArtDocument
+  /rest/ArtPiece/{row_id}/publication:ArtPiecePrintable:
+    get:
+      summary: Call a custom publication for a ArtPiece business object record or
+        for all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artpiece-publication-artpieceprintable
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PublicationResult'
+          description: Success in calling the custom publication
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - ArtPiece
+  /rest/ArtTechnique/{row_id}:
+    post:
+      summary: Create a new ArtTechniquebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-arttechnique-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArtTechnique'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/ArtTechnique'
+        in: body
+        name: body
+      tags:
+      - ArtTechnique
+      consumes:
+      - application/json
+    get:
+      summary: Get a ArtTechnique business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-arttechnique-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArtTechnique'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - ArtTechnique
+    delete:
+      summary: Delete a ArtTechnique business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-arttechnique-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - ArtTechnique
+    put:
+      summary: Update a ArtTechniquebusiness object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-arttechnique-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArtTechnique'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/ArtTechnique'
+        in: body
+        name: body
+      tags:
+      - ArtTechnique
+      consumes:
+      - application/json
+  /logout:
+    get:
+      summary: Logout (revoke bearer token)
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: logout
+      responses:
+        '200':
+          description: Successfull logout
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+      tags:
+      - session
+  /rest/ArtPlace:
+    get:
+      summary: Search ArtPlace business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artplace-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfArtPlace'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: artPlcName
+        description: Search filter for Name
+        type: string
+        required: false
+      - in: query
+        name: artPlcPublic
+        description: Search filter for Public
+        type: boolean
+        required: false
+      tags:
+      - ArtPlace
+  /:
+    get:
+      summary: Get user session information
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: info
+      responses:
+        '200':
+          description: Success in getting user session information
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+      parameters:
+      - in: query
+        name: texts
+        description: Texts?
+        type: boolean
+        required: false
+      tags:
+      - session
   /rest/ArtArtist/{row_id}:
     post:
       summary: Create a new ArtArtistbusiness object record
@@ -1629,127 +2123,6 @@ paths:
       - ArtArtist
       consumes:
       - application/json
-  /rest/ArtArtist:
-    get:
-      summary: Search ArtArtist business object records or get contextualized metadata
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-artartist-search
-      responses:
-        '200':
-          schema:
-            $ref: '#/definitions/ArrayOfArtArtist'
-          description: Success in searching business object records (or in getting
-            contextualized business object metadata, documentation, ...)
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-        '500':
-          schema:
-            $ref: '#/definitions/Error500'
-          description: Internal server error
-      parameters:
-      - in: query
-        name: _metadata
-        description: Metadata?
-        type: boolean
-        required: false
-      - in: query
-        name: _count
-        description: Count?
-        type: boolean
-        required: false
-      - in: query
-        name: _doc
-        description: Documentation?
-        type: boolean
-        required: false
-      - in: query
-        name: artArtFirstname
-        description: Search filter for First name
-        type: string
-        required: false
-      - in: query
-        name: artArtLastname
-        description: Search filter for Last name
-        type: string
-        required: false
-      - in: query
-        name: artArtYear
-        description: Search filter for Year of birth
-        type: integer
-        required: false
-      tags:
-      - ArtArtist
-  /rest/ArtExhibition:
-    get:
-      summary: Search ArtExhibition business object records or get contextualized
-        metadata
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-artexhibition-search
-      responses:
-        '200':
-          schema:
-            $ref: '#/definitions/ArrayOfArtExhibition'
-          description: Success in searching business object records (or in getting
-            contextualized business object metadata, documentation, ...)
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-        '500':
-          schema:
-            $ref: '#/definitions/Error500'
-          description: Internal server error
-      parameters:
-      - in: query
-        name: _metadata
-        description: Metadata?
-        type: boolean
-        required: false
-      - in: query
-        name: _count
-        description: Count?
-        type: boolean
-        required: false
-      - in: query
-        name: _doc
-        description: Documentation?
-        type: boolean
-        required: false
-      - in: query
-        name: artExbDate
-        description: Search filter for art exb date
-        type: string
-        required: false
-      - in: query
-        name: artExbPlcId
-        description: Search filter for Place
-        type: string
-        required: false
-      - in: query
-        name: artExbPlcId__artPlcName
-        description: Search filter for Place Name
-        type: string
-        required: false
-      - in: query
-        name: artExbCommissaire
-        description: Search filter for art exb commissaire
-        type: string
-        required: false
-      - in: query
-        name: artExbDescrition
-        description: Search filter for art exb descrition
-        type: string
-        required: false
-      tags:
-      - ArtExhibition
   /rest/ArtPiece/{row_id}:
     post:
       summary: Create a new ArtPiecebusiness object record
@@ -1957,7 +2330,7 @@ paths:
         required: false
       - in: query
         name: artExbpicExbId__artExbDate
-        description: Search filter for art exbpic exb id art exb date
+        description: Search filter for art exbpic exb id Date
         type: string
         required: false
       - in: query
@@ -2134,66 +2507,6 @@ paths:
       - ArtExbPic
       consumes:
       - application/json
-  /rest/ArtTagPiece:
-    get:
-      summary: Search ArtTagPiece business object records or get contextualized metadata
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-arttagpiece-search
-      responses:
-        '200':
-          schema:
-            $ref: '#/definitions/ArrayOfArtTagPiece'
-          description: Success in searching business object records (or in getting
-            contextualized business object metadata, documentation, ...)
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-        '500':
-          schema:
-            $ref: '#/definitions/Error500'
-          description: Internal server error
-      parameters:
-      - in: query
-        name: _metadata
-        description: Metadata?
-        type: boolean
-        required: false
-      - in: query
-        name: _count
-        description: Count?
-        type: boolean
-        required: false
-      - in: query
-        name: _doc
-        description: Documentation?
-        type: boolean
-        required: false
-      - in: query
-        name: artTpTagId
-        description: Search filter for app art tag fk
-        type: string
-        required: false
-      - in: query
-        name: artTpTagId__artTagLabel
-        description: Search filter for app art tag fk Label
-        type: string
-        required: false
-      - in: query
-        name: artTpPieceId
-        description: Search filter for app art piece fk
-        type: string
-        required: false
-      - in: query
-        name: artTpPieceId__artPicCode
-        description: Search filter for app art piece fk Code
-        type: string
-        required: false
-      tags:
-      - ArtTagPiece
 securityDefinitions:
   basicAuth:
     type: basic
@@ -2223,7 +2536,7 @@ definitions:
         description: Art piece
         type: string
       artDocFile:
-        description: art doc file
+        description: File
         type: object
       row_id:
         description: Unique technical row ID
@@ -2232,7 +2545,7 @@ definitions:
         description: Art piece Title
         type: string
       artDocDescription:
-        description: art doc description
+        description: Description
         type: string
   ArrayOfArtTag:
     type: array
@@ -2242,6 +2555,15 @@ definitions:
     type: object
     properties:
       artOwnName:
+        description: Name
+        type: string
+      row_id:
+        description: Unique technical row ID
+        type: string
+  ArtTechnique:
+    type: object
+    properties:
+      artTecName:
         description: Name
         type: string
       row_id:
@@ -2268,8 +2590,43 @@ definitions:
       artArtLastname:
         description: Last name
         type: string
+      artArtRatingFormula:
+        description: Art art value formula
+        type: string
       row_id:
         description: Unique technical row ID
+        type: string
+  PlaceData:
+    type: object
+    properties:
+      coord:
+        description: Geographical coordinates
+        type: string
+      address:
+        description: Address
+        type: string
+      row_id:
+        description: Row ID
+        type: string
+      label1:
+        description: 'Label #1'
+        type: string
+      label2:
+        description: 'Label #2'
+        type: string
+      label3:
+        description: 'Label #3'
+        type: string
+  PlaceMapData:
+    type: object
+    properties:
+      places:
+        description: Places
+        type: array
+        items:
+          $ref: '#/definitions/PlaceData'
+      name:
+        description: Name
         type: string
   ArrayOfArtExhibition:
     type: array
@@ -2301,13 +2658,13 @@ definitions:
     type: object
     properties:
       artPicArtistId__artArtLastname:
-        description: Last name
+        description: Artist
         type: string
       artPicTagVirtual:
         description: art pic tag virtual
         type: string
       artPicDocument:
-        description: File
+        description: Files
         type: object
       artPicState:
         description: State
@@ -2322,6 +2679,9 @@ definitions:
       artPicExbVirtual:
         description: art pic exb virtual
         type: string
+      artPicTecId:
+        description: Technique
+        type: string
       artPicEntry:
         description: Entry date
         type: string
@@ -2329,6 +2689,9 @@ definitions:
       artPicPicture:
         description: Picture
         type: object
+      artPicTecId__artTecName:
+        description: Technique
+        type: string
       artPicPrice:
         description: Estimated price
         type: number
@@ -2342,7 +2705,7 @@ definitions:
         description: Artist|Artists
         type: string
       artPicTechnique:
-        description: Technique
+        description: Technique (decrec)
         type: string
         enum:
         - 'NULL'
@@ -2351,11 +2714,14 @@ definitions:
         - OIL
         - LUNGI
       artPicComment:
-        description: Comment
+        description: Comments
         type: string
       artPicPlaceId:
         description: Place|Places
         type: string
+      artPicEstimatedPrice:
+        description: Estimated Price
+        type: number
       artPicSigned:
         description: Signed
         type: string
@@ -2369,17 +2735,20 @@ definitions:
       artPicCodeBis:
         description: Code 2
         type: string
-      artPicScore:
-        description: Score
-        type: number
+      artPicArtistId__artArtRatingFormula:
+        description: Artist|Artists Art art value formula
+        type: string
       artPicOwnId:
         description: Owner
         type: string
+      artPicScore:
+        description: Score
+        type: number
       artPicPlaceId__artPlcName:
-        description: Name
+        description: Place
         type: string
       artPicArtistId__artArtFirstname:
-        description: First name
+        description: Artist's first name
         type: string
       row_id:
         description: Unique technical row ID
@@ -2434,7 +2803,7 @@ definitions:
         description: art exbpic pic id Code
         type: string
       artExbpicExbId__artExbDate:
-        description: art exbpic exb id art exb date
+        description: art exbpic exb id Date
         type: string
         example: yyyy-MM-dd
       artExbpicExbId:
@@ -2469,14 +2838,14 @@ definitions:
     type: object
     properties:
       artExbDate:
-        description: art exb date
+        description: Date
         type: string
         example: yyyy-MM-dd
       artExbPlcId:
         description: Place
         type: string
       artExbCommissaire:
-        description: art exb commissaire
+        description: Commissaire
         type: string
       row_id:
         description: Unique technical row ID
@@ -2535,6 +2904,10 @@ definitions:
     type: array
     items:
       $ref: '#/definitions/ArtOwner'
+  ArrayOfArtTechnique:
+    type: array
+    items:
+      $ref: '#/definitions/ArtTechnique'
 swagger: '2.0'
 info:
   license:
@@ -2546,7 +2919,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module Artil
   title: Artil
-  version: '1.11'
+  version: '1.12'
 tags:
 - name: ArtArtist
   description: Artist
@@ -2566,3 +2939,5 @@ tags:
   description: Tag
 - name: ArtTagPiece
   description: Tags
+- name: ArtTechnique
+  description: Technique

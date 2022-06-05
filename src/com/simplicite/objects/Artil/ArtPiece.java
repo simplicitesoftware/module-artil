@@ -4,9 +4,10 @@ import java.util.*;
 import com.simplicite.util.*;
 import com.simplicite.util.tools.*;
 
-import com.simplicite.commons.Artil.ArtLireHelper;
+//import com.simplicite.commons.Artil.ArtLireHelper;
 import java.io.InputStream;
 import com.simplicite.commons.Artil.ArtilCommons;
+import com.simplicite.util.exceptions.ActionException;
 
 /**
  * Business object ArtPiece
@@ -51,27 +52,27 @@ public class ArtPiece extends ObjectDB {
 	
 	@Override
 	public String postDelete() {
-		try{
+		/*try{
 			ArtLireHelper.deleteFromIndex(getRowId());
 		}
 		catch(Exception e){
 			AppLog.error(getClass(), "postDelete", e.getMessage(), e, getGrant());
-		}
+		}*/
 		return null;
 	}
 	
 	private void tryLireIndexing(){
-		try{
+		/*try{
 			InputStream img = getField("artPicPicture").getDocument(getGrant()).getInputStream();
 			ArtLireHelper.indexImage(img, getRowId());
 		}
 		catch(Exception e){
 			AppLog.error(getClass(), "tryLireIndexing", e.getMessage(), e, getGrant());
-		}		
+		}	*/	
 	}
 	
 	public String reIndexAll(){
-		try{
+		/*try{
 			ArtLireHelper.deleteAllIndex();
 		}
 		catch(Exception e){
@@ -89,7 +90,51 @@ public class ArtPiece extends ObjectDB {
 			});
 			c = pic.getCount();
 		}
-		return c+" objects indexed.";
+		return c+" objects indexed.";*/
+		return "Image recognition index is broken at the moment.";
+	}
+	
+	private static List<String[]> getActionRows(ObjectDB obj) throws ActionException{
+		List<String[]> rows = new ArrayList<>();
+		// List actions AND Row action (row action not supported)
+		if(obj.getContext().isList()){
+			if(obj.getSelectedIds()!=null){
+				for(String id : obj.getSelectedIds())
+					if(obj.select(id))
+						rows.add(obj.getValues());
+			}
+			else{
+				rows = obj.search();
+			}
+		}
+		// Form action
+		else
+			rows.add(obj.getValues());
+		
+		if(rows.size()==0)
+			throw new ActionException("No record selected for action. ");
+		
+		return rows;
+	}
+	
+	
+	public String calculateCalculatedPrice(){
+		int updated = 0;
+		try{
+			for(String[] row : getActionRows(this)){
+				setValues(row);
+				String expr = getFieldValue("artPicArtistId.artArtRatingFormula");
+				if(!Tool.isEmpty(expr))
+					setFieldValue("artPicEstimatedPrice",evalExpression(expr,ObjectCore.CONTEXT_ACTION));
+				getTool().validateAndUpdate();
+				updated++;
+			}
+		}
+		catch(Exception e){
+			return Message.formatSimpleError(e.getMessage()+"Records updated before exception: "+updated);
+		}
+		
+		return Message.formatSimpleInfo("Records updated : "+updated);
 	}
 	
 	@Override
