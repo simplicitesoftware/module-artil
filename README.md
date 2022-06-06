@@ -190,6 +190,53 @@ Piece of art
 | `artTpPieceId` link to **`ArtPiece`**                        | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `artTpPieceId.artPicCode`_                             | _char(20)_                               |          |           |          | -                                                                                |
 
+`ArtInvoice` business object definition
+---------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `artInvDate`                                                 | date                                     |          | yes       |          | -                                                                                |
+| `artInvCode`                                                 | char(100)                                | yes*     | yes       |          | -                                                                                |
+| `artInvFile`                                                 | document                                 |          | yes       |          | -                                                                                |
+| `artInvFrom`                                                 | html(2000)                               |          | yes       |          | -                                                                                |
+| `artInvTo`                                                   | html(2000)                               |          | yes       |          | -                                                                                |
+| `artInvTotal`                                                | float(100, 2)                            |          | yes       |          | -                                                                                |
+
+### Custom actions
+
+* `calculateTotal`: 
+
+`ArtPicInv` business object definition
+--------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `artPicinvPicId` link to **`ArtPiece`**                      | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `artPicinvPicId.artPicCode`_                           | _char(20)_                               |          |           |          | -                                                                                |
+| _Ref. `artPicinvPicId.artPicTitle`_                          | _char(200)_                              |          |           |          | -                                                                                |
+| _Ref. `artPicinvPicId.artPicTecId`_                          | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `artPicTecId.artTecName`_                              | _char(250)_                              |          |           |          | -                                                                                |
+| _Ref. `artPicinvPicId.artPicHeight`_                         | _float(7, 2)_                            |          |           |          | -                                                                                |
+| _Ref. `artPicinvPicId.artPicWidth`_                          | _float(7, 2)_                            |          |           |          | -                                                                                |
+| _Ref. `artPicinvPicId.artPicYear`_                           | _int(4)_                                 |          |           |          | -                                                                                |
+| _Ref. `artPicinvPicId.artPicPicture`_                        | _image_                                  |          |           |          | -                                                                                |
+| _Ref. `artPicinvPicId.artPicPrice`_                          | _float(9, 2)_                            |          |           |          | _Estimated price_                                                                |
+| _Ref. `artPicinvPicId.artPicEstimatedPrice`_                 | _float(100, 2)_                          |          |           |          | -                                                                                |
+| `artPicinvInvId` link to **`ArtInvoice`**                    | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `artPicinvPicId.artPicArtistId`_                       | _id_                                     |          |           |          | -                                                                                |
+| _Ref. `artPicinvInvId.artInvCode`_                           | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `artPicArtistId.artArtLastname`_                       | _char(50)_                               |          |           |          | -                                                                                |
+| _Ref. `artPicArtistId.artArtFirstname`_                      | _char(50)_                               |          |           |          | -                                                                                |
+| `artPicinvPrice`                                             | float(100, 2)                            |          | yes       |          | -                                                                                |
+
 `ArtImageRecognition` external object definition
 ------------------------------------------------
 
