@@ -5,7 +5,7 @@
 	<action>upsert</action>
 	<data>
 		<mdl_name>Artil</mdl_name>
-		<mdl_version>1.12</mdl_version>
+		<mdl_version>1.13</mdl_version>
 		<mdl_prefix>art</mdl_prefix>
 		<mdl_url><![CDATA[{
 	"type": "git",
@@ -223,6 +223,12 @@ sim tomcat-star
 		<lov_model_id.mod_image/>
 	</data>
 	<data>
+		<lov_name>ARTINVSTATE</lov_name>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<lov_model_id.mod_name/>
+		<lov_model_id.mod_image/>
+	</data>
+	<data>
 		<lov_name>ARTPICSTATE</lov_name>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<lov_model_id.mod_name/>
@@ -259,6 +265,39 @@ sim tomcat-star
 		<lov_code>0</lov_code>
 		<lov_order_by>3</lov_order_by>
 		<lov_label>FALSE</lov_label>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
+	</data>
+	<data>
+		<lov_list_id.lov_name>ARTINVSTATE</lov_list_id.lov_name>
+		<lov_code>DRAFT</lov_code>
+		<lov_order_by>10</lov_order_by>
+		<lov_label>Draft</lov_label>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
+	</data>
+	<data>
+		<lov_list_id.lov_name>ARTINVSTATE</lov_list_id.lov_name>
+		<lov_code>SENT</lov_code>
+		<lov_order_by>20</lov_order_by>
+		<lov_label>Sent</lov_label>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<lov_color/>
+		<lov_color_bg/>
+		<lov_icon/>
+		<lov_display>L</lov_display>
+	</data>
+	<data>
+		<lov_list_id.lov_name>ARTINVSTATE</lov_list_id.lov_name>
+		<lov_code>PAYED</lov_code>
+		<lov_order_by>30</lov_order_by>
+		<lov_label>Payed</lov_label>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<lov_color/>
 		<lov_color_bg/>
@@ -345,6 +384,48 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
+		<lov_code_id.lov_list_id.lov_name>ARTINVSTATE</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>DRAFT</lov_code_id.lov_code>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Draft]]></lov_value>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>ARTINVSTATE</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>SENT</lov_code_id.lov_code>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Sent]]></lov_value>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>ARTINVSTATE</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>PAYED</lov_code_id.lov_code>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Payed]]></lov_value>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>ARTINVSTATE</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>DRAFT</lov_code_id.lov_code>
+		<lov_lang>FRA</lov_lang>
+		<lov_value><![CDATA[Draft]]></lov_value>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>ARTINVSTATE</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>SENT</lov_code_id.lov_code>
+		<lov_lang>FRA</lov_lang>
+		<lov_value><![CDATA[Sent]]></lov_value>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>ARTINVSTATE</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>PAYED</lov_code_id.lov_code>
+		<lov_lang>FRA</lov_lang>
+		<lov_value><![CDATA[Payed]]></lov_value>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
 		<lov_code_id.lov_list_id.lov_name>ARTPICSTATE</lov_code_id.lov_list_id.lov_name>
 		<lov_code_id.lov_code>SELLING</lov_code_id.lov_code>
 		<lov_lang>ENU</lov_lang>
@@ -395,7 +476,7 @@ sim tomcat-star
 		<fld_dbname>art_firstname</fld_dbname>
 		<fld_visible>3</fld_visible>
 		<fld_updatable>1</fld_updatable>
-		<fld_required>1</fld_required>
+		<fld_required>0</fld_required>
 		<fld_fonctid>1</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
@@ -506,7 +587,7 @@ sim tomcat-star
 		<fld_dbname>art_year</fld_dbname>
 		<fld_visible>3</fld_visible>
 		<fld_updatable>1</fld_updatable>
-		<fld_required>1</fld_required>
+		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
 		<fld_research>1</fld_research>
 		<fld_researchreq>0</fld_researchreq>
@@ -835,6 +916,43 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
+		<fld_name>artInvDescription</fld_name>
+		<fld_dbname>art_inv_description</fld_dbname>
+		<fld_visible>3</fld_visible>
+		<fld_updatable>1</fld_updatable>
+		<fld_required>0</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research>1</fld_research>
+		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
+		<fld_more>0</fld_more>
+		<fld_listmore>0</fld_listmore>
+		<fld_listsum/>
+		<fld_tray/>
+		<fld_type>3</fld_type>
+		<fld_type_id.flt_code/>
+		<fld_list_id.lov_name/>
+		<fld_copy>1</fld_copy>
+		<fld_size>255</fld_size>
+		<fld_minsize/>
+		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
+		<fld_dfault/>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
+		<fld_updall>1</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering/>
+		<fld_speech/>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment/>
+		<fld_classification/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
 		<fld_name>artInvFile</fld_name>
 		<fld_dbname>art_inv_file</fld_dbname>
 		<fld_visible>3</fld_visible>
@@ -874,7 +992,7 @@ sim tomcat-star
 	<data>
 		<fld_name>artInvFrom</fld_name>
 		<fld_dbname>art_inv_from</fld_dbname>
-		<fld_visible>3</fld_visible>
+		<fld_visible>2</fld_visible>
 		<fld_updatable>1</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
@@ -909,9 +1027,46 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
+		<fld_name>artInvState</fld_name>
+		<fld_dbname>art_inv_state</fld_dbname>
+		<fld_visible>3</fld_visible>
+		<fld_updatable>1</fld_updatable>
+		<fld_required>1</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research>1</fld_research>
+		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
+		<fld_more>0</fld_more>
+		<fld_listmore>0</fld_listmore>
+		<fld_listsum/>
+		<fld_tray/>
+		<fld_type>7</fld_type>
+		<fld_type_id.flt_code/>
+		<fld_list_id.lov_name>ARTINVSTATE</fld_list_id.lov_name>
+		<fld_copy>1</fld_copy>
+		<fld_size>20</fld_size>
+		<fld_minsize/>
+		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
+		<fld_dfault/>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
+		<fld_updall>1</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering/>
+		<fld_speech/>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment/>
+		<fld_classification/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
 		<fld_name>artInvTo</fld_name>
 		<fld_dbname>art_inv_to</fld_dbname>
-		<fld_visible>3</fld_visible>
+		<fld_visible>2</fld_visible>
 		<fld_updatable>1</fld_updatable>
 		<fld_required>0</fld_required>
 		<fld_fonctid>0</fld_fonctid>
@@ -957,7 +1112,7 @@ sim tomcat-star
 		<fld_sort>C</fld_sort>
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
-		<fld_listsum/>
+		<fld_listsum>1</fld_listsum>
 		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
@@ -971,6 +1126,43 @@ sim tomcat-star
 		<fld_indexable>0</fld_indexable>
 		<fld_autocomp>0</fld_autocomp>
 		<fld_groupby>0</fld_groupby>
+		<fld_updall>1</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering/>
+		<fld_speech/>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment/>
+		<fld_classification/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fld_name>artInvYear</fld_name>
+		<fld_dbname>art_inv_year</fld_dbname>
+		<fld_visible>0</fld_visible>
+		<fld_updatable>0</fld_updatable>
+		<fld_required>0</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research>1</fld_research>
+		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
+		<fld_more>0</fld_more>
+		<fld_listmore>0</fld_listmore>
+		<fld_listsum/>
+		<fld_tray/>
+		<fld_type>3</fld_type>
+		<fld_type_id.flt_code/>
+		<fld_list_id.lov_name/>
+		<fld_copy>1</fld_copy>
+		<fld_size>4</fld_size>
+		<fld_minsize/>
+		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
+		<fld_dfault/>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>1</fld_groupby>
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
@@ -1982,6 +2174,43 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
+		<fld_name>artTagDescription</fld_name>
+		<fld_dbname>art_tag_description</fld_dbname>
+		<fld_visible>3</fld_visible>
+		<fld_updatable>1</fld_updatable>
+		<fld_required>0</fld_required>
+		<fld_fonctid>0</fld_fonctid>
+		<fld_research>1</fld_research>
+		<fld_researchreq>0</fld_researchreq>
+		<fld_sort>C</fld_sort>
+		<fld_more>0</fld_more>
+		<fld_listmore>0</fld_listmore>
+		<fld_listsum/>
+		<fld_tray/>
+		<fld_type>3</fld_type>
+		<fld_type_id.flt_code/>
+		<fld_list_id.lov_name/>
+		<fld_copy>1</fld_copy>
+		<fld_size>255</fld_size>
+		<fld_minsize/>
+		<fld_precision/>
+		<fld_fromdate_id.fld_name/>
+		<fld_dfault/>
+		<fld_indexable>0</fld_indexable>
+		<fld_autocomp>0</fld_autocomp>
+		<fld_groupby>0</fld_groupby>
+		<fld_updall>1</fld_updall>
+		<fld_case/>
+		<fld_righttoleft>0</fld_righttoleft>
+		<fld_rendering/>
+		<fld_speech/>
+		<fld_calc/>
+		<fld_objlist/>
+		<fld_comment/>
+		<fld_classification/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
 		<fld_name>artTagLabel</fld_name>
 		<fld_dbname>tag_label</fld_dbname>
 		<fld_visible>3</fld_visible>
@@ -2384,6 +2613,13 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
+		<tpl_name>ArtTag</tpl_name>
+		<tpl_ui><![CDATA[<div class="area" data-area="1"></div>]]></tpl_ui>
+		<tpl_min/>
+		<tpl_image/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
 		<tpl_name>ArtTechnique</tpl_name>
 		<tpl_ui><![CDATA[<div class="area" data-area="1"></div>]]></tpl_ui>
 		<tpl_min/>
@@ -2458,6 +2694,15 @@ sim tomcat-star
     </div>
     <div class="col-sm-6">
       <div class="field" data-field="artInvDate"></div>
+      <div class="field" data-field="artInvYear"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="field" data-field="artInvDescription"></div>
+    </div>
+    <div class="col-sm-6">
+      <div class="field" data-field="artInvState"></div>
     </div>
   </div>
   <div class="row">
@@ -2675,6 +2920,18 @@ sim tomcat-star
   </div>
 </div>]]></ofa_ui>
 		<ofa_icon>money</ofa_icon>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<ofa_name>ArtTag-1</ofa_name>
+		<ofa_position>1</ofa_position>
+		<ofa_title>0</ofa_title>
+		<ofa_ui><![CDATA[<div>
+  <div class="field" data-field="artTagLabel"></div>
+  <div class="field" data-field="artTagDescription"></div>
+  <div class="field" data-field="artTagPublic"></div>
+</div>]]></ofa_ui>
+		<ofa_icon>star</ofa_icon>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -3272,7 +3529,7 @@ sim tomcat-star
 		<obo_indexable>1</obo_indexable>
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
-		<obo_template_id.tpl_name>Base</obo_template_id.tpl_name>
+		<obo_template_id.tpl_name>ArtTag</obo_template_id.tpl_name>
 		<obo_cache>D</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
@@ -3462,11 +3719,11 @@ sim tomcat-star
 	<action>upsert</action>
 	<data>
 		<obf_object_id.obo_name>ArtArtist</obf_object_id.obo_name>
-		<obf_field_id.fld_name>artArtFirstname</obf_field_id.fld_name>
+		<obf_field_id.fld_name>artArtLastname</obf_field_id.fld_name>
 		<obf_field_id.fld_type>3</obf_field_id.fld_type>
-		<obf_order>10</obf_order>
+		<obf_order>5</obf_order>
 		<obf_group_by/>
-		<obf_dfault_order/>
+		<obf_dfault_order>1</obf_dfault_order>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
 		<obf_ref_object_id.obo_name/>
@@ -3491,9 +3748,9 @@ sim tomcat-star
 	</data>
 	<data>
 		<obf_object_id.obo_name>ArtArtist</obf_object_id.obo_name>
-		<obf_field_id.fld_name>artArtLastname</obf_field_id.fld_name>
+		<obf_field_id.fld_name>artArtFirstname</obf_field_id.fld_name>
 		<obf_field_id.fld_type>3</obf_field_id.fld_type>
-		<obf_order>20</obf_order>
+		<obf_order>10</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
@@ -3698,7 +3955,7 @@ sim tomcat-star
 		<obf_field_id.fld_type>4</obf_field_id.fld_type>
 		<obf_order>10</obf_order>
 		<obf_group_by/>
-		<obf_dfault_order>1</obf_dfault_order>
+		<obf_dfault_order>-1</obf_dfault_order>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
 		<obf_ref_object_id.obo_name/>
@@ -3843,6 +4100,64 @@ sim tomcat-star
 		<obf_field_id.fld_type>4</obf_field_id.fld_type>
 		<obf_order>10</obf_order>
 		<obf_group_by/>
+		<obf_dfault_order>-1</obf_dfault_order>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>ArtInvoice-1</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>ArtInvoice</obf_object_id.obo_name>
+		<obf_field_id.fld_name>artInvYear</obf_field_id.fld_name>
+		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_order>20</obf_order>
+		<obf_group_by>1</obf_group_by>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>ArtInvoice-1</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>ArtInvoice</obf_object_id.obo_name>
+		<obf_field_id.fld_name>artInvState</obf_field_id.fld_name>
+		<obf_field_id.fld_type>7</obf_field_id.fld_type>
+		<obf_order>30</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -3870,9 +4185,38 @@ sim tomcat-star
 		<obf_object_id.obo_name>ArtInvoice</obf_object_id.obo_name>
 		<obf_field_id.fld_name>artInvCode</obf_field_id.fld_name>
 		<obf_field_id.fld_type>3</obf_field_id.fld_type>
-		<obf_order>20</obf_order>
+		<obf_order>40</obf_order>
 		<obf_group_by/>
-		<obf_dfault_order>1</obf_dfault_order>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>ArtInvoice-1</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>ArtInvoice</obf_object_id.obo_name>
+		<obf_field_id.fld_name>artInvDescription</obf_field_id.fld_name>
+		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_order>50</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
 		<obf_ref_object_id.obo_name/>
@@ -3899,7 +4243,36 @@ sim tomcat-star
 		<obf_object_id.obo_name>ArtInvoice</obf_object_id.obo_name>
 		<obf_field_id.fld_name>artInvFile</obf_field_id.fld_name>
 		<obf_field_id.fld_type>17</obf_field_id.fld_type>
-		<obf_order>30</obf_order>
+		<obf_order>60</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>ArtInvoice-1</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>ArtInvoice</obf_object_id.obo_name>
+		<obf_field_id.fld_name>artInvTotal</obf_field_id.fld_name>
+		<obf_field_id.fld_type>2</obf_field_id.fld_type>
+		<obf_order>70</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
@@ -3928,7 +4301,7 @@ sim tomcat-star
 		<obf_object_id.obo_name>ArtInvoice</obf_object_id.obo_name>
 		<obf_field_id.fld_name>artInvFrom</obf_field_id.fld_name>
 		<obf_field_id.fld_type>11</obf_field_id.fld_type>
-		<obf_order>40</obf_order>
+		<obf_order>80</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
@@ -3957,7 +4330,7 @@ sim tomcat-star
 		<obf_object_id.obo_name>ArtInvoice</obf_object_id.obo_name>
 		<obf_field_id.fld_name>artInvTo</obf_field_id.fld_name>
 		<obf_field_id.fld_type>11</obf_field_id.fld_type>
-		<obf_order>50</obf_order>
+		<obf_order>90</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
@@ -3980,35 +4353,6 @@ sim tomcat-star
 		<obf_field_id.fld_dfault/>
 		<obf_area_id.ofa_name>ArtInvoice-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<obf_object_id.obo_name>ArtInvoice</obf_object_id.obo_name>
-		<obf_field_id.fld_name>artInvTotal</obf_field_id.fld_name>
-		<obf_field_id.fld_type>2</obf_field_id.fld_type>
-		<obf_order>60</obf_order>
-		<obf_group_by/>
-		<obf_dfault_order/>
-		<obf_input/>
-		<obf_ref_field_id.fld_name/>
-		<obf_ref_object_id.obo_name/>
-		<obf_cascad/>
-		<obf_card/>
-		<obf_visible/>
-		<obf_ref_export>1</obf_ref_export>
-		<obf_copy/>
-		<obf_ref_order/>
-		<obf_fld_visible/>
-		<obf_fld_required/>
-		<obf_fld_updatable/>
-		<obf_fld_research/>
-		<obf_fld_more/>
-		<obf_fld_listmore/>
-		<obf_fld_researchreq/>
-		<obf_fld_dfault/>
-		<obf_field_id.fld_dfault/>
-		<obf_area_id.ofa_name>ArtInvoice-1</obf_area_id.ofa_name>
-		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -4404,11 +4748,11 @@ sim tomcat-star
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy/>
 		<obf_ref_order/>
-		<obf_fld_visible/>
+		<obf_fld_visible>3</obf_fld_visible>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
 		<obf_fld_research/>
-		<obf_fld_more/>
+		<obf_fld_more>0</obf_fld_more>
 		<obf_fld_listmore/>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
@@ -5322,7 +5666,7 @@ sim tomcat-star
 		<obf_field_id.fld_type>3</obf_field_id.fld_type>
 		<obf_order>10</obf_order>
 		<obf_group_by/>
-		<obf_dfault_order/>
+		<obf_dfault_order>1</obf_dfault_order>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
 		<obf_ref_object_id.obo_name/>
@@ -5380,6 +5724,35 @@ sim tomcat-star
 		<obf_field_id.fld_type>3</obf_field_id.fld_type>
 		<obf_order>10</obf_order>
 		<obf_group_by/>
+		<obf_dfault_order>1</obf_dfault_order>
+		<obf_input/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name/>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible/>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more/>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_field_id.fld_dfault/>
+		<obf_area_id.ofa_name>ArtTag-1</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_object_id.obo_name>ArtTag</obf_object_id.obo_name>
+		<obf_field_id.fld_name>artTagDescription</obf_field_id.fld_name>
+		<obf_field_id.fld_type>3</obf_field_id.fld_type>
+		<obf_order>15</obf_order>
+		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
@@ -5399,8 +5772,8 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
-		<obf_area_id.ofa_name/>
-		<obf_area_id.ofa_position/>
+		<obf_area_id.ofa_name>ArtTag-1</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -5428,8 +5801,8 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
-		<obf_area_id.ofa_name/>
-		<obf_area_id.ofa_position/>
+		<obf_area_id.ofa_name>ArtTag-1</obf_area_id.ofa_name>
+		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -5554,7 +5927,7 @@ sim tomcat-star
 		<obf_field_id.fld_type>3</obf_field_id.fld_type>
 		<obf_order>10</obf_order>
 		<obf_group_by/>
-		<obf_dfault_order/>
+		<obf_dfault_order>1</obf_dfault_order>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
 		<obf_ref_object_id.obo_name/>
@@ -7385,8 +7758,14 @@ sim tomcat-star
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>artArtRatingFormula</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Art art value formula</tsl_value>
-		<tsl_simplehelp/>
+		<tsl_value>Rating</tsl_value>
+		<tsl_simplehelp><![CDATA[<p>Formula to calculate a piece's price based on the piece's attributes.</p>
+<p>Use <a href="https://docs.simplicite.io/documentation/01-core/expressions.md">Simplicit&eacute; expressions</a> to return a value.</p>
+<p>Examples</p>
+<ol>
+<li><code>[VALUE:artPicHeight]+[VALUE:artPicWidth]</code></li>
+<li><code>(()=&gt;{</code><code>if([VALUE:artPicTecId.artTecName]=='Oil on canvas') return [VALUE:artPicHeight]; else return [VALUE:artPicWidth]; })()</code></li>
+</ol>]]></tsl_simplehelp>
 		<tsl_short_value/>
 		<tsl_placeholder/>
 		<tsl_listhelp/>
@@ -7503,6 +7882,18 @@ sim tomcat-star
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>artInvDescription</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Description</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>artInvFile</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>File</tsl_value>
@@ -7518,6 +7909,18 @@ sim tomcat-star
 		<tsl_id.fld_name>artInvFrom</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>From</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>artInvState</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>State</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -7551,6 +7954,18 @@ sim tomcat-star
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>artInvYear</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Year</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>artOwnName</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Name</tsl_value>
@@ -7565,7 +7980,7 @@ sim tomcat-star
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>artPicArtistId</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Artist|Artists</tsl_value>
+		<tsl_value>Artist</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -7875,6 +8290,18 @@ sim tomcat-star
 	</data>
 	<data>
 		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>artTagDescription</tsl_id.fld_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Description</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>artTagLabel</tsl_id.fld_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Label</tsl_value>
@@ -8081,7 +8508,7 @@ sim tomcat-star
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>artInvCode</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Art inv code</tsl_value>
+		<tsl_value>Code</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -8093,7 +8520,19 @@ sim tomcat-star
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>artInvDate</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Art inv date</tsl_value>
+		<tsl_value>Date</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>artInvDescription</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Description</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -8105,7 +8544,7 @@ sim tomcat-star
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>artInvFile</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Art inv file</tsl_value>
+		<tsl_value>Fichier</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -8117,7 +8556,19 @@ sim tomcat-star
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>artInvFrom</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Art inv from</tsl_value>
+		<tsl_value>Émetteur</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>artInvState</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>État</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -8129,7 +8580,7 @@ sim tomcat-star
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>artInvTo</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Art inv to</tsl_value>
+		<tsl_value>Destinataire</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -8141,7 +8592,19 @@ sim tomcat-star
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>artInvTotal</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Art inv total</tsl_value>
+		<tsl_value>Total</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>artInvYear</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Année</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -8165,7 +8628,7 @@ sim tomcat-star
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>artPicArtistId</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Artiste|Artistes</tsl_value>
+		<tsl_value>Artiste</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -8297,7 +8760,7 @@ sim tomcat-star
 		<tsl_typeField>F</tsl_typeField>
 		<tsl_id.fld_name>artPicinvPrice</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Art picinv price</tsl_value>
+		<tsl_value>Prix</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -8466,6 +8929,18 @@ sim tomcat-star
 		<tsl_id.fld_name>artPlcPublic</tsl_id.fld_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Public</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<tsl_tooltip/>
+	</data>
+	<data>
+		<tsl_typeField>F</tsl_typeField>
+		<tsl_id.fld_name>artTagDescription</tsl_id.fld_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Art tag description</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -8661,6 +9136,13 @@ sim tomcat-star
 	</data>
 	<data>
 		<tsl_typeFieldArea>Z</tsl_typeFieldArea>
+		<tsl_id.ofa_name>ArtTag-1</tsl_id.ofa_name>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>ArtTag-1</tsl_value>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeFieldArea>Z</tsl_typeFieldArea>
 		<tsl_id.ofa_name>ArtTechnique-1</tsl_id.ofa_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Technique -1</tsl_value>
@@ -8762,6 +9244,13 @@ sim tomcat-star
 		<tsl_id.ofa_name>ArtPiece-Price</tsl_id.ofa_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Price</tsl_value>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeFieldArea>Z</tsl_typeFieldArea>
+		<tsl_id.ofa_name>ArtTag-1</tsl_id.ofa_name>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Tag -1</tsl_value>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -9067,6 +9556,19 @@ sim tomcat-star
 		<tsl_id.obf_order>190</tsl_id.obf_order>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Place</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_typeObjectField>L</tsl_typeObjectField>
+		<tsl_id.obf_object_id.obo_name>ArtPicInv</tsl_id.obf_object_id.obo_name>
+		<tsl_id.obf_field_id.fld_name>artPicArtistId</tsl_id.obf_field_id.fld_name>
+		<tsl_id.obf_order>200</tsl_id.obf_order>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Artiste</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
 		<tsl_listhelp/>

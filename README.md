@@ -43,9 +43,9 @@ sim tomcat-star
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
-| `artArtFirstname`                                            | char(50)                                 | yes*     | yes       |          | -                                                                                |
 | `artArtLastname`                                             | char(50)                                 | yes*     | yes       |          | -                                                                                |
-| `artArtYear`                                                 | int(4)                                   | yes      | yes       |          | Year of birth                                                                    |
+| `artArtFirstname`                                            | char(50)                                 | *        | yes       |          | -                                                                                |
+| `artArtYear`                                                 | int(4)                                   |          | yes       |          | Year of birth                                                                    |
 | `artArtRatingFormula`                                        | text(1000)                               |          | yes       |          | -                                                                                |
 
 `ArtOwner` business object definition
@@ -174,6 +174,7 @@ Piece of art
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `artTagLabel`                                                | char(20)                                 | yes*     | yes       |          | -                                                                                |
+| `artTagDescription`                                          | char(255)                                |          | yes       |          | -                                                                                |
 | `artTagPublic`                                               | boolean                                  |          | yes       |          | -                                                                                |
 
 `ArtTagPiece` business object definition
@@ -200,11 +201,21 @@ Piece of art
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `artInvDate`                                                 | date                                     |          | yes       |          | -                                                                                |
+| `artInvYear`                                                 | char(4)                                  |          |           |          | -                                                                                |
+| `artInvState`                                                | enum(20) using `ARTINVSTATE` list        | yes      | yes       |          | -                                                                                |
 | `artInvCode`                                                 | char(100)                                | yes*     | yes       |          | -                                                                                |
+| `artInvDescription`                                          | char(255)                                |          | yes       |          | -                                                                                |
 | `artInvFile`                                                 | document                                 |          | yes       |          | -                                                                                |
+| `artInvTotal`                                                | float(100, 2)                            |          | yes       |          | -                                                                                |
 | `artInvFrom`                                                 | html(2000)                               |          | yes       |          | -                                                                                |
 | `artInvTo`                                                   | html(2000)                               |          | yes       |          | -                                                                                |
-| `artInvTotal`                                                | float(100, 2)                            |          | yes       |          | -                                                                                |
+
+### Lists
+
+* `ARTINVSTATE`
+    - `DRAFT` Draft
+    - `SENT` Sent
+    - `PAYED` Payed
 
 ### Custom actions
 

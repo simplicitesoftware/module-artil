@@ -15,6 +15,21 @@ import org.json.JSONArray;
 public class ArtInvoice extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 	
+	@Override
+	public String preSave() {
+		setFieldValue("artInvYear", Tool.getYear(getFieldValue("artInvDate")));
+		
+		//return Message.formatInfo("INFO_CODE", "Message", "fieldName");
+		//return Message.formatWarning("WARNING_CODE", "Message", "fieldName");
+		//return Message.formatError("ERROR_CODE", "Message", "fieldName");
+		return null;
+	}
+	
+	@Override
+	public boolean isUpdateEnable(String[] row) {
+		return !"PAYED".equals(row[getFieldIndex("artInvState")]);
+	}
+	
 	public void calculateTotal(){
 		setFieldValue("artInvTotal", getGrant().simpleQueryAsDouble("SELECT SUM(art_picinv_price) FROM art_pic_inv WHERE art_picinv_inv_id="+getRowId()));
 		save();

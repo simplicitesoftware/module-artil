@@ -14,7 +14,9 @@ public class ArtPicInv extends ObjectDB {
 	
 	@Override
 	public String preCreate() {
-		setFieldValue("artPicinvPrice", getFieldValue("artPicinvPicId.artPicPrice"));
+		ObjectField p = getField("artPicinvPrice");
+		if(p.isEmpty())
+			p.setValue(getFieldValue("artPicinvPicId.artPicPrice"));
 		return null;
 	}
 }

@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: Artil 1.12
+#             |_| Module: Artil 1.13
 paths:
   /rest/ArtTag:
     get:
@@ -53,6 +53,11 @@ paths:
         type: string
         required: false
       - in: query
+        name: artTagDescription
+        description: Search filter for Description
+        type: string
+        required: false
+      - in: query
         name: artTagPublic
         description: Search filter for Public
         type: boolean
@@ -87,18 +92,18 @@ paths:
         - token
       tags:
       - session
-  /rest/ArtTechnique:
+  /rest/ArtPicInv:
     get:
-      summary: Search ArtTechnique business object records or get contextualized metadata
+      summary: Search ArtPicInv business object records or get contextualized metadata
       security:
       - bearerAuth: []
       produces:
       - application/json
-      operationId: obj-arttechnique-search
+      operationId: obj-artpicinv-search
       responses:
         '200':
           schema:
-            $ref: '#/definitions/ArrayOfArtTechnique'
+            $ref: '#/definitions/ArrayOfArtPicInv'
           description: Success in searching business object records (or in getting
             contextualized business object metadata, documentation, ...)
         '401':
@@ -126,12 +131,92 @@ paths:
         type: boolean
         required: false
       - in: query
-        name: artTecName
-        description: Search filter for Name
+        name: artPicinvPicId
+        description: Search filter for Piece
         type: string
         required: false
+      - in: query
+        name: artPicinvPicId__artPicCode
+        description: Search filter for Piece Code
+        type: string
+        required: false
+      - in: query
+        name: artPicinvPicId__artPicTitle
+        description: Search filter for Piece Title
+        type: string
+        required: false
+      - in: query
+        name: artPicinvPicId__artPicTecId
+        description: Search filter for Piece Technique
+        type: string
+        required: false
+      - in: query
+        name: artPicinvPicId__artPicTecId__artTecName
+        description: Search filter for Piece Technique Name
+        type: string
+        required: false
+      - in: query
+        name: artPicinvPicId__artPicHeight
+        description: Search filter for Piece Height
+        type: number
+        required: false
+      - in: query
+        name: artPicinvPicId__artPicWidth
+        description: Search filter for Piece Width
+        type: number
+        required: false
+      - in: query
+        name: artPicinvPicId__artPicYear
+        description: Search filter for Piece Year
+        type: integer
+        required: false
+      - in: query
+        name: artPicinvPicId__artPicPicture
+        description: Search filter for Piece Picture
+        type: string
+        required: false
+      - in: query
+        name: artPicinvPicId__artPicPrice
+        description: Search filter for Estimated price
+        type: number
+        required: false
+      - in: query
+        name: artPicinvPicId__artPicEstimatedPrice
+        description: Search filter for Piece Estimated Price
+        type: number
+        required: false
+      - in: query
+        name: artPicinvInvId
+        description: Search filter for Invoice
+        type: string
+        required: false
+      - in: query
+        name: artPicinvPicId__artPicArtistId
+        description: Search filter for Piece Artist
+        type: string
+        required: false
+      - in: query
+        name: artPicinvInvId__artInvCode
+        description: Search filter for Invoice Code
+        type: string
+        required: false
+      - in: query
+        name: artPicinvPicId__artPicArtistId__artArtLastname
+        description: Search filter for Artist Lastname
+        type: string
+        required: false
+      - in: query
+        name: artPicinvPicId__artPicArtistId__artArtFirstname
+        description: Search filter for Artist First name
+        type: string
+        required: false
+      - in: query
+        name: artPicinvPrice
+        description: Search filter for Price
+        type: number
+        required: false
       tags:
-      - ArtTechnique
+      - ArtPicInv
   /rest/ArtTag/{row_id}:
     post:
       summary: Create a new ArtTagbusiness object record
@@ -294,18 +379,18 @@ paths:
       - ArtTag
       consumes:
       - application/json
-  /rest/ArtPicInv:
+  /rest/ArtTechnique:
     get:
-      summary: Search ArtPicInv business object records or get contextualized metadata
+      summary: Search ArtTechnique business object records or get contextualized metadata
       security:
       - bearerAuth: []
       produces:
       - application/json
-      operationId: obj-artpicinv-search
+      operationId: obj-arttechnique-search
       responses:
         '200':
           schema:
-            $ref: '#/definitions/ArrayOfArtPicInv'
+            $ref: '#/definitions/ArrayOfArtTechnique'
           description: Success in searching business object records (or in getting
             contextualized business object metadata, documentation, ...)
         '401':
@@ -333,92 +418,12 @@ paths:
         type: boolean
         required: false
       - in: query
-        name: artPicinvPicId
-        description: Search filter for Piece
+        name: artTecName
+        description: Search filter for Name
         type: string
-        required: false
-      - in: query
-        name: artPicinvPicId__artPicCode
-        description: Search filter for Piece Code
-        type: string
-        required: false
-      - in: query
-        name: artPicinvPicId__artPicTitle
-        description: Search filter for Piece Title
-        type: string
-        required: false
-      - in: query
-        name: artPicinvPicId__artPicTecId
-        description: Search filter for Piece Technique
-        type: string
-        required: false
-      - in: query
-        name: artPicinvPicId__artPicTecId__artTecName
-        description: Search filter for Piece Technique Name
-        type: string
-        required: false
-      - in: query
-        name: artPicinvPicId__artPicHeight
-        description: Search filter for Piece Height
-        type: number
-        required: false
-      - in: query
-        name: artPicinvPicId__artPicWidth
-        description: Search filter for Piece Width
-        type: number
-        required: false
-      - in: query
-        name: artPicinvPicId__artPicYear
-        description: Search filter for Piece Year
-        type: integer
-        required: false
-      - in: query
-        name: artPicinvPicId__artPicPicture
-        description: Search filter for Piece Picture
-        type: string
-        required: false
-      - in: query
-        name: artPicinvPicId__artPicPrice
-        description: Search filter for Estimated price
-        type: number
-        required: false
-      - in: query
-        name: artPicinvPicId__artPicEstimatedPrice
-        description: Search filter for Piece Estimated Price
-        type: number
-        required: false
-      - in: query
-        name: artPicinvInvId
-        description: Search filter for Invoice
-        type: string
-        required: false
-      - in: query
-        name: artPicinvPicId__artPicArtistId
-        description: Search filter for Piece Artist|Artists
-        type: string
-        required: false
-      - in: query
-        name: artPicinvInvId__artInvCode
-        description: Search filter for Invoice Code
-        type: string
-        required: false
-      - in: query
-        name: artPicinvPicId__artPicArtistId__artArtLastname
-        description: Search filter for Artist Lastname
-        type: string
-        required: false
-      - in: query
-        name: artPicinvPicId__artPicArtistId__artArtFirstname
-        description: Search filter for Artist First name
-        type: string
-        required: false
-      - in: query
-        name: artPicinvPrice
-        description: Search filter for Price
-        type: number
         required: false
       tags:
-      - ArtPicInv
+      - ArtTechnique
   /rest/ArtPiece/{row_id}/action:reIndexAll:
     get:
       summary: Call a custom action for a ArtPiece business object record or for all
@@ -619,6 +624,40 @@ paths:
       - ArtTagPiece
       consumes:
       - application/json
+  /rest/ArtInvoice/{row_id}/publication:ArtInvoice:
+    get:
+      summary: Call a custom publication for a ArtInvoice business object record or
+        for all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artinvoice-publication-artinvoice
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PublicationResult'
+          description: Success in calling the custom publication
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - ArtInvoice
   /rest/ArtOwner:
     get:
       summary: Search ArtOwner business object records or get contextualized metadata
@@ -664,40 +703,6 @@ paths:
         required: false
       tags:
       - ArtOwner
-  /rest/ArtInvoice/{row_id}/publication:ArtInvoice:
-    get:
-      summary: Call a custom publication for a ArtInvoice business object record or
-        for all records
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-artinvoice-publication-artinvoice
-      responses:
-        '200':
-          schema:
-            $ref: '#/definitions/PublicationResult'
-          description: Success in calling the custom publication
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-        '500':
-          schema:
-            $ref: '#/definitions/Error500'
-          description: Internal server error
-        '404':
-          schema:
-            $ref: '#/definitions/Error404'
-          description: Not found
-      parameters:
-      - in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        type: string
-        required: true
-      tags:
-      - ArtInvoice
   /rest/ArtOwner/{row_id}:
     post:
       summary: Create a new ArtOwnerbusiness object record
@@ -860,6 +865,194 @@ paths:
       - ArtOwner
       consumes:
       - application/json
+  /rest/ArtPiece:
+    get:
+      summary: Search ArtPiece business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artpiece-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfArtPiece'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: _indexsearch
+        description: Index search query
+        type: string
+        required: false
+      - in: query
+        name: artPicTitle
+        description: Search filter for Title
+        type: string
+        required: false
+      - in: query
+        name: artPicArtistId
+        description: Search filter for Artist
+        type: string
+        required: false
+      - in: query
+        name: artPicArtistId__artArtFirstname
+        description: Search filter for Artist's first name
+        type: string
+        required: false
+      - in: query
+        name: artPicArtistId__artArtLastname
+        description: Search filter for Artist
+        type: string
+        required: false
+      - in: query
+        name: artPicArtistId__artArtRatingFormula
+        description: Search filter for Artist Rating
+        type: string
+        required: false
+      - in: query
+        name: artPicYear
+        description: Search filter for Year
+        type: integer
+        required: false
+      - in: query
+        name: artPicTecId
+        description: Search filter for Technique
+        type: string
+        required: false
+      - in: query
+        name: artPicTecId__artTecName
+        description: Search filter for Technique
+        type: string
+        required: false
+      - in: query
+        name: artPicHeight
+        description: Search filter for Height
+        type: number
+        required: false
+      - in: query
+        name: artPicWidth
+        description: Search filter for Width
+        type: number
+        required: false
+      - in: query
+        name: artPicSigned
+        description: Search filter for Signed
+        type: string
+        required: false
+        enum:
+        - '2'
+        - '1'
+        - '0'
+      - in: query
+        name: artPicPicture
+        description: Search filter for Picture
+        type: string
+        required: false
+      - in: query
+        name: artPicState
+        description: Search filter for State
+        type: string
+        required: false
+        enum:
+        - SELLING
+        - SOLD
+        - STORED
+      - in: query
+        name: artPicCode
+        description: Search filter for Code
+        type: string
+        required: false
+      - in: query
+        name: artPicCodeBis
+        description: Search filter for Code 2
+        type: string
+        required: false
+      - in: query
+        name: artPicEntry
+        description: Search filter for Entry date
+        type: string
+        required: false
+      - in: query
+        name: artPicPlaceId
+        description: Search filter for Place|Places
+        type: string
+        required: false
+      - in: query
+        name: artPicPlaceId__artPlcName
+        description: Search filter for Place
+        type: string
+        required: false
+      - in: query
+        name: artPicOwnId
+        description: Search filter for Owner
+        type: string
+        required: false
+      - in: query
+        name: artPicOwnId__artOwnName
+        description: Search filter for Owner Name
+        type: string
+        required: false
+      - in: query
+        name: artPicPrice
+        description: Search filter for Estimated price
+        type: number
+        required: false
+      - in: query
+        name: artPicEstimatedPrice
+        description: Search filter for Estimated Price
+        type: number
+        required: false
+      - in: query
+        name: artPicComment
+        description: Search filter for Comments
+        type: string
+        required: false
+      - in: query
+        name: artPicDocument
+        description: Search filter for Files
+        type: string
+        required: false
+      - in: query
+        name: artPicScore
+        description: Search filter for Score
+        type: number
+        required: false
+      - in: query
+        name: artPicExbVirtual
+        description: Search filter for art pic exb virtual
+        type: string
+        required: false
+      - in: query
+        name: artPicTagVirtual
+        description: Search filter for art pic tag virtual
+        type: string
+        required: false
+      tags:
+      - ArtPiece
   /rest/ArtPlace/{row_id}:
     post:
       summary: Create a new ArtPlacebusiness object record
@@ -1022,194 +1215,6 @@ paths:
       - ArtPlace
       consumes:
       - application/json
-  /rest/ArtPiece:
-    get:
-      summary: Search ArtPiece business object records or get contextualized metadata
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-artpiece-search
-      responses:
-        '200':
-          schema:
-            $ref: '#/definitions/ArrayOfArtPiece'
-          description: Success in searching business object records (or in getting
-            contextualized business object metadata, documentation, ...)
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-        '500':
-          schema:
-            $ref: '#/definitions/Error500'
-          description: Internal server error
-      parameters:
-      - in: query
-        name: _metadata
-        description: Metadata?
-        type: boolean
-        required: false
-      - in: query
-        name: _count
-        description: Count?
-        type: boolean
-        required: false
-      - in: query
-        name: _doc
-        description: Documentation?
-        type: boolean
-        required: false
-      - in: query
-        name: _indexsearch
-        description: Index search query
-        type: string
-        required: false
-      - in: query
-        name: artPicTitle
-        description: Search filter for Title
-        type: string
-        required: false
-      - in: query
-        name: artPicArtistId
-        description: Search filter for Artist|Artists
-        type: string
-        required: false
-      - in: query
-        name: artPicArtistId__artArtFirstname
-        description: Search filter for Artist's first name
-        type: string
-        required: false
-      - in: query
-        name: artPicArtistId__artArtLastname
-        description: Search filter for Artist
-        type: string
-        required: false
-      - in: query
-        name: artPicArtistId__artArtRatingFormula
-        description: Search filter for Artist|Artists Art art value formula
-        type: string
-        required: false
-      - in: query
-        name: artPicYear
-        description: Search filter for Year
-        type: integer
-        required: false
-      - in: query
-        name: artPicTecId
-        description: Search filter for Technique
-        type: string
-        required: false
-      - in: query
-        name: artPicTecId__artTecName
-        description: Search filter for Technique
-        type: string
-        required: false
-      - in: query
-        name: artPicHeight
-        description: Search filter for Height
-        type: number
-        required: false
-      - in: query
-        name: artPicWidth
-        description: Search filter for Width
-        type: number
-        required: false
-      - in: query
-        name: artPicSigned
-        description: Search filter for Signed
-        type: string
-        required: false
-        enum:
-        - '2'
-        - '1'
-        - '0'
-      - in: query
-        name: artPicPicture
-        description: Search filter for Picture
-        type: string
-        required: false
-      - in: query
-        name: artPicState
-        description: Search filter for State
-        type: string
-        required: false
-        enum:
-        - SELLING
-        - SOLD
-        - STORED
-      - in: query
-        name: artPicCode
-        description: Search filter for Code
-        type: string
-        required: false
-      - in: query
-        name: artPicCodeBis
-        description: Search filter for Code 2
-        type: string
-        required: false
-      - in: query
-        name: artPicEntry
-        description: Search filter for Entry date
-        type: string
-        required: false
-      - in: query
-        name: artPicPlaceId
-        description: Search filter for Place|Places
-        type: string
-        required: false
-      - in: query
-        name: artPicPlaceId__artPlcName
-        description: Search filter for Place
-        type: string
-        required: false
-      - in: query
-        name: artPicOwnId
-        description: Search filter for Owner
-        type: string
-        required: false
-      - in: query
-        name: artPicOwnId__artOwnName
-        description: Search filter for Owner Name
-        type: string
-        required: false
-      - in: query
-        name: artPicPrice
-        description: Search filter for Estimated price
-        type: number
-        required: false
-      - in: query
-        name: artPicEstimatedPrice
-        description: Search filter for Estimated Price
-        type: number
-        required: false
-      - in: query
-        name: artPicComment
-        description: Search filter for Comments
-        type: string
-        required: false
-      - in: query
-        name: artPicDocument
-        description: Search filter for Files
-        type: string
-        required: false
-      - in: query
-        name: artPicScore
-        description: Search filter for Score
-        type: number
-        required: false
-      - in: query
-        name: artPicExbVirtual
-        description: Search filter for art pic exb virtual
-        type: string
-        required: false
-      - in: query
-        name: artPicTagVirtual
-        description: Search filter for art pic tag virtual
-        type: string
-        required: false
-      tags:
-      - ArtPiece
   /rest/ArtExhibition/{row_id}:
     post:
       summary: Create a new ArtExhibitionbusiness object record
@@ -1411,13 +1416,13 @@ paths:
         type: boolean
         required: false
       - in: query
-        name: artArtFirstname
-        description: Search filter for First name
+        name: artArtLastname
+        description: Search filter for Last name
         type: string
         required: false
       - in: query
-        name: artArtLastname
-        description: Search filter for Last name
+        name: artArtFirstname
+        description: Search filter for First name
         type: string
         required: false
       - in: query
@@ -1427,7 +1432,7 @@ paths:
         required: false
       - in: query
         name: artArtRatingFormula
-        description: Search filter for Art art value formula
+        description: Search filter for Rating
         type: string
         required: false
       tags:
@@ -1596,6 +1601,40 @@ paths:
         required: false
       tags:
       - ArtTagPiece
+  /rest/ArtPiece/{row_id}/publication:ArtPiecePrintable:
+    get:
+      summary: Call a custom publication for a ArtPiece business object record or
+        for all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artpiece-publication-artpieceprintable
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PublicationResult'
+          description: Success in calling the custom publication
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - ArtPiece
   /rest/ArtTechnique/{row_id}:
     post:
       summary: Create a new ArtTechniquebusiness object record
@@ -1758,40 +1797,6 @@ paths:
       - ArtTechnique
       consumes:
       - application/json
-  /rest/ArtPiece/{row_id}/publication:ArtPiecePrintable:
-    get:
-      summary: Call a custom publication for a ArtPiece business object record or
-        for all records
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-artpiece-publication-artpieceprintable
-      responses:
-        '200':
-          schema:
-            $ref: '#/definitions/PublicationResult'
-          description: Success in calling the custom publication
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-        '500':
-          schema:
-            $ref: '#/definitions/Error500'
-          description: Internal server error
-        '404':
-          schema:
-            $ref: '#/definitions/Error404'
-          description: Not found
-      parameters:
-      - in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        type: string
-        required: true
-      tags:
-      - ArtPiece
   /logout:
     get:
       summary: Logout (revoke bearer token)
@@ -2834,14 +2839,38 @@ paths:
         type: string
         required: false
       - in: query
+        name: artInvYear
+        description: Search filter for Year
+        type: string
+        required: false
+      - in: query
+        name: artInvState
+        description: Search filter for State
+        type: string
+        required: false
+        enum:
+        - DRAFT
+        - SENT
+        - PAYED
+      - in: query
         name: artInvCode
         description: Search filter for Code
+        type: string
+        required: false
+      - in: query
+        name: artInvDescription
+        description: Search filter for Description
         type: string
         required: false
       - in: query
         name: artInvFile
         description: Search filter for File
         type: string
+        required: false
+      - in: query
+        name: artInvTotal
+        description: Search filter for Total
+        type: number
         required: false
       - in: query
         name: artInvFrom
@@ -2852,11 +2881,6 @@ paths:
         name: artInvTo
         description: Search filter for To
         type: string
-        required: false
-      - in: query
-        name: artInvTotal
-        description: Search filter for Total
-        type: number
         required: false
       tags:
       - ArtInvoice
@@ -2923,7 +2947,7 @@ definitions:
         description: Last name
         type: string
       artArtRatingFormula:
-        description: Art art value formula
+        description: Rating
         type: string
       row_id:
         description: Unique technical row ID
@@ -3034,7 +3058,7 @@ definitions:
         description: Title
         type: string
       artPicArtistId:
-        description: Artist|Artists
+        description: Artist
         type: string
       artPicComment:
         description: Comments
@@ -3059,7 +3083,7 @@ definitions:
         description: Code 2
         type: string
       artPicArtistId__artArtRatingFormula:
-        description: Artist|Artists Art art value formula
+        description: Artist Rating
         type: string
       artPicOwnId:
         description: Owner
@@ -3137,7 +3161,7 @@ definitions:
         description: Piece Picture
         type: object
       artPicinvPicId__artPicArtistId:
-        description: Piece Artist|Artists
+        description: Piece Artist
         type: string
   ArrayOfArtExbPic:
     type: array
@@ -3157,6 +3181,19 @@ definitions:
   ArtInvoice:
     type: object
     properties:
+      artInvYear:
+        description: Year
+        type: string
+      artInvDescription:
+        description: Description
+        type: string
+      artInvState:
+        description: State
+        type: string
+        enum:
+        - DRAFT
+        - SENT
+        - PAYED
       artInvTotal:
         description: Total
         type: number
@@ -3261,11 +3298,18 @@ definitions:
       artExbPlcId__artPlcName:
         description: Place Name
         type: string
+  ArrayOfArtInvoice:
+    type: array
+    items:
+      $ref: '#/definitions/ArtInvoice'
   ArtTag:
     type: object
     properties:
       artTagLabel:
         description: Label
+        type: string
+      artTagDescription:
+        description: Description
         type: string
       artTagPublic:
         description: Public
@@ -3273,10 +3317,6 @@ definitions:
       row_id:
         description: Unique technical row ID
         type: string
-  ArrayOfArtInvoice:
-    type: array
-    items:
-      $ref: '#/definitions/ArtInvoice'
   ArrayOfArtTagPiece:
     type: array
     items:
@@ -3328,27 +3368,27 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module Artil
   title: Artil
-  version: '1.12'
+  version: '1.13'
 tags:
 - name: ArtArtist
   description: Artist
-- name: ArtOwner
-  description: Owner
-- name: ArtPlace
-  description: Place
-- name: ArtTechnique
-  description: Technique
-- name: ArtPiece
-  description: Art piece
-- name: ArtExhibition
-  description: Exhibition
 - name: ArtExbPic
   description: Exhibitions
+- name: ArtExhibition
+  description: Exhibition
+- name: ArtInvoice
+  description: Invoice
+- name: ArtOwner
+  description: Owner
+- name: ArtPicInv
+  description: Invoice item
+- name: ArtPiece
+  description: Art piece
+- name: ArtPlace
+  description: Place
 - name: ArtTag
   description: Tag
 - name: ArtTagPiece
   description: Tags
-- name: ArtInvoice
-  description: Invoice
-- name: ArtPicInv
-  description: Invoice item
+- name: ArtTechnique
+  description: Technique
