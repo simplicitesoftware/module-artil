@@ -2592,9 +2592,15 @@ sim tomcat-star
 		</style>
 	</head>
 	<div class="container">
+		<h3>Inventory export ([EXPR:Tool.getCurrentDate()])</h3>
 		<table class="table table-bordered">
-			[BEGIN]
 			<tr>
+				<th>Description</th>
+				<th>Inventory</th>
+				<th>Picture</th>
+			</tr>
+			[BEGIN]
+			<!--<tr>
 				<td>[VALUE:artPicCode]</td>
 				<td>[VALUE:artArtLastname]</td>
 				<td>[VALUE:artPicHeight]x[VALUE:artPicWidth]</td>
@@ -2603,7 +2609,33 @@ sim tomcat-star
 				<td>[VALUE:artPicSigned]</td>
 				<td>[VALUE:artPicComment]</td>
 				<td class="thmb"><img src="[EXPR:obj.getField('artPicPicture').getDocument().getThumbnailURL('inline')]"/></td>
+			</tr>-->
+			<tr>
+				<td>
+					<ul style="list-style-type: none; margin: 0; padding: 0;">
+						<li><strong>Artist:</strong> [VALUE:artArtFirstname] [VALUE:artArtLastname]</li>
+						<li><strong>Title:</strong> [VALUE:artPicTitle] </li>
+						<li><strong>Size:</strong> [VALUE:artPicHeight]x[VALUE:artPicWidth]cm</li>
+						<li><strong>Technique:</strong> [VALUE:artTecName]</li>
+						<li><strong>Signed:</strong> [VALUE:artPicSigned]</li>
+					</ul>
+				</td>
+				<td>
+					<ul style="list-style-type: none; margin: 0; padding: 0;">
+						<li><strong>Code:</strong> [VALUE:artPicCode] [EXPR:obj.getField('artPicCodeBis').isEmpty()?"":"("+obj.getFieldValue('artPicCodeBis')+")"]</li>
+						<li><strong>Owner:</strong> [VALUE:artOwnName]</li>
+						<li><strong>Localization:</strong> [VALUE:artPlcName]</li>
+						<li><strong>Estimated Value:</strong> [VALUE:artPicEstimatedPrice][EXPR:obj.getField('artPicEstimatedPrice').isEmpty()?"":" €"]</li>
+						<li><strong>Selling Price:</strong> [VALUE:artPicPrice][EXPR:obj.getField('artPicPrice').isEmpty()?"":" €"]</li>
+						<li><strong>Comments:</strong></li>
+					</ul>
+					[VALUE:artPicComment]
+				</td>
+				<td>
+					<img src="[EXPR:obj.getField('artPicPicture').getDocument().getThumbnailURL('inline')]"/>
+				</td>
 			</tr>
+			
 			[END]
 		</table>
 	</div>

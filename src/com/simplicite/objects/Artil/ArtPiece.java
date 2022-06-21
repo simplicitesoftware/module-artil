@@ -15,9 +15,9 @@ import com.simplicite.util.exceptions.ActionException;
 public class ArtPiece extends ObjectDB {
 	private static final long serialVersionUID = 1L;
 	private static final String[] adminOnlyFields = new String[]{
-		"artPicPrice", 
-		"artPicDocument", 
-		"artPicPlaceId"
+		"artPicPrice",
+		"artPicEstimatedPrice",
+		"artPicDocument"
 	};
 	
 	private void reGenerateThumbnails(){
