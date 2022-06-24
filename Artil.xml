@@ -209,7 +209,7 @@ sim tomcat-star
 		<rsp_group_id.grp_name>ART_ADMIN</rsp_group_id.grp_name>
 		<rsp_start_dt>2022-06-03</rsp_start_dt>
 		<rsp_end_dt/>
-		<rsp_activ>0</rsp_activ>
+		<rsp_activ>1</rsp_activ>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 </object>
@@ -3468,8 +3468,8 @@ sim tomcat-star
 		<obo_btn_savenew>1</obo_btn_savenew>
 		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>0</obo_btn_close>
-		<obo_tray>1</obo_tray>
-		<obo_dashboard>1</obo_dashboard>
+		<obo_tray>0</obo_tray>
+		<obo_dashboard>0</obo_dashboard>
 		<obo_prefix>pic</obo_prefix>
 		<obo_search_ts/>
 		<obo_minrows/>
@@ -7130,7 +7130,7 @@ sim tomcat-star
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
-		<sta_access>1</sta_access>
+		<sta_access>0</sta_access>
 		<sta_timeout/>
 		<sta_alert_id.alt_name/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -7144,7 +7144,7 @@ sim tomcat-star
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
-		<sta_access>1</sta_access>
+		<sta_access>0</sta_access>
 		<sta_timeout/>
 		<sta_alert_id.alt_name/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -7158,7 +7158,7 @@ sim tomcat-star
 		<sta_activ>1</sta_activ>
 		<sta_terminal>0</sta_terminal>
 		<sta_read>0</sta_read>
-		<sta_access>1</sta_access>
+		<sta_access>0</sta_access>
 		<sta_timeout/>
 		<sta_alert_id.alt_name/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -9336,7 +9336,7 @@ sim tomcat-star
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>ArtExhibition</tsl_id.obo_name>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Exhibition</tsl_value>
+		<tsl_value>Exhibition|Exhibitions</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -9424,7 +9424,7 @@ sim tomcat-star
 		<tsl_typeObject>O</tsl_typeObject>
 		<tsl_id.obo_name>ArtExhibition</tsl_id.obo_name>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Exposition</tsl_value>
+		<tsl_value>Exposition|Expositions</tsl_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
