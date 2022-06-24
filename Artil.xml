@@ -5231,7 +5231,7 @@ sim tomcat-star
 		<obf_field_id.fld_type>7</obf_field_id.fld_type>
 		<obf_order>140</obf_order>
 		<obf_group_by/>
-		<obf_dfault_order>1</obf_dfault_order>
+		<obf_dfault_order/>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
 		<obf_ref_object_id.obo_name/>
@@ -5260,7 +5260,7 @@ sim tomcat-star
 		<obf_field_id.fld_type>3</obf_field_id.fld_type>
 		<obf_order>150</obf_order>
 		<obf_group_by/>
-		<obf_dfault_order/>
+		<obf_dfault_order>10</obf_dfault_order>
 		<obf_input/>
 		<obf_ref_field_id.fld_name/>
 		<obf_ref_object_id.obo_name/>
