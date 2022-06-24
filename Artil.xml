@@ -3443,7 +3443,7 @@ sim tomcat-star
 		<obo_minrows/>
 		<obo_maxrows/>
 		<obo_sortable>1</obo_sortable>
-		<obo_list_areas>1</obo_list_areas>
+		<obo_list_areas>0</obo_list_areas>
 	</data>
 	<data>
 		<obo_name>ArtPlace</obo_name>
