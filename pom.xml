@@ -13,7 +13,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
   <description>Simplicite module: Artil</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <simplicite.url>https://artil.dev.simplicite.io</simplicite.url>
+    <simplicite.url>https://migartil.sca.simplicite.io</simplicite.url>
     <simplicite.version>5.2-SNAPSHOT</simplicite.version>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
@@ -39,7 +39,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>3.3.0</version>
         <configuration>
           <excludes>
             <exclude>.gitkeep</exclude>
@@ -53,7 +53,7 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.3.2</version>
+        <version>3.4.1</version>
       </plugin>
     </plugins>
   </build>

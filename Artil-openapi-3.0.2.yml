@@ -478,6 +478,8 @@ components:
       bearerFormat: Simplicite token
       scheme: bearer
       type: http
+servers:
+- url: /api
 openapi: 3.0.2
 paths:
   /rest/ArtTag:
@@ -733,7 +735,7 @@ paths:
       - ArtPicInv
   /rest/ArtTag/{row_id}:
     post:
-      summary: Create a new ArtTagbusiness object record
+      summary: Create a new ArtTag business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -877,7 +879,7 @@ paths:
       tags:
       - ArtTag
     put:
-      summary: Update a ArtTagbusiness object record
+      summary: Update a ArtTag business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -1028,7 +1030,7 @@ paths:
       - ArtPiece
   /rest/ArtTagPiece/{row_id}:
     post:
-      summary: Create a new ArtTagPiecebusiness object record
+      summary: Create a new ArtTagPiece business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -1172,7 +1174,7 @@ paths:
       tags:
       - ArtTagPiece
     put:
-      summary: Update a ArtTagPiecebusiness object record
+      summary: Update a ArtTagPiece business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -1317,7 +1319,7 @@ paths:
       - ArtOwner
   /rest/ArtOwner/{row_id}:
     post:
-      summary: Create a new ArtOwnerbusiness object record
+      summary: Create a new ArtOwner business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -1461,7 +1463,7 @@ paths:
       tags:
       - ArtOwner
     put:
-      summary: Update a ArtOwnerbusiness object record
+      summary: Update a ArtOwner business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -1735,7 +1737,7 @@ paths:
       - ArtPiece
   /rest/ArtPlace/{row_id}:
     post:
-      summary: Create a new ArtPlacebusiness object record
+      summary: Create a new ArtPlace business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -1879,7 +1881,7 @@ paths:
       tags:
       - ArtPlace
     put:
-      summary: Update a ArtPlacebusiness object record
+      summary: Update a ArtPlace business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -1930,7 +1932,7 @@ paths:
       - ArtPlace
   /rest/ArtExhibition/{row_id}:
     post:
-      summary: Create a new ArtExhibitionbusiness object record
+      summary: Create a new ArtExhibition business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -2074,7 +2076,7 @@ paths:
       tags:
       - ArtExhibition
     put:
-      summary: Update a ArtExhibitionbusiness object record
+      summary: Update a ArtExhibition business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -2433,7 +2435,7 @@ paths:
       - ArtPiece
   /rest/ArtTechnique/{row_id}:
     post:
-      summary: Create a new ArtTechniquebusiness object record
+      summary: Create a new ArtTechnique business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -2577,7 +2579,7 @@ paths:
       tags:
       - ArtTechnique
     put:
-      summary: Update a ArtTechniquebusiness object record
+      summary: Update a ArtTechnique business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -2732,7 +2734,7 @@ paths:
       - session
   /rest/ArtPicInv/{row_id}:
     post:
-      summary: Create a new ArtPicInvbusiness object record
+      summary: Create a new ArtPicInv business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -2876,7 +2878,7 @@ paths:
       tags:
       - ArtPicInv
     put:
-      summary: Update a ArtPicInvbusiness object record
+      summary: Update a ArtPicInv business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -2927,7 +2929,7 @@ paths:
       - ArtPicInv
   /rest/ArtArtist/{row_id}:
     post:
-      summary: Create a new ArtArtistbusiness object record
+      summary: Create a new ArtArtist business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -3071,7 +3073,7 @@ paths:
       tags:
       - ArtArtist
     put:
-      summary: Update a ArtArtistbusiness object record
+      summary: Update a ArtArtist business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -3122,7 +3124,7 @@ paths:
       - ArtArtist
   /rest/ArtInvoice/{row_id}:
     post:
-      summary: Create a new ArtInvoicebusiness object record
+      summary: Create a new ArtInvoice business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -3266,7 +3268,7 @@ paths:
       tags:
       - ArtInvoice
     put:
-      summary: Update a ArtInvoicebusiness object record
+      summary: Update a ArtInvoice business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -3364,7 +3366,7 @@ paths:
       - ArtInvoice
   /rest/ArtPiece/{row_id}:
     post:
-      summary: Create a new ArtPiecebusiness object record
+      summary: Create a new ArtPiece business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -3508,7 +3510,7 @@ paths:
       tags:
       - ArtPiece
     put:
-      summary: Update a ArtPiecebusiness object record
+      summary: Update a ArtPiece business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -3630,7 +3632,7 @@ paths:
       - ArtExbPic
   /rest/ArtExbPic/{row_id}:
     post:
-      summary: Create a new ArtExbPicbusiness object record
+      summary: Create a new ArtExbPic business object record
       security:
       - bearerAuth: []
       requestBody:
@@ -3774,7 +3776,7 @@ paths:
       tags:
       - ArtExbPic
     put:
-      summary: Update a ArtExbPicbusiness object record
+      summary: Update a ArtExbPic business object record
       security:
       - bearerAuth: []
       requestBody:

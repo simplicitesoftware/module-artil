@@ -241,11 +241,11 @@ Piece of art
 | _Ref. `artPicinvPicId.artPicPicture`_                        | _image_                                  |          |           |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicPrice`_                          | _float(9, 2)_                            |          |           |          | _Estimated price_                                                                |
 | _Ref. `artPicinvPicId.artPicEstimatedPrice`_                 | _float(100, 2)_                          |          |           |          | -                                                                                |
-| `artPicinvInvId` link to **`ArtInvoice`**                    | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicArtistId`_                       | _id_                                     |          |           |          | -                                                                                |
-| _Ref. `artPicinvInvId.artInvCode`_                           | _char(100)_                              |          |           |          | -                                                                                |
+| `artPicinvInvId` link to **`ArtInvoice`**                    | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `artPicArtistId.artArtLastname`_                       | _char(50)_                               |          |           |          | -                                                                                |
 | _Ref. `artPicArtistId.artArtFirstname`_                      | _char(50)_                               |          |           |          | -                                                                                |
+| _Ref. `artPicinvInvId.artInvCode`_                           | _char(100)_                              |          |           |          | -                                                                                |
 | `artPicinvPrice`                                             | float(100, 2)                            |          | yes       |          | -                                                                                |
 
 `ArtImageRecognition` external object definition
