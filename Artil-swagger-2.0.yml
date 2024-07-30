@@ -999,7 +999,7 @@ paths:
         required: false
       - in: query
         name: artPicPlaceId
-        description: Search filter for Place|Places
+        description: Search filter for Place
         type: string
         required: false
       - in: query
@@ -3065,7 +3065,7 @@ definitions:
         description: Comments
         type: string
       artPicPlaceId:
-        description: Place|Places
+        description: Place
         type: string
       artPicEstimatedPrice:
         description: Estimated Price
