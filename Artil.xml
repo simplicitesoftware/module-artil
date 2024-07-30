@@ -5,13 +5,11 @@
 	<action>upsert</action>
 	<data>
 		<mdl_name>Artil</mdl_name>
-		<mdl_version>1.13</mdl_version>
+		<mdl_version>1.14</mdl_version>
 		<mdl_prefix>art</mdl_prefix>
 		<mdl_url><![CDATA[{
-	"type": "git",
-	"origin": {
-		"uri": "https://github.com/simplicitesoftware/module-artil.git"
-	}
+    "origin": {"uri": "https://github.com/simplicitesoftware/module-artil.git"},
+    "type": "git"
 }]]></mdl_url>
 		<mdl_type>A</mdl_type>
 		<mdl_comment><![CDATA[TODO : Clarify Build jar process
@@ -43,8 +41,7 @@ sim tomcat-star
 	<action>upsert</action>
 	<data>
 		<sys_code>WINDOW_TITLE</sys_code>
-		<sys_value><![CDATA[Artil]]></sys_value>
-		<sys_value2/>
+		<sys_value><![CDATA[Simplicité]]></sys_value>
 		<sys_type>LFL</sys_type>
 		<sys_desc><![CDATA[Webapp title]]></sys_desc>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -454,6 +451,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -477,6 +475,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artArtLastname</fld_name>
@@ -491,6 +490,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -514,6 +514,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artArtRatingFormula</fld_name>
@@ -528,6 +529,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>13</fld_type>
 		<fld_type_id.flt_code/>
@@ -551,6 +553,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artArtYear</fld_name>
@@ -565,6 +568,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
@@ -588,6 +592,7 @@ sim tomcat-star
 		<fld_comment><![CDATA[Year of birth]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artExbCommissaire</fld_name>
@@ -602,6 +607,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -625,6 +631,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artExbDate</fld_name>
@@ -639,6 +646,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
@@ -662,6 +670,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artExbDescrition</fld_name>
@@ -676,6 +685,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
@@ -699,6 +709,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artExbpicExbId</fld_name>
@@ -713,6 +724,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -736,6 +748,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artExbpicPicId</fld_name>
@@ -750,6 +763,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -773,6 +787,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artExbPlcId</fld_name>
@@ -787,6 +802,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -810,6 +826,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artInvCode</fld_name>
@@ -824,6 +841,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -847,6 +865,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artInvDate</fld_name>
@@ -861,6 +880,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
@@ -884,6 +904,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artInvDescription</fld_name>
@@ -898,6 +919,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -921,6 +943,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artInvFile</fld_name>
@@ -935,6 +958,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
@@ -958,6 +982,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artInvFrom</fld_name>
@@ -972,6 +997,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
@@ -995,6 +1021,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artInvState</fld_name>
@@ -1009,6 +1036,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -1032,6 +1060,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artInvTo</fld_name>
@@ -1046,6 +1075,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>11</fld_type>
 		<fld_type_id.flt_code/>
@@ -1069,6 +1099,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artInvTotal</fld_name>
@@ -1083,6 +1114,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>1</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
@@ -1106,6 +1138,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artInvYear</fld_name>
@@ -1120,6 +1153,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -1143,6 +1177,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artOwnName</fld_name>
@@ -1157,6 +1192,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -1180,6 +1216,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicArtistId</fld_name>
@@ -1194,6 +1231,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -1217,6 +1255,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicCode</fld_name>
@@ -1231,6 +1270,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -1254,6 +1294,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicCodeBis</fld_name>
@@ -1268,6 +1309,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -1291,6 +1333,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicComment</fld_name>
@@ -1305,6 +1348,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>1</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>13</fld_type>
 		<fld_type_id.flt_code/>
@@ -1328,6 +1372,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicDocument</fld_name>
@@ -1342,6 +1387,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>17</fld_type>
 		<fld_type_id.flt_code/>
@@ -1365,6 +1411,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicEntry</fld_name>
@@ -1379,6 +1426,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>4</fld_type>
 		<fld_type_id.flt_code/>
@@ -1402,6 +1450,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicEstimatedPrice</fld_name>
@@ -1416,6 +1465,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>1</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
@@ -1439,6 +1489,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicExbVirtual</fld_name>
@@ -1453,6 +1504,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -1476,6 +1528,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicHeight</fld_name>
@@ -1490,6 +1543,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
@@ -1513,6 +1567,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicinvInvId</fld_name>
@@ -1527,6 +1582,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -1550,6 +1606,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicinvPicId</fld_name>
@@ -1564,6 +1621,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -1587,6 +1645,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicinvPrice</fld_name>
@@ -1601,6 +1660,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>1</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
@@ -1624,6 +1684,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicOwnId</fld_name>
@@ -1638,6 +1699,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -1661,6 +1723,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicPicture</fld_name>
@@ -1675,6 +1738,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>20</fld_type>
 		<fld_type_id.flt_code/>
@@ -1698,6 +1762,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicPlaceId</fld_name>
@@ -1712,6 +1777,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -1735,6 +1801,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicPrice</fld_name>
@@ -1749,6 +1816,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum>1</fld_listsum>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
@@ -1772,6 +1840,7 @@ sim tomcat-star
 		<fld_comment><![CDATA[Estimated price]]></fld_comment>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicScore</fld_name>
@@ -1786,6 +1855,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
@@ -1809,6 +1879,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicSigned</fld_name>
@@ -1823,6 +1894,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -1846,6 +1918,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicState</fld_name>
@@ -1860,6 +1933,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>7</fld_type>
 		<fld_type_id.flt_code/>
@@ -1883,6 +1957,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicTagVirtual</fld_name>
@@ -1897,6 +1972,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -1920,6 +1996,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicTecId</fld_name>
@@ -1934,6 +2011,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -1957,6 +2035,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicTitle</fld_name>
@@ -1971,6 +2050,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -1994,6 +2074,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicWidth</fld_name>
@@ -2008,6 +2089,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>2</fld_type>
 		<fld_type_id.flt_code/>
@@ -2031,6 +2113,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPicYear</fld_name>
@@ -2045,6 +2128,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>1</fld_type>
 		<fld_type_id.flt_code/>
@@ -2068,6 +2152,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPlcName</fld_name>
@@ -2082,6 +2167,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -2105,6 +2191,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artPlcPublic</fld_name>
@@ -2119,6 +2206,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
@@ -2142,6 +2230,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artTagDescription</fld_name>
@@ -2156,6 +2245,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -2179,6 +2269,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artTagLabel</fld_name>
@@ -2193,6 +2284,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -2216,6 +2308,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artTagPublic</fld_name>
@@ -2230,6 +2323,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>8</fld_type>
 		<fld_type_id.flt_code/>
@@ -2253,6 +2347,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artTecName</fld_name>
@@ -2267,6 +2362,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
@@ -2290,6 +2386,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artTecpicPicId</fld_name>
@@ -2304,6 +2401,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -2327,6 +2425,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artTecpicTecId</fld_name>
@@ -2341,6 +2440,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -2364,6 +2464,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artTpPieceId</fld_name>
@@ -2378,6 +2479,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -2401,6 +2503,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 	<data>
 		<fld_name>artTpTagId</fld_name>
@@ -2415,6 +2518,7 @@ sim tomcat-star
 		<fld_more>0</fld_more>
 		<fld_listmore>0</fld_listmore>
 		<fld_listsum/>
+		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
 		<fld_type>0</fld_type>
 		<fld_type_id.flt_code/>
@@ -2438,6 +2542,7 @@ sim tomcat-star
 		<fld_comment/>
 		<fld_classification/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<fld_incrementsyntax/>
 	</data>
 </object>
 <object>
@@ -2996,7 +3101,6 @@ sim tomcat-star
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>ArtArtist</obo_template_id.tpl_name>
-		<obo_cache>D</obo_cache>
 		<obo_copy>0</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -3022,6 +3126,7 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -3063,7 +3168,6 @@ sim tomcat-star
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name/>
-		<obo_cache>D</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -3089,6 +3193,7 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -3130,7 +3235,6 @@ sim tomcat-star
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>ArtExhibition</obo_template_id.tpl_name>
-		<obo_cache>D</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -3156,6 +3260,7 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -3197,7 +3302,6 @@ sim tomcat-star
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>ArtInvoice</obo_template_id.tpl_name>
-		<obo_cache>D</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -3223,6 +3327,7 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -3264,7 +3369,6 @@ sim tomcat-star
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>ArtOwner</obo_template_id.tpl_name>
-		<obo_cache>D</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -3290,6 +3394,7 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -3331,7 +3436,6 @@ sim tomcat-star
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>ArtPicInv</obo_template_id.tpl_name>
-		<obo_cache>D</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -3357,6 +3461,7 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -3398,7 +3503,6 @@ sim tomcat-star
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>ArtPiece</obo_template_id.tpl_name>
-		<obo_cache>D</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -3424,6 +3528,7 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -3465,7 +3570,6 @@ sim tomcat-star
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>Base</obo_template_id.tpl_name>
-		<obo_cache>D</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -3491,6 +3595,7 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -3532,7 +3637,6 @@ sim tomcat-star
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>ArtTag</obo_template_id.tpl_name>
-		<obo_cache>D</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -3558,6 +3662,7 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -3599,7 +3704,6 @@ sim tomcat-star
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name/>
-		<obo_cache>D</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -3625,6 +3729,7 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -3666,7 +3771,6 @@ sim tomcat-star
 		<obo_groupby>0</obo_groupby>
 		<obo_dfltref/>
 		<obo_template_id.tpl_name>ArtTechnique</obo_template_id.tpl_name>
-		<obo_cache>D</obo_cache>
 		<obo_copy>1</obo_copy>
 		<obo_export>1</obo_export>
 		<obo_pagine>1</obo_pagine>
@@ -3692,6 +3796,7 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<obo_btn_reload>P</obo_btn_reload>
 		<obo_btn_prefs>P</obo_btn_prefs>
+		<obo_btn_bookmark>1</obo_btn_bookmark>
 		<obo_btn_del>P</obo_btn_del>
 		<obo_btn_copy>P</obo_btn_copy>
 		<obo_btn_export>P</obo_btn_export>
@@ -3744,6 +3849,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtArtist-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -3773,6 +3881,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtArtist-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -3802,6 +3913,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtArtist-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -3831,6 +3945,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtArtist-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -3860,6 +3977,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -3889,6 +4009,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -3918,6 +4041,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -3947,6 +4073,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -3976,6 +4105,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtExhibition-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4005,6 +4137,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtExhibition-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4034,6 +4169,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtExhibition-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4063,6 +4201,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtExhibition-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4092,6 +4233,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtExhibition-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4121,6 +4265,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtInvoice-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4150,6 +4297,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtInvoice-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4179,6 +4329,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtInvoice-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4208,6 +4361,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtInvoice-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4237,6 +4393,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtInvoice-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4266,6 +4425,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtInvoice-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4295,6 +4457,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtInvoice-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4324,6 +4489,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtInvoice-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4353,6 +4521,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtInvoice-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4382,6 +4553,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtOwner-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4411,6 +4585,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4440,6 +4617,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4469,6 +4649,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4498,6 +4681,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4527,6 +4713,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4556,6 +4745,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4585,6 +4777,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4614,6 +4809,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4643,6 +4841,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4672,6 +4873,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4701,6 +4905,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4730,6 +4937,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4759,6 +4969,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4788,6 +5001,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4817,6 +5033,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4846,6 +5065,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-2</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4875,6 +5097,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPicInv-3</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4904,6 +5129,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4933,6 +5161,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4962,6 +5193,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -4991,6 +5225,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5020,6 +5257,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5049,6 +5289,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5078,6 +5321,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5107,6 +5353,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5136,6 +5385,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5165,6 +5417,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5194,6 +5449,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[2]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5223,6 +5481,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Main</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>2</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5252,6 +5513,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[SELLING]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Inventory</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5281,6 +5545,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Inventory</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5310,6 +5577,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Inventory</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5339,6 +5609,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault><![CDATA[[DATE]]]></obf_field_id.fld_dfault>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Inventory</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5368,6 +5641,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Inventory</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5397,6 +5673,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Inventory</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5426,6 +5705,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Inventory</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5455,6 +5737,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Inventory</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5484,6 +5769,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Price</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5513,6 +5801,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Price</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>3</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5542,6 +5833,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Extra</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5571,6 +5865,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Extra</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5600,6 +5897,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Extra</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5629,6 +5929,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Extra</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5658,6 +5961,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtPiece-Extra</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>4</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5687,6 +5993,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5716,6 +6025,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5745,6 +6057,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtTag-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5774,6 +6089,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtTag-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5803,6 +6121,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtTag-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5832,6 +6153,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5861,6 +6185,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5890,6 +6217,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5919,6 +6249,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name/>
 		<obf_area_id.ofa_position/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5948,6 +6281,9 @@ sim tomcat-star
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_field_id.fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_field_id.fld_exportable>1</obf_field_id.fld_exportable>
+		<obf_fld_uk/>
 		<obf_area_id.ofa_name>ArtTechnique-1</obf_area_id.ofa_name>
 		<obf_area_id.ofa_position>1</obf_area_id.ofa_position>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -5969,6 +6305,7 @@ sim tomcat-star
 		<obf_cascad>R</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -5993,6 +6330,7 @@ sim tomcat-star
 		<obf_cascad>R</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>0</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -6021,6 +6359,7 @@ sim tomcat-star
 	from art_exb_pic
 	where art_exbpic_exb_id=[row_id]
 )]]></obf_query>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -6045,6 +6384,7 @@ sim tomcat-star
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -6069,6 +6409,7 @@ sim tomcat-star
 		<obf_cascad>R</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -6093,6 +6434,7 @@ sim tomcat-star
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -6117,6 +6459,7 @@ sim tomcat-star
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -6141,6 +6484,7 @@ sim tomcat-star
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -6165,6 +6509,7 @@ sim tomcat-star
 		<obf_cascad>R</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -6189,6 +6534,7 @@ sim tomcat-star
 		<obf_cascad>C</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -6217,6 +6563,7 @@ sim tomcat-star
 	from art_tag_piece
 	where tp_tag_id=[row_id]
 )]]></obf_query>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>0</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -6241,6 +6588,7 @@ sim tomcat-star
 		<obf_cascad>R</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>0</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -6265,6 +6613,7 @@ sim tomcat-star
 		<obf_cascad>R</obf_cascad>
 		<obf_card>0,n</obf_card>
 		<obf_query/>
+		<obf_filters/>
 		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
 		<obf_copy>0</obf_copy>
@@ -6288,7 +6637,6 @@ sim tomcat-star
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image/>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -6298,6 +6646,9 @@ sim tomcat-star
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
+		<act_color/>
+		<act_color_bg/>
+		<act_image/>
 	</data>
 	<data>
 		<act_name>ARTPICSTATE-SELLING-STORED</act_name>
@@ -6307,7 +6658,6 @@ sim tomcat-star
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image/>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -6317,6 +6667,9 @@ sim tomcat-star
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
+		<act_color/>
+		<act_color_bg/>
+		<act_image/>
 	</data>
 	<data>
 		<act_name>ARTPICSTATE-SOLD-SELLING</act_name>
@@ -6326,7 +6679,6 @@ sim tomcat-star
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image/>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -6336,6 +6688,9 @@ sim tomcat-star
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
+		<act_color/>
+		<act_color_bg/>
+		<act_image/>
 	</data>
 	<data>
 		<act_name>ARTPICSTATE-SOLD-STORED</act_name>
@@ -6345,7 +6700,6 @@ sim tomcat-star
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image/>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -6355,6 +6709,9 @@ sim tomcat-star
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
+		<act_color/>
+		<act_color_bg/>
+		<act_image/>
 	</data>
 	<data>
 		<act_name>ARTPICSTATE-STORED-SELLING</act_name>
@@ -6364,7 +6721,6 @@ sim tomcat-star
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image/>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -6374,6 +6730,9 @@ sim tomcat-star
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
+		<act_color/>
+		<act_color_bg/>
+		<act_image/>
 	</data>
 	<data>
 		<act_name>ARTPICSTATE-STORED-SOLD</act_name>
@@ -6383,7 +6742,6 @@ sim tomcat-star
 		<act_method/>
 		<act_script/>
 		<act_url/>
-		<act_image/>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -6393,6 +6751,9 @@ sim tomcat-star
 		<act_exec>NUL</act_exec>
 		<act_count/>
 		<act_order/>
+		<act_color/>
+		<act_color_bg/>
+		<act_image/>
 	</data>
 	<data>
 		<act_name>calculateEstimatedPrice</act_name>
@@ -6402,7 +6763,6 @@ sim tomcat-star
 		<act_method>calculateCalculatedPrice</act_method>
 		<act_script/>
 		<act_url/>
-		<act_image>fas/calculator</act_image>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -6412,6 +6772,9 @@ sim tomcat-star
 		<act_exec>BCK</act_exec>
 		<act_count/>
 		<act_order/>
+		<act_color/>
+		<act_color_bg/>
+		<act_image>fas/calculator</act_image>
 	</data>
 	<data>
 		<act_name>calculateTotal</act_name>
@@ -6421,7 +6784,6 @@ sim tomcat-star
 		<act_method>calculateTotal</act_method>
 		<act_script/>
 		<act_url/>
-		<act_image>img/color/service_bell</act_image>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -6431,6 +6793,9 @@ sim tomcat-star
 		<act_exec>BCK</act_exec>
 		<act_count/>
 		<act_order/>
+		<act_color/>
+		<act_color_bg/>
+		<act_image>img/color/service_bell</act_image>
 	</data>
 	<data>
 		<act_name>reIndexAll</act_name>
@@ -6440,7 +6805,6 @@ sim tomcat-star
 		<act_method>reIndexAll</act_method>
 		<act_script/>
 		<act_url/>
-		<act_image/>
 		<act_confirm>1</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -6450,29 +6814,14 @@ sim tomcat-star
 		<act_exec>BCK</act_exec>
 		<act_count>0</act_count>
 		<act_order/>
+		<act_color/>
+		<act_color_bg/>
+		<act_image/>
 	</data>
 </object>
 <object>
 	<name>Function</name>
 	<action>upsert</action>
-	<data>
-		<fct_name>_CALCULATE_CALCULATED_PRICE_A</fct_name>
-		<fct_object_id.obj_type/>
-		<fct_object_id.obj_name/>
-		<fct_function>A</fct_function>
-		<fct_action_id.act_name>calculateEstimatedPrice</fct_action_id.act_name>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<fct_name>_CALCULATE_TOTAL_A</fct_name>
-		<fct_object_id.obj_type/>
-		<fct_object_id.obj_name/>
-		<fct_function>A</fct_function>
-		<fct_action_id.act_name>calculateTotal</fct_action_id.act_name>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
 	<data>
 		<fct_name>ART_ARTIL_D</fct_name>
 		<fct_object_id.obj_type>D</fct_object_id.obj_type>
@@ -6877,16 +7226,6 @@ sim tomcat-star
 		<grt_function_id.fct_object_id.obj_name>ArtTechnique</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>CMS</grt_function_id.fct_function>
-		<grt_activ>1</grt_activ>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<grt_group_id.grp_name>ART_READONLY</grt_group_id.grp_name>
-		<grt_function_id.fct_name>_CALCULATE_CALCULATED_PRICE_A</grt_function_id.fct_name>
-		<grt_function_id.fct_object_id.obj_type/>
-		<grt_function_id.fct_object_id.obj_name/>
-		<grt_function_id.fct_action_id.act_name>calculateEstimatedPrice</grt_function_id.fct_action_id.act_name>
-		<grt_function_id.fct_function>A</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -7352,6 +7691,7 @@ sim tomcat-star
 		<vwi_show/>
 		<vwi_url><![CDATA[[EXPR:HTMLTool.getExternalObjectURL("MDViewer", "doc=ARTIL_DOC")]]]></vwi_url>
 		<vwi_image/>
+		<vwi_subview_id.viw_name/>
 		<vwi_treeview_id.trv_name/>
 		<vwi_crosstab_id.ctb_name/>
 		<vwi_printtmpl_id.prt_name/>
@@ -7371,6 +7711,7 @@ sim tomcat-star
 		<vwi_show/>
 		<vwi_url><![CDATA[[EXPR:HTMLTool.getExternalObjectURL("ArtImageRecognition")]]]></vwi_url>
 		<vwi_image/>
+		<vwi_subview_id.viw_name/>
 		<vwi_treeview_id.trv_name/>
 		<vwi_crosstab_id.ctb_name/>
 		<vwi_printtmpl_id.prt_name/>
@@ -7403,7 +7744,6 @@ sim tomcat-star
 		<dsp_value><![CDATA[100000]]></dsp_value>
 		<dsp_param_id.sys_type>APP</dsp_param_id.sys_type>
 		<dsp_param_id.sys_value><![CDATA[100]]></dsp_param_id.sys_value>
-		<dsp_param_id.sys_value2/>
 		<dsp_param_id.sys_desc><![CDATA[Upload file: transfer size limitation in megabytes (Mb).]]></dsp_param_id.sys_desc>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -7413,7 +7753,6 @@ sim tomcat-star
 		<dsp_value><![CDATA[[VERSION:Artil]]]></dsp_value>
 		<dsp_param_id.sys_type>LFL</dsp_param_id.sys_type>
 		<dsp_param_id.sys_value><![CDATA[1.0.0]]></dsp_param_id.sys_value>
-		<dsp_param_id.sys_value2/>
 		<dsp_param_id.sys_desc><![CDATA[Application version (HTML syntax can be used).]]></dsp_param_id.sys_desc>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -9789,9 +10128,9 @@ sim tomcat-star
 	<action>upsert</action>
 	<data>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-		<dt_name>Test data</dt_name>
-		<dt_file>data/Test data.zip</dt_file>
-		<dt_desc><![CDATA[Created by module's data export on 2021-04-23 10:25:01]]></dt_desc>
+		<dt_name>Artil-data-20240730102134</dt_name>
+		<dt_file>data/Artil-data-20240730102134.zip</dt_file>
+		<dt_desc><![CDATA[Created by module's data export on 2024-07-30 10:21:34]]></dt_desc>
 	</data>
 </object>
 </simplicite>

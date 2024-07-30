@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: Artil 1.13
+#             |_| Module: Artil 1.14
 basePath: /api
 paths:
   /rest/ArtTag:
@@ -3369,7 +3369,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module Artil
   title: Artil
-  version: '1.13'
+  version: '1.14'
 tags:
 - name: ArtArtist
   description: Artist

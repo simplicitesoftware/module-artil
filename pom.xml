@@ -7,21 +7,21 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.simplicite.modules</groupId>
-  <version>1.13-SNAPSHOT</version>
+  <version>1.14-SNAPSHOT</version>
   <artifactId>Artil</artifactId>
   <name>Artil</name>
   <description>Simplicite module: Artil</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <simplicite.url>https://migartil.sca.simplicite.io</simplicite.url>
-    <simplicite.version>5.2-SNAPSHOT</simplicite.version>
+    <simplicite.version>5.3-SNAPSHOT</simplicite.version>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
     <sonar.projectKey>simplicite-modules-Artil</sonar.projectKey>
     <sonar.projectName>Artil</sonar.projectName>
-    <sonar.projectVersion>1.13</sonar.projectVersion>
+    <sonar.projectVersion>1.14</sonar.projectVersion>
     <sonar.sources>src,resources</sonar.sources>
-    <sonar.exclusions>**.min.js,**.min.css</sonar.exclusions>
+    <sonar.exclusions>Artil.xml,Artil.json,Artil-*.yml,configuration/**,**.min.js,**.min.css</sonar.exclusions>
     <sonar.coverage.exclusions>resources/**.js,src/**.java</sonar.coverage.exclusions>
   </properties>
   <packaging>jar</packaging>
@@ -79,12 +79,6 @@ ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
       <artifactId>simplicite-api</artifactId>
       <version>${simplicite.version}</version>
       <classifier>javadoc</classifier>
-    </dependency>
-    <dependency>
-      <groupId>com.simplicite</groupId>
-      <artifactId>simplicite-api</artifactId>
-      <version>${simplicite.version}</version>
-      <classifier>sources</classifier>
     </dependency>
   </dependencies>
 </project>
