@@ -5,7 +5,7 @@
 |___/_|_|_|_| .__/_|_\__|_|\__\___|
             |_| 
 -->
-![](https://docs.simplicite.io//logos/logo250.png)
+![](https://platform.simplicite.io/logos/standard/logo250.png)
 * * *
 
 `Artil` module definition
@@ -234,18 +234,18 @@ Piece of art
 | _Ref. `artPicinvPicId.artPicCode`_                           | _char(20)_                               |          |           |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicTitle`_                          | _char(200)_                              |          |           |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicTecId`_                          | _id_                                     |          |           |          | -                                                                                |
-| _Ref. `artPicinvPicId.artPicHeight`_                         | _float(7, 2)_                            |          |           |          | -                                                                                |
 | _Ref. `artPicTecId.artTecName`_                              | _char(250)_                              |          |           |          | -                                                                                |
+| _Ref. `artPicinvPicId.artPicHeight`_                         | _float(7, 2)_                            |          |           |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicWidth`_                          | _float(7, 2)_                            |          |           |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicYear`_                           | _int(4)_                                 |          |           |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicPicture`_                        | _image_                                  |          |           |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicPrice`_                          | _float(9, 2)_                            |          |           |          | _Estimated price_                                                                |
 | _Ref. `artPicinvPicId.artPicEstimatedPrice`_                 | _float(100, 2)_                          |          |           |          | -                                                                                |
-| _Ref. `artPicinvPicId.artPicArtistId`_                       | _id_                                     |          |           |          | -                                                                                |
 | `artPicinvInvId` link to **`ArtInvoice`**                    | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `artPicinvPicId.artPicArtistId`_                       | _id_                                     |          |           |          | -                                                                                |
 | _Ref. `artPicArtistId.artArtLastname`_                       | _char(50)_                               |          |           |          | -                                                                                |
-| _Ref. `artPicArtistId.artArtFirstname`_                      | _char(50)_                               |          |           |          | -                                                                                |
 | _Ref. `artPicinvInvId.artInvCode`_                           | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `artPicArtistId.artArtFirstname`_                      | _char(50)_                               |          |           |          | -                                                                                |
 | `artPicinvPrice`                                             | float(100, 2)                            |          | yes       |          | -                                                                                |
 
 `ArtImageRecognition` external object definition

@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: Artil 1.14
+#             |_| Module: Artil 1.15
 components:
   schemas:
     Error404:
@@ -177,7 +177,7 @@ components:
           description: Comments
           type: string
         artPicPlaceId:
-          description: Place|Places
+          description: Place
           type: string
         artPicEstimatedPrice:
           description: Estimated Price
@@ -710,14 +710,14 @@ paths:
       - schema:
           type: string
         in: query
-        name: artPicinvInvId__artInvCode
-        description: Search filter for Invoice Code
+        name: artPicinvPicId__artPicArtistId__artArtLastname
+        description: Search filter for Artist Lastname
         required: false
       - schema:
           type: string
         in: query
-        name: artPicinvPicId__artPicArtistId__artArtLastname
-        description: Search filter for Artist Lastname
+        name: artPicinvInvId__artInvCode
+        description: Search filter for Invoice Code
         required: false
       - schema:
           type: string
@@ -1671,7 +1671,7 @@ paths:
           type: string
         in: query
         name: artPicPlaceId
-        description: Search filter for Place|Places
+        description: Search filter for Place
         required: false
       - schema:
           type: string
@@ -3940,7 +3940,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module Artil
   title: Artil
-  version: '1.14'
+  version: '1.15'
 tags:
 - name: ArtArtist
   description: Artist
