@@ -47,6 +47,7 @@ sim tomcat-star
 | `artArtFirstname`                                            | char(50)                                 | *        | yes       |          | -                                                                                |
 | `artArtYear`                                                 | int(4)                                   |          | yes       |          | Year of birth                                                                    |
 | `artArtRatingFormula`                                        | text(1000)                               |          | yes       |          | -                                                                                |
+| `artBiography`                                               | text(100)                                |          | yes       |          | -                                                                                |
 
 `ArtOwner` business object definition
 -------------------------------------
@@ -81,6 +82,7 @@ sim tomcat-star
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `artTecName`                                                 | char(250)                                | yes*     | yes       |          | -                                                                                |
+| `artTecAltName`                                              | char(250)                                |          | yes       |          | -                                                                                |
 
 `ArtPiece` business object definition
 -------------------------------------
@@ -101,6 +103,7 @@ Piece of art
 | _Ref. `artPicTecId.artTecName`_                              | _char(250)_                              |          |           |          | -                                                                                |
 | `artPicHeight`                                               | float(7, 2)                              |          | yes       |          | -                                                                                |
 | `artPicWidth`                                                | float(7, 2)                              |          | yes       |          | -                                                                                |
+| `artPicDepth`                                                | float(100, 2)                            |          | yes       |          | -                                                                                |
 | `artPicSigned`                                               | enum(1) using `ART_ENUM_BOOL` list       | yes      | yes       |          | -                                                                                |
 | `artPicPicture`                                              | image                                    |          | yes       |          | -                                                                                |
 | `artPicState`                                                | enum(30) using `ARTPICSTATE` list        | yes      | yes       |          | -                                                                                |
@@ -234,8 +237,8 @@ Piece of art
 | _Ref. `artPicinvPicId.artPicCode`_                           | _char(20)_                               |          |           |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicTitle`_                          | _char(200)_                              |          |           |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicTecId`_                          | _id_                                     |          |           |          | -                                                                                |
-| _Ref. `artPicTecId.artTecName`_                              | _char(250)_                              |          |           |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicHeight`_                         | _float(7, 2)_                            |          |           |          | -                                                                                |
+| _Ref. `artPicTecId.artTecName`_                              | _char(250)_                              |          |           |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicWidth`_                          | _float(7, 2)_                            |          |           |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicYear`_                           | _int(4)_                                 |          |           |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicPicture`_                        | _image_                                  |          |           |          | -                                                                                |
@@ -244,8 +247,8 @@ Piece of art
 | `artPicinvInvId` link to **`ArtInvoice`**                    | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicArtistId`_                       | _id_                                     |          |           |          | -                                                                                |
 | _Ref. `artPicArtistId.artArtLastname`_                       | _char(50)_                               |          |           |          | -                                                                                |
-| _Ref. `artPicinvInvId.artInvCode`_                           | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `artPicArtistId.artArtFirstname`_                      | _char(50)_                               |          |           |          | -                                                                                |
+| _Ref. `artPicinvInvId.artInvCode`_                           | _char(100)_                              |          |           |          | -                                                                                |
 | `artPicinvPrice`                                             | float(100, 2)                            |          | yes       |          | -                                                                                |
 
 `ArtImageRecognition` external object definition
