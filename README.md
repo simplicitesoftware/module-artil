@@ -45,9 +45,11 @@ sim tomcat-star
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
 | `artArtLastname`                                             | char(50)                                 | yes*     | yes       |          | -                                                                                |
 | `artArtFirstname`                                            | char(50)                                 | *        | yes       |          | -                                                                                |
+| `artOrigin`                                                  | char(250)                                |          | yes       |          | -                                                                                |
 | `artArtYear`                                                 | int(4)                                   |          | yes       |          | Year of birth                                                                    |
 | `artArtRatingFormula`                                        | text(1000)                               |          | yes       |          | -                                                                                |
-| `artBiography`                                               | text(100)                                |          | yes       |          | -                                                                                |
+| `artBiography`                                               | text(10000)                              |          | yes       |          | -                                                                                |
+| `artCurriculum`                                              | text(10000)                              |          | yes       |          | -                                                                                |
 
 `ArtOwner` business object definition
 -------------------------------------
@@ -147,11 +149,20 @@ Piece of art
 
 | Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
 |--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `artExbTitle`                                                | char(255)                                |          | yes       |          | -                                                                                |
 | `artExbDate`                                                 | date                                     | yes*     | yes       |          | -                                                                                |
+| `artExbClosingDate`                                          | date                                     |          | yes       |          | -                                                                                |
 | `artExbPlcId` link to **`ArtPlace`**                         | id                                       |          | yes       |          | -                                                                                |
 | _Ref. `artExbPlcId.artPlcName`_                              | _char(50)_                               |          |           |          | -                                                                                |
 | `artExbCommissaire`                                          | char(100)                                |          | yes       |          | -                                                                                |
 | `artExbDescrition`                                           | html(10000)                              |          | yes       |          | -                                                                                |
+| `artExbType`                                                 | enum(100) using `ART_EXB_TYPE` list      |          | yes       |          | -                                                                                |
+
+### Lists
+
+* `ART_EXB_TYPE`
+    - `SOLO` Solo exhibition
+    - `GROUP` Group exhibition
 
 `ArtExbPic` business object definition
 --------------------------------------

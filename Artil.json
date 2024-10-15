@@ -59,7 +59,7 @@
      },
      "thm_addon": {
       "path": "files/Theme/ArtTheme2/addon.less",
-      "mime": "text/less",
+      "mime": "text/x-less",
       "name": "addon.less"
      },
      "thm_searchbox": null,
@@ -83,7 +83,7 @@
      "row_module_id__mdl_name": "Artil",
      "thm_const": {
       "path": "files/Theme/ArtTheme2/const.less",
-      "mime": "text/less",
+      "mime": "text/x-less",
       "name": "const.less"
      }
     }
@@ -160,7 +160,7 @@
      "mod_doc": {
       "path": "files/Model/Artil.svg",
       "mime": "image/svg+xml",
-      "name": "Artil.svg"
+      "name": "model.svg"
      },
      "mod_image": {
       "path": "files/Model/Artil.png",
@@ -266,6 +266,17 @@
     },
     {
      "object": "FieldList",
+     "userkey": "ART_EXB_TYPE",
+     "item": {
+      "lov_name": "ART_EXB_TYPE",
+      "lov_navbar": null,
+      "lov_navbar_opt": null,
+      "row_module_id__mdl_name": "Artil",
+      "lov_model_id__mod_name": null
+     }
+    },
+    {
+     "object": "FieldList",
      "userkey": "ARTINVSTATE",
      "item": {
       "lov_name": "ARTINVSTATE",
@@ -332,6 +343,36 @@
       "lov_code": "0",
       "lov_order_by": 3,
       "lov_label": "FALSE",
+      "row_module_id__mdl_name": "Artil",
+      "lov_color": null,
+      "lov_color_bg": null,
+      "lov_icon": null,
+      "lov_display": ["L"]
+     }
+    },
+    {
+     "object": "FieldListCode",
+     "userkey": "ART_EXB_TYPE SOLO",
+     "item": {
+      "lov_list_id__lov_name": "ART_EXB_TYPE",
+      "lov_code": "SOLO",
+      "lov_order_by": 10,
+      "lov_label": "Solo exhibition",
+      "row_module_id__mdl_name": "Artil",
+      "lov_color": null,
+      "lov_color_bg": null,
+      "lov_icon": null,
+      "lov_display": ["L"]
+     }
+    },
+    {
+     "object": "FieldListCode",
+     "userkey": "ART_EXB_TYPE GROUP",
+     "item": {
+      "lov_list_id__lov_name": "ART_EXB_TYPE",
+      "lov_code": "GROUP",
+      "lov_order_by": 20,
+      "lov_label": "Group exhibition",
       "row_module_id__mdl_name": "Artil",
       "lov_color": null,
       "lov_color_bg": null,
@@ -505,6 +546,50 @@
     },
     {
      "object": "FieldListValue",
+     "userkey": "ART_EXB_TYPE SOLO English",
+     "item": {
+      "lov_code_id__lov_list_id__lov_name": "ART_EXB_TYPE",
+      "lov_code_id__lov_code": "SOLO",
+      "lov_lang": "ENU",
+      "lov_value": "Solo",
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "FieldListValue",
+     "userkey": "ART_EXB_TYPE GROUP English",
+     "item": {
+      "lov_code_id__lov_list_id__lov_name": "ART_EXB_TYPE",
+      "lov_code_id__lov_code": "GROUP",
+      "lov_lang": "ENU",
+      "lov_value": "Group",
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "FieldListValue",
+     "userkey": "ART_EXB_TYPE SOLO French",
+     "item": {
+      "lov_code_id__lov_list_id__lov_name": "ART_EXB_TYPE",
+      "lov_code_id__lov_code": "SOLO",
+      "lov_lang": "FRA",
+      "lov_value": "Solo",
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "FieldListValue",
+     "userkey": "ART_EXB_TYPE GROUP French",
+     "item": {
+      "lov_code_id__lov_list_id__lov_name": "ART_EXB_TYPE",
+      "lov_code_id__lov_code": "GROUP",
+      "lov_lang": "FRA",
+      "lov_value": "Group",
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "FieldListValue",
      "userkey": "ARTINVSTATE SENT English",
      "item": {
       "lov_code_id__lov_list_id__lov_name": "ARTINVSTATE",
@@ -587,7 +672,7 @@
       "lov_code_id__lov_list_id__lov_name": "ARTPICSTATE",
       "lov_code_id__lov_code": "SELLING",
       "lov_lang": "ENU",
-      "lov_value": "SELLING",
+      "lov_value": "FOR SALE",
       "row_module_id__mdl_name": "Artil"
      }
     },
@@ -598,7 +683,7 @@
       "lov_code_id__lov_list_id__lov_name": "ARTPICSTATE",
       "lov_code_id__lov_code": "STORED",
       "lov_lang": "ENU",
-      "lov_value": "STORED",
+      "lov_value": "UNAVAILABLE",
       "row_module_id__mdl_name": "Artil"
      }
     },
@@ -609,7 +694,7 @@
       "lov_code_id__lov_list_id__lov_name": "ARTPICSTATE",
       "lov_code_id__lov_code": "STORED",
       "lov_lang": "FRA",
-      "lov_value": "Stocké",
+      "lov_value": "INDISPONIBLE",
       "row_module_id__mdl_name": "Artil"
      }
     },
@@ -620,7 +705,7 @@
       "lov_code_id__lov_list_id__lov_name": "ARTPICSTATE",
       "lov_code_id__lov_code": "SELLING",
       "lov_lang": "FRA",
-      "lov_value": "En vente",
+      "lov_value": "EN VENTE",
       "row_module_id__mdl_name": "Artil"
      }
     },
@@ -631,7 +716,7 @@
       "lov_code_id__lov_list_id__lov_name": "ARTPICSTATE",
       "lov_code_id__lov_code": "SOLD",
       "lov_lang": "FRA",
-      "lov_value": "Vendu",
+      "lov_value": "VENDU",
       "row_module_id__mdl_name": "Artil"
      }
     }
@@ -743,16 +828,16 @@
       "fld_dbname": "art_art_rating_formula",
       "fld_visible": "2",
       "fld_updatable": [
-       "2",
-       "3"
+       "3",
+       "2"
       ],
       "fld_required": false,
       "fld_fonctid": false,
       "fld_research": "1",
       "fld_researchreq": "0",
       "fld_sort": "C",
-      "fld_more": false,
-      "fld_listmore": false,
+      "fld_more": true,
+      "fld_listmore": true,
       "fld_listsum": null,
       "fld_exportable": true,
       "fld_tray": null,
@@ -844,7 +929,7 @@
       "fld_researchreq": "0",
       "fld_sort": "C",
       "fld_more": false,
-      "fld_listmore": false,
+      "fld_listmore": true,
       "fld_listsum": null,
       "fld_exportable": true,
       "fld_tray": null,
@@ -852,7 +937,99 @@
       "fld_type_id__flt_code": null,
       "fld_list_id__lov_name": null,
       "fld_copy": true,
-      "fld_size": 100,
+      "fld_size": 10000,
+      "fld_minsize": null,
+      "fld_precision": "h=20",
+      "fld_fromdate_id__fld_name": null,
+      "fld_dfault": null,
+      "fld_indexable": false,
+      "fld_autocomp": "0",
+      "fld_groupby": false,
+      "fld_updall": true,
+      "fld_case": null,
+      "fld_righttoleft": false,
+      "fld_rendering": null,
+      "fld_speech": null,
+      "fld_calc": null,
+      "fld_objlist": null,
+      "fld_comment": null,
+      "fld_classification": null,
+      "row_module_id__mdl_name": "Artil",
+      "fld_incrementsyntax": null
+     }
+    },
+    {
+     "object": "Field",
+     "userkey": "artCurriculum",
+     "item": {
+      "fld_name": "artCurriculum",
+      "fld_dbname": "art_curriculum",
+      "fld_visible": "3",
+      "fld_updatable": [
+       "3",
+       "2"
+      ],
+      "fld_required": false,
+      "fld_fonctid": false,
+      "fld_research": "1",
+      "fld_researchreq": "0",
+      "fld_sort": "C",
+      "fld_more": false,
+      "fld_listmore": true,
+      "fld_listsum": null,
+      "fld_exportable": true,
+      "fld_tray": null,
+      "fld_type": "13",
+      "fld_type_id__flt_code": null,
+      "fld_list_id__lov_name": null,
+      "fld_copy": true,
+      "fld_size": 10000,
+      "fld_minsize": null,
+      "fld_precision": "h=20",
+      "fld_fromdate_id__fld_name": null,
+      "fld_dfault": null,
+      "fld_indexable": false,
+      "fld_autocomp": "0",
+      "fld_groupby": false,
+      "fld_updall": true,
+      "fld_case": null,
+      "fld_righttoleft": false,
+      "fld_rendering": null,
+      "fld_speech": null,
+      "fld_calc": null,
+      "fld_objlist": null,
+      "fld_comment": null,
+      "fld_classification": null,
+      "row_module_id__mdl_name": "Artil",
+      "fld_incrementsyntax": null
+     }
+    },
+    {
+     "object": "Field",
+     "userkey": "artExbClosingDate",
+     "item": {
+      "fld_name": "artExbClosingDate",
+      "fld_dbname": "art_exb_closing_date",
+      "fld_visible": "3",
+      "fld_updatable": [
+       "3",
+       "2"
+      ],
+      "fld_required": false,
+      "fld_fonctid": false,
+      "fld_research": "1",
+      "fld_researchreq": "0",
+      "fld_sort": "C",
+      "fld_more": false,
+      "fld_listmore": false,
+      "fld_listsum": null,
+      "fld_exportable": true,
+      "fld_tray": null,
+      "fld_type": "4",
+      "fld_type_id__flt_code": null,
+      "fld_list_id__lov_name": null,
+      "fld_copy": true,
+      "fld_size": 10,
       "fld_minsize": null,
       "fld_precision": null,
       "fld_fromdate_id__fld_name": null,
@@ -992,7 +1169,7 @@
       "fld_copy": true,
       "fld_size": 10000,
       "fld_minsize": null,
-      "fld_precision": null,
+      "fld_precision": "h=20",
       "fld_fromdate_id__fld_name": null,
       "fld_dfault": null,
       "fld_indexable": false,
@@ -1129,6 +1306,98 @@
       "fld_list_id__lov_name": null,
       "fld_copy": true,
       "fld_size": 11,
+      "fld_minsize": null,
+      "fld_precision": null,
+      "fld_fromdate_id__fld_name": null,
+      "fld_dfault": null,
+      "fld_indexable": false,
+      "fld_autocomp": "0",
+      "fld_groupby": false,
+      "fld_updall": true,
+      "fld_case": null,
+      "fld_righttoleft": false,
+      "fld_rendering": null,
+      "fld_speech": null,
+      "fld_calc": null,
+      "fld_objlist": null,
+      "fld_comment": null,
+      "fld_classification": null,
+      "row_module_id__mdl_name": "Artil",
+      "fld_incrementsyntax": null
+     }
+    },
+    {
+     "object": "Field",
+     "userkey": "artExbTitle",
+     "item": {
+      "fld_name": "artExbTitle",
+      "fld_dbname": "art_exb_title",
+      "fld_visible": "3",
+      "fld_updatable": [
+       "3",
+       "2"
+      ],
+      "fld_required": false,
+      "fld_fonctid": false,
+      "fld_research": "1",
+      "fld_researchreq": "0",
+      "fld_sort": "C",
+      "fld_more": false,
+      "fld_listmore": false,
+      "fld_listsum": null,
+      "fld_exportable": true,
+      "fld_tray": null,
+      "fld_type": "3",
+      "fld_type_id__flt_code": null,
+      "fld_list_id__lov_name": null,
+      "fld_copy": true,
+      "fld_size": 255,
+      "fld_minsize": null,
+      "fld_precision": null,
+      "fld_fromdate_id__fld_name": null,
+      "fld_dfault": null,
+      "fld_indexable": false,
+      "fld_autocomp": "0",
+      "fld_groupby": false,
+      "fld_updall": true,
+      "fld_case": null,
+      "fld_righttoleft": false,
+      "fld_rendering": null,
+      "fld_speech": null,
+      "fld_calc": null,
+      "fld_objlist": null,
+      "fld_comment": null,
+      "fld_classification": null,
+      "row_module_id__mdl_name": "Artil",
+      "fld_incrementsyntax": null
+     }
+    },
+    {
+     "object": "Field",
+     "userkey": "artExbType",
+     "item": {
+      "fld_name": "artExbType",
+      "fld_dbname": "art_exb_type",
+      "fld_visible": "3",
+      "fld_updatable": [
+       "3",
+       "2"
+      ],
+      "fld_required": false,
+      "fld_fonctid": false,
+      "fld_research": "1",
+      "fld_researchreq": "0",
+      "fld_sort": "C",
+      "fld_more": false,
+      "fld_listmore": false,
+      "fld_listsum": null,
+      "fld_exportable": true,
+      "fld_tray": null,
+      "fld_type": "7",
+      "fld_type_id__flt_code": null,
+      "fld_list_id__lov_name": "ART_EXB_TYPE",
+      "fld_copy": true,
+      "fld_size": 100,
       "fld_minsize": null,
       "fld_precision": null,
       "fld_fromdate_id__fld_name": null,
@@ -1562,6 +1831,52 @@
     },
     {
      "object": "Field",
+     "userkey": "artOrigin",
+     "item": {
+      "fld_name": "artOrigin",
+      "fld_dbname": "art_origin",
+      "fld_visible": "3",
+      "fld_updatable": [
+       "3",
+       "2"
+      ],
+      "fld_required": false,
+      "fld_fonctid": false,
+      "fld_research": "1",
+      "fld_researchreq": "0",
+      "fld_sort": "C",
+      "fld_more": false,
+      "fld_listmore": false,
+      "fld_listsum": null,
+      "fld_exportable": true,
+      "fld_tray": null,
+      "fld_type": "3",
+      "fld_type_id__flt_code": null,
+      "fld_list_id__lov_name": null,
+      "fld_copy": true,
+      "fld_size": 250,
+      "fld_minsize": null,
+      "fld_precision": null,
+      "fld_fromdate_id__fld_name": null,
+      "fld_dfault": null,
+      "fld_indexable": false,
+      "fld_autocomp": "0",
+      "fld_groupby": false,
+      "fld_updall": true,
+      "fld_case": null,
+      "fld_righttoleft": false,
+      "fld_rendering": null,
+      "fld_speech": null,
+      "fld_calc": null,
+      "fld_objlist": null,
+      "fld_comment": null,
+      "fld_classification": null,
+      "row_module_id__mdl_name": "Artil",
+      "fld_incrementsyntax": null
+     }
+    },
+    {
+     "object": "Field",
      "userkey": "artOwnName",
      "item": {
       "fld_name": "artOwnName",
@@ -1714,8 +2029,8 @@
       "fld_research": "1",
       "fld_researchreq": "0",
       "fld_sort": "C",
-      "fld_more": false,
-      "fld_listmore": false,
+      "fld_more": true,
+      "fld_listmore": true,
       "fld_listsum": null,
       "fld_exportable": true,
       "fld_tray": null,
@@ -1944,8 +2259,8 @@
       "fld_research": "1",
       "fld_researchreq": "0",
       "fld_sort": "C",
-      "fld_more": false,
-      "fld_listmore": false,
+      "fld_more": true,
+      "fld_listmore": true,
       "fld_listsum": "1",
       "fld_exportable": true,
       "fld_tray": null,
@@ -3077,98 +3392,6 @@
     },
     {
      "object": "Field",
-     "userkey": "artTecpicPicId",
-     "item": {
-      "fld_name": "artTecpicPicId",
-      "fld_dbname": "art_tecpic_pic_id",
-      "fld_visible": "3",
-      "fld_updatable": [
-       "2",
-       "3"
-      ],
-      "fld_required": true,
-      "fld_fonctid": true,
-      "fld_research": "1",
-      "fld_researchreq": "0",
-      "fld_sort": "C",
-      "fld_more": false,
-      "fld_listmore": false,
-      "fld_listsum": null,
-      "fld_exportable": true,
-      "fld_tray": null,
-      "fld_type": "0",
-      "fld_type_id__flt_code": null,
-      "fld_list_id__lov_name": null,
-      "fld_copy": true,
-      "fld_size": 11,
-      "fld_minsize": null,
-      "fld_precision": null,
-      "fld_fromdate_id__fld_name": null,
-      "fld_dfault": null,
-      "fld_indexable": false,
-      "fld_autocomp": "0",
-      "fld_groupby": false,
-      "fld_updall": true,
-      "fld_case": null,
-      "fld_righttoleft": false,
-      "fld_rendering": null,
-      "fld_speech": null,
-      "fld_calc": null,
-      "fld_objlist": null,
-      "fld_comment": null,
-      "fld_classification": null,
-      "row_module_id__mdl_name": "Artil",
-      "fld_incrementsyntax": null
-     }
-    },
-    {
-     "object": "Field",
-     "userkey": "artTecpicTecId",
-     "item": {
-      "fld_name": "artTecpicTecId",
-      "fld_dbname": "art_tecpic_tec_id",
-      "fld_visible": "3",
-      "fld_updatable": [
-       "2",
-       "3"
-      ],
-      "fld_required": true,
-      "fld_fonctid": true,
-      "fld_research": "1",
-      "fld_researchreq": "0",
-      "fld_sort": "C",
-      "fld_more": false,
-      "fld_listmore": false,
-      "fld_listsum": null,
-      "fld_exportable": true,
-      "fld_tray": null,
-      "fld_type": "0",
-      "fld_type_id__flt_code": null,
-      "fld_list_id__lov_name": null,
-      "fld_copy": true,
-      "fld_size": 11,
-      "fld_minsize": null,
-      "fld_precision": null,
-      "fld_fromdate_id__fld_name": null,
-      "fld_dfault": null,
-      "fld_indexable": false,
-      "fld_autocomp": "0",
-      "fld_groupby": false,
-      "fld_updall": true,
-      "fld_case": null,
-      "fld_righttoleft": false,
-      "fld_rendering": null,
-      "fld_speech": null,
-      "fld_calc": null,
-      "fld_objlist": null,
-      "fld_comment": null,
-      "fld_classification": null,
-      "row_module_id__mdl_name": "Artil",
-      "fld_incrementsyntax": null
-     }
-    },
-    {
-     "object": "Field",
      "userkey": "artTpPieceId",
      "item": {
       "fld_name": "artTpPieceId",
@@ -3462,7 +3685,7 @@
       "ofa_name": "ArtArtist-1",
       "ofa_position": 1,
       "ofa_title": false,
-      "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artArtFirstname\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artArtLastname\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artArtYear\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"field\" data-field=\"artArtRatingFormula\"><\/div>\n  <div class=\"field\" data-field=\"artBiography\"><\/div>\n<\/div>",
+      "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artArtFirstname\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artArtLastname\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artOrigin\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artArtYear\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"field\" data-field=\"artBiography\"><\/div>\n  <div class=\"field\" data-field=\"artCurriculum\"><\/div>\n  <div class=\"field\" data-field=\"artArtRatingFormula\"><\/div>\n<\/div>",
       "ofa_icon": null,
       "row_module_id__mdl_name": "Artil"
      }
@@ -3486,7 +3709,7 @@
       "ofa_name": "ArtExhibition-Main",
       "ofa_position": 1,
       "ofa_title": false,
-      "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artExbDate\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artExbCommissaire\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"field\" data-field=\"artExbDescrition\"><\/div>\n<\/div>",
+      "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artExbDate\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artExbClosingDate\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"field\" data-field=\"artExbPlcId__artPlcName\"><\/div>\n  <div class=\"field\" data-field=\"artExbTitle\"><\/div>\n  <div class=\"field\" data-field=\"artExbCommissaire\"><\/div>\n  <div class=\"field\" data-field=\"artExbType\"><\/div>\n  <div class=\"field\" data-field=\"artExbDescrition\"><\/div>\n<\/div>",
       "ofa_icon": null,
       "row_module_id__mdl_name": "Artil"
      }
@@ -3618,7 +3841,7 @@
       "ofa_name": "ArtPiece-Price",
       "ofa_position": 3,
       "ofa_title": true,
-      "ofa_ui": "<div class=\"row\">\n  <div class=\"col-sm-6\">\n    <div class=\"field\" data-field=\"artPicPrice\"><\/div>\n  <\/div>\n  <div class=\"col-sm-6\">\n    <div class=\"field\" data-field=\"artPicEstimatedPrice\"><\/div>\n    <div class=\"action\" data-action=\"calculateEstimatedPrice\" data-size=\"btn-sm\" data-style=\"bluebg\"><\/div>\n  <\/div>\n<\/div>",
+      "ofa_ui": "<div class=\"row\">\n  <div class=\"col-sm-6\">\n    <div class=\"field\" data-field=\"artPicPrice\"><\/div>\n  <\/div>\n  <div class=\"col-sm-6\">\n    <div class=\"field\" data-field=\"artPicEstimatedPrice\"><\/div>\n  <\/div>\n<\/div>",
       "ofa_icon": "money",
       "row_module_id__mdl_name": "Artil"
      }
@@ -3755,8 +3978,8 @@
       "obo_btn_del": "P",
       "obo_btn_copy": "P",
       "obo_btn_export": "P",
-      "obo_btn_listadd": "1",
-      "obo_btn_listedit": "1",
+      "obo_btn_listadd": "P",
+      "obo_btn_listedit": "P",
       "obo_btn_listupsert": "1",
       "obo_btn_updall": "P",
       "obo_btn_delall": "P",
@@ -3834,8 +4057,8 @@
       "obo_btn_del": "P",
       "obo_btn_copy": "P",
       "obo_btn_export": "P",
-      "obo_btn_listadd": "1",
-      "obo_btn_listedit": "1",
+      "obo_btn_listadd": "P",
+      "obo_btn_listedit": "P",
       "obo_btn_listupsert": "1",
       "obo_btn_updall": "P",
       "obo_btn_delall": "P",
@@ -3913,8 +4136,8 @@
       "obo_btn_del": "P",
       "obo_btn_copy": "P",
       "obo_btn_export": "P",
-      "obo_btn_listadd": "1",
-      "obo_btn_listedit": "1",
+      "obo_btn_listadd": "P",
+      "obo_btn_listedit": "P",
       "obo_btn_listupsert": "1",
       "obo_btn_updall": "P",
       "obo_btn_delall": "P",
@@ -3996,8 +4219,8 @@
       "obo_btn_del": "P",
       "obo_btn_copy": "P",
       "obo_btn_export": "P",
-      "obo_btn_listadd": "1",
-      "obo_btn_listedit": "1",
+      "obo_btn_listadd": "P",
+      "obo_btn_listedit": "P",
       "obo_btn_listupsert": "1",
       "obo_btn_updall": "P",
       "obo_btn_delall": "P",
@@ -4075,8 +4298,8 @@
       "obo_btn_del": "P",
       "obo_btn_copy": "P",
       "obo_btn_export": "P",
-      "obo_btn_listadd": "1",
-      "obo_btn_listedit": "1",
+      "obo_btn_listadd": "P",
+      "obo_btn_listedit": "P",
       "obo_btn_listupsert": "1",
       "obo_btn_updall": "P",
       "obo_btn_delall": "P",
@@ -4158,8 +4381,8 @@
       "obo_btn_del": "P",
       "obo_btn_copy": "P",
       "obo_btn_export": "P",
-      "obo_btn_listadd": "1",
-      "obo_btn_listedit": "1",
+      "obo_btn_listadd": "P",
+      "obo_btn_listedit": "P",
       "obo_btn_listupsert": "1",
       "obo_btn_updall": "P",
       "obo_btn_delall": "P",
@@ -4243,8 +4466,8 @@
       "obo_btn_del": "P",
       "obo_btn_copy": "P",
       "obo_btn_export": "P",
-      "obo_btn_listadd": "1",
-      "obo_btn_listedit": "1",
+      "obo_btn_listadd": "P",
+      "obo_btn_listedit": "P",
       "obo_btn_listupsert": "1",
       "obo_btn_updall": "P",
       "obo_btn_delall": "P",
@@ -4322,8 +4545,8 @@
       "obo_btn_del": "P",
       "obo_btn_copy": "P",
       "obo_btn_export": "P",
-      "obo_btn_listadd": "1",
-      "obo_btn_listedit": "1",
+      "obo_btn_listadd": "P",
+      "obo_btn_listedit": "P",
       "obo_btn_listupsert": "1",
       "obo_btn_updall": "P",
       "obo_btn_delall": "P",
@@ -4404,8 +4627,8 @@
       "obo_btn_del": "P",
       "obo_btn_copy": "P",
       "obo_btn_export": "P",
-      "obo_btn_listadd": "1",
-      "obo_btn_listedit": "1",
+      "obo_btn_listadd": "P",
+      "obo_btn_listedit": "P",
       "obo_btn_listupsert": "1",
       "obo_btn_updall": "P",
       "obo_btn_delall": "P",
@@ -4479,8 +4702,8 @@
       "obo_btn_del": "P",
       "obo_btn_copy": "P",
       "obo_btn_export": "P",
-      "obo_btn_listadd": "1",
-      "obo_btn_listedit": "1",
+      "obo_btn_listadd": "P",
+      "obo_btn_listedit": "P",
       "obo_btn_listupsert": "1",
       "obo_btn_updall": "P",
       "obo_btn_delall": "P",
@@ -4558,8 +4781,8 @@
       "obo_btn_del": "P",
       "obo_btn_copy": "P",
       "obo_btn_export": "P",
-      "obo_btn_listadd": "1",
-      "obo_btn_listedit": "1",
+      "obo_btn_listadd": "P",
+      "obo_btn_listedit": "P",
       "obo_btn_listupsert": "1",
       "obo_btn_updall": "P",
       "obo_btn_delall": "P",
@@ -4633,6 +4856,41 @@
       "obf_object_id__obo_name": "ArtArtist",
       "obf_field_id__fld_name": "artArtFirstname",
       "obf_order": 10,
+      "obf_group_by": null,
+      "obf_dfault_order": null,
+      "obf_input": null,
+      "obf_ref_field_id__fld_name": null,
+      "obf_ref_object_id__obo_name": null,
+      "obf_cascad": null,
+      "obf_card": null,
+      "obf_visible": null,
+      "obf_ref_export": true,
+      "obf_copy": null,
+      "obf_ref_order": null,
+      "obf_fld_visible": null,
+      "obf_fld_required": null,
+      "obf_fld_updatable": null,
+      "obf_fld_research": null,
+      "obf_fld_more": null,
+      "obf_fld_listmore": null,
+      "obf_fld_researchreq": null,
+      "obf_fld_dfault": null,
+      "obf_fld_exportable": null,
+      "obf_fld_uk": null,
+      "obf_area_id__ofa_name": "ArtArtist-1",
+      "row_module_id__mdl_name": "Artil",
+      "obf_joined_id__obf_object_id__obo_name": null,
+      "obf_joined_id__obf_field_id__fld_name": null,
+      "obf_joined_id__obf_order": null
+     }
+    },
+    {
+     "object": "ObjectFieldSystem",
+     "userkey": "ArtArtist artOrigin 20",
+     "item": {
+      "obf_object_id__obo_name": "ArtArtist",
+      "obf_field_id__fld_name": "artOrigin",
+      "obf_order": 20,
       "obf_group_by": null,
       "obf_dfault_order": null,
       "obf_input": null,
@@ -4768,6 +5026,41 @@
     },
     {
      "object": "ObjectFieldSystem",
+     "userkey": "ArtArtist artCurriculum 70",
+     "item": {
+      "obf_object_id__obo_name": "ArtArtist",
+      "obf_field_id__fld_name": "artCurriculum",
+      "obf_order": 70,
+      "obf_group_by": null,
+      "obf_dfault_order": null,
+      "obf_input": null,
+      "obf_ref_field_id__fld_name": null,
+      "obf_ref_object_id__obo_name": null,
+      "obf_cascad": null,
+      "obf_card": null,
+      "obf_visible": null,
+      "obf_ref_export": true,
+      "obf_copy": null,
+      "obf_ref_order": null,
+      "obf_fld_visible": null,
+      "obf_fld_required": null,
+      "obf_fld_updatable": null,
+      "obf_fld_research": null,
+      "obf_fld_more": null,
+      "obf_fld_listmore": null,
+      "obf_fld_researchreq": null,
+      "obf_fld_dfault": null,
+      "obf_fld_exportable": null,
+      "obf_fld_uk": null,
+      "obf_area_id__ofa_name": "ArtArtist-1",
+      "row_module_id__mdl_name": "Artil",
+      "obf_joined_id__obf_object_id__obo_name": null,
+      "obf_joined_id__obf_field_id__fld_name": null,
+      "obf_joined_id__obf_order": null
+     }
+    },
+    {
+     "object": "ObjectFieldSystem",
      "userkey": "ArtExbPic artExbpicExbId 100",
      "item": {
       "obf_object_id__obo_name": "ArtExbPic",
@@ -4848,7 +5141,7 @@
       "obf_input": null,
       "obf_ref_field_id__fld_name": null,
       "obf_ref_object_id__obo_name": "ArtPiece",
-      "obf_cascad": "C",
+      "obf_cascad": "R",
       "obf_card": "0,n",
       "obf_visible": true,
       "obf_ref_export": true,
@@ -4908,6 +5201,41 @@
     },
     {
      "object": "ObjectFieldSystem",
+     "userkey": "ArtExhibition artExbTitle 5",
+     "item": {
+      "obf_object_id__obo_name": "ArtExhibition",
+      "obf_field_id__fld_name": "artExbTitle",
+      "obf_order": 5,
+      "obf_group_by": null,
+      "obf_dfault_order": null,
+      "obf_input": null,
+      "obf_ref_field_id__fld_name": null,
+      "obf_ref_object_id__obo_name": null,
+      "obf_cascad": null,
+      "obf_card": null,
+      "obf_visible": null,
+      "obf_ref_export": true,
+      "obf_copy": null,
+      "obf_ref_order": null,
+      "obf_fld_visible": null,
+      "obf_fld_required": null,
+      "obf_fld_updatable": null,
+      "obf_fld_research": null,
+      "obf_fld_more": null,
+      "obf_fld_listmore": null,
+      "obf_fld_researchreq": null,
+      "obf_fld_dfault": null,
+      "obf_fld_exportable": null,
+      "obf_fld_uk": null,
+      "obf_area_id__ofa_name": "ArtExhibition-Main",
+      "row_module_id__mdl_name": "Artil",
+      "obf_joined_id__obf_object_id__obo_name": null,
+      "obf_joined_id__obf_field_id__fld_name": null,
+      "obf_joined_id__obf_order": null
+     }
+    },
+    {
+     "object": "ObjectFieldSystem",
      "userkey": "ArtExhibition artExbDate 10",
      "item": {
       "obf_object_id__obo_name": "ArtExhibition",
@@ -4915,6 +5243,41 @@
       "obf_order": 10,
       "obf_group_by": null,
       "obf_dfault_order": -1,
+      "obf_input": null,
+      "obf_ref_field_id__fld_name": null,
+      "obf_ref_object_id__obo_name": null,
+      "obf_cascad": null,
+      "obf_card": null,
+      "obf_visible": null,
+      "obf_ref_export": true,
+      "obf_copy": null,
+      "obf_ref_order": null,
+      "obf_fld_visible": null,
+      "obf_fld_required": null,
+      "obf_fld_updatable": null,
+      "obf_fld_research": null,
+      "obf_fld_more": null,
+      "obf_fld_listmore": null,
+      "obf_fld_researchreq": null,
+      "obf_fld_dfault": null,
+      "obf_fld_exportable": null,
+      "obf_fld_uk": null,
+      "obf_area_id__ofa_name": "ArtExhibition-Main",
+      "row_module_id__mdl_name": "Artil",
+      "obf_joined_id__obf_object_id__obo_name": null,
+      "obf_joined_id__obf_field_id__fld_name": null,
+      "obf_joined_id__obf_order": null
+     }
+    },
+    {
+     "object": "ObjectFieldSystem",
+     "userkey": "ArtExhibition artExbClosingDate 20",
+     "item": {
+      "obf_object_id__obo_name": "ArtExhibition",
+      "obf_field_id__fld_name": "artExbClosingDate",
+      "obf_order": 20,
+      "obf_group_by": null,
+      "obf_dfault_order": null,
       "obf_input": null,
       "obf_ref_field_id__fld_name": null,
       "obf_ref_object_id__obo_name": null,
@@ -4953,7 +5316,7 @@
       "obf_input": null,
       "obf_ref_field_id__fld_name": null,
       "obf_ref_object_id__obo_name": "ArtPlace",
-      "obf_cascad": "C",
+      "obf_cascad": "N",
       "obf_card": "0,n",
       "obf_visible": true,
       "obf_ref_export": true,
@@ -5053,6 +5416,41 @@
       "obf_object_id__obo_name": "ArtExhibition",
       "obf_field_id__fld_name": "artExbDescrition",
       "obf_order": 130,
+      "obf_group_by": null,
+      "obf_dfault_order": null,
+      "obf_input": null,
+      "obf_ref_field_id__fld_name": null,
+      "obf_ref_object_id__obo_name": null,
+      "obf_cascad": null,
+      "obf_card": null,
+      "obf_visible": null,
+      "obf_ref_export": true,
+      "obf_copy": null,
+      "obf_ref_order": null,
+      "obf_fld_visible": null,
+      "obf_fld_required": null,
+      "obf_fld_updatable": null,
+      "obf_fld_research": null,
+      "obf_fld_more": null,
+      "obf_fld_listmore": null,
+      "obf_fld_researchreq": null,
+      "obf_fld_dfault": null,
+      "obf_fld_exportable": null,
+      "obf_fld_uk": null,
+      "obf_area_id__ofa_name": "ArtExhibition-Main",
+      "row_module_id__mdl_name": "Artil",
+      "obf_joined_id__obf_object_id__obo_name": null,
+      "obf_joined_id__obf_field_id__fld_name": null,
+      "obf_joined_id__obf_order": null
+     }
+    },
+    {
+     "object": "ObjectFieldSystem",
+     "userkey": "ArtExhibition artExbType 150",
+     "item": {
+      "obf_object_id__obo_name": "ArtExhibition",
+      "obf_field_id__fld_name": "artExbType",
+      "obf_order": 150,
       "obf_group_by": null,
       "obf_dfault_order": null,
       "obf_input": null,
@@ -5443,7 +5841,7 @@
       "obf_input": null,
       "obf_ref_field_id__fld_name": null,
       "obf_ref_object_id__obo_name": "ArtPiece",
-      "obf_cascad": "C",
+      "obf_cascad": "R",
       "obf_card": "0,n",
       "obf_visible": true,
       "obf_ref_export": true,
@@ -7528,7 +7926,7 @@
       "obf_ref_order": null,
       "obf_object_id__obj_name": "ArtPicInv",
       "obf_field_id__fld_name": "artPicinvPicId",
-      "obf_cascad": "C",
+      "obf_cascad": "R",
       "obf_card": "0,n",
       "obf_query": null,
       "obf_filters": null,
@@ -7552,7 +7950,7 @@
       "obf_ref_order": -1,
       "obf_object_id__obj_name": "ArtExbPic",
       "obf_field_id__fld_name": "artExbpicPicId",
-      "obf_cascad": "C",
+      "obf_cascad": "R",
       "obf_card": "0,n",
       "obf_query": null,
       "obf_filters": null,
@@ -7624,7 +8022,7 @@
       "obf_ref_order": 20,
       "obf_object_id__obj_name": "ArtExhibition",
       "obf_field_id__fld_name": "artExbPlcId",
-      "obf_cascad": "C",
+      "obf_cascad": "N",
       "obf_card": "0,n",
       "obf_query": null,
       "obf_filters": null,
@@ -9257,7 +9655,7 @@
       "res_cached": false,
       "res_file": {
        "path": "resources/ObjectExternal/ArtImageRecognition/CUSTOM_INPUT_STYLE.less",
-       "mime": "text/less",
+       "mime": "text/x-less",
        "name": "CUSTOM_INPUT_STYLE.less"
       },
       "res_image": null,
@@ -9281,7 +9679,7 @@
       "res_cached": false,
       "res_file": {
        "path": "resources/ObjectExternal/ArtImageRecognition/STYLE.less",
-       "mime": "text/less",
+       "mime": "text/x-less",
        "name": "STYLE.less"
       },
       "res_image": null,
@@ -9986,7 +10384,7 @@
        "object": "Field"
       },
       "tsl_lang": "ENU",
-      "tsl_value": "Date",
+      "tsl_value": "Opening Date",
       "tsl_simplehelp": null,
       "tsl_plural_value": null,
       "tsl_short_value": null,
@@ -10206,7 +10604,7 @@
        "object": "Field"
       },
       "tsl_lang": "ENU",
-      "tsl_value": "art exb descrition",
+      "tsl_value": "Descrition",
       "tsl_simplehelp": null,
       "tsl_plural_value": null,
       "tsl_short_value": null,
@@ -11350,7 +11748,7 @@
        "object": "Field"
       },
       "tsl_lang": "ENU",
-      "tsl_value": "Price",
+      "tsl_value": "Value",
       "tsl_simplehelp": null,
       "tsl_plural_value": null,
       "tsl_short_value": null,
@@ -11372,7 +11770,7 @@
        "object": "Field"
       },
       "tsl_lang": "FRA",
-      "tsl_value": "Prix",
+      "tsl_value": "Valeur",
       "tsl_simplehelp": null,
       "tsl_plural_value": null,
       "tsl_short_value": null,
@@ -12000,50 +12398,6 @@
     },
     {
      "object": "TranslateField",
-     "userkey": "artTecpicPicId English",
-     "item": {
-      "tsl_object": {
-       "item": {"fld_name": "artTecpicPicId"},
-       "icon": "img/system/field",
-       "label": "Field",
-       "userkeylabel": "artTecpicPicId",
-       "object": "Field"
-      },
-      "tsl_lang": "ENU",
-      "tsl_value": "Art tecpic pic id",
-      "tsl_simplehelp": null,
-      "tsl_plural_value": null,
-      "tsl_short_value": null,
-      "tsl_placeholder": null,
-      "tsl_listhelp": null,
-      "tsl_tooltip": null,
-      "row_module_id__mdl_name": "Artil"
-     }
-    },
-    {
-     "object": "TranslateField",
-     "userkey": "artTecpicPicId French",
-     "item": {
-      "tsl_object": {
-       "item": {"fld_name": "artTecpicPicId"},
-       "icon": "img/system/field",
-       "label": "Field",
-       "userkeylabel": "artTecpicPicId",
-       "object": "Field"
-      },
-      "tsl_lang": "FRA",
-      "tsl_value": "Art tecpic pic id",
-      "tsl_simplehelp": null,
-      "tsl_plural_value": null,
-      "tsl_short_value": null,
-      "tsl_placeholder": null,
-      "tsl_listhelp": null,
-      "tsl_tooltip": null,
-      "row_module_id__mdl_name": "Artil"
-     }
-    },
-    {
-     "object": "TranslateField",
      "userkey": "artTpPieceId English",
      "item": {
       "tsl_object": {
@@ -12077,50 +12431,6 @@
       },
       "tsl_lang": "FRA",
       "tsl_value": "app art piece fk",
-      "tsl_simplehelp": null,
-      "tsl_plural_value": null,
-      "tsl_short_value": null,
-      "tsl_placeholder": null,
-      "tsl_listhelp": null,
-      "tsl_tooltip": null,
-      "row_module_id__mdl_name": "Artil"
-     }
-    },
-    {
-     "object": "TranslateField",
-     "userkey": "artTecpicTecId English",
-     "item": {
-      "tsl_object": {
-       "item": {"fld_name": "artTecpicTecId"},
-       "icon": "img/system/field",
-       "label": "Field",
-       "userkeylabel": "artTecpicTecId",
-       "object": "Field"
-      },
-      "tsl_lang": "ENU",
-      "tsl_value": "Art tecpic tec id",
-      "tsl_simplehelp": null,
-      "tsl_plural_value": null,
-      "tsl_short_value": null,
-      "tsl_placeholder": null,
-      "tsl_listhelp": null,
-      "tsl_tooltip": null,
-      "row_module_id__mdl_name": "Artil"
-     }
-    },
-    {
-     "object": "TranslateField",
-     "userkey": "artTecpicTecId French",
-     "item": {
-      "tsl_object": {
-       "item": {"fld_name": "artTecpicTecId"},
-       "icon": "img/system/field",
-       "label": "Field",
-       "userkeylabel": "artTecpicTecId",
-       "object": "Field"
-      },
-      "tsl_lang": "FRA",
-      "tsl_value": "Art tecpic tec id",
       "tsl_simplehelp": null,
       "tsl_plural_value": null,
       "tsl_short_value": null,
@@ -12297,6 +12607,226 @@
       },
       "tsl_lang": "FRA",
       "tsl_value": "Tec alt name",
+      "tsl_simplehelp": null,
+      "tsl_plural_value": null,
+      "tsl_short_value": null,
+      "tsl_placeholder": null,
+      "tsl_listhelp": null,
+      "tsl_tooltip": null,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "TranslateField",
+     "userkey": "artOrigin English",
+     "item": {
+      "tsl_object": {
+       "item": {"fld_name": "artOrigin"},
+       "icon": "img/system/field",
+       "label": "Field",
+       "userkeylabel": "artOrigin",
+       "object": "Field"
+      },
+      "tsl_lang": "ENU",
+      "tsl_value": "Origin",
+      "tsl_simplehelp": null,
+      "tsl_plural_value": null,
+      "tsl_short_value": null,
+      "tsl_placeholder": null,
+      "tsl_listhelp": null,
+      "tsl_tooltip": null,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "TranslateField",
+     "userkey": "artOrigin French",
+     "item": {
+      "tsl_object": {
+       "item": {"fld_name": "artOrigin"},
+       "icon": "img/system/field",
+       "label": "Field",
+       "userkeylabel": "artOrigin",
+       "object": "Field"
+      },
+      "tsl_lang": "FRA",
+      "tsl_value": "Origin",
+      "tsl_simplehelp": null,
+      "tsl_plural_value": null,
+      "tsl_short_value": null,
+      "tsl_placeholder": null,
+      "tsl_listhelp": null,
+      "tsl_tooltip": null,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "TranslateField",
+     "userkey": "artCurriculum English",
+     "item": {
+      "tsl_object": {
+       "item": {"fld_name": "artCurriculum"},
+       "icon": "img/system/field",
+       "label": "Field",
+       "userkeylabel": "artCurriculum",
+       "object": "Field"
+      },
+      "tsl_lang": "ENU",
+      "tsl_value": "Curriculum",
+      "tsl_simplehelp": null,
+      "tsl_plural_value": null,
+      "tsl_short_value": null,
+      "tsl_placeholder": null,
+      "tsl_listhelp": null,
+      "tsl_tooltip": null,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "TranslateField",
+     "userkey": "artCurriculum French",
+     "item": {
+      "tsl_object": {
+       "item": {"fld_name": "artCurriculum"},
+       "icon": "img/system/field",
+       "label": "Field",
+       "userkeylabel": "artCurriculum",
+       "object": "Field"
+      },
+      "tsl_lang": "FRA",
+      "tsl_value": "Curriculum",
+      "tsl_simplehelp": null,
+      "tsl_plural_value": null,
+      "tsl_short_value": null,
+      "tsl_placeholder": null,
+      "tsl_listhelp": null,
+      "tsl_tooltip": null,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "TranslateField",
+     "userkey": "artExbTitle English",
+     "item": {
+      "tsl_object": {
+       "item": {"fld_name": "artExbTitle"},
+       "icon": "img/system/field",
+       "label": "Field",
+       "userkeylabel": "artExbTitle",
+       "object": "Field"
+      },
+      "tsl_lang": "ENU",
+      "tsl_value": "Title",
+      "tsl_simplehelp": null,
+      "tsl_plural_value": null,
+      "tsl_short_value": null,
+      "tsl_placeholder": null,
+      "tsl_listhelp": null,
+      "tsl_tooltip": null,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "TranslateField",
+     "userkey": "artExbTitle French",
+     "item": {
+      "tsl_object": {
+       "item": {"fld_name": "artExbTitle"},
+       "icon": "img/system/field",
+       "label": "Field",
+       "userkeylabel": "artExbTitle",
+       "object": "Field"
+      },
+      "tsl_lang": "FRA",
+      "tsl_value": "Exb title",
+      "tsl_simplehelp": null,
+      "tsl_plural_value": null,
+      "tsl_short_value": null,
+      "tsl_placeholder": null,
+      "tsl_listhelp": null,
+      "tsl_tooltip": null,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "TranslateField",
+     "userkey": "artExbType English",
+     "item": {
+      "tsl_object": {
+       "item": {"fld_name": "artExbType"},
+       "icon": "img/system/field",
+       "label": "Field",
+       "userkeylabel": "artExbType",
+       "object": "Field"
+      },
+      "tsl_lang": "ENU",
+      "tsl_value": "Type",
+      "tsl_simplehelp": null,
+      "tsl_plural_value": null,
+      "tsl_short_value": null,
+      "tsl_placeholder": null,
+      "tsl_listhelp": null,
+      "tsl_tooltip": null,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "TranslateField",
+     "userkey": "artExbType French",
+     "item": {
+      "tsl_object": {
+       "item": {"fld_name": "artExbType"},
+       "icon": "img/system/field",
+       "label": "Field",
+       "userkeylabel": "artExbType",
+       "object": "Field"
+      },
+      "tsl_lang": "FRA",
+      "tsl_value": "Exb type",
+      "tsl_simplehelp": null,
+      "tsl_plural_value": null,
+      "tsl_short_value": null,
+      "tsl_placeholder": null,
+      "tsl_listhelp": null,
+      "tsl_tooltip": null,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "TranslateField",
+     "userkey": "artExbClosingDate English",
+     "item": {
+      "tsl_object": {
+       "item": {"fld_name": "artExbClosingDate"},
+       "icon": "img/system/field",
+       "label": "Field",
+       "userkeylabel": "artExbClosingDate",
+       "object": "Field"
+      },
+      "tsl_lang": "ENU",
+      "tsl_value": "Closing Date",
+      "tsl_simplehelp": null,
+      "tsl_plural_value": null,
+      "tsl_short_value": null,
+      "tsl_placeholder": null,
+      "tsl_listhelp": null,
+      "tsl_tooltip": null,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "TranslateField",
+     "userkey": "artExbClosingDate French",
+     "item": {
+      "tsl_object": {
+       "item": {"fld_name": "artExbClosingDate"},
+       "icon": "img/system/field",
+       "label": "Field",
+       "userkeylabel": "artExbClosingDate",
+       "object": "Field"
+      },
+      "tsl_lang": "FRA",
+      "tsl_value": "Exb closing date",
       "tsl_simplehelp": null,
       "tsl_plural_value": null,
       "tsl_short_value": null,
@@ -12742,7 +13272,7 @@
        "object": "ObjectFieldArea"
       },
       "tsl_lang": "ENU",
-      "tsl_value": "Price",
+      "tsl_value": "Value",
       "row_module_id__mdl_name": "Artil"
      }
     },
