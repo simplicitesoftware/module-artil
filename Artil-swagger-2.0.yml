@@ -430,6 +430,56 @@ paths:
         required: false
       tags:
       - ArtTechnique
+  /rest/ArtFair:
+    get:
+      summary: Search ArtFair business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artfair-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfArtFair'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: artFairName
+        description: Search filter for Name
+        type: string
+        required: false
+      - in: query
+        name: artFairYear
+        description: Search filter for Year
+        type: string
+        required: false
+      tags:
+      - ArtFair
   /rest/ArtPiece/{row_id}/action:reIndexAll:
     get:
       summary: Call a custom action for a ArtPiece business object record or for all
@@ -913,6 +963,18 @@ paths:
         name: _indexsearch
         description: Index search query
         type: string
+        required: false
+      - in: query
+        name: _crosstab
+        description: Apply pivot table
+        type: string
+        required: false
+        enum:
+        - ArtPicPivot
+      - in: query
+        name: _crosstabcubes
+        description: Pivot table data as cubes?
+        type: boolean
         required: false
       - in: query
         name: artPicTitle
@@ -1863,6 +1925,168 @@ paths:
           description: Unauthorized
       tags:
       - session
+  /rest/ArtFairPic/{row_id}:
+    post:
+      summary: Create a new ArtFairPic business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artfairpic-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArtFairPic'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/ArtFairPic'
+        in: body
+        name: body
+      tags:
+      - ArtFairPic
+      consumes:
+      - application/json
+    get:
+      summary: Get a ArtFairPic business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artfairpic-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArtFairPic'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - ArtFairPic
+    delete:
+      summary: Delete a ArtFairPic business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artfairpic-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - ArtFairPic
+    put:
+      summary: Update a ArtFairPic business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artfairpic-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArtFairPic'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/ArtFairPic'
+        in: body
+        name: body
+      tags:
+      - ArtFairPic
+      consumes:
+      - application/json
   /rest/ArtPlace:
     get:
       summary: Search ArtPlace business object records or get contextualized metadata
@@ -1936,6 +2160,168 @@ paths:
         required: false
       tags:
       - session
+  /rest/ArtFair/{row_id}:
+    post:
+      summary: Create a new ArtFair business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artfair-create
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArtFair'
+          description: Success in creating a new business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/ArtFair'
+        in: body
+        name: body
+      tags:
+      - ArtFair
+      consumes:
+      - application/json
+    get:
+      summary: Get a ArtFair business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artfair-get
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArtFair'
+          description: Success in getting a single business object record
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - in: query
+        name: _inline_documents
+        description: Inline documents?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_thumbnails
+        description: Inline documents' thumbnails?
+        type: boolean
+        required: false
+      - in: query
+        name: _inline_objects
+        description: Inline objects?
+        type: boolean
+        required: false
+      tags:
+      - ArtFair
+    delete:
+      summary: Delete a ArtFair business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artfair-delete
+      responses:
+        '200':
+          description: Success in deleting a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - ArtFair
+    put:
+      summary: Update a ArtFair business object record
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artfair-update
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArtFair'
+          description: Success in updating a business object record
+        '400':
+          schema:
+            $ref: '#/definitions/Error400'
+          description: Bad request
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      - schema:
+          $ref: '#/definitions/ArtFair'
+        in: body
+        name: body
+      tags:
+      - ArtFair
+      consumes:
+      - application/json
   /rest/ArtPicInv/{row_id}:
     post:
       summary: Create a new ArtPicInv business object record
@@ -2682,6 +3068,71 @@ paths:
         required: false
       tags:
       - ArtExbPic
+  /rest/ArtFairPic:
+    get:
+      summary: Search ArtFairPic business object records or get contextualized metadata
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artfairpic-search
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/ArrayOfArtFairPic'
+          description: Success in searching business object records (or in getting
+            contextualized business object metadata, documentation, ...)
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+      parameters:
+      - in: query
+        name: _metadata
+        description: Metadata?
+        type: boolean
+        required: false
+      - in: query
+        name: _count
+        description: Count?
+        type: boolean
+        required: false
+      - in: query
+        name: _doc
+        description: Documentation?
+        type: boolean
+        required: false
+      - in: query
+        name: artFpFairId
+        description: Search filter for Fairpic fair id
+        type: string
+        required: false
+      - in: query
+        name: artFpFairId__artFairName
+        description: Search filter for Fairpic fair id Name
+        type: string
+        required: false
+      - in: query
+        name: artFpFairId__artFairYear
+        description: Search filter for Fairpic fair id Year
+        type: string
+        required: false
+      - in: query
+        name: artFpPicId
+        description: Search filter for Fairpic pic id
+        type: string
+        required: false
+      - in: query
+        name: artFpPicId__artPicCode
+        description: Search filter for Fairpic pic id Code
+        type: string
+        required: false
+      tags:
+      - ArtFairPic
   /rest/ArtExbPic/{row_id}:
     post:
       summary: Create a new ArtExbPic business object record
@@ -2965,6 +3416,19 @@ definitions:
       row_id:
         description: Unique technical row ID
         type: string
+  ArtFair:
+    type: object
+    properties:
+      artFairName:
+        description: Name
+        type: string
+      row_id:
+        description: Unique technical row ID
+        type: string
+      artFairYear:
+        description: Year
+        type: string
+        example: yyyy-MM-dd
   ArtTechnique:
     type: object
     properties:
@@ -3305,6 +3769,28 @@ definitions:
         type: integer
         enum:
         - 500
+  ArtFairPic:
+    type: object
+    properties:
+      artFpFairId__artFairYear:
+        description: Fairpic fair id Year
+        type: string
+        example: yyyy-MM-dd
+      artFpPicId__artPicCode:
+        description: Fairpic pic id Code
+        type: string
+      artFpPicId:
+        description: Fairpic pic id
+        type: string
+      artFpFairId:
+        description: Fairpic fair id
+        type: string
+      row_id:
+        description: Unique technical row ID
+        type: string
+      artFpFairId__artFairName:
+        description: Fairpic fair id Name
+        type: string
   ArrayOfArtPicInv:
     type: array
     items:
@@ -3339,10 +3825,18 @@ definitions:
         type: integer
         enum:
         - 403
+  ArrayOfArtFairPic:
+    type: array
+    items:
+      $ref: '#/definitions/ArtFairPic'
   ArrayOfArtArtist:
     type: array
     items:
       $ref: '#/definitions/ArtArtist'
+  ArrayOfArtFair:
+    type: array
+    items:
+      $ref: '#/definitions/ArtFair'
   ArtExhibition:
     type: object
     properties:
@@ -3456,6 +3950,10 @@ tags:
   description: Exhibitions
 - name: ArtExhibition
   description: Exhibition
+- name: ArtFair
+  description: Fair
+- name: ArtFairPic
+  description: Fair piece
 - name: ArtInvoice
   description: Invoice
 - name: ArtOwner

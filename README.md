@@ -34,6 +34,33 @@ sim tomcat-stop
 sim tomcat-star
 ```
 
+`ArtFair` business object definition
+------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `artFairName`                                                | char(100)                                | yes*     | yes       |          | -                                                                                |
+| `artFairYear`                                                | date                                     | yes*     | yes       |          | -                                                                                |
+
+`ArtFairPic` business object definition
+---------------------------------------
+
+
+
+### Fields
+
+| Name                                                         | Type                                     | Required | Updatable | Personal | Description                                                                      |
+|--------------------------------------------------------------|------------------------------------------|----------|-----------|----------|----------------------------------------------------------------------------------|
+| `artFpFairId` link to **`ArtFair`**                          | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `artFpFairId.artFairName`_                             | _char(100)_                              |          |           |          | -                                                                                |
+| _Ref. `artFpFairId.artFairYear`_                             | _date_                                   |          |           |          | -                                                                                |
+| `artFpPicId` link to **`ArtPiece`**                          | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `artFpPicId.artPicCode`_                               | _char(20)_                               |          |           |          | -                                                                                |
+
 `ArtArtist` business object definition
 --------------------------------------
 
@@ -262,6 +289,12 @@ Piece of art
 | _Ref. `artPicArtistId.artArtFirstname`_                      | _char(50)_                               |          |           |          | -                                                                                |
 | _Ref. `artPicinvInvId.artInvCode`_                           | _char(100)_                              |          |           |          | -                                                                                |
 | `artPicinvPrice`                                             | float(100, 2)                            |          | yes       |          | -                                                                                |
+
+`ArtHomeCounters` external object definition
+--------------------------------------------
+
+
+
 
 `ArtImageRecognition` external object definition
 ------------------------------------------------
