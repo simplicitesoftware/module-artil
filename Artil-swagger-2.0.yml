@@ -1062,6 +1062,11 @@ paths:
         description: Search filter for art pic tag virtual
         type: string
         required: false
+      - in: query
+        name: artPicFullyEditable
+        description: Search filter for Unprotect fields
+        type: boolean
+        required: false
       tags:
       - ArtPiece
   /rest/ArtPlace/{row_id}:
@@ -3141,6 +3146,9 @@ definitions:
       artPicCodeBis:
         description: Code 2
         type: string
+      artPicFullyEditable:
+        description: Unprotect fields
+        type: boolean
       artPicArtistId__artArtRatingFormula:
         description: Artist Rating
         type: string

@@ -123,6 +123,7 @@ Piece of art
 | `artPicScore`                                                | float(5, 2)                              |          |           |          | -                                                                                |
 | `artPicExbVirtual` link to **`ArtExhibition`**               | id                                       |          | yes       |          | -                                                                                |
 | `artPicTagVirtual` link to **`ArtTag`**                      | id                                       |          | yes       |          | -                                                                                |
+| `artPicFullyEditable`                                        | boolean                                  |          | yes       |          | -                                                                                |
 
 ### Lists
 

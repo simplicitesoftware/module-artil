@@ -210,6 +210,9 @@ components:
         artPicCodeBis:
           description: Code 2
           type: string
+        artPicFullyEditable:
+          description: Unprotect fields
+          type: boolean
         artPicArtistId__artArtRatingFormula:
           description: Artist Rating
           type: string
@@ -1772,6 +1775,12 @@ paths:
         in: query
         name: artPicTagVirtual
         description: Search filter for art pic tag virtual
+        required: false
+      - schema:
+          type: boolean
+        in: query
+        name: artPicFullyEditable
+        description: Search filter for Unprotect fields
         required: false
       tags:
       - ArtPiece

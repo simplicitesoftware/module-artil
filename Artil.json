@@ -2337,6 +2337,52 @@
     },
     {
      "object": "Field",
+     "userkey": "artPicFullyEditable",
+     "item": {
+      "fld_name": {
+       "value": "artPicFullyEditable",
+       "oldvalue": "artPicProtected"
+      },
+      "fld_dbname": null,
+      "fld_visible": "2",
+      "fld_updatable": ["2"],
+      "fld_required": false,
+      "fld_fonctid": false,
+      "fld_research": "0",
+      "fld_researchreq": "0",
+      "fld_sort": "C",
+      "fld_more": false,
+      "fld_listmore": false,
+      "fld_listsum": null,
+      "fld_exportable": true,
+      "fld_tray": null,
+      "fld_type": "8",
+      "fld_type_id__flt_code": null,
+      "fld_list_id__lov_name": null,
+      "fld_copy": true,
+      "fld_size": 1,
+      "fld_minsize": null,
+      "fld_precision": null,
+      "fld_fromdate_id__fld_name": null,
+      "fld_dfault": "[ISNEW]",
+      "fld_indexable": false,
+      "fld_autocomp": "0",
+      "fld_groupby": false,
+      "fld_updall": true,
+      "fld_case": null,
+      "fld_righttoleft": false,
+      "fld_rendering": "SLIDE",
+      "fld_speech": null,
+      "fld_calc": null,
+      "fld_objlist": null,
+      "fld_comment": null,
+      "fld_classification": null,
+      "row_module_id__mdl_name": "Artil",
+      "fld_incrementsyntax": null
+     }
+    },
+    {
+     "object": "Field",
      "userkey": "artPicHeight",
      "item": {
       "fld_name": "artPicHeight",
@@ -3623,7 +3669,7 @@
      "userkey": "ArtPiece",
      "item": {
       "tpl_name": "ArtPiece",
-      "tpl_ui": "<div class=\"row\">\n  <div class=\"col-sm-6\">\n    <div class=\"area\" data-area=\"2:=\"><\/div>\n  <\/div>\n  <div class=\"col-sm-6\">\n    <div class=\"area\" data-area=\"1\"><\/div>\n    <div class=\"area\" data-area=\"3\"><\/div>\n    <div class=\"area\" data-area=\"4\"><\/div>\n  <\/div>\n<\/div>",
+      "tpl_ui": "<div class=\"row\">\n  <div class=\"col-sm-6\">\n    <div class=\"area\" data-area=\"2:=\"><\/div>\n  <\/div>\n  <div class=\"col-sm-6\">\n    <div class=\"area\" data-area=\"5\"><\/div>\n    <div class=\"area\" data-area=\"1\"><\/div>\n    <div class=\"area\" data-area=\"3\"><\/div>\n    <div class=\"area\" data-area=\"4\"><\/div>\n  <\/div>\n<\/div>",
       "tpl_min": null,
       "tpl_image": null,
       "tpl_grid": null,
@@ -3788,12 +3834,24 @@
     },
     {
      "object": "ObjectFieldArea",
+     "userkey": "ArtPiece-5",
+     "item": {
+      "ofa_name": "ArtPiece-5",
+      "ofa_position": 5,
+      "ofa_title": true,
+      "ofa_ui": "<div class=\"field\" data-field=\"artPicFullyEditable\"><\/div>",
+      "ofa_icon": "fas/unlock-alt",
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "ObjectFieldArea",
      "userkey": "ArtPiece-Artist",
      "item": {
       "ofa_name": "ArtPiece-Artist",
       "ofa_position": 2,
       "ofa_title": true,
-      "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicTitle\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicArtistId__artArtLastname\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicYear\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicTecId__artTecName\"><\/div>\n      <div class=\"field\" data-field=\"artPicTechnique\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artPicHeight\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artPicWidth\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artPicDepth\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicSigned\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\"><\/div>\n  <\/div>\n  <div class=\"area\" data-area=\"ArtExbPic;artExbpicPicId\"><\/div>\n  <div class=\"field\" data-field=\"artPicPicture\"><\/div>\n<\/div>",
+      "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicYear\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicArtistId__artArtLastname\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicTitle\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicTecId__artTecName\"><\/div>\n      <div class=\"field\" data-field=\"artPicTechnique\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artPicHeight\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artPicWidth\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artPicDepth\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicSigned\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\"><\/div>\n  <\/div>\n  <div class=\"area\" data-area=\"ArtExbPic;artExbpicPicId\"><\/div>\n  <div class=\"field\" data-field=\"artPicPicture\"><\/div>\n<\/div>",
       "ofa_icon": "img/color/identification",
       "row_module_id__mdl_name": "Artil"
      }
@@ -3829,7 +3887,7 @@
       "ofa_name": "ArtPiece-Main",
       "ofa_position": 2,
       "ofa_title": true,
-      "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicTitle\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicArtistId__artArtLastname\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicYear\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicTecId__artTecName\"><\/div>\n      <div class=\"field\" data-field=\"artPicTechnique\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artPicHeight\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artPicWidth\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artPicDepth\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicSigned\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\"><\/div>\n  <\/div>\n  <div class=\"area\" data-area=\"ArtExbPic;artExbpicPicId\"><\/div>\n  <div class=\"field\" data-field=\"artPicPicture\"><\/div>\n<\/div>",
+      "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicTitle\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicArtistId__artArtLastname\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n    \t<div class=\"field\" data-field=\"artPicYear\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicTecId__artTecName\"><\/div>\n      <div class=\"field\" data-field=\"artPicTechnique\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artPicHeight\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artPicWidth\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artPicDepth\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicSigned\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\"><\/div>\n  <\/div>\n  <div class=\"area\" data-area=\"ArtExbPic;artExbpicPicId\"><\/div>\n  <div class=\"field\" data-field=\"artPicPicture\"><\/div>\n<\/div>",
       "ofa_icon": "img/color/panorama",
       "row_module_id__mdl_name": "Artil"
      }
@@ -4420,7 +4478,7 @@
        "name": "ArtPiece.java"
       },
       "obo_usets": "1",
-      "obo_nosearch": "0",
+      "obo_nosearch": "1",
       "obo_comment": "Piece of art",
       "obo_type": "O",
       "obo_searchspec": null,
@@ -4468,7 +4526,7 @@
       "obo_btn_export": "P",
       "obo_btn_listadd": "P",
       "obo_btn_listedit": "P",
-      "obo_btn_listupsert": "1",
+      "obo_btn_listupsert": "P",
       "obo_btn_updall": "P",
       "obo_btn_delall": "P",
       "obo_btn_merge": "P",
@@ -7406,6 +7464,41 @@
     },
     {
      "object": "ObjectFieldSystem",
+     "userkey": "ArtPiece artPicFullyEditable 270",
+     "item": {
+      "obf_object_id__obo_name": "ArtPiece",
+      "obf_field_id__fld_name": "artPicFullyEditable",
+      "obf_order": 270,
+      "obf_group_by": null,
+      "obf_dfault_order": null,
+      "obf_input": null,
+      "obf_ref_field_id__fld_name": null,
+      "obf_ref_object_id__obo_name": null,
+      "obf_cascad": null,
+      "obf_card": null,
+      "obf_visible": null,
+      "obf_ref_export": true,
+      "obf_copy": null,
+      "obf_ref_order": null,
+      "obf_fld_visible": null,
+      "obf_fld_required": null,
+      "obf_fld_updatable": null,
+      "obf_fld_research": null,
+      "obf_fld_more": null,
+      "obf_fld_listmore": null,
+      "obf_fld_researchreq": null,
+      "obf_fld_dfault": null,
+      "obf_fld_exportable": null,
+      "obf_fld_uk": null,
+      "obf_area_id__ofa_name": "ArtPiece-5",
+      "row_module_id__mdl_name": "Artil",
+      "obf_joined_id__obf_object_id__obo_name": null,
+      "obf_joined_id__obf_field_id__fld_name": null,
+      "obf_joined_id__obf_order": null
+     }
+    },
+    {
+     "object": "ObjectFieldSystem",
      "userkey": "ArtPlace artPlcName 10",
      "item": {
       "obf_object_id__obo_name": "ArtPlace",
@@ -8973,6 +9066,162 @@
       "grt_function_id__fct_object_id__obo_name": "ArtTechnique",
       "grt_function_id__fct_action_id__act_name": null,
       "grt_activ": true,
+      "row_module_id__mdl_name": "Artil"
+     }
+    }
+   ]
+  },
+  {
+   "object": "ConstraintObject",
+   "label": "Constraints",
+   "icon": "img/system/constraint",
+   "field": "row_module_id",
+   "list": [{
+    "object": "ConstraintObject",
+    "userkey": "ProtectedFields",
+    "item": {
+     "cst_name": "ProtectedFields",
+     "cst_object_id__obo_name": "ArtPiece",
+     "cst_order": 10,
+     "cst_desc": null,
+     "cst_type": "E",
+     "cst_effects": ["F"],
+     "cst_field_id__fld_name": null,
+     "cst_expr": "true",
+     "cst_method": null,
+     "row_module_id__mdl_name": "Artil"
+    }
+   }]
+  },
+  {
+   "object": "ConstraintImpact",
+   "label": "Impacts",
+   "icon": "img/system/impact",
+   "field": "row_module_id",
+   "list": [
+    {
+     "object": "ConstraintImpact",
+     "userkey": "ProtectedFields ArtPiece 10",
+     "item": {
+      "csi_const_id__cst_name": "ProtectedFields",
+      "csi_const_id__cst_object_id__obo_name": "ArtPiece",
+      "csi_order": 10,
+      "csi_object_prop": null,
+      "csi_field_prop": "U",
+      "csi_apply": "F",
+      "csi_expr": "[VALUE:artPicFullyEditable]",
+      "csi_target": null,
+      "csi_objfield_id__obf_object_id__obo_name": "ArtExbPic",
+      "csi_objfield_id__obf_field_id__fld_name": "artPicCode",
+      "csi_objfield_id__obf_order": 210,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "ConstraintImpact",
+     "userkey": "ProtectedFields ArtPiece 20",
+     "item": {
+      "csi_const_id__cst_name": "ProtectedFields",
+      "csi_const_id__cst_object_id__obo_name": "ArtPiece",
+      "csi_order": 20,
+      "csi_object_prop": null,
+      "csi_field_prop": "U",
+      "csi_apply": "F",
+      "csi_expr": "[VALUE:artPicFullyEditable]",
+      "csi_target": null,
+      "csi_objfield_id__obf_object_id__obo_name": "ArtPiece",
+      "csi_objfield_id__obf_field_id__fld_name": "artPicTitle",
+      "csi_objfield_id__obf_order": 10,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "ConstraintImpact",
+     "userkey": "ProtectedFields ArtPiece 40",
+     "item": {
+      "csi_const_id__cst_name": "ProtectedFields",
+      "csi_const_id__cst_object_id__obo_name": "ArtPiece",
+      "csi_order": 40,
+      "csi_object_prop": null,
+      "csi_field_prop": "U",
+      "csi_apply": "F",
+      "csi_expr": "[VALUE:artPicFullyEditable]",
+      "csi_target": null,
+      "csi_objfield_id__obf_object_id__obo_name": "ArtPiece",
+      "csi_objfield_id__obf_field_id__fld_name": "artPicYear",
+      "csi_objfield_id__obf_order": 50,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "ConstraintImpact",
+     "userkey": "ProtectedFields ArtPiece 60",
+     "item": {
+      "csi_const_id__cst_name": "ProtectedFields",
+      "csi_const_id__cst_object_id__obo_name": "ArtPiece",
+      "csi_order": 60,
+      "csi_object_prop": null,
+      "csi_field_prop": "U",
+      "csi_apply": "F",
+      "csi_expr": "[VALUE:artPicFullyEditable]",
+      "csi_target": null,
+      "csi_objfield_id__obf_object_id__obo_name": "ArtPiece",
+      "csi_objfield_id__obf_field_id__fld_name": "artPicHeight",
+      "csi_objfield_id__obf_order": 90,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "ConstraintImpact",
+     "userkey": "ProtectedFields ArtPiece 70",
+     "item": {
+      "csi_const_id__cst_name": "ProtectedFields",
+      "csi_const_id__cst_object_id__obo_name": "ArtPiece",
+      "csi_order": 70,
+      "csi_object_prop": null,
+      "csi_field_prop": "U",
+      "csi_apply": "F",
+      "csi_expr": "[VALUE:artPicFullyEditable]",
+      "csi_target": null,
+      "csi_objfield_id__obf_object_id__obo_name": "ArtPiece",
+      "csi_objfield_id__obf_field_id__fld_name": "artPicWidth",
+      "csi_objfield_id__obf_order": 100,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "ConstraintImpact",
+     "userkey": "ProtectedFields ArtPiece 80",
+     "item": {
+      "csi_const_id__cst_name": "ProtectedFields",
+      "csi_const_id__cst_object_id__obo_name": "ArtPiece",
+      "csi_order": 80,
+      "csi_object_prop": null,
+      "csi_field_prop": "U",
+      "csi_apply": "F",
+      "csi_expr": "[VALUE:artPicFullyEditable]",
+      "csi_target": null,
+      "csi_objfield_id__obf_object_id__obo_name": "ArtPiece",
+      "csi_objfield_id__obf_field_id__fld_name": "artPicDepth",
+      "csi_objfield_id__obf_order": 105,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "ConstraintImpact",
+     "userkey": "ProtectedFields ArtPiece 90",
+     "item": {
+      "csi_const_id__cst_name": "ProtectedFields",
+      "csi_const_id__cst_object_id__obo_name": "ArtPiece",
+      "csi_order": 90,
+      "csi_object_prop": null,
+      "csi_field_prop": "U",
+      "csi_apply": "F",
+      "csi_expr": "[VALUE:artPicFullyEditable]",
+      "csi_target": null,
+      "csi_objfield_id__obf_object_id__obo_name": "ArtPiece",
+      "csi_objfield_id__obf_field_id__fld_name": "artPicSigned",
+      "csi_objfield_id__obf_order": 110,
       "row_module_id__mdl_name": "Artil"
      }
     }
@@ -12835,6 +13084,50 @@
       "tsl_tooltip": null,
       "row_module_id__mdl_name": "Artil"
      }
+    },
+    {
+     "object": "TranslateField",
+     "userkey": "artPicFullyEditable English",
+     "item": {
+      "tsl_object": {
+       "item": {"fld_name": "artPicFullyEditable"},
+       "icon": "img/system/field",
+       "label": "Field",
+       "userkeylabel": "artPicFullyEditable",
+       "object": "Field"
+      },
+      "tsl_lang": "ENU",
+      "tsl_value": "Unprotect fields",
+      "tsl_simplehelp": null,
+      "tsl_plural_value": null,
+      "tsl_short_value": null,
+      "tsl_placeholder": null,
+      "tsl_listhelp": null,
+      "tsl_tooltip": null,
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "TranslateField",
+     "userkey": "artPicFullyEditable French",
+     "item": {
+      "tsl_object": {
+       "item": {"fld_name": "artPicFullyEditable"},
+       "icon": "img/system/field",
+       "label": "Field",
+       "userkeylabel": "artPicFullyEditable",
+       "object": "Field"
+      },
+      "tsl_lang": "FRA",
+      "tsl_value": "Pic protected",
+      "tsl_simplehelp": null,
+      "tsl_plural_value": null,
+      "tsl_short_value": null,
+      "tsl_placeholder": null,
+      "tsl_listhelp": null,
+      "tsl_tooltip": null,
+      "row_module_id__mdl_name": "Artil"
+     }
     }
    ]
   },
@@ -13353,6 +13646,38 @@
       },
       "tsl_lang": "FRA",
       "tsl_value": "ArtTechnique-1",
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "TranslateFieldArea",
+     "userkey": "ArtPiece-5 English",
+     "item": {
+      "tsl_object": {
+       "item": {"ofa_name": "ArtPiece-5"},
+       "icon": "img/system/field_area",
+       "label": "Fields area",
+       "userkeylabel": "ArtPiece-5",
+       "object": "ObjectFieldArea"
+      },
+      "tsl_lang": "ENU",
+      "tsl_value": "Data Protection",
+      "row_module_id__mdl_name": "Artil"
+     }
+    },
+    {
+     "object": "TranslateFieldArea",
+     "userkey": "ArtPiece-5 French",
+     "item": {
+      "tsl_object": {
+       "item": {"ofa_name": "ArtPiece-5"},
+       "icon": "img/system/field_area",
+       "label": "Fields area",
+       "userkeylabel": "ArtPiece-5",
+       "object": "ObjectFieldArea"
+      },
+      "tsl_lang": "FRA",
+      "tsl_value": "Piece -5",
       "row_module_id__mdl_name": "Artil"
      }
     }

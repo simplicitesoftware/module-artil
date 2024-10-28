@@ -44,53 +44,7 @@ public class ArtPiece extends ObjectDB {
 		return ArtilCommons.isAdmin(getGrant());
 	}
 	
-	@Override
-	public String postSave() {
-		tryLireIndexing();
-		return null;
-	}
-	
-	@Override
-	public String postDelete() {
-		/*try{
-			ArtLireHelper.deleteFromIndex(getRowId());
-		}
-		catch(Exception e){
-			AppLog.error(getClass(), "postDelete", e.getMessage(), e, getGrant());
-		}*/
-		return null;
-	}
-	
-	private void tryLireIndexing(){
-		/*try{
-			InputStream img = getField("artPicPicture").getDocument(getGrant()).getInputStream();
-			ArtLireHelper.indexImage(img, getRowId());
-		}
-		catch(Exception e){
-			AppLog.error(getClass(), "tryLireIndexing", e.getMessage(), e, getGrant());
-		}	*/	
-	}
-	
 	public String reIndexAll(){
-		/*try{
-			ArtLireHelper.deleteAllIndex();
-		}
-		catch(Exception e){
-			AppLog.error(getClass(), "reIndexAll", e.getMessage(), e, getGrant());
-			return "Could not empty index";
-		}
-		
-		ArtPiece pic = (ArtPiece) getGrant().getTmpObject("ArtPiece");
-		long c = 0;
-		synchronized(pic){
-			pic.resetFilters();
-			pic.search().forEach(row -> {
-				pic.setValues(row);
-				pic.tryLireIndexing();
-			});
-			c = pic.getCount();
-		}
-		return c+" objects indexed.";*/
 		return "Image recognition index is broken at the moment.";
 	}
 	
