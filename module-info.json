@@ -1,8 +1,8 @@
 {
-    "date": "2024-10-28 18:15:57",
+    "date": "2024-10-28 18:18:18",
     "name": "Artil",
-    "format": "json",
-    "files": ["Artil.json"],
+    "format": "xml",
+    "files": ["Artil.xml"],
     "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-artil.git"}},
     "version": "1.15",
     "platform": "6.1.10"
