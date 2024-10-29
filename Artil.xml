@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="649" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="653" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
 	<data>
 		<mdl_name>Artil</mdl_name>
-		<mdl_version>1.15</mdl_version>
+		<mdl_version>1.16</mdl_version>
 		<mdl_prefix>art</mdl_prefix>
 		<mdl_url><![CDATA[{
     "origin": {"uri": "https://github.com/simplicitesoftware/module-artil.git"},
@@ -52,8 +52,8 @@ sim tomcat-star
 	<name>Theme</name>
 	<action>upsert</action>
 	<data>
-		<thm_name>ArtTheme2</thm_name>
-		<thm_logo_id>files/Theme/ArtTheme2/logo.jpg</thm_logo_id>
+		<thm_name>ArtTheme</thm_name>
+		<thm_logo_id>files/Theme/ArtTheme/logo.jpg</thm_logo_id>
 		<thm_logo_invert/>
 		<thm_logo2_id/>
 		<thm_favicon_id/>
@@ -62,9 +62,9 @@ sim tomcat-star
 		<thm_text2/>
 		<thm_color3/>
 		<thm_text3/>
-		<thm_base>simplicite</thm_base>
-		<thm_css_doc>files/Theme/ArtTheme2/ArtTheme2_gen.css</thm_css_doc>
-		<thm_addon>files/Theme/ArtTheme2/addon.less</thm_addon>
+		<thm_base>light</thm_base>
+		<thm_css_doc>files/Theme/ArtTheme/ArtTheme_gen.css</thm_css_doc>
+		<thm_addon>files/Theme/ArtTheme/addon.less</thm_addon>
 		<thm_searchbox/>
 		<thm_active/>
 		<thm_font>Roboto</thm_font>
@@ -84,7 +84,7 @@ sim tomcat-star
 		<thm_menu_sta_t/>
 		<thm_compact>1</thm_compact>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-		<thm_const>files/Theme/ArtTheme2/const.less</thm_const>
+		<thm_const>files/Theme/ArtTheme/const.less</thm_const>
 	</data>
 </object>
 <object>
@@ -96,13 +96,14 @@ sim tomcat-star
 		<viw_ui><![CDATA[<div>
   <div class="area" data-area="1"></div>
   <div class="area" data-area="2"></div>
+  <div class="area" data-area="3"></div>
 </div>]]></viw_ui>
 		<viw_order>1</viw_order>
 		<viw_icon>img/color/panorama</viw_icon>
 		<viw_disp_id.dis_code/>
 		<viw_scope>art_admin_scope</viw_scope>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-		<viw_theme_id.thm_name>ArtTheme2</viw_theme_id.thm_name>
+		<viw_theme_id.thm_name>ArtTheme</viw_theme_id.thm_name>
 		<viw_lang/>
 	</data>
 	<data>
@@ -114,7 +115,7 @@ sim tomcat-star
 		<viw_disp_id.dis_code/>
 		<viw_scope>art_readonly_scope</viw_scope>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-		<viw_theme_id.thm_name>ArtTheme2</viw_theme_id.thm_name>
+		<viw_theme_id.thm_name>ArtTheme</viw_theme_id.thm_name>
 		<viw_lang/>
 	</data>
 	<data>
@@ -2291,7 +2292,7 @@ sim tomcat-star
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering/>
+		<fld_rendering>PICTE</fld_rendering>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
@@ -3147,6 +3148,24 @@ sim tomcat-star
     <div class="area" data-area="3"></div>
   </div>
 </div>]]></tpl_ui>
+		<tpl_min/>
+		<tpl_image/>
+		<tpl_grid/>
+		<tpl_context/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tpl_name>ArtPicSingle</tpl_name>
+		<tpl_ui><![CDATA[<!doctype html>
+<html lang=en>
+<head>
+	<meta charset=utf-8>
+	<title>blah</title>
+</head>
+<body>
+	<p>I'm the second content</p>
+</body>
+</html>]]></tpl_ui>
 		<tpl_min/>
 		<tpl_image/>
 		<tpl_grid/>
@@ -8666,6 +8685,21 @@ sim tomcat-star
 	</data>
 	<data>
 		<prt_object_id.obo_name>ArtPiece</prt_object_id.obo_name>
+		<prt_name>ArtPicSingle</prt_name>
+		<prt_usage>O</prt_usage>
+		<prt_visible>1</prt_visible>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<prt_lang>ANY</prt_lang>
+		<prt_translation>Get PDF</prt_translation>
+		<prt_filename><![CDATA[[VALUE:artPicTitle]]]></prt_filename>
+		<prt_mimetype>pdf</prt_mimetype>
+		<prt_type>FILE</prt_type>
+		<prt_method/>
+		<prt_file>files/PrintTemplate/ArtPicSingle.html</prt_file>
+		<prt_template_id.tpl_name/>
+	</data>
+	<data>
+		<prt_object_id.obo_name>ArtPiece</prt_object_id.obo_name>
 		<prt_name>ArtPiecePrintable</prt_name>
 		<prt_usage>L</prt_usage>
 		<prt_visible>1</prt_visible>
@@ -9123,6 +9157,26 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
+		<vwi_view_id.viw_name>ArtScopeAdmin</vwi_view_id.viw_name>
+		<vwi_position>3</vwi_position>
+		<vwi_type>E</vwi_type>
+		<vwi_title>0</vwi_title>
+		<vwi_research_id.rch_name/>
+		<vwi_research_id.rch_object_id.obo_name/>
+		<vwi_research_id.rch_user_id.usr_login/>
+		<vwi_search_spec/>
+		<vwi_lov_code/>
+		<vwi_show/>
+		<vwi_url><![CDATA[[EXPR:HTMLTool.getExternalObjectURL("ArtHomeLastAdded")]]]></vwi_url>
+		<vwi_image/>
+		<vwi_subview_id.viw_name/>
+		<vwi_treeview_id.trv_name/>
+		<vwi_crosstab_id.ctb_name/>
+		<vwi_printtmpl_id.prt_name/>
+		<vwi_printtmpl_id.prt_lang/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
 		<vwi_view_id.viw_name>ArtViewHome</vwi_view_id.viw_name>
 		<vwi_position>1</vwi_position>
 		<vwi_type>E</vwi_type>
@@ -9154,6 +9208,32 @@ sim tomcat-star
 	<data>
 		<vig_view_id.viw_name>ArtScopeReadonly</vig_view_id.viw_name>
 		<vig_group_id.grp_name>ART_READONLY</vig_group_id.grp_name>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>Agenda</name>
+	<action>upsert</action>
+	<data>
+		<agd_name>ArtExbCalendar</agd_name>
+		<agd_object_id.obo_name>ArtExhibition</agd_object_id.obo_name>
+		<agd_opendays>1;2;3;4;5;6;7</agd_opendays>
+		<agd_min_hr>00:00</agd_min_hr>
+		<agd_max_hr>24:00</agd_max_hr>
+		<agd_start_hr>08:00</agd_start_hr>
+		<agd_end_hr>18:00</agd_end_hr>
+		<agd_quantum>30</agd_quantum>
+		<agd_flying>0</agd_flying>
+		<agd_date_id.fld_name>artExbDate</agd_date_id.fld_name>
+		<agd_enddate_id.fld_name>artExbClosingDate</agd_enddate_id.fld_name>
+		<agd_duration_id.fld_name/>
+		<agd_group_id.fld_name/>
+		<agd_user_id.fld_name/>
+		<agd_label1_id.fld_name>artExbTitle</agd_label1_id.fld_name>
+		<agd_label2_id.fld_name>artPlcName</agd_label2_id.fld_name>
+		<agd_label3_id.fld_name/>
+		<agd_label4_id.fld_name/>
+		<agd_label5_id.fld_name/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 </object>
@@ -9646,7 +9726,7 @@ sim tomcat-star
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Pic pivot</tsl_value>
+		<tsl_value>Pivot Table</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -9660,7 +9740,7 @@ sim tomcat-star
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Pic pivot</tsl_value>
+		<tsl_value>Tableau croisé</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -13402,7 +13482,7 @@ sim tomcat-star
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Admin</tsl_value>
+		<tsl_value>Artil Admin</tsl_value>
 		<tsl_help/>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -13417,7 +13497,7 @@ sim tomcat-star
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Admin</tsl_value>
+		<tsl_value>Artil Admin</tsl_value>
 		<tsl_help/>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
