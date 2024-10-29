@@ -1,9 +1,0 @@
-{
-    "date": "2024-07-30 10:22:25",
-    "name": "Artil",
-    "format": "xml",
-    "files": ["Artil.xml"],
-    "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-artil.git"}},
-    "version": "1.14",
-    "platform": "5.3.44"
-}
