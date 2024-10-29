@@ -1,10 +1,10 @@
-![Logo](https://www.simplicite.io/resources/logos/logo250.png)
-* * *
+# Artil
 
-Artil
-=============
+**Artil** is an **art pieces inventory** for art management structures (galleries, museums, and collectors). Artil stands for "Art Information Logistics".
 
-Artil stands for "Art Information Logistics". It is an art pieces inventory for art management structures (galleries, museums, and collectors).
+This app was built with the [Simplicité platform](https://www.simplicite.io).
+
+![Logo Simplicité](https://www.simplicite.io/resources/logos/logo125.png)
 
 ## Business model
 
@@ -18,4 +18,3 @@ Art pieces:
 Invoices containing one to many art pieces can be generated.
 
 ![Model](https://raw.githubusercontent.com/simplicitesoftware/module-artil/refs/heads/v6/files/Model/Artil.png)
-
