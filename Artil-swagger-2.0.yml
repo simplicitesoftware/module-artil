@@ -1612,6 +1612,11 @@ paths:
         enum:
         - SOLO
         - GROUP
+      - in: query
+        name: artExbPictures
+        description: Search filter for Pictures
+        type: string
+        required: false
       tags:
       - ArtExhibition
   /rest/ArtPiece/{row_id}/action:calculateEstimatedPrice:
@@ -3893,6 +3898,9 @@ definitions:
       artExbTitle:
         description: Title
         type: string
+      artExbPictures:
+        description: Pictures
+        type: object
       row_id:
         description: Unique technical row ID
         type: string

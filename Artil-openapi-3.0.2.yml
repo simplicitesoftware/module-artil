@@ -472,6 +472,9 @@ components:
         artExbTitle:
           description: Title
           type: string
+        artExbPictures:
+          description: Pictures
+          type: object
         row_id:
           description: Unique technical row ID
           type: string
@@ -2475,6 +2478,12 @@ paths:
         in: query
         name: artExbType
         description: Search filter for Type
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artExbPictures
+        description: Search filter for Pictures
         required: false
       tags:
       - ArtExhibition

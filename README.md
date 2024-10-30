@@ -158,6 +158,7 @@ Piece of art
 | `artExbCommissaire`                                          | char(100)                                |          | yes       |          | -                                                                                |
 | `artExbDescrition`                                           | html(10000)                              |          | yes       |          | -                                                                                |
 | `artExbType`                                                 | enum(100) using `ART_EXB_TYPE` list      |          | yes       |          | -                                                                                |
+| `artExbPictures`                                             | document                                 |          | yes       |          | -                                                                                |
 
 ### Lists
 
