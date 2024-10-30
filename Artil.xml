@@ -3694,7 +3694,7 @@ sim tomcat-star
 	<data>
 		<obe_name>ArtImageRecognition</obe_name>
 		<obe_type>E</obe_type>
-		<obe_nature/>
+		<obe_nature>com_simplicite_util_ExternalObject</obe_nature>
 		<obe_url/>
 		<obe_settings/>
 		<obe_comment/>
