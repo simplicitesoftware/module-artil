@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="653" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="654" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -53,7 +53,7 @@ sim tomcat-star
 	<action>upsert</action>
 	<data>
 		<thm_name>ArtTheme</thm_name>
-		<thm_logo_id>files/Theme/ArtTheme/logo.jpg</thm_logo_id>
+		<thm_logo_id>files/Theme/ArtTheme/logo.png</thm_logo_id>
 		<thm_logo_invert/>
 		<thm_logo2_id/>
 		<thm_favicon_id/>
@@ -3934,7 +3934,7 @@ sim tomcat-star
 		<obo_comment/>
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
-		<obo_exportorder/>
+		<obo_exportorder>100</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>0</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -4005,7 +4005,7 @@ sim tomcat-star
 		<obo_comment/>
 		<obo_type>O</obo_type>
 		<obo_searchspec/>
-		<obo_exportorder/>
+		<obo_exportorder>110</obo_exportorder>
 		<obo_distinct>0</obo_distinct>
 		<obo_indexable>0</obo_indexable>
 		<obo_groupby>0</obo_groupby>
@@ -13671,6 +13671,12 @@ sim tomcat-star
 		<dt_name>Artil-data-20240730102134</dt_name>
 		<dt_file>data/Artil-data-20240730102134.zip</dt_file>
 		<dt_desc><![CDATA[Created by module's data export on 2024-07-30 10:21:34]]></dt_desc>
+	</data>
+	<data>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<dt_name>Artil-data-20241029213411</dt_name>
+		<dt_file>data/Artil-data-20241029213411.zip</dt_file>
+		<dt_desc><![CDATA[Created by module's data export on 2024-10-29 21:34:11]]></dt_desc>
 	</data>
 </object>
 <object>
