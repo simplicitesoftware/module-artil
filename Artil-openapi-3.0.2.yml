@@ -194,7 +194,7 @@ components:
           type: number
         artPicYear:
           description: Year
-          type: integer
+          type: string
         artPicTitle:
           description: Title
           type: string
@@ -270,7 +270,7 @@ components:
           type: number
         artPicinvPicId__artPicYear:
           description: Piece Year
-          type: integer
+          type: string
         artPicinvInvId:
           description: Invoice
           type: string
@@ -749,7 +749,7 @@ paths:
         description: Search filter for Piece Width
         required: false
       - schema:
-          type: integer
+          type: string
         in: query
         name: artPicinvPicId__artPicYear
         description: Search filter for Piece Year
@@ -1750,7 +1750,7 @@ paths:
         description: Search filter for Artist Rating
         required: false
       - schema:
-          type: integer
+          type: string
         in: query
         name: artPicYear
         description: Search filter for Year

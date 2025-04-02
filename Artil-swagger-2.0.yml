@@ -169,7 +169,7 @@ paths:
       - in: query
         name: artPicinvPicId__artPicYear
         description: Search filter for Piece Year
-        type: integer
+        type: string
         required: false
       - in: query
         name: artPicinvPicId__artPicPicture
@@ -1004,7 +1004,7 @@ paths:
       - in: query
         name: artPicYear
         description: Search filter for Year
-        type: integer
+        type: string
         required: false
       - in: query
         name: artPicTecId
@@ -3620,7 +3620,7 @@ definitions:
         type: number
       artPicYear:
         description: Year
-        type: integer
+        type: string
       artPicTitle:
         description: Title
         type: string
@@ -3696,7 +3696,7 @@ definitions:
         type: number
       artPicinvPicId__artPicYear:
         description: Piece Year
-        type: integer
+        type: string
       artPicinvInvId:
         description: Invoice
         type: string

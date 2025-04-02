@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="666" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="665" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -2706,11 +2706,11 @@ sim tomcat-star
 		<fld_listsum/>
 		<fld_exportable>1</fld_exportable>
 		<fld_tray/>
-		<fld_type>1</fld_type>
+		<fld_type>3</fld_type>
 		<fld_type_id.flt_code/>
 		<fld_list_id.lov_name/>
 		<fld_copy>1</fld_copy>
-		<fld_size>4</fld_size>
+		<fld_size>10</fld_size>
 		<fld_minsize/>
 		<fld_precision/>
 		<fld_fromdate_id.fld_name/>
@@ -2721,7 +2721,7 @@ sim tomcat-star
 		<fld_updall>1</fld_updall>
 		<fld_case/>
 		<fld_righttoleft>0</fld_righttoleft>
-		<fld_rendering>NUM</fld_rendering>
+		<fld_rendering/>
 		<fld_speech/>
 		<fld_calc/>
 		<fld_objlist/>
@@ -13846,12 +13846,6 @@ sim tomcat-star
 		<dt_name>Artil-data-20240730102134</dt_name>
 		<dt_file>data/Artil-data-20240730102134.zip</dt_file>
 		<dt_desc><![CDATA[Created by module's data export on 2024-07-30 10:21:34]]></dt_desc>
-	</data>
-	<data>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-		<dt_name>Artil-data-20241029213411</dt_name>
-		<dt_file>data/Artil-data-20241029213411.zip</dt_file>
-		<dt_desc><![CDATA[Created by module's data export on 2024-10-29 21:34:11]]></dt_desc>
 	</data>
 </object>
 <object>
