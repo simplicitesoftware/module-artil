@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: Artil 1.16
+#             |_| Module: Artil 1.17
 basePath: /api
 paths:
   /rest/ArtTag:
@@ -480,44 +480,6 @@ paths:
         required: false
       tags:
       - ArtFair
-  /rest/ArtPiece/{row_id}/action:reIndexAll:
-    get:
-      summary: Call a custom action for a ArtPiece business object record or for all
-        records
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-artpiece-action-reindexall
-      responses:
-        '200':
-          schema:
-            $ref: '#/definitions/ActionResult'
-          description: Success in calling the custom action
-        '400':
-          schema:
-            $ref: '#/definitions/Error400'
-          description: Bad request
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-        '500':
-          schema:
-            $ref: '#/definitions/Error500'
-          description: Internal server error
-        '404':
-          schema:
-            $ref: '#/definitions/Error404'
-          description: Not found
-      parameters:
-      - in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        type: string
-        required: true
-      tags:
-      - ArtPiece
   /rest/ArtTagPiece/{row_id}:
     post:
       summary: Create a new ArtTagPiece business object record
@@ -1619,44 +1581,6 @@ paths:
         required: false
       tags:
       - ArtExhibition
-  /rest/ArtPiece/{row_id}/action:calculateEstimatedPrice:
-    get:
-      summary: Call a custom action for a ArtPiece business object record or for all
-        records
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-artpiece-action-calculateestimatedprice
-      responses:
-        '200':
-          schema:
-            $ref: '#/definitions/ActionResult'
-          description: Success in calling the custom action
-        '400':
-          schema:
-            $ref: '#/definitions/Error400'
-          description: Bad request
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-        '500':
-          schema:
-            $ref: '#/definitions/Error500'
-          description: Internal server error
-        '404':
-          schema:
-            $ref: '#/definitions/Error404'
-          description: Not found
-      parameters:
-      - in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        type: string
-        required: true
-      tags:
-      - ArtPiece
   /rest/ArtTagPiece:
     get:
       summary: Search ArtTagPiece business object records or get contextualized metadata
@@ -2813,44 +2737,6 @@ paths:
       - ArtInvoice
       consumes:
       - application/json
-  /rest/ArtInvoice/{row_id}/action:calculateTotal:
-    get:
-      summary: Call a custom action for a ArtInvoice business object record or for
-        all records
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-artinvoice-action-calculatetotal
-      responses:
-        '200':
-          schema:
-            $ref: '#/definitions/ActionResult'
-          description: Success in calling the custom action
-        '400':
-          schema:
-            $ref: '#/definitions/Error400'
-          description: Bad request
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-        '500':
-          schema:
-            $ref: '#/definitions/Error500'
-          description: Internal server error
-        '404':
-          schema:
-            $ref: '#/definitions/Error404'
-          description: Not found
-      parameters:
-      - in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        type: string
-        required: true
-      tags:
-      - ArtInvoice
   /rest/ArtPiece/{row_id}:
     post:
       summary: Create a new ArtPiece business object record
@@ -3432,6 +3318,7 @@ securityDefinitions:
     type: apiKey
 definitions:
   Error404:
+    description: Not found
     type: object
     properties:
       error:
@@ -3443,44 +3330,57 @@ definitions:
         enum:
         - 404
   ArrayOfArtTag:
+    description: List of Tag
     type: array
     items:
       $ref: '#/definitions/ArtTag'
   ArtOwner:
+    description: Owner
     type: object
     properties:
       artOwnName:
         description: Name
         type: string
+        maxLength: 255
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
   ArtFair:
+    description: Fair
     type: object
     properties:
       artFairName:
         description: Name
         type: string
+        maxLength: 100
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       artFairYear:
         description: Year
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
   ArtTechnique:
+    description: Technique
     type: object
     properties:
       artTecAltName:
         description: Alt Name
         type: string
+        maxLength: 250
       artTecName:
         description: Name
         type: string
+        maxLength: 250
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
   PublicationResult:
+    description: Publication result
     type: object
     properties:
       mime:
@@ -3490,33 +3390,42 @@ definitions:
         description: Content (plain text or base64 encoded)
         type: string
   ArtArtist:
+    description: Artist
     type: object
     properties:
       artArtFirstname:
         description: First name
         type: string
+        maxLength: 50
       artArtYear:
         description: Year of birth
         type: integer
       artArtLastname:
         description: Last name
         type: string
+        maxLength: 50
       artOrigin:
         description: Origin
         type: string
+        maxLength: 250
       artArtRatingFormula:
         description: Rating
         type: string
+        maxLength: 1000
       artBiography:
         description: Biography
         type: string
+        maxLength: 10000
       artCurriculum:
         description: Curriculum
         type: string
+        maxLength: 10000
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
   PlaceData:
+    description: Place data
     type: object
     properties:
       coord:
@@ -3538,6 +3447,7 @@ definitions:
         description: 'Label #3'
         type: string
   PlaceMapData:
+    description: Places map data
     type: object
     properties:
       places:
@@ -3549,46 +3459,61 @@ definitions:
         description: Name
         type: string
   ArrayOfArtExhibition:
+    description: List of Exhibitions
     type: array
     items:
       $ref: '#/definitions/ArtExhibition'
   ArrayOfArtPlace:
+    description: List of Places
     type: array
     items:
       $ref: '#/definitions/ArtPlace'
   ArtTagPiece:
+    description: Tags
     type: object
     properties:
       artTpTagId__artTagLabel:
         description: app art tag fk Label
         type: string
+        maxLength: 20
       artTpPieceId__artPicCode:
         description: app art piece fk Code
         type: string
+        maxLength: 20
       artTpPieceId:
         description: app art piece fk
         type: string
+        maxLength: 11
       artTpTagId:
         description: app art tag fk
         type: string
+        maxLength: 11
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
   ArtPiece:
+    description: |-
+      Art piece:
+
+      Piece of art
     type: object
     properties:
       artPicArtistId__artArtLastname:
         description: Artist
         type: string
+        maxLength: 50
       artPicTagVirtual:
         description: art pic tag virtual
         type: string
+        maxLength: 11
       artPicDocument:
         description: Files
         type: object
       artPicState:
         description: State
         type: string
+        maxLength: 30
         enum:
         - SELLING
         - SOLD
@@ -3599,12 +3524,15 @@ definitions:
       artPicExbVirtual:
         description: art pic exb virtual
         type: string
+        maxLength: 11
       artPicTecId:
         description: Technique
         type: string
+        maxLength: 11
       artPicEntry:
         description: Entry date
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       artPicPicture:
         description: Picture
@@ -3612,6 +3540,7 @@ definitions:
       artPicTecId__artTecName:
         description: Technique
         type: string
+        maxLength: 250
       artPicDepth:
         description: Depth
         type: number
@@ -3621,24 +3550,30 @@ definitions:
       artPicYear:
         description: Year
         type: string
+        maxLength: 10
       artPicTitle:
         description: Title
         type: string
+        maxLength: 200
       artPicArtistId:
         description: Artist
         type: string
+        maxLength: 11
       artPicComment:
         description: Comments
         type: string
+        maxLength: 1000
       artPicPlaceId:
         description: Place
         type: string
+        maxLength: 11
       artPicEstimatedPrice:
         description: Estimated Price
         type: number
       artPicSigned:
         description: Signed
         type: string
+        maxLength: 1
         enum:
         - '2'
         - '1'
@@ -3646,75 +3581,93 @@ definitions:
       artPicOwnId__artOwnName:
         description: Owner Name
         type: string
+        maxLength: 255
       artPicCodeBis:
         description: Code 2
         type: string
+        maxLength: 20
       artPicFullyEditable:
         description: Unprotect fields
         type: boolean
       artPicArtistId__artArtRatingFormula:
         description: Artist Rating
         type: string
+        maxLength: 1000
       artPicOwnId:
         description: Owner
         type: string
+        maxLength: 11
       artPicScore:
         description: Score
         type: number
       artPicPlaceId__artPlcName:
         description: Place
         type: string
+        maxLength: 50
       artPicArtistId__artArtFirstname:
         description: Artist's first name
         type: string
+        maxLength: 50
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       artPicCode:
         description: Code
         type: string
+        maxLength: 20
       artPicHeight:
         description: Height
         type: number
   ArtPicInv:
+    description: Invoice item
     type: object
     properties:
       artPicinvPicId__artPicTitle:
         description: Piece Title
         type: string
+        maxLength: 200
       artPicinvPicId__artPicHeight:
         description: Piece Height
         type: number
       artPicinvPicId__artPicCode:
         description: Piece Code
         type: string
+        maxLength: 20
       artPicinvPicId__artPicTecId__artTecName:
         description: Piece Technique Name
         type: string
+        maxLength: 250
       artPicinvPicId__artPicEstimatedPrice:
         description: Piece Estimated Price
         type: number
       artPicinvPicId__artPicYear:
         description: Piece Year
         type: string
+        maxLength: 10
       artPicinvInvId:
         description: Invoice
         type: string
+        maxLength: 11
       artPicinvPicId__artPicArtistId__artArtLastname:
         description: Artist Lastname
         type: string
+        maxLength: 50
       artPicinvPrice:
         description: Price
         type: number
       artPicinvInvId__artInvCode:
         description: Invoice Code
         type: string
+        maxLength: 100
       artPicinvPicId__artPicArtistId__artArtFirstname:
         description: Artist First name
         type: string
+        maxLength: 50
       artPicinvPicId:
         description: Piece
         type: string
+        maxLength: 11
       artPicinvPicId__artPicPrice:
         description: Estimated price
         type: number
@@ -3724,20 +3677,25 @@ definitions:
       artPicinvPicId__artPicTecId:
         description: Piece Technique
         type: string
+        maxLength: 11
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       artPicinvPicId__artPicPicture:
         description: Piece Picture
         type: object
       artPicinvPicId__artPicArtistId:
         description: Piece Artist
         type: string
+        maxLength: 11
   ArrayOfArtExbPic:
+    description: List of Exhibitions
     type: array
     items:
       $ref: '#/definitions/ArtExbPic'
   Error400:
+    description: Bad request
     type: object
     properties:
       error:
@@ -3749,17 +3707,21 @@ definitions:
         enum:
         - 400
   ArtInvoice:
+    description: Invoice
     type: object
     properties:
       artInvYear:
         description: Year
         type: string
+        maxLength: 4
       artInvDescription:
         description: Description
         type: string
+        maxLength: 255
       artInvState:
         description: State
         type: string
+        maxLength: 20
         enum:
         - DRAFT
         - SENT
@@ -3770,23 +3732,29 @@ definitions:
       artInvFrom:
         description: From
         type: string
+        maxLength: 2000
       artInvTo:
         description: To
         type: string
+        maxLength: 2000
       artInvCode:
         description: Code
         type: string
+        maxLength: 100
       artInvFile:
         description: File
         type: object
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       artInvDate:
         description: Date
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
   Error401:
+    description: Unauthorized
     type: object
     properties:
       error:
@@ -3798,6 +3766,7 @@ definitions:
         enum:
         - 401
   Error500:
+    description: Internal server error
     type: object
     properties:
       error:
@@ -3809,51 +3778,66 @@ definitions:
         enum:
         - 500
   ArtFairPic:
+    description: Fair piece
     type: object
     properties:
       artFpFairId__artFairYear:
         description: Fairpic fair id Year
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       artFpPicId__artPicCode:
         description: Fairpic pic id Code
         type: string
+        maxLength: 20
       artFpPicId:
         description: Fairpic pic id
         type: string
+        maxLength: 11
       artFpFairId:
         description: Fairpic fair id
         type: string
+        maxLength: 11
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       artFpFairId__artFairName:
         description: Fairpic fair id Name
         type: string
+        maxLength: 100
   ArrayOfArtPicInv:
+    description: List of Invoice items
     type: array
     items:
       $ref: '#/definitions/ArtPicInv'
   ArtExbPic:
+    description: Exhibitions
     type: object
     properties:
       artExbpicPicId__artPicCode:
         description: art exbpic pic id Code
         type: string
+        maxLength: 20
       artExbpicExbId__artExbDate:
         description: art exbpic exb id Opening Date
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       artExbpicExbId:
         description: art exbpic exb id
         type: string
+        maxLength: 11
       artExbpicPicId:
         description: art exbpic pic id
         type: string
+        maxLength: 11
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
   Error403:
+    description: Forbidden
     type: object
     properties:
       error:
@@ -3865,79 +3849,99 @@ definitions:
         enum:
         - 403
   ArrayOfArtFairPic:
+    description: List of Fair pieces
     type: array
     items:
       $ref: '#/definitions/ArtFairPic'
   ArrayOfArtArtist:
+    description: List of Artists
     type: array
     items:
       $ref: '#/definitions/ArtArtist'
   ArrayOfArtFair:
+    description: List of Fairs
     type: array
     items:
       $ref: '#/definitions/ArtFair'
   ArtExhibition:
+    description: Exhibition
     type: object
     properties:
       artExbType:
         description: Type
         type: string
+        maxLength: 100
         enum:
         - SOLO
         - GROUP
       artExbDate:
         description: Opening Date
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       artExbPlcId:
         description: Place
         type: string
+        maxLength: 11
       artExbCommissaire:
         description: Commissaire
         type: string
+        maxLength: 100
       artExbTitle:
         description: Title
         type: string
+        maxLength: 255
       artExbPictures:
         description: Pictures
         type: object
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
       artExbDescrition:
         description: Descrition
         type: string
+        maxLength: 10000
       artExbClosingDate:
         description: Closing Date
         type: string
+        maxLength: 10
         example: yyyy-MM-dd
       artExbPlcId__artPlcName:
         description: Place Name
         type: string
+        maxLength: 50
   ArrayOfArtInvoice:
+    description: List of Invoices
     type: array
     items:
       $ref: '#/definitions/ArtInvoice'
   ArtTag:
+    description: Tag
     type: object
     properties:
       artTagLabel:
         description: Label
         type: string
+        maxLength: 20
       artTagDescription:
         description: Description
         type: string
+        maxLength: 255
       artTagPublic:
         description: Public
         type: boolean
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
   ArrayOfArtTagPiece:
+    description: List of Tags
     type: array
     items:
       $ref: '#/definitions/ArtTagPiece'
   ActionResult:
+    description: Action result
     type: object
     properties:
       result:
@@ -3950,26 +3954,32 @@ definitions:
         description: Object item with lists of linked objects' items
         type: object
   ArtPlace:
+    description: Place
     type: object
     properties:
       artPlcName:
         description: Name
         type: string
+        maxLength: 50
       artPlcPublic:
         description: Public
         type: boolean
       row_id:
         description: Unique technical row ID
         type: string
+        maxLength: 11
   ArrayOfArtPiece:
+    description: List of Art pieces
     type: array
     items:
       $ref: '#/definitions/ArtPiece'
   ArrayOfArtOwner:
+    description: List of Owners
     type: array
     items:
       $ref: '#/definitions/ArtOwner'
   ArrayOfArtTechnique:
+    description: List of Techniques
     type: array
     items:
       $ref: '#/definitions/ArtTechnique'
@@ -3984,7 +3994,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module Artil
   title: Artil
-  version: '1.16'
+  version: '1.17'
 tags:
 - name: ArtArtist
   description: Artist

@@ -5,7 +5,7 @@
 	<action>upsert</action>
 	<data>
 		<mdl_name>Artil</mdl_name>
-		<mdl_version>1.16</mdl_version>
+		<mdl_version>1.17</mdl_version>
 		<mdl_prefix>art</mdl_prefix>
 		<mdl_url><![CDATA[{
     "origin": {"uri": "https://github.com/simplicitesoftware/module-artil.git"},
@@ -4377,7 +4377,7 @@ sim tomcat-star
 		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>0</obo_btn_close>
 		<obo_tray>0</obo_tray>
-		<obo_dashboard>0</obo_dashboard>
+		<obo_dashboard/>
 		<obo_prefix>pic</obo_prefix>
 		<obo_search_ts/>
 		<obo_minrows/>
@@ -8791,6 +8791,7 @@ sim tomcat-star
 		<prt_method>pubInvoiceHtml</prt_method>
 		<prt_file/>
 		<prt_template_id.tpl_name/>
+		<prt_syntax>DEFAULT</prt_syntax>
 	</data>
 	<data>
 		<prt_object_id.obo_name>ArtPiece</prt_object_id.obo_name>
@@ -8806,6 +8807,7 @@ sim tomcat-star
 		<prt_method/>
 		<prt_file>files/PrintTemplate/ArtPicSingle.html</prt_file>
 		<prt_template_id.tpl_name/>
+		<prt_syntax>DEFAULT</prt_syntax>
 	</data>
 	<data>
 		<prt_object_id.obo_name>ArtPiece</prt_object_id.obo_name>
@@ -8821,6 +8823,7 @@ sim tomcat-star
 		<prt_method/>
 		<prt_file/>
 		<prt_template_id.tpl_name>ArtPiecePrintable</prt_template_id.tpl_name>
+		<prt_syntax>DEFAULT</prt_syntax>
 	</data>
 </object>
 <object>
@@ -9524,12 +9527,6 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
-		<scr_code>ArtLuceneAnalyzers</scr_code>
-		<scr_file>lib/lucene-analyzers-common-8.0.0.jar</scr_file>
-		<scr_type>LIB</scr_type>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
 		<scr_code>ArtLireLib</scr_code>
 		<scr_file>lib/lire-1.0.b05.jar</scr_file>
 		<scr_type>LIB</scr_type>
@@ -9539,6 +9536,12 @@ sim tomcat-star
 		<scr_code>ArtLireTest</scr_code>
 		<scr_file>test/src/com/simplicite/tests/Artil/ArtLireTest.java</scr_file>
 		<scr_type>TST</scr_type>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<scr_code>ArtLuceneAnalyzers</scr_code>
+		<scr_file>lib/lucene-analyzers-common-8.0.0.jar</scr_file>
+		<scr_type>LIB</scr_type>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
