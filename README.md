@@ -297,9 +297,3 @@ Piece of art
 
 
 
-`ArtImageRecognition` external object definition
-------------------------------------------------
-
-
-
-

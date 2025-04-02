@@ -4,7 +4,6 @@ import java.util.*;
 import com.simplicite.util.*;
 import com.simplicite.util.tools.*;
 
-//import com.simplicite.commons.Artil.ArtLireHelper;
 import java.io.InputStream;
 import com.simplicite.commons.Artil.ArtilCommons;
 import com.simplicite.util.exceptions.ActionException;

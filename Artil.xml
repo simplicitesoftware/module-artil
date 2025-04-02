@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="665" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="652" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -86,6 +86,41 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<thm_const>files/Theme/ArtTheme/const.less</thm_const>
 	</data>
+	<data>
+		<thm_name>ThemeMondrian-Light-Artil</thm_name>
+		<thm_logo_id>files/Theme/ThemeMondrian-Light-Artil/logo.png</thm_logo_id>
+		<thm_logo_invert>0</thm_logo_invert>
+		<thm_logo2_id/>
+		<thm_favicon_id/>
+		<thm_color1>#F3F1EE</thm_color1>
+		<thm_color2>#F3F1EE</thm_color2>
+		<thm_text2>#474747</thm_text2>
+		<thm_color3>#F3F1EE</thm_color3>
+		<thm_text3>#474747</thm_text3>
+		<thm_base>light</thm_base>
+		<thm_css_doc>files/Theme/ThemeMondrian-Light-Artil/ThemeMondrian-Light-Artil_gen.css</thm_css_doc>
+		<thm_addon>files/Theme/ThemeMondrian-Light-Artil/addon.less</thm_addon>
+		<thm_searchbox/>
+		<thm_active/>
+		<thm_font/>
+		<thm_font_mono/>
+		<thm_iconset/>
+		<thm_code_editor_theme/>
+		<thm_html_editor_theme>LIGHT</thm_html_editor_theme>
+		<thm_menu_dom_c/>
+		<thm_menu_dom_t>#474747</thm_menu_dom_t>
+		<thm_menu_dact_c>#F3F1EE</thm_menu_dact_c>
+		<thm_menu_dact_t>#303030</thm_menu_dact_t>
+		<thm_menu_sub_c>#F3F1EE</thm_menu_sub_c>
+		<thm_menu_sub_t>#474747</thm_menu_sub_t>
+		<thm_menu_sact_c>#FFFAF0</thm_menu_sact_c>
+		<thm_menu_sact_t>#303030</thm_menu_sact_t>
+		<thm_menu_sta_c>#F3F1EE</thm_menu_sta_c>
+		<thm_menu_sta_t>#474747</thm_menu_sta_t>
+		<thm_compact>1</thm_compact>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<thm_const>files/Theme/ThemeMondrian-Light-Artil/const.less</thm_const>
+	</data>
 </object>
 <object>
 	<name>View</name>
@@ -103,7 +138,7 @@ sim tomcat-star
 		<viw_disp_id.dis_code/>
 		<viw_scope>art_admin_scope</viw_scope>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-		<viw_theme_id.thm_name>ArtTheme</viw_theme_id.thm_name>
+		<viw_theme_id.thm_name>ThemeMondrian-Light-Artil</viw_theme_id.thm_name>
 		<viw_lang/>
 	</data>
 	<data>
@@ -3729,21 +3764,6 @@ sim tomcat-star
 		<obe_icon/>
 		<obe_permalink/>
 		<obe_widget>1</obe_widget>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<obe_name>ArtImageRecognition</obe_name>
-		<obe_type>E</obe_type>
-		<obe_nature>com_simplicite_util_ExternalObject</obe_nature>
-		<obe_url/>
-		<obe_settings/>
-		<obe_comment/>
-		<obe_help/>
-		<obe_class/>
-		<obe_script_id>src/com/simplicite/extobjects/Artil/ArtImageRecognition.java</obe_script_id>
-		<obe_icon>fas/search</obe_icon>
-		<obe_permalink/>
-		<obe_widget/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 </object>
@@ -9411,91 +9431,6 @@ sim tomcat-star
 	<data>
 		<res_object>
 			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>ArtImageRecognition</obe_name>
-				</data>
-			</object>
-		</res_object>
-		<res_type>CSS</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>CUSTOM_INPUT_STYLE</res_code>
-		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/ArtImageRecognition/CUSTOM_INPUT_STYLE.less</res_file>
-		<res_image/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>ArtImageRecognition</obe_name>
-				</data>
-			</object>
-		</res_object>
-		<res_type>CSS</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>STYLE</res_code>
-		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/ArtImageRecognition/STYLE.less</res_file>
-		<res_image/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>ArtImageRecognition</obe_name>
-				</data>
-			</object>
-		</res_object>
-		<res_type>HTML</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>TEMPLATE</res_code>
-		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/ArtImageRecognition/TEMPLATE.html</res_file>
-		<res_image/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>ArtImageRecognition</obe_name>
-				</data>
-			</object>
-		</res_object>
-		<res_type>JS</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>CUSTOM_INPUT_SCRIPT</res_code>
-		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/ArtImageRecognition/CUSTOM_INPUT_SCRIPT.js</res_file>
-		<res_image/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>ArtImageRecognition</obe_name>
-				</data>
-			</object>
-		</res_object>
-		<res_type>JS</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>SCRIPT</res_code>
-		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/ArtImageRecognition/SCRIPT.js</res_file>
-		<res_image/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
 				<name>ObjectInternal</name>
 				<data>
 					<obo_name>ArtInvoice</obo_name>
@@ -9518,30 +9453,6 @@ sim tomcat-star
 		<scr_code>ArtilCommons</scr_code>
 		<scr_file>src/com/simplicite/commons/Artil/ArtilCommons.java</scr_file>
 		<scr_type>JSR</scr_type>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<scr_code>ArtLireHelper</scr_code>
-		<scr_file>src/com/simplicite/commons/Artil/ArtLireHelper.java</scr_file>
-		<scr_type>JSR</scr_type>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<scr_code>ArtLireLib</scr_code>
-		<scr_file>lib/lire-1.0.b05.jar</scr_file>
-		<scr_type>LIB</scr_type>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<scr_code>ArtLireTest</scr_code>
-		<scr_file>test/src/com/simplicite/tests/Artil/ArtLireTest.java</scr_file>
-		<scr_type>TST</scr_type>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<scr_code>ArtLuceneAnalyzers</scr_code>
-		<scr_file>lib/lucene-analyzers-common-8.0.0.jar</scr_file>
-		<scr_type>LIB</scr_type>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -13319,36 +13230,6 @@ sim tomcat-star
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>ArtImageRecognition</obe_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Image search</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>ArtImageRecognition</obe_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Recherche par image</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
 					<obe_name>ArtHomeCounters</obe_name>
 				</data>
 			</object>
@@ -13877,23 +13758,6 @@ sim tomcat-star
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>ArtImageRecognition</obe_name>
-				</data>
-			</object>
-		</prm_object>
-		<prm_perm>1</prm_perm>
-		<prm_upd>0</prm_upd>
-		<prm_req>0</prm_req>
-		<prm_prop/>
-		<prm_value/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<prm_group_id.grp_name>ART_ADMIN</prm_group_id.grp_name>
-		<prm_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
 					<obe_name>ArtHomeCounters</obe_name>
 				</data>
 			</object>
@@ -13917,20 +13781,6 @@ sim tomcat-star
 				<name>Domain</name>
 				<data>
 					<obd_name>ArtArtil</obd_name>
-				</data>
-			</object>
-		</pmg_perm_id.prm_object>
-		<pmg_perm_id.prm_prop/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<pmg_group_id.grp_name>ART_READONLY</pmg_group_id.grp_name>
-		<pmg_perm_id.prm_group_id.grp_name>ART_ADMIN</pmg_perm_id.prm_group_id.grp_name>
-		<pmg_perm_id.prm_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>ArtImageRecognition</obe_name>
 				</data>
 			</object>
 		</pmg_perm_id.prm_object>

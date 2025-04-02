@@ -1,0 +1,1327 @@
+/* Light Color Palette (cf documentation) */
+@mazette-black-01:  #F1F1F1;
+@mazette-black-02:  #E2E2E2;
+@mazette-black-03:  #C6C6C6;
+@mazette-black-04:  #ABABAB;
+@mazette-black-05:  #919191;
+@mazette-black-06:  #777777;
+@mazette-black-07:  #5E5E5E;
+@mazette-black-08:  #474747;
+@mazette-black-09:  #303030;
+@mazette-black-10:  #1C1C1C;
+
+@mazette-blue-01:   #EEEEFF;
+@mazette-blue-02:   #DDDCFF;
+@mazette-blue-03:   #BBB9FF;
+@mazette-blue-04:   #9897FF;
+@mazette-blue-05:   #7674FF;
+@mazette-blue-06:   #5451FF;
+@mazette-blue-07:   #4341CC;
+@mazette-blue-08:   #323199;
+@mazette-blue-09:   #222066;
+@mazette-blue-10:   #111033;
+
+@mazette-yellow-01: #FFFAF0;
+@mazette-yellow-02: #FFF6E0;
+@mazette-yellow-03: #FFEDC2;
+@mazette-yellow-04: #FFE3A3;
+@mazette-yellow-05: #FFDA85;
+@mazette-yellow-06: #FFD166;
+@mazette-yellow-07: #CCA752;
+@mazette-yellow-08: #997D3D;
+@mazette-yellow-09: #665429;
+@mazette-yellow-10: #332A14;
+
+@mazette-green-01:  #EEFDF5;
+@mazette-green-02:  #DEFBEB;
+@mazette-green-03:  #BCF7D7;
+@mazette-green-04:  #9BF4C3;
+@mazette-green-05:  #79F0AF;
+@mazette-green-06:  #58EC9B;
+@mazette-green-07:  #46BD7C;
+@mazette-green-08:  #358E5D;
+@mazette-green-09:  #235E3E;
+@mazette-green-10:  #122F1F;
+
+@mazette-red-01:    #FFEBEC;
+@mazette-red-02:    #FED7D9;
+@mazette-red-03:    #FDAFB3;
+@mazette-red-04:    #FD868C;
+@mazette-red-05:    #FC5E66;
+@mazette-red-06:    #FB3640;
+@mazette-red-07:    #C92B33;
+@mazette-red-08:    #972026;
+@mazette-red-09:    #64161A;
+@mazette-red-10:    #320B0D;
+
+@mazette-purple-01: #FDF5FD;
+@mazette-purple-02: #FBEBFB;
+@mazette-purple-03: #F7D8F8;
+@mazette-purple-04: #F4C4F4;
+@mazette-purple-05: #F0B1F1;
+@mazette-purple-06: #EC9DED;
+@mazette-purple-07: #BD7EBE;
+@mazette-purple-08: #8E5E8E;
+@mazette-purple-09: #5E3F5F;
+@mazette-purple-10: #2F1F2F;
+
+/* UI variables */
+@bg-website-color:          #F3F1EE;
+@background-color:          @mazette-black-01;
+@background-fade-color:     fade(@mazette-black-01, 25%);
+@background-dropdown-color: @mazette-black-01;
+@text-main-color:           @mazette-black-08;
+@text-color:        		@mazette-black-08;
+@text-light-color:          @mazette-black-10;
+@text-dark-color:           @mazette-black-03;
+@layer1-color:              @mazette-black-02;
+@layer2-color:              @mazette-black-03;
+@border-color:              @mazette-black-03;
+
+a {
+    color: @mazette-blue-09;
+}
+a:hover, a:focus {
+    color: @mazette-blue-10;
+}
+a:active {
+    color: @mazette-blue-05;
+}
+
+.main-menu {
+	li > a {
+		&:hover {
+			background-color: lighten(@border-color, 4%) !important;
+		}
+	}
+    > li > ul > li { /* Targetting only SubMenus */
+	    &:hover {
+	    	background-color: @layer1-color;
+	    }
+    }
+    
+    > li > ul > li {
+    	.status > a:hover {
+    		background-color: lighten(@border-color, 4%) !important;
+    	}
+    	
+    	a {
+    		.ico > i.icon {
+	    		color: darken(@border-color, 16%) !important;
+    		}
+    	}
+    }
+    
+    li.active > a {
+		border-left: solid 0.25rem @mazette-red-03;
+    }
+    li.active > ul.sub-menu > li.active > a {
+    	border-left: solid 0.25rem @mazette-red-04;
+    }
+}
+ul.sub-menu a.menu-sel::before {
+	background: @mazette-red-05 !important;
+}
+
+.header {
+    .btn-shortcut { /* embedded shortcuts, shortcuts dropdown */
+        &:hover {
+            color: darken(@layer1-color, 32%);
+        }
+    }
+    .btn-group {
+    	&:hover {
+            background: @layer1-color;
+        }
+    }
+    .scope-icon {
+    	background-color: @layer1-color !important;
+    	border-radius: 0rem !important;
+    	border: none !important;
+    	img {
+    		background-color: @layer1-color !important;
+    		border-radius: 0rem !important;
+    		border: none !important;
+    	}
+    }
+    img.user-avatar {
+    	background-color: @layer1-color !important;
+    	border-radius: 0rem !important;
+    	border: none !important;
+    }
+}
+
+.header .index { /* The one in the header only */
+    div.input-group.searchbox {
+        background-color: transparent !important;
+
+        input.form-control {
+            background-color: lighten(@background-color, 16%) !important;
+            color: @text-main-color !important;
+        }
+        button.btn {
+            background-color: lighten(@background-color, 32%) !important;
+            &:hover {
+                color: @mazette-black-06 !important;
+            }
+        }
+    }
+}
+
+.breadcrumb {
+	// font-style: italic !important;
+	font-weight: 400 !important;
+	
+	li.breadcrumb-item {
+		overflow: visible !important;
+		a {
+			overflow: visible !important;
+		}
+	}
+	
+	a:hover, a:focus {
+		color: @mazette-yellow-07 !important;
+	}
+	a:active {
+		color: @mazette-yellow-04 !important;
+	}
+}
+
+.search-bar {
+    background: transparent !important;
+    div input.form-control {
+        background: @layer1-color !important;
+        border-radius: 0 !important;
+        border: solid 0.065rem @border-color !important;
+
+        color: @text-light-color !important;
+    }
+
+    div.input-group span.btn{ /* Specific to menu's searchbar */
+        padding: 7.75px 6px !important;
+        color: @text-light-color !important;
+        background: @layer1-color !important;
+    }
+    .input-group > button.btn.btn-icon {
+    	padding: 8px;
+    }
+}
+body.compact {
+	.search-bar > .input-group > input.form-control {
+		padding: 7px 7px !important;
+	}
+}
+
+.dropdown-menu {
+    box-shadow: none;
+    border: solid 0.125rem @border-color;
+    background: @background-dropdown-color !important;
+    border-radius: 0px !important;
+    
+    li {
+        background: @background-color !important;
+        padding: 0 .25rem;
+    }
+    li > a {
+        color: @text-main-color;
+        padding: 0.5rem !important;
+        &:hover {
+            color: @text-main-color !important;
+            background-color: @layer1-color !important;
+            border-radius: 0.25rem;
+        }
+    }
+    
+    .zoom-bar {
+    	div > button.zoom-compact, .slider > span {
+    		color: @text-main-color !important;
+    	}
+    }
+    .languages {
+    	div > select.form-select {
+    		color: @text-main-color;
+    		background-color: @background-color !important;
+    		margin-top: 0.25rem;
+    		margin-bottom: 0.25rem;
+    		border-radius: 0rem !important;
+    		option {
+    			border-radius: 0rem !important;
+    		}
+    	}
+    }
+}
+
+ul.dropdown-menu.shortcuts {
+	li > a > span > a {
+		i.bi-pin-angle {
+			color: @text-main-color !important;
+		}
+		i.bi-pin-angle-filled {
+			color: @text-main-color !important;
+		}
+	}
+}
+
+.alert-help {
+    color: @mazette-purple-07 !important;
+	background: @mazette-purple-03 !important;
+    border: solid 0.125rem @mazette-purple-07 !important;
+    font-size: 1.125rem;
+}
+.alert-info {
+	color: @mazette-blue-07 !important;
+	background: @mazette-blue-03 !important;
+    border: solid 0.125rem @mazette-blue-07 !important;
+    font-size: 1.125rem;
+}
+.alert-danger {
+	color: @mazette-red-07 !important;
+	background: @mazette-red-03 !important;
+    border: solid 0.125rem @mazette-red-07 !important;
+    font-size: 1.125rem;
+}
+.alert-warning {
+	color: @mazette-yellow-08 !important;
+	background: @mazette-yellow-03 !important;
+    border: solid 0.125rem @mazette-yellow-08 !important;
+    font-size: 1.125rem;
+}
+.alert-success {
+	color: @mazette-green-08 !important;
+	background: @mazette-green-03 !important;
+    border: solid 0.125rem @mazette-green-08 !important;
+    font-size: 18px;
+}
+
+form {
+	.alert {
+		font-size: 1rem;
+		padding: 0.3rem 0.5rem !important;
+		border-radius: 0;
+	}
+}
+.tab-pane {
+	.panel-list {
+		form {
+			.alert {
+				margin-top: 1rem !important;
+			}
+		}
+	}
+}
+
+.list-shortcuts {
+    .item {
+        background: @background-color;
+        color: @text-main-color;
+        border: solid 0.065rem @layer1-color;
+        border-radius: 0 !important;
+        
+        transition: background 0.25s ease, border 0.25s ease;
+        i {
+        	opacity: 0.75;
+        }
+        
+        &:hover {
+        	background: @layer1-color;
+            border: solid 0.065rem @border-color;
+            box-shadow: none !important;
+            
+            i { opacity: 1; }
+        }
+        
+        .label {
+        	font-weight: 400 !important;
+        }
+    }
+}
+
+.cache img {
+    border: solid 0.25rem transparent;
+	transition: border 0.25s ease, transform 0.25s ease !important;
+	border-radius: 0.75rem !important;
+	
+    &:hover {
+        box-shadow: none !important;
+        border: solid 0.25rem rgba(0,0,0, 0.08);
+        transform: scale(1.05);
+    }
+}
+
+.sysinfos .alert-info {
+    background: @background-color !important;
+    border: none !important;
+}
+
+.container-table {
+    border: none !important;
+    overflow: hidden;
+    padding: 1rem !important;
+}
+
+.table > thead > tr.head {
+	td, th {
+		padding-bottom: 0rem !important;
+	}
+}
+.container-table table {
+    box-shadow: none;
+    border: solid 0.065rem @border-color;
+    
+    thead {
+    	border-left: solid 0.25rem @mazette-yellow-06;
+    	
+        tr.search {
+        	th.col-action {
+        		padding: 0.5rem !important;
+        	}
+        	th {
+        		padding-top: 0rem !important;
+        		border: solid 0.065rem @border-color;
+        		border-top-color: transparent !important;
+        	}
+        }
+        &:not(.sticky-head) {
+    		border-bottom: solid 0.065rem @border-color !important;
+    	}
+        th {
+            border-left: solid 0.065rem @border-color;
+            border-right: solid 0.065rem @border-color;
+			padding: 0.5rem !important;
+			
+            div.input-group {
+                margin: 0.25rem;
+                .input-group-text {
+                	border: solid 0.0125rem @border-color;
+                	background-color: @mazette-black-02;
+                	&:hover {
+                		background-color: @mazette-black-01;
+                		cursor: pointer;
+                	}
+                	
+                }
+                .form-control {
+                	border: solid 0.0125rem @border-color;
+                    background-color: @mazette-black-02;
+                    color: @mazette-black-08;
+                }
+            }
+            
+        }
+        tr.col-area > td, tr.col-area > th {
+        	border-right: solid 0.065rem @border-color !important;
+        }
+        
+    }
+    tbody tr {
+        border-top: @background-color !important;
+        border-bottom: @background-color !important;
+        border-left: solid 0.065rem @border-color;
+        
+        td {
+            border-right: solid 0.065rem lighten(@border-color, 8%) !important;
+            padding-left: 0.5rem !important;
+            border-bottom: solid 0.065rem darken(@border-color, 12%) !important;
+        }
+
+        .btn {
+        	background-color: transparent !important;
+            margin-top: 8px !important;
+            margin-bottom: 8px !important;
+            
+            &:hover {
+            	background-color: darken(@mazette-black-03, 8%) !important;
+            }
+        }
+        &:hover {
+        	td {
+        		color: @mazette-yellow-09 !important;
+        		background-color: @layer1-color !important;
+        		border-right: solid 0.065rem @background-color !important;
+        	}
+        }
+        &.selected {
+            td {
+                background-color: @layer1-color !important;
+                border-right: solid 0.065rem @background-color !important;
+            }
+            td.col-action {
+            	border-left: solid 0.25rem @mazette-yellow-04;
+            }
+        }
+    }
+}
+
+.tab-content {
+    background-color: @background-color !important;
+}
+
+.module-sys .module, 
+.module-app .module {
+	background-color: darken(@background-color, 8%) !important;
+	border: solid 0.065rem transparent !important;
+	border-radius: 0 !important;
+	
+	span {
+		color: @text-light-color !important;
+	}
+	
+	&:hover {
+		box-shadow: none !important;
+		border: solid 0.065rem @border-color !important;
+	}
+}
+
+#panel_Home_3 {
+	.view-item, .item-extern {
+		
+    	.levels {
+        	background-color: @background-color !important;
+        	div.center {
+        		background-color: @background-color !important;
+        		.title {
+        			color: @text-main-color !important;
+        		}
+        	}
+        	
+        	// custom colors for the circle-bars
+        	.circular-progress-bar[data-level="T"] {
+        		.rotate, .right {
+        			background-color: @mazette-blue-04;
+        		}
+        	}
+        	.circular-progress-bar[data-level="W"] {
+        		.rotate, .right {
+        			background-color: @mazette-yellow-04;
+        		}
+        	}
+        	.circular-progress-bar[data-level="E"] {
+        		.rotate, .right {
+        			background-color: @mazette-red-04;
+        		}
+        	}
+        	.circular-progress-bar[data-level="C"] {
+        		.rotate, .right {
+        			background-color: @border-color;
+        		}
+        	}
+    	}
+	}
+}
+ 
+div.monitor.docked ul.nav.nav-tabs {
+	padding: 8px 4px !important;
+	background-color: @layer2-color !important;	
+}
+
+div.social.audit {
+	background-color: @background-color !important;
+	border-radius: 0rem !important;
+	
+	.post.info {
+		border-left: solid 0.25rem @mazette-blue-06 !important;
+		border-radius: 0rem !important;
+		color: @mazette-black-09 !important;
+		background: @mazette-blue-03 !important;
+	    
+	    .desc {
+            .head {
+            	border-radius: 0rem !important;
+                color: @mazette-blue-03 !important;
+                .level {
+                	border-radius: 0rem !important;
+                	color: @mazette-black-08 !important;
+                }
+            }
+            .msg {
+                background-color: @mazette-blue-02 !important;
+            }
+        }
+		.action {
+			.btn-icon {
+				background-color: transparent !important;
+				border-radius: 0rem !important;
+				color: @mazette-black-09 !important;
+				
+				&:hover:not(.disabled):not([disabled]) {
+					background-color: rgba(0,0,0, 0.08) !important;
+					border-radius: 0rem !important;
+				}
+			}
+		}
+	}
+	.post.warning {
+		border-radius: 0rem !important;
+		border-left: solid 0.25rem @mazette-yellow-06 !important;
+		color: @mazette-black-09 !important;
+		background: @mazette-yellow-03 !important;
+	    
+	    .desc {
+            .head {
+            	border-radius: 0rem !important;
+                color: @mazette-yellow-03 !important;
+                .level {
+                	border-radius: 0rem !important;
+                	color: @mazette-black-09 !important;
+                }
+            }
+            .msg {
+                background-color: @mazette-yellow-02 !important;
+            }
+        }
+        .action {
+			.btn-icon {
+				background-color: transparent !important;
+				border-radius: 0rem !important;
+				color: @mazette-black-09 !important;
+				
+				&:hover:not(.disabled):not([disabled]) {
+					background-color: rgba(0,0,0, 0.08) !important;
+					border-radius: 0rem !important;
+				}
+			}
+		}
+	}
+	.post.error {
+		border-radius: 0rem !important;
+		border-left: solid 0.25rem @mazette-red-06 !important;
+		color: @mazette-black-09 !important;
+		background: @mazette-red-03 !important;
+	    
+	    .desc {
+	    	margin-bottom: 0.5rem !important;
+            .head {
+            	border-radius: 0rem !important;
+                color: @mazette-red-03 !important;
+                .level {
+                	border-radius: 0rem !important;
+                	color: @mazette-black-08 !important;
+                }
+            }
+            .msg {
+                background-color: @mazette-red-02 !important;
+            }
+        }
+        .action {
+			.btn-icon {
+				background-color: transparent !important;
+				border-radius: 0rem !important;
+				color: @mazette-black-09 !important;
+				
+				&:hover:not(.disabled):not([disabled]) {
+					background-color: rgba(0,0,0, 0.08) !important;
+					border-radius: 0rem !important;
+				}
+			}
+		}
+	}
+	
+	.post {
+		border-left-width: 0.25rem;
+		transition: border-left-width 0.25s ease;
+		&:hover {
+			border-left-width: 0.5rem !important;
+			box-shadow: none;
+		}
+	}
+	
+	.post.create {
+		background-color: @layer1-color !important;
+		.msg {
+			background-color: @layer1-color !important;
+		}
+		.action {
+			background-color: @layer1-color !important;
+		}
+		
+		&:hover {
+			transform: scale(1) !important;
+		}
+	}
+}
+
+.post.create, .post.owner {
+	padding: 0.75rem !important;
+	background-color: @background-color !important;
+	border-radius: 0 !important;
+	border: solid 0.065rem @border-color !important;
+	
+	.msg {
+		border-radius: 0 !important;
+		border-left: solid 0.125rem @border-color;
+		background-color: lighten(@background-color, 2%) !important;
+	}
+}
+
+.follow {
+	background-color: @background-color;
+	padding-top: 0.5rem !important;
+	padding-bottom: 0.5rem !important;
+}
+
+.field-container {
+	.form-control { // input ?
+		color: @text-main-color !important;
+	}
+	span.select2 > span.selection > span > span > div.enum-item {
+		color: @text-main-color !important;
+	}
+}
+
+.apps {
+	button.thumbnail {
+		background-color: @background-color !important;
+		border-radius: 0rem !important;
+		border: solid 0.065rem @border-color !important;
+		transition: all 0.25s ease;
+		
+		.caption {
+			color: @text-main-color !important;
+		}
+		
+		&:hover {
+			border-color: darken(@border-color, 8%) !important;
+			background-color: darken(@background-color, 8%) !important;
+		}
+	}
+}
+
+.select2-container--bootstrap .select2-selection--single .select2-selection__rendered {
+	background-color: @mazette-black-02 !important;
+}
+
+.zoom-compact::before {
+	color: @text-main-color !important;
+}
+
+.form-actionbar.floating-bar, .list-actionbar.floating-bar {
+	box-shadow: none !important;
+	border: solid 0.125rem @border-color;
+	border-radius: 0rem !important;
+}
+
+.activity {
+	.act-row > ol.act-road > li > .act-road-item {
+		color: @text-main-color !important;
+		
+		&::before {
+			background-color: @mazette-blue-06 !important;
+		}
+	}
+}
+
+.widget-cards .card {
+	box-shadow: none !important;
+	border: solid 0.065rem @border-color !important;
+}
+.card.text-center {
+	height: 100% !important;
+}
+
+.container-table.upsert .col-action {
+	background-color: @background-color !important;
+}
+.table.table-striped {
+	background-color: @background-color !important;
+}
+.btn-color-picker > div.preview {
+	left: -0.5rem !important;
+	width: 1rem !important;
+	border: solid 0.125rem @border-color;
+}
+
+.store-container {
+	background-color: @background-color !important;
+	
+	.storegrid > .storegrid__item {
+		border-radius: 0px !important;
+		
+		.storecard {
+			border: solid 0.125rem @border-color;
+			border-radius: 0rem !important;
+			transition: all 0.33s ease;
+			
+			&:hover {
+				border: solid 0.125rem rgba(255,255,255, 0.16) !important;
+				box-shadow: none !important;
+				transform: none !important;
+				
+				.storecard__content {
+					background-color: lighten(@background-color, 12%) !important;
+				}
+			}
+			
+			.storecard__img {
+				padding: 0.5rem 0rem;
+				background-color: @bg-website-color !important; // specific ...
+				border-bottom: solid 0.125rem @border-color;
+			}
+			
+			.storecard__content {
+				background-color: lighten(@background-color, 8%) !important;
+				.storecard__header {
+					color: @mazette-blue-09 !important;
+					font-weight: bold;
+				}
+				.storecard__text {
+					color: @text-main-color !important;
+				}
+			}
+		}
+	}
+}
+
+td.workkey {
+	background-color: @mazette-purple-03 !important;
+}
+
+.badge.status { //specific to status in main-menu ...
+	background: @layer1-color !important;
+	border: solid 1px @mazette-black-06 !important;
+	color: @mazette-black-06 !important;
+}
+
+.badge, .badge.count { //all other badges
+	background: @mazette-blue-03 !important;
+	border: solid 1px @mazette-blue-09 !important;
+	color: @mazette-blue-09 !important;
+}
+
+.select2-results__option > .enum-item {
+	background: @background-color !important;
+	color: @text-main-color !important;
+}
+
+.card {
+	.card-header {
+		padding: 0.5rem 1rem !important;
+		border: solid 0.065rem @border-color !important;
+	}
+	
+	.card-body {
+		.card > .card-header {
+			border-color: transparent !important;
+			border-bottom-color: @border-color !important;
+		}
+	}
+	
+	.card-footer > .search-footer > .nav {
+		background: @background-color;
+	}
+}
+
+.input-group {
+	button:hover {
+		background-color: darken(@background-color, 4%) !important;
+	}
+	.input-group-text {
+		border-left: solid 0.125rem @border-color;
+		&:hover {
+			background-color: darken(@background-color, 4%) !important;
+		}
+	}
+	.form-control.search-control {
+		background: #F9F8F7 !important;
+	}
+}
+
+.footer-bar > footer.footer > ul.list-inline > li.list-inline-item > a {
+	&:hover {
+		color: @mazette-yellow-07 !important;
+	}
+	&:active {
+		color: @mazette-yellow-05 !important;
+	}
+}
+
+.panel-list .actions .btn.active {
+	background: @background-color !important;
+	&:hover {
+		background: @border-color !important;
+	}
+}
+
+.modal-content .modal-body .search .search-form div.nav {
+	background: @background-color !important;
+}
+
+.modal-dialog > .modal-content > .modal-footer > .search-footer > .nav {
+	background: @background-color !important;
+}
+
+.modal-body {
+	h3 {
+		background: @background-color !important;
+	}
+}
+
+.search .index-search {
+	background: @background-color !important;
+}
+
+.form-group.field-search {
+	div > div.input-group {
+		.form-control {
+			border-right: solid 0.065rem @border-color;
+		}
+	}
+}
+
+div.field-container > input.form-control {
+	border-right: solid 0.065rem @border-color;
+}
+
+.tab-pane.active, .nav-tabs .nav-link.active {
+	background: #F9F8F7 !important;
+}
+
+
+/*
+	LEFT-BORDERS FOR IDENTITY !
+*/
+
+.card {
+	.card-header {
+		border-left: solid 0.25rem @mazette-purple-06 !important;
+	}
+	.panel-card {
+		.card {
+			&:focus {
+				.card-body {
+					border-left: solid 0.2rem @mazette-blue-06 !important;
+				}
+			}
+			.card-header {
+				border-left: solid 0.2rem @mazette-blue-06 !important;
+			}
+		}
+	}
+}
+
+//handling all TABS possibilities
+.tabs-top {
+	.nav-link {
+		border-bottom: solid 0.065rem @border-color !important;
+		&:not(.active) {
+			background: darken(@bg-website-color, 4%) !important;
+		}
+		
+		&:hover {
+			background: @bg-website-color !important;
+		}
+	}
+}
+.tabs-left {
+	.nav-tabs {
+		border-bottom: solid 0.065rem @border-color !important;
+		border-right: none !important;
+	}
+	.nav-link {
+		&:not(.active) {
+			background: darken(@bg-website-color, 4%) !important;
+		}
+		
+		&:hover {
+			background: @bg-website-color !important;
+		}
+	}
+}
+.nav-tabs .nav-link.active {
+	border-bottom-color: transparent !important;
+	border-left: solid 0.2rem @mazette-green-06 !important;
+}
+
+// MASONRY "CARDS"
+div.obj-summary {
+	background: transparent !important;
+	border-radius: 0px !important;
+	border: solid 0.065rem @border-color;
+	color: @text-color !important;
+	
+	.obj-body {
+		.title {
+			background: @background-fade-color !important;
+			border-radius: 0px !important;
+		}
+		.infos {
+			.obj-addons {
+				background: @background-fade-color !important;
+			}
+		}
+	}
+	
+	.obj-actions {
+		background: @background-fade-color !important;
+	}
+	
+	&:hover {
+		background: darken(@background-fade-color, 10%) !important;
+		border-color: darken(@border-color, 25%) !important;
+		box-shadow: none !important;
+		.obj-body {
+			.title {
+				background: darken(@background-fade-color, 25%) !important;
+				border-radius: 0px !important;
+				border-bottom-color: darken(@border-color, 25%) !important;
+			}
+			.infos {
+				.obj-addons {
+					background: darken(@background-fade-color, 25%) !important;
+				}
+			}
+		}
+		
+		.obj-actions {
+			background: darken(@background-fade-color, 8%) !important;
+		}
+	}
+}
+
+.tray-item {
+	div.obj-summary {
+		border-color: transparent !important;
+		border-left-color: @border-color !important;
+		
+		&:hover {
+			border-color: transparent !important;
+			border-left-color: darken(@border-color, 25%) !important;
+		}
+	}
+	
+	&:hover {
+		.obj-summary {
+			.obj-body {
+				.title {
+					// background-color: darken(@background-fade-color, 8%) !important;
+				}
+				.infos {
+					.obj-addons {
+						.actors {
+							background-color: transparent !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// CODE EDITOR (main, not embedded)
+div.code-editor {
+	div.split.horizontal {
+		.editor-area {
+			.editor-head {
+				// BG + BORDER + RADIUS
+				background: @background-color !important;
+				border-radius: 0 !important;
+				border: solid 0.065rem @border-color; //proper color ?
+			}
+		}
+		.split-part > .editor-explore {
+			// BG + BORDER + RADIUS
+			background: @background-color !important;
+			border-radius: 0 !important;
+			border: solid 0.065rem @border-color; //proper color ?
+			
+			ul.explorer {
+				li.module {
+					// COLOR (text)
+					color: @text-color !important; //? !important
+					
+					a.toggle {
+						// BG + HOVER
+						background: @background-color !important;
+						border-radius: 0 !important;
+						&:hover {
+							background: darken(@background-color, 4%) !important;
+						}
+					}
+					ul > li.object {
+						a.toggle {
+							// COLOR (redish) + HOVER (bg)
+							color: @mazette-red-08 !important;
+							background: none; //? transparent
+						}
+						ul > li.file {
+							a { 
+								// COLOR (yellow/grey) + HOVER (bg)
+								color: @mazette-black-08 !important; //? 07
+								background: none; //? transparent
+							}
+							ul > li.resource > a {
+								// COLOR (blue) + HOVER (bg)
+								color: @mazette-blue-08 !important;
+								background: none; //? transparent
+							}
+						}
+					}
+				}
+				
+				a.noopen {
+					opacity: 0.5 !important;
+				}
+				a:hover {
+					background: darken(@background-color, 4%) !important;
+				}
+			}
+		}
+	}
+}
+
+// TREEVIEW QUICK FIXES
+ul.root-ul {
+	button.btn-default {
+		color: @text-color !important;
+		&:hover {
+			background: @layer1-color !important;
+		}
+	}
+}
+
+// OPERATION TOOL FIXES
+.backend-monitor {
+	.head > .views > .tab.active {
+		background: @mazette-black-05 !important;
+	}
+	.tabs > .tab {
+		background: @mazette-black-05 !important;
+	}
+}
+
+// HOME SPECIFIC STYLES 
+#view_Home {
+	.card-header {
+		background: @bg-website-color !important;
+	}
+}
+
+// Latest fixes
+.search-form {
+	form {
+		background: @background-color;
+		border-radius: 0 !important;
+	}
+	i.icon-close {
+		background: transparent !important;
+	}
+}
+
+.docked {
+	.actions {
+		button.btn:not(.btn-primary):not(.btn-secondary) {
+			color: @text-color !important;
+			
+			&:hover {
+				color: lighten(@text-color, 16%) !important;
+			}
+		}
+	}
+}
+
+.datetimepicker table {
+	border: none !important;
+	color: @text-color !important;
+	span:hover {
+		background: @mazette-black-02 !important;
+	}
+	
+	thead {
+		border-color: transparent !important;
+		border-bottom-color: transparent !important;
+		border-bottom-width: 0px !important;
+		
+		color: @text-color !important;
+		
+		tr {
+			th, td {
+				border: none !important;
+			}
+		}
+	}
+	
+	tbody > tr {
+		border: none !important;
+		color: @text-color !important;
+		
+		&:hover {
+			td {
+				// here
+				&:not(.new) {
+					color: @text-color !important; // not changing
+				}
+	        	background-color: transparent !important;
+	        	border-right: none !important;
+			}
+		}
+		
+		td {
+			border: none !important;
+			
+			&:hover {
+				background: @bg-website-color !important;
+			}
+			
+			&:is(.active) {
+				background: @mazette-blue-06 !important;
+			}
+			&:is(.today) {
+				color: @text-color !important;
+				background: @mazette-yellow-06 !important;
+			}
+		}
+	}
+	
+	tfoot > tr > th {
+		color: @text-color !important;
+		border: none !important;
+	}
+}
+
+.modal-dialog {
+	.modal-content {
+		.modal-header > div > .follow {
+			div.item {
+				&:hover {
+					border-radius: 0 !important;
+					background: darken(@background-color, 4%);
+				}
+				
+				.follow-title {
+					color: darken(@text-dark-color, 16%) !important;
+					font-size: 0.75rem;
+					font-weight: bold;
+				}
+			}
+		}
+		
+		.modal-body > .social {
+			.post:hover {
+				box-shadow: none !important;
+				border-color: lighten(@border-color, 16%;) !important;
+				background: darken(@background-color, 4%) !important;
+			}
+			
+			.post .btn-like {
+				margin-top: 0 !important;
+				margin-bottom: 0.25rem !important;
+			}
+		}
+		
+		.modal-body {
+			.mono {
+				padding: 4px;
+				background: @layer1-color !important;
+				color: @text-color !important;
+			}
+			
+			.mono.error {
+				background: @mazette-red-03 !important;
+				color: @mazette-red-07 !important;
+			}
+		}
+		
+		.modal-footer > .nav {
+			background: @bg-website-color !important;
+		}
+	}
+}
+
+/* TEMPLATE EDITOR QUICK REWORK */
+.tmpl-edit {
+	.dock-zone {
+		margin-top: 0.625rem;
+		height: 1rem !important;
+		border: none !important;
+		border-radius: 5px;
+	}
+	div > .dock-zone.on { // increase specificity to override ...
+		border-color: transparent !important;
+		background-color: @mazette-yellow-04 !important;
+	}
+	
+	.row > .tmpl-bar {
+		border-radius: 0 !important;
+		background-color: @mazette-green-07 !important;
+	}
+	.area > .tmpl-bar {
+		border-radius: 0 !important;
+		background-color: @mazette-blue-07 !important;
+	}	
+	.field > .tmpl-bar {
+		border-radius: 0 !important;
+		background-color: @mazette-black-07 !important;
+	}
+}
+
+.tmpl-desk.on {
+	.row {
+		padding: 4px !important;
+		border-color: @mazette-green-04 !important;
+		
+		&:hover {
+			border-color: @mazette-green-07 !important;
+			box-shadow: none !important;
+		}
+	}
+	
+	.area {
+		padding: 4px !important;
+		border-color: @mazette-blue-04 !important;
+		
+		&:hover {
+			border-color: @mazette-blue-07 !important;
+			box-shadow: none !important;
+		}
+	}
+	
+	.field {
+		padding: 8px !important;
+		border-color: @mazette-black-04 !important;
+		
+		&:hover {
+			border-color: @mazette-black-07 !important;
+			box-shadow: none !important;
+			background-color: @mazette-black-01 !important;
+		}
+	}
+}
+
+// Template editor works
+.tmpl-new > .new-menu.on {
+	background: @background-color !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	border: solid 0.065rem @border-color !important;
+	
+	div:hover {
+		background: @layer1-color !important;
+	}
+}
+
+.tmpl-selector > ul > li {
+	background: @background-color !important;
+	border-bottom-color: @border-color !important;
+	&:hover {
+		background: @layer1-color !important;
+	}
+}
+
+.ace_tooltip {
+	background: @bg-website-color !important;
+	max-height: 425px !important;
+	
+	* {
+		color: @text-color !important;
+	}
+}
+
+// .user-dashboard > .tabs > .tab-content > .tab-pane.active {
+// 	background: @bg-website-color !important;
+// }
+
+.user-dashboard > .tabs > .tab-content > .tab-pane.active > .panel-card > .card {
+	background: #F8F7F6 !important;
+	& > .card-footer {
+		background: #F8F7F6 !important;
+	}
+}
