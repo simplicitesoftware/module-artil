@@ -206,6 +206,7 @@ Piece of art
 | _Ref. `artTpTagId.artTagLabel`_                              | _char(20)_                               |          |           |          | -                                                                                |
 | `artTpPieceId` link to **`ArtPiece`**                        | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `artTpPieceId.artPicCode`_                             | _char(20)_                               |          |           |          | -                                                                                |
+| _Ref. `artTpPieceId.artPicPicture`_                          | _image_                                  |          |           |          | -                                                                                |
 
 `ArtInvoice` business object definition
 ---------------------------------------

@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: Artil 1.17
+#             |_| Module: Artil 1.18
 components:
   schemas:
     Error404:
@@ -157,7 +157,7 @@ components:
       items:
         $ref: '#/components/schemas/ArtPlace'
     ArtTagPiece:
-      description: Tags
+      description: Tag / Artwork
       type: object
       properties:
         artTpTagId__artTagLabel:
@@ -165,11 +165,11 @@ components:
           type: string
           maxLength: 20
         artTpPieceId__artPicCode:
-          description: app art piece fk Code
+          description: Artwork Code
           type: string
           maxLength: 20
         artTpPieceId:
-          description: app art piece fk
+          description: Artwork
           type: string
           maxLength: 11
         artTpTagId:
@@ -180,9 +180,12 @@ components:
           description: Unique technical row ID
           type: string
           maxLength: 11
+        artTpPieceId__artPicPicture:
+          description: Artwork Picture
+          type: object
     ArtPiece:
       description: |-
-        Art piece:
+        Artwork:
 
         Piece of art
       type: object
@@ -624,7 +627,7 @@ components:
           type: string
           maxLength: 11
     ArrayOfArtTagPiece:
-      description: List of Tags
+      description: List of Tags / Artworks
       type: array
       items:
         $ref: '#/components/schemas/ArtTagPiece'
@@ -657,7 +660,7 @@ components:
           type: string
           maxLength: 11
     ArrayOfArtPiece:
-      description: List of Art pieces
+      description: List of Artworks
       type: array
       items:
         $ref: '#/components/schemas/ArtPiece'
@@ -2719,13 +2722,19 @@ paths:
           type: string
         in: query
         name: artTpPieceId
-        description: Search filter for app art piece fk
+        description: Search filter for Artwork
         required: false
       - schema:
           type: string
         in: query
         name: artTpPieceId__artPicCode
-        description: Search filter for app art piece fk Code
+        description: Search filter for Artwork Code
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artTpPieceId__artPicPicture
+        description: Search filter for Artwork Picture
         required: false
       tags:
       - ArtTagPiece
@@ -4785,7 +4794,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module Artil
   title: Artil
-  version: '1.17'
+  version: '1.18'
 tags:
 - name: ArtArtist
   description: Artist
@@ -4804,12 +4813,12 @@ tags:
 - name: ArtPicInv
   description: Invoice item
 - name: ArtPiece
-  description: Art piece
+  description: Artwork
 - name: ArtPlace
   description: Place
 - name: ArtTag
   description: Tag
 - name: ArtTagPiece
-  description: Tags
+  description: Tag / Artwork
 - name: ArtTechnique
   description: Technique

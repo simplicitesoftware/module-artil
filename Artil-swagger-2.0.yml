@@ -2,7 +2,7 @@
 # / __(_)_ __  _ __| (_)__(_) |_ /_/
 # \__ \ | '  \| '_ \ | / _| |  _/ -_)
 # |___/_|_|_|_| .__/_|_\__|_|\__\___|
-#             |_| Module: Artil 1.17
+#             |_| Module: Artil 1.18
 basePath: /api
 paths:
   /rest/ArtTag:
@@ -1707,12 +1707,17 @@ paths:
         required: false
       - in: query
         name: artTpPieceId
-        description: Search filter for app art piece fk
+        description: Search filter for Artwork
         type: string
         required: false
       - in: query
         name: artTpPieceId__artPicCode
-        description: Search filter for app art piece fk Code
+        description: Search filter for Artwork Code
+        type: string
+        required: false
+      - in: query
+        name: artTpPieceId__artPicPicture
+        description: Search filter for Artwork Picture
         type: string
         required: false
       tags:
@@ -3583,7 +3588,7 @@ definitions:
     items:
       $ref: '#/definitions/ArtPlace'
   ArtTagPiece:
-    description: Tags
+    description: Tag / Artwork
     type: object
     properties:
       artTpTagId__artTagLabel:
@@ -3591,11 +3596,11 @@ definitions:
         type: string
         maxLength: 20
       artTpPieceId__artPicCode:
-        description: app art piece fk Code
+        description: Artwork Code
         type: string
         maxLength: 20
       artTpPieceId:
-        description: app art piece fk
+        description: Artwork
         type: string
         maxLength: 11
       artTpTagId:
@@ -3606,9 +3611,12 @@ definitions:
         description: Unique technical row ID
         type: string
         maxLength: 11
+      artTpPieceId__artPicPicture:
+        description: Artwork Picture
+        type: object
   ArtPiece:
     description: |-
-      Art piece:
+      Artwork:
 
       Piece of art
     type: object
@@ -4050,7 +4058,7 @@ definitions:
         type: string
         maxLength: 11
   ArrayOfArtTagPiece:
-    description: List of Tags
+    description: List of Tags / Artworks
     type: array
     items:
       $ref: '#/definitions/ArtTagPiece'
@@ -4083,7 +4091,7 @@ definitions:
         type: string
         maxLength: 11
   ArrayOfArtPiece:
-    description: List of Art pieces
+    description: List of Artworks
     type: array
     items:
       $ref: '#/definitions/ArtPiece'
@@ -4108,7 +4116,7 @@ info:
     email: contact@simplicitesoftware.com
   description: API for module Artil
   title: Artil
-  version: '1.17'
+  version: '1.18'
 tags:
 - name: ArtArtist
   description: Artist
@@ -4127,12 +4135,12 @@ tags:
 - name: ArtPicInv
   description: Invoice item
 - name: ArtPiece
-  description: Art piece
+  description: Artwork
 - name: ArtPlace
   description: Place
 - name: ArtTag
   description: Tag
 - name: ArtTagPiece
-  description: Tags
+  description: Tag / Artwork
 - name: ArtTechnique
   description: Technique
