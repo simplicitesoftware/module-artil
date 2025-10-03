@@ -858,16 +858,16 @@ paths:
         description: Search filter for Piece Technique
         required: false
       - schema:
-          type: string
-        in: query
-        name: artPicinvPicId__artPicTecId__artTecName
-        description: Search filter for Piece Technique Name
-        required: false
-      - schema:
           type: number
         in: query
         name: artPicinvPicId__artPicHeight
         description: Search filter for Piece Height
+        required: false
+      - schema:
+          type: string
+        in: query
+        name: artPicinvPicId__artPicTecId__artTecName
+        description: Search filter for Piece Technique Name
         required: false
       - schema:
           type: number
@@ -902,14 +902,14 @@ paths:
       - schema:
           type: string
         in: query
-        name: artPicinvInvId
-        description: Search filter for Invoice
+        name: artPicinvPicId__artPicArtistId
+        description: Search filter for Piece Artist
         required: false
       - schema:
           type: string
         in: query
-        name: artPicinvPicId__artPicArtistId
-        description: Search filter for Piece Artist
+        name: artPicinvInvId
+        description: Search filter for Invoice
         required: false
       - schema:
           type: string

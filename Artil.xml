@@ -465,16 +465,16 @@ sim tomcat-star
 	</data>
 	<data>
 		<lov_code_id.lov_list_id.lov_name>ART_EXB_TYPE</lov_code_id.lov_list_id.lov_name>
-		<lov_code_id.lov_code>SOLO</lov_code_id.lov_code>
+		<lov_code_id.lov_code>GROUP</lov_code_id.lov_code>
 		<lov_lang>ENU</lov_lang>
-		<lov_value><![CDATA[Solo]]></lov_value>
+		<lov_value><![CDATA[Group]]></lov_value>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
 		<lov_code_id.lov_list_id.lov_name>ART_EXB_TYPE</lov_code_id.lov_list_id.lov_name>
-		<lov_code_id.lov_code>GROUP</lov_code_id.lov_code>
+		<lov_code_id.lov_code>SOLO</lov_code_id.lov_code>
 		<lov_lang>ENU</lov_lang>
-		<lov_value><![CDATA[Group]]></lov_value>
+		<lov_value><![CDATA[Solo]]></lov_value>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -489,13 +489,6 @@ sim tomcat-star
 		<lov_code_id.lov_code>GROUP</lov_code_id.lov_code>
 		<lov_lang>FRA</lov_lang>
 		<lov_value><![CDATA[Group]]></lov_value>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<lov_code_id.lov_list_id.lov_name>ARTINVSTATE</lov_code_id.lov_list_id.lov_name>
-		<lov_code_id.lov_code>SENT</lov_code_id.lov_code>
-		<lov_lang>ENU</lov_lang>
-		<lov_value><![CDATA[Sent]]></lov_value>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -510,6 +503,13 @@ sim tomcat-star
 		<lov_code_id.lov_code>PAYED</lov_code_id.lov_code>
 		<lov_lang>ENU</lov_lang>
 		<lov_value><![CDATA[Payed]]></lov_value>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<lov_code_id.lov_list_id.lov_name>ARTINVSTATE</lov_code_id.lov_list_id.lov_name>
+		<lov_code_id.lov_code>SENT</lov_code_id.lov_code>
+		<lov_lang>ENU</lov_lang>
+		<lov_value><![CDATA[Sent]]></lov_value>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -556,16 +556,16 @@ sim tomcat-star
 	</data>
 	<data>
 		<lov_code_id.lov_list_id.lov_name>ARTPICSTATE</lov_code_id.lov_list_id.lov_name>
-		<lov_code_id.lov_code>STORED</lov_code_id.lov_code>
+		<lov_code_id.lov_code>SELLING</lov_code_id.lov_code>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[INDISPONIBLE]]></lov_value>
+		<lov_value><![CDATA[EN VENTE]]></lov_value>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
 		<lov_code_id.lov_list_id.lov_name>ARTPICSTATE</lov_code_id.lov_list_id.lov_name>
-		<lov_code_id.lov_code>SELLING</lov_code_id.lov_code>
+		<lov_code_id.lov_code>STORED</lov_code_id.lov_code>
 		<lov_lang>FRA</lov_lang>
-		<lov_value><![CDATA[EN VENTE]]></lov_value>
+		<lov_value><![CDATA[INDISPONIBLE]]></lov_value>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -1282,7 +1282,7 @@ sim tomcat-star
 		<fld_incrementsyntax/>
 	</data>
 	<data>
-		<fld_name oldvalue="artFairpicFairId">artFpFairId</fld_name>
+		<fld_name>artFpFairId</fld_name>
 		<fld_dbname>art_fp_fair_id</fld_dbname>
 		<fld_visible>3</fld_visible>
 		<fld_updatable>2;3</fld_updatable>
@@ -1321,7 +1321,7 @@ sim tomcat-star
 		<fld_incrementsyntax/>
 	</data>
 	<data>
-		<fld_name oldvalue="artFairpicPicId">artFpPicId</fld_name>
+		<fld_name>artFpPicId</fld_name>
 		<fld_dbname>art_fp_pic_id</fld_dbname>
 		<fld_visible>3</fld_visible>
 		<fld_updatable>2;3</fld_updatable>
@@ -2140,7 +2140,7 @@ sim tomcat-star
 		<fld_incrementsyntax/>
 	</data>
 	<data>
-		<fld_name oldvalue="artPicProtected">artPicFullyEditable</fld_name>
+		<fld_name>artPicFullyEditable</fld_name>
 		<fld_dbname/>
 		<fld_visible>2</fld_visible>
 		<fld_updatable>2</fld_updatable>
@@ -4434,7 +4434,7 @@ sim tomcat-star
 		<obo_btn_savecopy>1</obo_btn_savecopy>
 		<obo_btn_close>0</obo_btn_close>
 		<obo_tray>0</obo_tray>
-		<obo_dashboard/>
+		<obo_dashboard>1;2</obo_dashboard>
 		<obo_prefix>pic</obo_prefix>
 		<obo_search_ts/>
 		<obo_minrows/>
@@ -6224,37 +6224,6 @@ sim tomcat-star
 	</data>
 	<data>
 		<obf_object_id.obo_name>ArtPicInv</obf_object_id.obo_name>
-		<obf_field_id.fld_name>artPicinvInvId</obf_field_id.fld_name>
-		<obf_order>200</obf_order>
-		<obf_group_by/>
-		<obf_dfault_order/>
-		<obf_input/>
-		<obf_ref_field_id.fld_name/>
-		<obf_ref_object_id.obo_name>ArtInvoice</obf_ref_object_id.obo_name>
-		<obf_cascad>C</obf_cascad>
-		<obf_card>0,n</obf_card>
-		<obf_visible>1</obf_visible>
-		<obf_ref_export>1</obf_ref_export>
-		<obf_copy>0</obf_copy>
-		<obf_ref_order/>
-		<obf_fld_visible/>
-		<obf_fld_required/>
-		<obf_fld_updatable/>
-		<obf_fld_research/>
-		<obf_fld_more/>
-		<obf_fld_listmore/>
-		<obf_fld_researchreq/>
-		<obf_fld_dfault/>
-		<obf_fld_exportable/>
-		<obf_fld_uk/>
-		<obf_area_id.ofa_name>ArtPicInv-2</obf_area_id.ofa_name>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-		<obf_joined_id.obf_object_id.obo_name/>
-		<obf_joined_id.obf_field_id.fld_name/>
-		<obf_joined_id.obf_order/>
-	</data>
-	<data>
-		<obf_object_id.obo_name>ArtPicInv</obf_object_id.obo_name>
 		<obf_field_id.fld_name>artPicArtistId</obf_field_id.fld_name>
 		<obf_order>200</obf_order>
 		<obf_group_by/>
@@ -6286,38 +6255,38 @@ sim tomcat-star
 	</data>
 	<data>
 		<obf_object_id.obo_name>ArtPicInv</obf_object_id.obo_name>
-		<obf_field_id.fld_name>artArtLastname</obf_field_id.fld_name>
-		<obf_order>210</obf_order>
+		<obf_field_id.fld_name>artPicinvInvId</obf_field_id.fld_name>
+		<obf_order>200</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
 		<obf_input/>
-		<obf_ref_field_id.fld_name>artPicArtistId</obf_ref_field_id.fld_name>
-		<obf_ref_object_id.obo_name>ArtArtist</obf_ref_object_id.obo_name>
-		<obf_cascad/>
-		<obf_card/>
-		<obf_visible/>
+		<obf_ref_field_id.fld_name/>
+		<obf_ref_object_id.obo_name>ArtInvoice</obf_ref_object_id.obo_name>
+		<obf_cascad>C</obf_cascad>
+		<obf_card>0,n</obf_card>
+		<obf_visible>1</obf_visible>
 		<obf_ref_export>1</obf_ref_export>
-		<obf_copy/>
+		<obf_copy>0</obf_copy>
 		<obf_ref_order/>
-		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_visible/>
 		<obf_fld_required/>
 		<obf_fld_updatable/>
 		<obf_fld_research/>
-		<obf_fld_more>0</obf_fld_more>
+		<obf_fld_more/>
 		<obf_fld_listmore/>
 		<obf_fld_researchreq/>
 		<obf_fld_dfault/>
 		<obf_fld_exportable/>
 		<obf_fld_uk/>
-		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
+		<obf_area_id.ofa_name>ArtPicInv-2</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-		<obf_joined_id.obf_object_id.obo_name>ArtPicInv</obf_joined_id.obf_object_id.obo_name>
-		<obf_joined_id.obf_field_id.fld_name>artPicArtistId</obf_joined_id.obf_field_id.fld_name>
-		<obf_joined_id.obf_order>200</obf_joined_id.obf_order>
+		<obf_joined_id.obf_object_id.obo_name/>
+		<obf_joined_id.obf_field_id.fld_name/>
+		<obf_joined_id.obf_order/>
 	</data>
 	<data>
 		<obf_object_id.obo_name>ArtPicInv</obf_object_id.obo_name>
-		<obf_field_id.fld_name>artArtFirstname</obf_field_id.fld_name>
+		<obf_field_id.fld_name>artArtLastname</obf_field_id.fld_name>
 		<obf_order>210</obf_order>
 		<obf_group_by/>
 		<obf_dfault_order/>
@@ -6375,6 +6344,37 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 		<obf_joined_id.obf_object_id.obo_name>ArtPicInv</obf_joined_id.obf_object_id.obo_name>
 		<obf_joined_id.obf_field_id.fld_name>artPicinvInvId</obf_joined_id.obf_field_id.fld_name>
+		<obf_joined_id.obf_order>200</obf_joined_id.obf_order>
+	</data>
+	<data>
+		<obf_object_id.obo_name>ArtPicInv</obf_object_id.obo_name>
+		<obf_field_id.fld_name>artArtFirstname</obf_field_id.fld_name>
+		<obf_order>210</obf_order>
+		<obf_group_by/>
+		<obf_dfault_order/>
+		<obf_input/>
+		<obf_ref_field_id.fld_name>artPicArtistId</obf_ref_field_id.fld_name>
+		<obf_ref_object_id.obo_name>ArtArtist</obf_ref_object_id.obo_name>
+		<obf_cascad/>
+		<obf_card/>
+		<obf_visible/>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy/>
+		<obf_ref_order/>
+		<obf_fld_visible>3</obf_fld_visible>
+		<obf_fld_required/>
+		<obf_fld_updatable/>
+		<obf_fld_research/>
+		<obf_fld_more>0</obf_fld_more>
+		<obf_fld_listmore/>
+		<obf_fld_researchreq/>
+		<obf_fld_dfault/>
+		<obf_fld_exportable/>
+		<obf_fld_uk/>
+		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+		<obf_joined_id.obf_object_id.obo_name>ArtPicInv</obf_joined_id.obf_object_id.obo_name>
+		<obf_joined_id.obf_field_id.fld_name>artPicArtistId</obf_joined_id.obf_field_id.fld_name>
 		<obf_joined_id.obf_order>200</obf_joined_id.obf_order>
 	</data>
 	<data>
@@ -7809,46 +7809,6 @@ sim tomcat-star
 	</data>
 	<data>
 		<obf_ref_object_id.obo_name>ArtPiece</obf_ref_object_id.obo_name>
-		<obf_order>100</obf_order>
-		<obf_ref_order/>
-		<obf_object_id.obj_name>ArtPicInv</obf_object_id.obj_name>
-		<obf_field_id.fld_name>artPicinvPicId</obf_field_id.fld_name>
-		<obf_cascad>R</obf_cascad>
-		<obf_card>0,n</obf_card>
-		<obf_query/>
-		<obf_filters/>
-		<obf_visible>1</obf_visible>
-		<obf_ref_export>1</obf_ref_export>
-		<obf_copy>0</obf_copy>
-		<obf_associate>1</obf_associate>
-		<obf_inline>0</obf_inline>
-		<obf_rendering/>
-		<obf_treedepth/>
-		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<obf_ref_object_id.obo_name>ArtPiece</obf_ref_object_id.obo_name>
-		<obf_order>200</obf_order>
-		<obf_ref_order/>
-		<obf_object_id.obj_name>ArtFairPic</obf_object_id.obj_name>
-		<obf_field_id.fld_name>artFpPicId</obf_field_id.fld_name>
-		<obf_cascad>C</obf_cascad>
-		<obf_card>0,n</obf_card>
-		<obf_query/>
-		<obf_filters/>
-		<obf_visible>1</obf_visible>
-		<obf_ref_export>1</obf_ref_export>
-		<obf_copy>0</obf_copy>
-		<obf_associate>1</obf_associate>
-		<obf_inline>0</obf_inline>
-		<obf_rendering/>
-		<obf_treedepth/>
-		<obf_area_id.ofa_name/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<obf_ref_object_id.obo_name>ArtPiece</obf_ref_object_id.obo_name>
 		<obf_order>200</obf_order>
 		<obf_ref_order>-1</obf_ref_order>
 		<obf_object_id.obj_name>ArtExbPic</obf_object_id.obj_name>
@@ -7885,6 +7845,46 @@ sim tomcat-star
 		<obf_rendering>P</obf_rendering>
 		<obf_treedepth/>
 		<obf_area_id.ofa_name/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_ref_object_id.obo_name>ArtPiece</obf_ref_object_id.obo_name>
+		<obf_order>200</obf_order>
+		<obf_ref_order/>
+		<obf_object_id.obj_name>ArtFairPic</obf_object_id.obj_name>
+		<obf_field_id.fld_name>artFpPicId</obf_field_id.fld_name>
+		<obf_cascad>C</obf_cascad>
+		<obf_card>0,n</obf_card>
+		<obf_query/>
+		<obf_filters/>
+		<obf_visible>1</obf_visible>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy>0</obf_copy>
+		<obf_associate>1</obf_associate>
+		<obf_inline>0</obf_inline>
+		<obf_rendering/>
+		<obf_treedepth/>
+		<obf_area_id.ofa_name/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<obf_ref_object_id.obo_name>ArtPiece</obf_ref_object_id.obo_name>
+		<obf_order>100</obf_order>
+		<obf_ref_order/>
+		<obf_object_id.obj_name>ArtPicInv</obf_object_id.obj_name>
+		<obf_field_id.fld_name>artPicinvPicId</obf_field_id.fld_name>
+		<obf_cascad>R</obf_cascad>
+		<obf_card>0,n</obf_card>
+		<obf_query/>
+		<obf_filters/>
+		<obf_visible>1</obf_visible>
+		<obf_ref_export>1</obf_ref_export>
+		<obf_copy>0</obf_copy>
+		<obf_associate>1</obf_associate>
+		<obf_inline>0</obf_inline>
+		<obf_rendering/>
+		<obf_treedepth/>
+		<obf_area_id.ofa_name>ArtPicInv-1</obf_area_id.ofa_name>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
@@ -8231,17 +8231,25 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
-		<fct_name>ART_FAIR_CRUD</fct_name>
-		<fct_object_id.obo_name>ArtFair</fct_object_id.obo_name>
+		<fct_name>ArtExhibition-CUD</fct_name>
+		<fct_object_id.obo_name>ArtExhibition</fct_object_id.obo_name>
 		<fct_function>CMS</fct_function>
 		<fct_action_id.act_name/>
 		<fct_view_id.viw_name/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
-		<fct_name>ART_FAIR_R</fct_name>
-		<fct_object_id.obo_name>ArtFair</fct_object_id.obo_name>
+		<fct_name>ArtExhibition-R</fct_name>
+		<fct_object_id.obo_name>ArtExhibition</fct_object_id.obo_name>
 		<fct_function>L</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fct_name>ART_FAIR_CRUD</fct_name>
+		<fct_object_id.obo_name>ArtFair</fct_object_id.obo_name>
+		<fct_function>CMS</fct_function>
 		<fct_action_id.act_name/>
 		<fct_view_id.viw_name/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -8257,6 +8265,14 @@ sim tomcat-star
 	<data>
 		<fct_name>ART_FAIRPIC_R</fct_name>
 		<fct_object_id.obo_name>ArtFairPic</fct_object_id.obo_name>
+		<fct_function>L</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fct_name>ART_FAIR_R</fct_name>
+		<fct_object_id.obo_name>ArtFair</fct_object_id.obo_name>
 		<fct_function>L</fct_function>
 		<fct_action_id.act_name/>
 		<fct_view_id.viw_name/>
@@ -8287,6 +8303,22 @@ sim tomcat-star
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
 	<data>
+		<fct_name>ArtOwner-CUD</fct_name>
+		<fct_object_id.obo_name>ArtOwner</fct_object_id.obo_name>
+		<fct_function>CMS</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fct_name>ArtOwner-R</fct_name>
+		<fct_object_id.obo_name>ArtOwner</fct_object_id.obo_name>
+		<fct_function>L</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
 		<fct_name>ART_PIC_CALCULATE_ESTIMATED_PRICE_A</fct_name>
 		<fct_object_id.obo_name>ArtPiece</fct_object_id.obo_name>
 		<fct_function>A</fct_function>
@@ -8298,6 +8330,22 @@ sim tomcat-star
 		<fct_name>ART_PIC_CRUD</fct_name>
 		<fct_object_id.obo_name>ArtPiece</fct_object_id.obo_name>
 		<fct_function>CMS</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fct_name>ART_PICINV_CRUD</fct_name>
+		<fct_object_id.obo_name>ArtPicInv</fct_object_id.obo_name>
+		<fct_function>CMS</fct_function>
+		<fct_action_id.act_name/>
+		<fct_view_id.viw_name/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<fct_name>ART_PICINV_R</fct_name>
+		<fct_object_id.obo_name>ArtPicInv</fct_object_id.obo_name>
+		<fct_function>L</fct_function>
 		<fct_action_id.act_name/>
 		<fct_view_id.viw_name/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -8315,22 +8363,6 @@ sim tomcat-star
 		<fct_object_id.obo_name>ArtPiece</fct_object_id.obo_name>
 		<fct_function>A</fct_function>
 		<fct_action_id.act_name>reIndexAll</fct_action_id.act_name>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<fct_name>ART_PICINV_CRUD</fct_name>
-		<fct_object_id.obo_name>ArtPicInv</fct_object_id.obo_name>
-		<fct_function>CMS</fct_function>
-		<fct_action_id.act_name/>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<fct_name>ART_PICINV_R</fct_name>
-		<fct_object_id.obo_name>ArtPicInv</fct_object_id.obo_name>
-		<fct_function>L</fct_function>
-		<fct_action_id.act_name/>
 		<fct_view_id.viw_name/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -8401,38 +8433,6 @@ sim tomcat-star
 	<data>
 		<fct_name>ART_TP_R</fct_name>
 		<fct_object_id.obo_name>ArtTagPiece</fct_object_id.obo_name>
-		<fct_function>L</fct_function>
-		<fct_action_id.act_name/>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<fct_name>ArtExhibition-CUD</fct_name>
-		<fct_object_id.obo_name>ArtExhibition</fct_object_id.obo_name>
-		<fct_function>CMS</fct_function>
-		<fct_action_id.act_name/>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<fct_name>ArtExhibition-R</fct_name>
-		<fct_object_id.obo_name>ArtExhibition</fct_object_id.obo_name>
-		<fct_function>L</fct_function>
-		<fct_action_id.act_name/>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<fct_name>ArtOwner-CUD</fct_name>
-		<fct_object_id.obo_name>ArtOwner</fct_object_id.obo_name>
-		<fct_function>CMS</fct_function>
-		<fct_action_id.act_name/>
-		<fct_view_id.viw_name/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<fct_name>ArtOwner-R</fct_name>
-		<fct_object_id.obo_name>ArtOwner</fct_object_id.obo_name>
 		<fct_function>L</fct_function>
 		<fct_action_id.act_name/>
 		<fct_view_id.viw_name/>
@@ -9690,36 +9690,6 @@ sim tomcat-star
 			<object>
 				<name>Action</name>
 				<data>
-					<act_name>ARTPICSTATE-SOLD-STORED</act_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Stored</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Action</name>
-				<data>
-					<act_name>ARTPICSTATE-SOLD-STORED</act_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Stocké</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Action</name>
-				<data>
 					<act_name>ARTPICSTATE-SOLD-SELLING</act_name>
 				</data>
 			</object>
@@ -9741,6 +9711,36 @@ sim tomcat-star
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Retour ventes</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Action</name>
+				<data>
+					<act_name>ARTPICSTATE-SOLD-STORED</act_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Stored</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Action</name>
+				<data>
+					<act_name>ARTPICSTATE-SOLD-STORED</act_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Stocké</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -10018,12 +10018,12 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artExbCommissaire</fld_name>
+					<fld_name>artBiography</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Commissaire</tsl_value>
+		<tsl_value>Biography</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -10037,12 +10037,50 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artExbCommissaire</fld_name>
+					<fld_name>artBiography</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Commissaire</tsl_value>
+		<tsl_value>Biography</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artCurriculum</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Curriculum</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artCurriculum</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Curriculum</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -10132,6 +10170,44 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
+					<fld_name>artExbClosingDate</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Closing Date</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artExbClosingDate</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Exb closing date</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
 					<fld_name>artArtLastname</fld_name>
 				</data>
 			</object>
@@ -10208,6 +10284,44 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
+					<fld_name>artExbDescrition</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Descrition</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artExbDescrition</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Descrition</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
 					<fld_name>artExbpicPicId</fld_name>
 				</data>
 			</object>
@@ -10233,6 +10347,82 @@ sim tomcat-star
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>art exbpic pic id</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artExbCommissaire</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Commissaire</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artExbCommissaire</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Commissaire</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artExbPictures</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Pictures</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artExbPictures</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Exb pictures</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -10284,12 +10474,12 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artExbDescrition</fld_name>
+					<fld_name>artExbTitle</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Descrition</tsl_value>
+		<tsl_value>Title</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -10303,12 +10493,202 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artExbDescrition</fld_name>
+					<fld_name>artExbTitle</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Descrition</tsl_value>
+		<tsl_value>Exb title</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artFairName</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Name</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artFairName</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Fair name</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artFpPicId</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Fairpic pic id</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artFpPicId</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Fairpic pic id</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artExbType</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Type</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artExbType</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Exb type</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artFpFairId</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Fairpic fair id</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artFpFairId</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Fairpic fair id</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artFairYear</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Year</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artFairYear</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Fair year</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -10474,44 +10854,6 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artInvState</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>State</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artInvState</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>État</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
 					<fld_name>artInvFrom</fld_name>
 				</data>
 			</object>
@@ -10588,6 +10930,44 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
+					<fld_name>artInvState</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>State</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artInvState</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>État</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
 					<fld_name>artInvTotal</fld_name>
 				</data>
 			</object>
@@ -10613,6 +10993,44 @@ sim tomcat-star
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Total</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artOrigin</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Origin</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artOrigin</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Origin</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -10778,6 +11196,44 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
+					<fld_name>artPicDepth</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Depth</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artPicDepth</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Pic depth</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
 					<fld_name>artPicComment</fld_name>
 				</data>
 			</object>
@@ -10854,6 +11310,82 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
+					<fld_name>artPicExbVirtual</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>art pic exb virtual</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artPicExbVirtual</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>art pic exb virtual</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artPicCodeBis</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Code 2</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artPicCodeBis</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Code 2</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
 					<fld_name>artPicEntry</fld_name>
 				</data>
 			</object>
@@ -10879,82 +11411,6 @@ sim tomcat-star
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Date d'entrée</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicCodeBis</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Code 2</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicCodeBis</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Code 2</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicHeight</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Height</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicHeight</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Hauteur</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -11006,13 +11462,13 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artPicExbVirtual</fld_name>
+					<fld_name>artPicFullyEditable</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>art pic exb virtual</tsl_value>
-		<tsl_simplehelp/>
+		<tsl_value>Unprotect fields</tsl_value>
+		<tsl_simplehelp><![CDATA[<p>Some fields are protected to avoid accidental changes. Unprotect to edit them.</p>]]></tsl_simplehelp>
 		<tsl_plural_value/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
@@ -11025,12 +11481,12 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artPicExbVirtual</fld_name>
+					<fld_name>artPicFullyEditable</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>art pic exb virtual</tsl_value>
+		<tsl_value>Pic protected</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -11044,12 +11500,12 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artPicinvInvId</fld_name>
+					<fld_name>artPicHeight</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Invoice</tsl_value>
+		<tsl_value>Height</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -11063,12 +11519,12 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artPicinvInvId</fld_name>
+					<fld_name>artPicHeight</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Facture</tsl_value>
+		<tsl_value>Hauteur</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -11120,12 +11576,12 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artPicOwnId</fld_name>
+					<fld_name>artPicinvInvId</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Owner</tsl_value>
+		<tsl_value>Invoice</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -11139,50 +11595,12 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artPicOwnId</fld_name>
+					<fld_name>artPicinvInvId</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Propriétaire</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicPicture</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Picture</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicPicture</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Photo</tsl_value>
+		<tsl_value>Facture</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -11234,14 +11652,14 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artPicPlaceId</fld_name>
+					<fld_name>artPicPicture</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Place</tsl_value>
+		<tsl_value>Picture</tsl_value>
 		<tsl_simplehelp/>
-		<tsl_plural_value>Places</tsl_plural_value>
+		<tsl_plural_value/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
 		<tsl_listhelp/>
@@ -11253,14 +11671,90 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artPicPlaceId</fld_name>
+					<fld_name>artPicPicture</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Lieu</tsl_value>
+		<tsl_value>Photo</tsl_value>
 		<tsl_simplehelp/>
-		<tsl_plural_value>Lieux</tsl_plural_value>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artPicOwnId</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Owner</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artPicOwnId</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Propriétaire</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artPicScore</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Score</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artPicScore</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Score</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
 		<tsl_short_value/>
 		<tsl_placeholder/>
 		<tsl_listhelp/>
@@ -11297,44 +11791,6 @@ sim tomcat-star
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Valeur</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicScore</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Score</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicScore</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Score</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -11386,14 +11842,14 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artPicState</fld_name>
+					<fld_name>artPicPlaceId</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>State</tsl_value>
+		<tsl_value>Place</tsl_value>
 		<tsl_simplehelp/>
-		<tsl_plural_value/>
+		<tsl_plural_value>Places</tsl_plural_value>
 		<tsl_short_value/>
 		<tsl_placeholder/>
 		<tsl_listhelp/>
@@ -11405,90 +11861,14 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artPicState</fld_name>
+					<fld_name>artPicPlaceId</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>State</tsl_value>
+		<tsl_value>Lieu</tsl_value>
 		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicTagVirtual</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>art pic tag virtual</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicTagVirtual</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Œuvres d'art</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicTecId</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Technique</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicTecId</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Technique</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
+		<tsl_plural_value>Lieux</tsl_plural_value>
 		<tsl_short_value/>
 		<tsl_placeholder/>
 		<tsl_listhelp/>
@@ -11525,6 +11905,82 @@ sim tomcat-star
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Titre</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artPicState</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>State</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artPicState</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>State</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artPicTecId</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Technique</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artPicTecId</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Technique</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -11614,12 +12070,12 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artTagLabel</fld_name>
+					<fld_name>artPlcName</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Label</tsl_value>
+		<tsl_value>Name</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -11633,12 +12089,12 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artTagLabel</fld_name>
+					<fld_name>artPlcName</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Label</tsl_value>
+		<tsl_value>Nom</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -11690,6 +12146,82 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
+					<fld_name>artTagLabel</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Label</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artTagLabel</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Label</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artPicTagVirtual</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>art pic tag virtual</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
+					<fld_name>artPicTagVirtual</fld_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Œuvres d'art</tsl_value>
+		<tsl_simplehelp/>
+		<tsl_plural_value/>
+		<tsl_short_value/>
+		<tsl_placeholder/>
+		<tsl_listhelp/>
+		<tsl_tooltip/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Field</name>
+				<data>
 					<fld_name>artTagDescription</fld_name>
 				</data>
 			</object>
@@ -11728,44 +12260,6 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artTecName</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Name</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artTecName</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Nom</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
 					<fld_name>artPlcPublic</fld_name>
 				</data>
 			</object>
@@ -11791,196 +12285,6 @@ sim tomcat-star
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Public</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPlcName</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Name</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPlcName</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Nom</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artTpPieceId</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Artwork</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artTpPieceId</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Œuvre</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artTpTagId</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>app art tag fk</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artTpTagId</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>app art tag fk</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artBiography</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Biography</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artBiography</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Biography</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicDepth</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Depth</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicDepth</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Pic depth</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -12032,235 +12336,7 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artOrigin</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Origin</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artOrigin</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Origin</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artCurriculum</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Curriculum</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artCurriculum</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Curriculum</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artExbTitle</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Title</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artExbTitle</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Exb title</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artExbType</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Type</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artExbType</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Exb type</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artExbClosingDate</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Closing Date</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artExbClosingDate</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Exb closing date</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicFullyEditable</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Unprotect fields</tsl_value>
-		<tsl_simplehelp><![CDATA[<p>Some fields are protected to avoid accidental changes. Unprotect to edit them.</p>]]></tsl_simplehelp>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artPicFullyEditable</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Pic protected</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artFairName</fld_name>
+					<fld_name>artTecName</fld_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -12279,12 +12355,12 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artFairName</fld_name>
+					<fld_name>artTecName</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Fair name</tsl_value>
+		<tsl_value>Nom</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -12298,12 +12374,12 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artFairYear</fld_name>
+					<fld_name>artTpTagId</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Year</tsl_value>
+		<tsl_value>app art tag fk</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -12317,12 +12393,12 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artFairYear</fld_name>
+					<fld_name>artTpTagId</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Fair year</tsl_value>
+		<tsl_value>app art tag fk</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -12336,12 +12412,12 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artFpFairId</fld_name>
+					<fld_name>artTpPieceId</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Fairpic fair id</tsl_value>
+		<tsl_value>Artwork</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -12355,88 +12431,12 @@ sim tomcat-star
 			<object>
 				<name>Field</name>
 				<data>
-					<fld_name>artFpFairId</fld_name>
+					<fld_name>artTpPieceId</fld_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Fairpic fair id</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artFpPicId</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Fairpic pic id</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artFpPicId</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Fairpic pic id</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artExbPictures</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Pictures</tsl_value>
-		<tsl_simplehelp/>
-		<tsl_plural_value/>
-		<tsl_short_value/>
-		<tsl_placeholder/>
-		<tsl_listhelp/>
-		<tsl_tooltip/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>Field</name>
-				<data>
-					<fld_name>artExbPictures</fld_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Exb pictures</tsl_value>
+		<tsl_value>Œuvre</tsl_value>
 		<tsl_simplehelp/>
 		<tsl_plural_value/>
 		<tsl_short_value/>
@@ -12510,12 +12510,12 @@ sim tomcat-star
 			<object>
 				<name>ObjectFieldArea</name>
 				<data>
-					<ofa_name>ArtExhibition-Main</ofa_name>
+					<ofa_name>ArtFair-1</ofa_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>ArtExhibition-1</tsl_value>
+		<tsl_value>ArtFair-1</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -12524,12 +12524,40 @@ sim tomcat-star
 			<object>
 				<name>ObjectFieldArea</name>
 				<data>
-					<ofa_name>ArtExhibition-Main</ofa_name>
+					<ofa_name>ArtFair-1</ofa_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>ArtExhibition-1</tsl_value>
+		<tsl_value>Fair -1</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
+					<ofa_name>ArtOwner-1</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>ArtOwner-1</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
+					<ofa_name>ArtOwner-1</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>ArtOwner-1</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -12594,12 +12622,12 @@ sim tomcat-star
 			<object>
 				<name>ObjectFieldArea</name>
 				<data>
-					<ofa_name>ArtOwner-1</ofa_name>
+					<ofa_name>ArtPicInv-2</ofa_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>ArtOwner-1</tsl_value>
+		<tsl_value>Invoice</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -12608,12 +12636,12 @@ sim tomcat-star
 			<object>
 				<name>ObjectFieldArea</name>
 				<data>
-					<ofa_name>ArtOwner-1</ofa_name>
+					<ofa_name>ArtPicInv-2</ofa_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>ArtOwner-1</tsl_value>
+		<tsl_value>Pic inv -2</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -12650,34 +12678,6 @@ sim tomcat-star
 			<object>
 				<name>ObjectFieldArea</name>
 				<data>
-					<ofa_name>ArtPicInv-2</ofa_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Invoice</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldArea</name>
-				<data>
-					<ofa_name>ArtPicInv-2</ofa_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Pic inv -2</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldArea</name>
-				<data>
 					<ofa_name>ArtPicInv-3</ofa_name>
 				</data>
 			</object>
@@ -12698,6 +12698,62 @@ sim tomcat-star
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Pic inv -3</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
+					<ofa_name>ArtPiece-5</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Data Protection</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
+					<ofa_name>ArtPiece-5</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Piece -5</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
+					<ofa_name>ArtExhibition-Main</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>ArtExhibition-1</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
+					<ofa_name>ArtExhibition-Main</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>ArtExhibition-1</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -12790,34 +12846,6 @@ sim tomcat-star
 			<object>
 				<name>ObjectFieldArea</name>
 				<data>
-					<ofa_name>ArtPiece-Main</ofa_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Piece</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldArea</name>
-				<data>
-					<ofa_name>ArtPiece-Main</ofa_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Œuvre</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldArea</name>
-				<data>
 					<ofa_name>ArtPiece-Price</ofa_name>
 				</data>
 			</object>
@@ -12838,6 +12866,34 @@ sim tomcat-star
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Price</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
+					<ofa_name>ArtPiece-Main</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Piece</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldArea</name>
+				<data>
+					<ofa_name>ArtPiece-Main</ofa_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Œuvre</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -12897,62 +12953,6 @@ sim tomcat-star
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldArea</name>
-				<data>
-					<ofa_name>ArtPiece-5</ofa_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Data Protection</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldArea</name>
-				<data>
-					<ofa_name>ArtPiece-5</ofa_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Piece -5</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldArea</name>
-				<data>
-					<ofa_name>ArtFair-1</ofa_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>ArtFair-1</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldArea</name>
-				<data>
-					<ofa_name>ArtFair-1</ofa_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Fair -1</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
 </object>
 <object>
 	<name>TranslateDomain</name>
@@ -12996,13 +12996,13 @@ sim tomcat-star
 			<object>
 				<name>ObjectInternal</name>
 				<data>
-					<obo_name>ArtArtist</obo_name>
+					<obo_name>ArtExbPic</obo_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Artist</tsl_value>
-		<tsl_plural_value>Artists</tsl_plural_value>
+		<tsl_value>Exhibitions</tsl_value>
+		<tsl_plural_value/>
 		<tsl_help/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -13011,13 +13011,43 @@ sim tomcat-star
 			<object>
 				<name>ObjectInternal</name>
 				<data>
-					<obo_name>ArtArtist</obo_name>
+					<obo_name>ArtExbPic</obo_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Artiste</tsl_value>
-		<tsl_plural_value>Artistes</tsl_plural_value>
+		<tsl_value>Expositions</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectInternal</name>
+				<data>
+					<obo_name>ArtFair</obo_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Fair</tsl_value>
+		<tsl_plural_value>Fairs</tsl_plural_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectInternal</name>
+				<data>
+					<obo_name>ArtFair</obo_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Foire</tsl_value>
+		<tsl_plural_value>Foires</tsl_plural_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -13086,36 +13116,6 @@ sim tomcat-star
 			<object>
 				<name>ObjectInternal</name>
 				<data>
-					<obo_name>ArtTag</obo_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Tag</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectInternal</name>
-				<data>
-					<obo_name>ArtTag</obo_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Tag</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectInternal</name>
-				<data>
 					<obo_name>ArtPlace</obo_name>
 				</data>
 			</object>
@@ -13138,6 +13138,36 @@ sim tomcat-star
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Lieu</tsl_value>
 		<tsl_plural_value>Lieux</tsl_plural_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectInternal</name>
+				<data>
+					<obo_name>ArtTag</obo_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Tag</tsl_value>
+		<tsl_plural_value/>
+		<tsl_help/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectInternal</name>
+				<data>
+					<obo_name>ArtTag</obo_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Tag</tsl_value>
+		<tsl_plural_value/>
 		<tsl_help/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -13176,36 +13206,6 @@ sim tomcat-star
 			<object>
 				<name>ObjectInternal</name>
 				<data>
-					<obo_name>ArtTechnique</obo_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Technique</tsl_value>
-		<tsl_plural_value>Techniques</tsl_plural_value>
-		<tsl_help/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectInternal</name>
-				<data>
-					<obo_name>ArtTechnique</obo_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Technique</tsl_value>
-		<tsl_plural_value>Techniques</tsl_plural_value>
-		<tsl_help/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectInternal</name>
-				<data>
 					<obo_name>ArtPicInv</obo_name>
 				</data>
 			</object>
@@ -13228,6 +13228,36 @@ sim tomcat-star
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Élément de facture</tsl_value>
 		<tsl_plural_value>Éléments de facture</tsl_plural_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectInternal</name>
+				<data>
+					<obo_name>ArtFairPic</obo_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Fair piece</tsl_value>
+		<tsl_plural_value>Fair pieces</tsl_plural_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectInternal</name>
+				<data>
+					<obo_name>ArtFairPic</obo_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Fair pic</tsl_value>
+		<tsl_plural_value/>
 		<tsl_help/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -13266,6 +13296,36 @@ sim tomcat-star
 			<object>
 				<name>ObjectInternal</name>
 				<data>
+					<obo_name>ArtTechnique</obo_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Technique</tsl_value>
+		<tsl_plural_value>Techniques</tsl_plural_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectInternal</name>
+				<data>
+					<obo_name>ArtTechnique</obo_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Technique</tsl_value>
+		<tsl_plural_value>Techniques</tsl_plural_value>
+		<tsl_help/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectInternal</name>
+				<data>
 					<obo_name>ArtExhibition</obo_name>
 				</data>
 			</object>
@@ -13296,13 +13356,13 @@ sim tomcat-star
 			<object>
 				<name>ObjectInternal</name>
 				<data>
-					<obo_name>ArtExbPic</obo_name>
+					<obo_name>ArtArtist</obo_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Exhibitions</tsl_value>
-		<tsl_plural_value/>
+		<tsl_value>Artist</tsl_value>
+		<tsl_plural_value>Artists</tsl_plural_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -13311,73 +13371,13 @@ sim tomcat-star
 			<object>
 				<name>ObjectInternal</name>
 				<data>
-					<obo_name>ArtExbPic</obo_name>
+					<obo_name>ArtArtist</obo_name>
 				</data>
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Expositions</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectInternal</name>
-				<data>
-					<obo_name>ArtFair</obo_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Fair|Fairs</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectInternal</name>
-				<data>
-					<obo_name>ArtFair</obo_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Foire|Foires</tsl_value>
-		<tsl_plural_value/>
-		<tsl_help/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectInternal</name>
-				<data>
-					<obo_name>ArtFairPic</obo_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Fair piece</tsl_value>
-		<tsl_plural_value>Fair pieces</tsl_plural_value>
-		<tsl_help/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectInternal</name>
-				<data>
-					<obo_name>ArtFairPic</obo_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Fair pic</tsl_value>
-		<tsl_plural_value/>
+		<tsl_value>Artiste</tsl_value>
+		<tsl_plural_value>Artistes</tsl_plural_value>
 		<tsl_help/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
@@ -13425,26 +13425,6 @@ sim tomcat-star
 				<name>ObjectFieldSystem</name>
 				<data>
 					<obf_object_id.obo_name>ArtPicInv</obf_object_id.obo_name>
-					<obf_field_id.fld_name>artPicArtistId</obf_field_id.fld_name>
-					<obf_order>200</obf_order>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Artiste</tsl_value>
-		<tsl_plural_value/>
-		<tsl_simplehelp/>
-		<tsl_short_value/>
-		<tsl_listhelp/>
-		<tsl_placeholder/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>ObjectFieldSystem</name>
-				<data>
-					<obf_object_id.obo_name>ArtPicInv</obf_object_id.obo_name>
 					<obf_field_id.fld_name>artArtLastname</obf_field_id.fld_name>
 					<obf_order>210</obf_order>
 				</data>
@@ -13465,13 +13445,13 @@ sim tomcat-star
 				<name>ObjectFieldSystem</name>
 				<data>
 					<obf_object_id.obo_name>ArtPicInv</obf_object_id.obo_name>
-					<obf_field_id.fld_name>artArtFirstname</obf_field_id.fld_name>
-					<obf_order>210</obf_order>
+					<obf_field_id.fld_name>artPicArtistId</obf_field_id.fld_name>
+					<obf_order>200</obf_order>
 				</data>
 			</object>
 		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Artist First name</tsl_value>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Artiste</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
@@ -13552,6 +13532,26 @@ sim tomcat-star
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Prénom de l'artiste</tsl_value>
+		<tsl_plural_value/>
+		<tsl_simplehelp/>
+		<tsl_short_value/>
+		<tsl_listhelp/>
+		<tsl_placeholder/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>ObjectFieldSystem</name>
+				<data>
+					<obf_object_id.obo_name>ArtPicInv</obf_object_id.obo_name>
+					<obf_field_id.fld_name>artArtFirstname</obf_field_id.fld_name>
+					<obf_order>210</obf_order>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Artist First name</tsl_value>
 		<tsl_plural_value/>
 		<tsl_simplehelp/>
 		<tsl_short_value/>
@@ -13728,36 +13728,6 @@ sim tomcat-star
 			<object>
 				<name>View</name>
 				<data>
-					<viw_name>ArtViewHome</viw_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>ArtHome</tsl_value>
-		<tsl_help/>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>View</name>
-				<data>
-					<viw_name>ArtViewHome</viw_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>ArtHome</tsl_value>
-		<tsl_help/>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>View</name>
-				<data>
 					<viw_name>ArtScopeAdminFallbackTheme</viw_name>
 				</data>
 			</object>
@@ -13783,6 +13753,36 @@ sim tomcat-star
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>View</name>
+				<data>
+					<viw_name>ArtViewHome</viw_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>ArtHome</tsl_value>
+		<tsl_help/>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>View</name>
+				<data>
+					<viw_name>ArtViewHome</viw_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>ArtHome</tsl_value>
+		<tsl_help/>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
 </object>
 <object>
 	<name>TranslateDocIndex</name>
@@ -13792,6 +13792,34 @@ sim tomcat-star
 			<object>
 				<name>DocIndex</name>
 				<data>
+					<din_name>B-artExbPictures</din_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>B-art exb pictures</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>DocIndex</name>
+				<data>
+					<din_name>B-artExbPictures</din_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>B-art exb pictures</tsl_value>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>DocIndex</name>
+				<data>
 					<din_name>B-artInvFile</din_name>
 				</data>
 			</object>
@@ -13868,34 +13896,6 @@ sim tomcat-star
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>B-art pic picture</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>DocIndex</name>
-				<data>
-					<din_name>B-artExbPictures</din_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>B-art exb pictures</tsl_value>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>DocIndex</name>
-				<data>
-					<din_name>B-artExbPictures</din_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>B-art exb pictures</tsl_value>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
 	</data>

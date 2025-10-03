@@ -152,14 +152,14 @@ paths:
         type: string
         required: false
       - in: query
-        name: artPicinvPicId__artPicTecId__artTecName
-        description: Search filter for Piece Technique Name
-        type: string
-        required: false
-      - in: query
         name: artPicinvPicId__artPicHeight
         description: Search filter for Piece Height
         type: number
+        required: false
+      - in: query
+        name: artPicinvPicId__artPicTecId__artTecName
+        description: Search filter for Piece Technique Name
+        type: string
         required: false
       - in: query
         name: artPicinvPicId__artPicWidth
@@ -187,13 +187,13 @@ paths:
         type: number
         required: false
       - in: query
-        name: artPicinvInvId
-        description: Search filter for Invoice
+        name: artPicinvPicId__artPicArtistId
+        description: Search filter for Piece Artist
         type: string
         required: false
       - in: query
-        name: artPicinvPicId__artPicArtistId
-        description: Search filter for Piece Artist
+        name: artPicinvInvId
+        description: Search filter for Invoice
         type: string
         required: false
       - in: query
