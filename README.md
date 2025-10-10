@@ -292,6 +292,12 @@ Piece of art
 | `artFpPicId` link to **`ArtPiece`**                          | id                                       | yes*     | yes       |          | -                                                                                |
 | _Ref. `artFpPicId.artPicCode`_                               | _char(20)_                               |          |           |          | -                                                                                |
 
+`ArtHomeCarousel` external object definition
+--------------------------------------------
+
+
+
+
 `ArtHomeCounters` external object definition
 --------------------------------------------
 
