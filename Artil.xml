@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="669" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="668" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -12987,7 +12987,7 @@ sim tomcat-star
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Artwork Inventory</tsl_value>
+		<tsl_value>Artil</tsl_value>
 		<tsl_help/>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -13002,7 +13002,7 @@ sim tomcat-star
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Inventaire d'œuvres</tsl_value>
+		<tsl_value>Artil</tsl_value>
 		<tsl_help/>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -13723,7 +13723,7 @@ sim tomcat-star
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Artil Admin</tsl_value>
+		<tsl_value>Artil</tsl_value>
 		<tsl_help/>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -13738,7 +13738,7 @@ sim tomcat-star
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Artil Admin</tsl_value>
+		<tsl_value>Artil</tsl_value>
 		<tsl_help/>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -13782,23 +13782,8 @@ sim tomcat-star
 				</data>
 			</object>
 		</tsl_object>
-		<tsl_lang>ENU</tsl_lang>
+		<tsl_lang>ANY</tsl_lang>
 		<tsl_value>Artil fallback theme</tsl_value>
-		<tsl_help/>
-		<tsl_plural_value/>
-		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
-	</data>
-	<data>
-		<tsl_object>
-			<object>
-				<name>View</name>
-				<data>
-					<viw_name>ArtScopeAdminFallbackTheme</viw_name>
-				</data>
-			</object>
-		</tsl_object>
-		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Thème fallback Artil</tsl_value>
 		<tsl_help/>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
