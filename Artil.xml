@@ -134,7 +134,7 @@ sim tomcat-star
   <div class="area" data-area="3"></div>
 </div>]]></viw_ui>
 		<viw_order>1</viw_order>
-		<viw_icon>img/color/panorama</viw_icon>
+		<viw_icon>icon/artil/icons8-paint-palette-100</viw_icon>
 		<viw_disp_id.dis_code/>
 		<viw_scope>art_admin_scope</viw_scope>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -150,7 +150,7 @@ sim tomcat-star
   <div class="area" data-area="3"></div>
 </div>]]></viw_ui>
 		<viw_order>2</viw_order>
-		<viw_icon>img/color/panorama</viw_icon>
+		<viw_icon>tools</viw_icon>
 		<viw_disp_id.dis_code/>
 		<viw_scope>art_admin_scope_initial</viw_scope>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -3763,7 +3763,7 @@ sim tomcat-star
 		<obd_type>D</obd_type>
 		<obd_view_id.viw_name>ArtViewHome</obd_view_id.viw_name>
 		<obd_nohome>1</obd_nohome>
-		<obd_icon>fas/paint-brush</obd_icon>
+		<obd_icon>icon/artil/icons8-paint-palette-100</obd_icon>
 		<obd_order>1000</obd_order>
 		<obd_domain_id.obd_name/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -13783,7 +13783,7 @@ sim tomcat-star
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Fallback theme</tsl_value>
+		<tsl_value>Artil fallback theme</tsl_value>
 		<tsl_help/>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
@@ -13798,7 +13798,7 @@ sim tomcat-star
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Thème fallback</tsl_value>
+		<tsl_value>Thème fallback Artil</tsl_value>
 		<tsl_help/>
 		<tsl_plural_value/>
 		<row_module_id.mdl_name>Artil</row_module_id.mdl_name>
