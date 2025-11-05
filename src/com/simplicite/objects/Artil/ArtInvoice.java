@@ -68,6 +68,7 @@ public class ArtInvoice extends ObjectDB {
 				inv.search(), 
 				new InlineParam(false, true, false), 
 				false,
+				false,
 				false
 			));
 		}
