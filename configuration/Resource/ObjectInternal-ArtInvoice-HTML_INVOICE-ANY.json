@@ -1,0 +1,20 @@
+{
+ "res_object": {
+  "item": {"obo_name": "ArtInvoice"},
+  "icon": "img/system/business_object",
+  "label": "Business object",
+  "userkeylabel": "ArtInvoice",
+  "object": "ObjectInternal"
+ },
+ "res_type": "HTML",
+ "res_lang": "ANY",
+ "res_code": "HTML_INVOICE",
+ "res_cached": false,
+ "res_file": {
+  "path": "resources/ObjectInternal/ArtInvoice/HTML_INVOICE.html",
+  "mime": "text/html",
+  "name": "HTML_INVOICE.html"
+ },
+ "res_image": null,
+ "row_module_id__mdl_name": "Artil"
+}

@@ -1,0 +1,8 @@
+{
+ "ofa_name": "ArtOwner-1",
+ "ofa_position": 1,
+ "ofa_title": false,
+ "ofa_ui": "<div class=\"field\" data-field=\"artOwnName\"><\/div>",
+ "ofa_icon": "star",
+ "row_module_id__mdl_name": "Artil"
+}

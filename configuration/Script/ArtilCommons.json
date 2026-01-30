@@ -1,0 +1,10 @@
+{
+ "scr_code": "ArtilCommons",
+ "scr_file": {
+  "path": "src/com/simplicite/commons/Artil/ArtilCommons.java",
+  "mime": "text/plain",
+  "name": "ArtilCommons.java"
+ },
+ "scr_type": "JSR",
+ "row_module_id__mdl_name": "Artil"
+}

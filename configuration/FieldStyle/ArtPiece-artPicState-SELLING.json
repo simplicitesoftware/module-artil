@@ -1,0 +1,10 @@
+{
+ "sty_object": "ArtPiece",
+ "sty_field": "artPicState",
+ "sty_value": "SELLING",
+ "sty_vmin": null,
+ "sty_vmax": null,
+ "sty_style": "bluebg",
+ "sty_image": null,
+ "row_module_id__mdl_name": "Artil"
+}

@@ -1,0 +1,8 @@
+{
+ "fct_name": "ART_INV_CALCULATE_TOTAL_A",
+ "fct_object_id__obo_name": "ArtInvoice",
+ "fct_function": "A",
+ "fct_action_id__act_name": "calculateTotal",
+ "fct_view_id__viw_name": null,
+ "row_module_id__mdl_name": "Artil"
+}

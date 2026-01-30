@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"ofa_name": "ArtPiece-Artist"},
+  "icon": "img/system/field_area",
+  "label": "Fields area",
+  "userkeylabel": "ArtPiece-Artist",
+  "object": "ObjectFieldArea"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Artist",
+ "row_module_id__mdl_name": "Artil"
+}

@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"din_name": "B-artInvFile"},
+  "icon": "img/system/bookshelf",
+  "label": "Bookshelf",
+  "userkeylabel": "B-artInvFile",
+  "object": "DocIndex"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "B-art inv file",
+ "row_module_id__mdl_name": "Artil"
+}

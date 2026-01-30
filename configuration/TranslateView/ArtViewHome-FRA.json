@@ -1,0 +1,13 @@
+{
+ "tsl_object": {
+  "item": {"viw_name": "ArtViewHome"},
+  "icon": "img/system/view",
+  "label": "View",
+  "userkeylabel": "ArtViewHome",
+  "object": "View"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "ArtHome",
+ "tsl_help": null,
+ "row_module_id__mdl_name": "Artil"
+}

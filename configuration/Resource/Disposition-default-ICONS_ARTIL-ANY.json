@@ -1,0 +1,20 @@
+{
+ "res_object": {
+  "item": {"dis_code": "default"},
+  "icon": "img/system/disposition",
+  "label": "Disposition",
+  "userkeylabel": "default",
+  "object": "Disposition"
+ },
+ "res_type": "SET",
+ "res_lang": "ANY",
+ "res_code": "ICONS_ARTIL",
+ "res_cached": true,
+ "res_file": {
+  "path": "resources/Disposition/default/ICONS_ARTIL.zip",
+  "mime": "application/zip",
+  "name": "ICONS_ARTIL.zip"
+ },
+ "res_image": null,
+ "row_module_id__mdl_name": "Artil"
+}

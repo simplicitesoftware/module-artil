@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"ctb_name": "ArtPicPivot"},
+  "icon": "img/system/pivot_table",
+  "label": "Pivot table",
+  "userkeylabel": "ArtPicPivot",
+  "object": "Crosstab"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Tableau croisé",
+ "row_module_id__mdl_name": "Artil"
+}

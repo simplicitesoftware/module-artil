@@ -1,0 +1,19 @@
+{
+ "prm_group_id__grp_name": "ART_ADMIN",
+ "prm_object": {
+  "item": {
+   "prt_name": "ArtPieceNoPrice",
+   "prt_lang": "ENU"
+  },
+  "icon": "img/system/publication",
+  "label": "Publication",
+  "userkeylabel": "ArtPieceNoPrice English",
+  "object": "PrintTemplate"
+ },
+ "prm_perm": true,
+ "prm_upd": false,
+ "prm_req": false,
+ "prm_prop": null,
+ "prm_value": null,
+ "row_module_id__mdl_name": "Artil"
+}

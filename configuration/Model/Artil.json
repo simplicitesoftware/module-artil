@@ -1,0 +1,16 @@
+{
+ "mod_name": "Artil",
+ "mod_template_id__mtp_name": "ModelBusinessObject",
+ "mod_json": null,
+ "mod_doc": {
+  "path": "files/Model/Artil.svg",
+  "mime": "image/svg+xml",
+  "name": "Artil.svg"
+ },
+ "mod_image": {
+  "path": "files/Model/Artil.png",
+  "mime": "image/png",
+  "name": "Artil.png"
+ },
+ "row_module_id__mdl_name": "Artil"
+}

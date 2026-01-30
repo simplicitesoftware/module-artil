@@ -1,0 +1,9 @@
+{
+ "tpl_name": "ArtInvoice",
+ "tpl_ui": "<div>\n  <div class=\"area\" data-area=\"1\"><\/div>\n  <div class=\"area\" data-area=\"2\"><\/div>\n<\/div>",
+ "tpl_min": null,
+ "tpl_image": null,
+ "tpl_grid": null,
+ "tpl_context": null,
+ "row_module_id__mdl_name": "Artil"
+}

@@ -1,0 +1,8 @@
+{
+ "fct_name": "ART_PIC_RE_INDEX_ALL_A",
+ "fct_object_id__obo_name": "ArtPiece",
+ "fct_function": "A",
+ "fct_action_id__act_name": "reIndexAll",
+ "fct_view_id__viw_name": null,
+ "row_module_id__mdl_name": "Artil"
+}

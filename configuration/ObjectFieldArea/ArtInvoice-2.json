@@ -1,0 +1,8 @@
+{
+ "ofa_name": "ArtInvoice-2",
+ "ofa_position": 2,
+ "ofa_title": true,
+ "ofa_ui": "<div class=\"row\">\n  <div class=\"col-sm-6\">\n    <div class=\"field\" data-field=\"artInvFrom\"><\/div>\n  <\/div>\n  <div class=\"col-sm-6\">\n    <div class=\"field\" data-field=\"artInvTo\"><\/div>\n  <\/div>\n<\/div>",
+ "ofa_icon": "print",
+ "row_module_id__mdl_name": "Artil"
+}

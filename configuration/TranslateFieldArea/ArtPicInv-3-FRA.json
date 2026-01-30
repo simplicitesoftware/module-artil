@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"ofa_name": "ArtPicInv-3"},
+  "icon": "img/system/field_area",
+  "label": "Fields area",
+  "userkeylabel": "ArtPicInv-3",
+  "object": "ObjectFieldArea"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Pic inv -3",
+ "row_module_id__mdl_name": "Artil"
+}

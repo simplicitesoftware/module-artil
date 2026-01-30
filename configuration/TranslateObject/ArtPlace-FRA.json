@@ -1,0 +1,14 @@
+{
+ "tsl_object": {
+  "item": {"obo_name": "ArtPlace"},
+  "icon": "img/system/business_object",
+  "label": "Business object",
+  "userkeylabel": "ArtPlace",
+  "object": "ObjectInternal"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Lieu",
+ "tsl_plural_value": "Lieux",
+ "tsl_help": null,
+ "row_module_id__mdl_name": "Artil"
+}

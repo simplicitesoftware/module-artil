@@ -1,0 +1,51 @@
+{
+ "thm_name": "ThemeMondrian-Light-Artil",
+ "thm_logo_id": {
+  "path": "files/Theme/ThemeMondrian-Light-Artil/logo.png",
+  "mime": "image/png",
+  "name": "logo.png"
+ },
+ "thm_logo_invert": false,
+ "thm_logo2_id": null,
+ "thm_favicon_id": null,
+ "thm_color1": "#F3F1EE",
+ "thm_color2": "#F3F1EE",
+ "thm_text2": "#474747",
+ "thm_color3": "#F3F1EE",
+ "thm_text3": "#474747",
+ "thm_base": "light",
+ "thm_css_doc": {
+  "path": "files/Theme/ThemeMondrian-Light-Artil/ThemeMondrian-Light-Artil_gen.css",
+  "mime": "text/css",
+  "name": "ThemeMondrian-Light-Artil_gen.css"
+ },
+ "thm_addon": {
+  "path": "files/Theme/ThemeMondrian-Light-Artil/addon.less",
+  "mime": "text/x-less",
+  "name": "addon.less"
+ },
+ "thm_searchbox": null,
+ "thm_active": null,
+ "thm_font": null,
+ "thm_font_mono": null,
+ "thm_iconset": null,
+ "thm_code_editor_theme": null,
+ "thm_html_editor_theme": "LIGHT",
+ "thm_menu_dom_c": null,
+ "thm_menu_dom_t": "#474747",
+ "thm_menu_dact_c": "#F3F1EE",
+ "thm_menu_dact_t": "#303030",
+ "thm_menu_sub_c": "#F3F1EE",
+ "thm_menu_sub_t": "#474747",
+ "thm_menu_sact_c": "#FFFAF0",
+ "thm_menu_sact_t": "#303030",
+ "thm_menu_sta_c": "#F3F1EE",
+ "thm_menu_sta_t": "#474747",
+ "thm_compact": true,
+ "row_module_id__mdl_name": "Artil",
+ "thm_const": {
+  "path": "files/Theme/ThemeMondrian-Light-Artil/const.less",
+  "mime": "text/x-less",
+  "name": "const.less"
+ }
+}

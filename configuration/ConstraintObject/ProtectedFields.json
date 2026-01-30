@@ -1,0 +1,12 @@
+{
+ "cst_name": "ProtectedFields",
+ "cst_object_id__obo_name": "ArtPiece",
+ "cst_order": 10,
+ "cst_desc": null,
+ "cst_type": "E",
+ "cst_effects": ["F"],
+ "cst_field_id__fld_name": null,
+ "cst_expr": "true",
+ "cst_method": null,
+ "row_module_id__mdl_name": "Artil"
+}

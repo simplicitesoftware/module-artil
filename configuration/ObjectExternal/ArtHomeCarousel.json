@@ -1,0 +1,15 @@
+{
+ "obe_name": "ArtHomeCarousel",
+ "obe_type": "E",
+ "obe_nature": "com_simplicite_webapp_web_ResponsiveExternalObject",
+ "obe_url": null,
+ "obe_settings": "{\n  \"subTitleField\": \"artPicTitle\",\n  \"imageField\": \"artPicPicture\",\n  \"titleField\": \"artPicArtistId.artArtLastname\",\n  \"name\": \"ArtPiece\",\n  \"descriptionField\": \"artPicComment\",\n  \"filters\": {\"order_artPicEntry\": -1},\n  \"height\": \"18rem\"\n}",
+ "obe_comment": null,
+ "obe_help": null,
+ "obe_class": "com.simplicite.webapp.web.widgets.CarouselExternalObject",
+ "obe_script_id": null,
+ "obe_icon": null,
+ "obe_permalink": null,
+ "obe_widget": true,
+ "row_module_id__mdl_name": "Artil"
+}

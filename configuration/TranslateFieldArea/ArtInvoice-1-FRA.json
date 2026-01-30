@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"ofa_name": "ArtInvoice-1"},
+  "icon": "img/system/field_area",
+  "label": "Fields area",
+  "userkeylabel": "ArtInvoice-1",
+  "object": "ObjectFieldArea"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Invoice -1",
+ "row_module_id__mdl_name": "Artil"
+}

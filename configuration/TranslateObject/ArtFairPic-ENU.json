@@ -1,0 +1,14 @@
+{
+ "tsl_object": {
+  "item": {"obo_name": "ArtFairPic"},
+  "icon": "img/system/business_object",
+  "label": "Business object",
+  "userkeylabel": "ArtFairPic",
+  "object": "ObjectInternal"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Fair piece",
+ "tsl_plural_value": "Fair pieces",
+ "tsl_help": null,
+ "row_module_id__mdl_name": "Artil"
+}

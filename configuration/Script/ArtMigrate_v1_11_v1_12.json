@@ -1,0 +1,10 @@
+{
+ "scr_code": "ArtMigrate_v1_11_v1_12",
+ "scr_file": {
+  "path": "test/src/com/simplicite/tests/Artil/ArtMigrate_v1_11_v1_12.java",
+  "mime": "text/plain",
+  "name": "ArtMigrate_v1_11_v1_12.java"
+ },
+ "scr_type": "TST",
+ "row_module_id__mdl_name": "Artil"
+}

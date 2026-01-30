@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"ofa_name": "ArtFair-1"},
+  "icon": "img/system/field_area",
+  "label": "Fields area",
+  "userkeylabel": "ArtFair-1",
+  "object": "ObjectFieldArea"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "ArtFair-1",
+ "row_module_id__mdl_name": "Artil"
+}

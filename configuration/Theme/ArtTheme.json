@@ -1,0 +1,51 @@
+{
+ "thm_name": "ArtTheme",
+ "thm_logo_id": {
+  "path": "files/Theme/ArtTheme/logo.png",
+  "mime": "image/png",
+  "name": "logo.png"
+ },
+ "thm_logo_invert": null,
+ "thm_logo2_id": null,
+ "thm_favicon_id": null,
+ "thm_color1": null,
+ "thm_color2": null,
+ "thm_text2": null,
+ "thm_color3": null,
+ "thm_text3": null,
+ "thm_base": "light",
+ "thm_css_doc": {
+  "path": "files/Theme/ArtTheme/ArtTheme_gen.css",
+  "mime": "text/css",
+  "name": "ArtTheme_gen.css"
+ },
+ "thm_addon": {
+  "path": "files/Theme/ArtTheme/addon.less",
+  "mime": "text/x-less",
+  "name": "addon.less"
+ },
+ "thm_searchbox": null,
+ "thm_active": null,
+ "thm_font": "Roboto",
+ "thm_font_mono": null,
+ "thm_iconset": null,
+ "thm_code_editor_theme": null,
+ "thm_html_editor_theme": "LIGHT",
+ "thm_menu_dom_c": null,
+ "thm_menu_dom_t": null,
+ "thm_menu_dact_c": null,
+ "thm_menu_dact_t": null,
+ "thm_menu_sub_c": null,
+ "thm_menu_sub_t": null,
+ "thm_menu_sact_c": null,
+ "thm_menu_sact_t": null,
+ "thm_menu_sta_c": null,
+ "thm_menu_sta_t": null,
+ "thm_compact": true,
+ "row_module_id__mdl_name": "Artil",
+ "thm_const": {
+  "path": "files/Theme/ArtTheme/const.less",
+  "mime": "text/x-less",
+  "name": "const.less"
+ }
+}

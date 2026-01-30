@@ -1,0 +1,10 @@
+{
+ "row_module_id__mdl_name": "Artil",
+ "dt_name": "artil-test-dataset",
+ "dt_file": {
+  "path": "data/artil-test-dataset.zip",
+  "mime": "application/zip",
+  "name": "Artil-data-20240730102134.zip"
+ },
+ "dt_desc": "Created by module's data export on 2024-07-30 10:21:34"
+}

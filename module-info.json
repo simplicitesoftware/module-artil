@@ -1,8 +1,8 @@
 {
-    "date": "2026-01-30 23:37:20",
+    "date": "2026-01-30 23:35:25",
     "name": "Artil",
-    "format": "xml",
-    "files": ["Artil.xml"],
+    "format": "json",
+    "files": ["configuration/**.json"],
     "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-artil.git"}},
     "version": "1.18",
     "platform": "6.2.21"

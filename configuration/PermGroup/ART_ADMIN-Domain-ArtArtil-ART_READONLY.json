@@ -1,0 +1,13 @@
+{
+ "pmg_group_id__grp_name": "ART_READONLY",
+ "pmg_perm_id__prm_group_id__grp_name": "ART_ADMIN",
+ "pmg_perm_id__prm_object": {
+  "item": {"obd_name": "ArtArtil"},
+  "icon": "img/system/domain",
+  "label": "Domain",
+  "userkeylabel": "ArtArtil",
+  "object": "Domain"
+ },
+ "pmg_perm_id__prm_prop": null,
+ "row_module_id__mdl_name": "Artil"
+}

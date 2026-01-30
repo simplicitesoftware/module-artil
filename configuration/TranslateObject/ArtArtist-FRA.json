@@ -1,0 +1,14 @@
+{
+ "tsl_object": {
+  "item": {"obo_name": "ArtArtist"},
+  "icon": "img/system/business_object",
+  "label": "Business object",
+  "userkeylabel": "ArtArtist",
+  "object": "ObjectInternal"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Artiste",
+ "tsl_plural_value": "Artistes",
+ "tsl_help": null,
+ "row_module_id__mdl_name": "Artil"
+}

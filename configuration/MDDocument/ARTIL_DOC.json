@@ -1,0 +1,12 @@
+{
+ "mdDocCode": "ARTIL_DOC",
+ "mdDocURL": "/ui/ext/MDViewer?doc=ARTIL_DOC",
+ "mdDocTitle": "Artil module documentation",
+ "mdDocFile": {
+  "path": "docs/MDDocument/ARTIL_DOC.md",
+  "mime": "text/x-markdown",
+  "name": "ARTIL_DOC.md"
+ },
+ "mdDocPublished": false,
+ "row_module_id__mdl_name": "Artil"
+}

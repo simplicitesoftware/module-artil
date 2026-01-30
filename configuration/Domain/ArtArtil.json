@@ -1,0 +1,11 @@
+{
+ "obd_name": "ArtArtil",
+ "obd_comment": null,
+ "obd_type": "D",
+ "obd_view_id__viw_name": "ArtViewHome",
+ "obd_nohome": true,
+ "obd_icon": "icon/artil/icons8-paint-palette-100",
+ "obd_order": 1000,
+ "obd_domain_id__obd_name": null,
+ "row_module_id__mdl_name": "Artil"
+}

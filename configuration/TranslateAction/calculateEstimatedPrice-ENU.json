@@ -1,0 +1,13 @@
+{
+ "tsl_object": {
+  "item": {"act_name": "calculateEstimatedPrice"},
+  "icon": "img/system/action_btn",
+  "label": "Action",
+  "userkeylabel": "calculateEstimatedPrice",
+  "object": "Action"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Calculate estimated price from artist's rating",
+ "tsl_simplehelp": null,
+ "row_module_id__mdl_name": "Artil"
+}

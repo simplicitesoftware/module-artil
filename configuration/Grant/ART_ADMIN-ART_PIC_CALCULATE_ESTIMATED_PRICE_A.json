@@ -1,0 +1,8 @@
+{
+ "grt_group_id__grp_name": "ART_ADMIN",
+ "grt_function_id__fct_name": "ART_PIC_CALCULATE_ESTIMATED_PRICE_A",
+ "grt_function_id__fct_object_id__obo_name": "ArtPiece",
+ "grt_function_id__fct_action_id__act_name": "calculateEstimatedPrice",
+ "grt_activ": true,
+ "row_module_id__mdl_name": "Artil"
+}

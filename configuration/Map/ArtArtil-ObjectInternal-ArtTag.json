@@ -1,0 +1,13 @@
+{
+ "map_domain_id__obd_name": "ArtArtil",
+ "map_object": {
+  "item": {"obo_name": "ArtTag"},
+  "icon": "img/system/business_object",
+  "label": "Business object",
+  "userkeylabel": "ArtTag",
+  "object": "ObjectInternal"
+ },
+ "map_order": 1030,
+ "map_ext": false,
+ "row_module_id__mdl_name": "Artil"
+}

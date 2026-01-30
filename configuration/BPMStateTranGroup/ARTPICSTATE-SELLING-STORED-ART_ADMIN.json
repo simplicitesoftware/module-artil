@@ -1,0 +1,7 @@
+{
+ "stg_transition_id__stm_name": "ARTPICSTATE-SELLING-STORED",
+ "stg_group_id__grp_name": "ART_ADMIN",
+ "stg_activ": true,
+ "stg_object_id__obo_name": "ArtPiece",
+ "row_module_id__mdl_name": "Artil"
+}

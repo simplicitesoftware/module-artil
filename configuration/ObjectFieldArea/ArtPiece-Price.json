@@ -1,0 +1,8 @@
+{
+ "ofa_name": "ArtPiece-Price",
+ "ofa_position": 3,
+ "ofa_title": true,
+ "ofa_ui": "<div class=\"row\">\n  <div class=\"col-sm-6\">\n    <div class=\"field\" data-field=\"artPicPrice\"><\/div>\n  <\/div>\n  <div class=\"col-sm-6\">\n    <div class=\"field\" data-field=\"artPicEstimatedPrice\"><\/div>\n  <\/div>\n<\/div>",
+ "ofa_icon": "money",
+ "row_module_id__mdl_name": "Artil"
+}

@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"ofa_name": "ArtPiece-Price"},
+  "icon": "img/system/field_area",
+  "label": "Fields area",
+  "userkeylabel": "ArtPiece-Price",
+  "object": "ObjectFieldArea"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Price",
+ "row_module_id__mdl_name": "Artil"
+}

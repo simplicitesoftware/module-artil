@@ -1,0 +1,6 @@
+{
+ "dsp_disp_id__dis_code": "default",
+ "dsp_param_id__sys_code": "MAX_UPLOAD_SIZE",
+ "dsp_value": "100000",
+ "row_module_id__mdl_name": "Artil"
+}

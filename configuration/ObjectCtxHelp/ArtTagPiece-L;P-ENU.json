@@ -1,0 +1,10 @@
+{
+ "och_object_id__obo_name": "ArtTagPiece",
+ "och_context": [
+  "L",
+  "P"
+ ],
+ "och_lang": "ENU",
+ "och_help": "<p>This panel is solely used to buld associate artworks to a tag. This use case aside, the artwork panel should be used.<\/p>",
+ "row_module_id__mdl_name": "Artil"
+}

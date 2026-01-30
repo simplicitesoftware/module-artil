@@ -1,0 +1,12 @@
+{
+ "viw_name": "ArtScopeAdmin",
+ "viw_type": "H",
+ "viw_ui": "<div>\n  <div class=\"area\" data-area=\"1\"><\/div>\n  <div class=\"area\" data-area=\"2\"><\/div>\n  <div class=\"area\" data-area=\"3\"><\/div>\n<\/div>",
+ "viw_order": 1,
+ "viw_icon": "icon/artil/icons8-paint-palette-100",
+ "viw_disp_id__dis_code": null,
+ "viw_scope": "art_admin_scope",
+ "row_module_id__mdl_name": "Artil",
+ "viw_theme_id__thm_name": "ThemeMondrian-Light-Artil",
+ "viw_lang": null
+}

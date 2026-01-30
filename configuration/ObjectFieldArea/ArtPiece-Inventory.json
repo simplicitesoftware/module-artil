@@ -1,0 +1,8 @@
+{
+ "ofa_name": "ArtPiece-Inventory",
+ "ofa_position": 1,
+ "ofa_title": true,
+ "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicState\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicEntry\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicCode\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicCodeBis\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicPlaceId__artPlcName\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicOwnId__artOwnName\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"area\" data-area=\"ArtTagPiece;artTpPieceId\"><\/div>\n<\/div>",
+ "ofa_icon": "img/color/checked",
+ "row_module_id__mdl_name": "Artil"
+}

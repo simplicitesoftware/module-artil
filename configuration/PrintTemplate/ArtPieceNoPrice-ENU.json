@@ -1,0 +1,20 @@
+{
+ "prt_object_id__obo_name": "ArtPiece",
+ "prt_name": "ArtPieceNoPrice",
+ "prt_usage": "L",
+ "prt_visible": "1",
+ "row_module_id__mdl_name": "Artil",
+ "prt_lang": "ENU",
+ "prt_translation": "Export as PDF",
+ "prt_filename": "artil-export-[DATETIME]",
+ "prt_mimetype": "html",
+ "prt_type": "FILE",
+ "prt_method": null,
+ "prt_file": {
+  "path": "files/PrintTemplate/ArtPieceNoPrice-ENU.html",
+  "mime": "text/html",
+  "name": "artpiecenoprice.html"
+ },
+ "prt_template_id__tpl_name": null,
+ "prt_syntax": "DEFAULT"
+}

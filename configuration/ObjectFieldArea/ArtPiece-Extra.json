@@ -1,0 +1,8 @@
+{
+ "ofa_name": "ArtPiece-Extra",
+ "ofa_position": 4,
+ "ofa_title": true,
+ "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"artPicDocument\"><\/div>\n  <div class=\"field\" data-field=\"artPicComment\"><\/div>\n<\/div>",
+ "ofa_icon": "img/color/note",
+ "row_module_id__mdl_name": "Artil"
+}

@@ -1,0 +1,18 @@
+{
+ "tsl_object": {
+  "item": {"fld_name": "artArtRatingFormula"},
+  "icon": "img/system/field",
+  "label": "Field",
+  "userkeylabel": "artArtRatingFormula",
+  "object": "Field"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Rating",
+ "tsl_simplehelp": "<p>Formula to calculate a piece's price based on the piece's attributes.<\/p>\n<p>Use <a href=\"https://docs.simplicite.io/documentation/01-core/expressions.md\">Simplicit&eacute; expressions<\/a> to return a value.<\/p>\n<p>Examples<\/p>\n<ol>\n<li><code>[VALUE:artPicHeight]+[VALUE:artPicWidth]<\/code><\/li>\n<li><code>(()=&gt;{<\/code><code>if([VALUE:artPicTecId.artTecName]=='Oil on canvas') return [VALUE:artPicHeight]; else return [VALUE:artPicWidth]; })()<\/code><\/li>\n<\/ol>",
+ "tsl_plural_value": null,
+ "tsl_short_value": null,
+ "tsl_placeholder": null,
+ "tsl_listhelp": null,
+ "tsl_tooltip": null,
+ "row_module_id__mdl_name": "Artil"
+}

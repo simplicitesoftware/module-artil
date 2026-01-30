@@ -1,0 +1,8 @@
+{
+ "ofa_name": "ArtPiece-Main",
+ "ofa_position": 2,
+ "ofa_title": true,
+ "ofa_ui": "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicTitle\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicArtistId__artArtLastname\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n    \t<div class=\"field\" data-field=\"artPicYear\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicTecId__artTecName\"><\/div>\n      <div class=\"field\" data-field=\"artPicTechnique\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artPicHeight\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artPicWidth\"><\/div>\n    <\/div>\n    <div class=\"col-sm-4\">\n      <div class=\"field\" data-field=\"artPicDepth\"><\/div>\n    <\/div>\n  <\/div>\n  <div class=\"row\">\n    <div class=\"col-sm-6\">\n      <div class=\"field\" data-field=\"artPicSigned\"><\/div>\n    <\/div>\n    <div class=\"col-sm-6\"><\/div>\n  <\/div>\n  <div class=\"area\" data-area=\"ArtExbPic;artExbpicPicId\"><\/div>\n  <div class=\"field\" data-field=\"artPicPicture\"><\/div>\n<\/div>",
+ "ofa_icon": "img/color/panorama",
+ "row_module_id__mdl_name": "Artil"
+}

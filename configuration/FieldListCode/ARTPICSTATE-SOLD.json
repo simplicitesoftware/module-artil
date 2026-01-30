@@ -1,0 +1,11 @@
+{
+ "lov_list_id__lov_name": "ARTPICSTATE",
+ "lov_code": "SOLD",
+ "lov_order_by": 20,
+ "lov_label": "Vendu",
+ "row_module_id__mdl_name": "Artil",
+ "lov_color": null,
+ "lov_color_bg": null,
+ "lov_icon": "icon/color/btn_grey",
+ "lov_display": ["L"]
+}

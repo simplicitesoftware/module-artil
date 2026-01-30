@@ -1,0 +1,9 @@
+{
+ "tpl_name": "ArtPicSingle",
+ "tpl_ui": "<!doctype html>\n<html lang=en>\n<head>\n\t<meta charset=utf-8>\n\t<title>blah<\/title>\n<\/head>\n<body>\n\t<p>I'm the second content<\/p>\n<\/body>\n<\/html>",
+ "tpl_min": null,
+ "tpl_image": null,
+ "tpl_grid": null,
+ "tpl_context": null,
+ "row_module_id__mdl_name": "Artil"
+}

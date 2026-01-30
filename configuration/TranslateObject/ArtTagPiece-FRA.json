@@ -1,0 +1,14 @@
+{
+ "tsl_object": {
+  "item": {"obo_name": "ArtTagPiece"},
+  "icon": "img/system/business_object",
+  "label": "Business object",
+  "userkeylabel": "ArtTagPiece",
+  "object": "ObjectInternal"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Tag / Œuvre",
+ "tsl_plural_value": "Tags / Œuvres",
+ "tsl_help": null,
+ "row_module_id__mdl_name": "Artil"
+}

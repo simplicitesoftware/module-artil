@@ -1,0 +1,8 @@
+{
+ "grt_group_id__grp_name": "ART_READONLY",
+ "grt_function_id__fct_name": "ART_TP_R",
+ "grt_function_id__fct_object_id__obo_name": "ArtTagPiece",
+ "grt_function_id__fct_action_id__act_name": null,
+ "grt_activ": true,
+ "row_module_id__mdl_name": "Artil"
+}

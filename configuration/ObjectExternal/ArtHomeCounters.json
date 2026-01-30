@@ -1,0 +1,15 @@
+{
+ "obe_name": "ArtHomeCounters",
+ "obe_type": "E",
+ "obe_nature": "com_simplicite_webapp_web_ResponsiveExternalObject",
+ "obe_url": null,
+ "obe_settings": "{\"objects\": [\n  {\n    \"color\": \"violet\",\n    \"name\": \"ArtArtist\",\n    \"icon\": \"fas/user\"\n  },\n  {\n    \"color\": \"blue\",\n    \"name\": \"ArtPiece\",\n    \"icon\": \"fas/palette\"\n  },\n  {\n    \"color\": \"green\",\n    \"name\": \"ArtInvoice\",\n    \"icon\": \"fas/file-invoice-dollar\"\n  }\n]}",
+ "obe_comment": null,
+ "obe_help": null,
+ "obe_class": "com.simplicite.webapp.web.widgets.CountersExternalObject",
+ "obe_script_id": null,
+ "obe_icon": null,
+ "obe_permalink": null,
+ "obe_widget": true,
+ "row_module_id__mdl_name": "Artil"
+}

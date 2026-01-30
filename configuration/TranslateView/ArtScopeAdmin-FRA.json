@@ -1,0 +1,13 @@
+{
+ "tsl_object": {
+  "item": {"viw_name": "ArtScopeAdmin"},
+  "icon": "img/system/view",
+  "label": "View",
+  "userkeylabel": "ArtScopeAdmin",
+  "object": "View"
+ },
+ "tsl_lang": "FRA",
+ "tsl_value": "Artil",
+ "tsl_help": null,
+ "row_module_id__mdl_name": "Artil"
+}

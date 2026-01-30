@@ -1,0 +1,12 @@
+{
+ "viw_name": "ArtViewHome",
+ "viw_type": "D",
+ "viw_ui": "<div class=\"area\" data-area=\"1\"><\/div>",
+ "viw_order": 10,
+ "viw_icon": null,
+ "viw_disp_id__dis_code": null,
+ "viw_scope": null,
+ "row_module_id__mdl_name": "Artil",
+ "viw_theme_id__thm_name": null,
+ "viw_lang": null
+}

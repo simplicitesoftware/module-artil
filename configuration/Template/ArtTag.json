@@ -1,0 +1,9 @@
+{
+ "tpl_name": "ArtTag",
+ "tpl_ui": "<div class=\"area\" data-area=\"1\"><\/div>",
+ "tpl_min": null,
+ "tpl_image": null,
+ "tpl_grid": null,
+ "tpl_context": null,
+ "row_module_id__mdl_name": "Artil"
+}

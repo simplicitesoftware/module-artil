@@ -1,0 +1,8 @@
+{
+ "fct_name": "ART_PICINV_CRUD",
+ "fct_object_id__obo_name": "ArtPicInv",
+ "fct_function": "CMS",
+ "fct_action_id__act_name": null,
+ "fct_view_id__viw_name": null,
+ "row_module_id__mdl_name": "Artil"
+}

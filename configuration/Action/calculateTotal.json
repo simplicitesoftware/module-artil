@@ -1,0 +1,23 @@
+{
+ "act_name": "calculateTotal",
+ "act_type": "O",
+ "act_async": "0",
+ "act_job_depth": null,
+ "act_method": "calculateTotal",
+ "act_script": null,
+ "act_url": null,
+ "act_confirm": true,
+ "act_confirm_expr": null,
+ "act_confirm_ui": null,
+ "act_plus": false,
+ "act_comment": null,
+ "row_module_id__mdl_name": "Artil",
+ "act_exec": "BCK",
+ "act_count": null,
+ "act_order": null,
+ "act_color": null,
+ "act_color_bg": null,
+ "act_image": "img/color/service_bell",
+ "act_group_id__acg_name": null,
+ "act_queue_id__acq_name": null
+}

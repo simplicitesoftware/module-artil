@@ -1,0 +1,12 @@
+{
+ "viw_name": "ArtScopeReadonly",
+ "viw_type": "H",
+ "viw_ui": null,
+ "viw_order": 3,
+ "viw_icon": "fas/paint-brush",
+ "viw_disp_id__dis_code": null,
+ "viw_scope": "art_readonly_scope",
+ "row_module_id__mdl_name": "Artil",
+ "viw_theme_id__thm_name": "ArtTheme",
+ "viw_lang": null
+}

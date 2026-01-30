@@ -1,0 +1,21 @@
+{
+ "tsl_object": {
+  "item": {
+   "obf_object_id__obo_name": "ArtPiece",
+   "obf_field_id__fld_name": "artPlcName",
+   "obf_order": 190
+  },
+  "icon": "img/system/object_field",
+  "label": "Object field",
+  "userkeylabel": "ArtPiece artPlcName 190",
+  "object": "ObjectFieldSystem"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "Place",
+ "tsl_plural_value": null,
+ "tsl_simplehelp": null,
+ "tsl_short_value": null,
+ "tsl_listhelp": null,
+ "tsl_placeholder": null,
+ "row_module_id__mdl_name": "Artil"
+}

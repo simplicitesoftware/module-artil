@@ -1,0 +1,20 @@
+{
+ "prt_object_id__obo_name": "ArtPiece",
+ "prt_name": "ArtPicSingle",
+ "prt_usage": "O",
+ "prt_visible": "1",
+ "row_module_id__mdl_name": "Artil",
+ "prt_lang": "ANY",
+ "prt_translation": "Get PDF",
+ "prt_filename": "[VALUE:artPicTitle]",
+ "prt_mimetype": "pdf",
+ "prt_type": "FILE",
+ "prt_method": null,
+ "prt_file": {
+  "path": "files/PrintTemplate/ArtPicSingle.html",
+  "mime": "text/html",
+  "name": "ArtPicSingle.html"
+ },
+ "prt_template_id__tpl_name": null,
+ "prt_syntax": "DEFAULT"
+}

@@ -1,0 +1,8 @@
+{
+ "ofa_name": "ArtPicInv-1",
+ "ofa_position": 1,
+ "ofa_title": true,
+ "ofa_ui": "<div>\n  <div class=\"field\" data-field=\"artPicinvPicId\"><\/div>\n  <div class=\"field\" data-field=\"artPicinvPicId__artPicCode\"><\/div>\n  <div class=\"field\" data-field=\"artPicinvPicId__artPicArtistId\"><\/div>\n  <div class=\"field\" data-field=\"artPicinvPicId__artPicArtistId__artArtLastname\"><\/div>\n  <div class=\"field\" data-field=\"artPicinvPicId__artPicArtistId__artArtFirstname\"><\/div>\n  <div class=\"field\" data-field=\"artPicinvPicId__artPicTitle\"><\/div>\n  <div class=\"field\" data-field=\"artPicinvPicId__artPicTecId\"><\/div>\n  <div class=\"field\" data-field=\"artPicinvPicId__artPicTecId__artTecName\"><\/div>\n  <div class=\"field\" data-field=\"artPicinvPicId__artPicHeight\"><\/div>\n  <div class=\"field\" data-field=\"artPicinvPicId__artPicWidth\"><\/div>\n  <div class=\"field\" data-field=\"artPicinvPicId__artPicYear\"><\/div>\n  <div class=\"field\" data-field=\"artPicinvPicId__artPicPicture\"><\/div>\n<\/div>",
+ "ofa_icon": "img/color/panorama",
+ "row_module_id__mdl_name": "Artil"
+}

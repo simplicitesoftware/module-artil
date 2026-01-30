@@ -1,0 +1,12 @@
+{
+ "tsl_object": {
+  "item": {"din_name": "B-artPicDocument"},
+  "icon": "img/system/bookshelf",
+  "label": "Bookshelf",
+  "userkeylabel": "B-artPicDocument",
+  "object": "DocIndex"
+ },
+ "tsl_lang": "ENU",
+ "tsl_value": "B-art pic document",
+ "row_module_id__mdl_name": "Artil"
+}

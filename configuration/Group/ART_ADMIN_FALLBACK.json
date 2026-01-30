@@ -1,0 +1,8 @@
+{
+ "grp_name": "ART_ADMIN_FALLBACK",
+ "grp_comment": null,
+ "grp_type": ["G"],
+ "grp_parent_id__grp_name": null,
+ "grp_home_id__viw_name": "ArtScopeAdminFallbackTheme",
+ "row_module_id__mdl_name": "Artil"
+}
