@@ -1,0 +1,256 @@
+<html>
+	<head>
+		<link href="/scripts/jquery/bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+			/* Limit and center body when not printing */
+			body {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 20px;
+			}
+			.thmb{
+				text-align: center;
+			}
+			.thmb img{
+				max-width:300px !important; /*override Boostrap on @print*/
+				max-height: 200px;
+			}
+			/* Styling for elements that won't print */
+			.no-print {
+				background-color: #fff3cd;
+				border: 2px dashed #ffc107;
+				border-radius: 4px;
+			}
+			.controls-info {
+				padding: 12px;
+				margin-bottom: 15px;
+				font-size: 0.9em;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.controls-info-text {
+				flex: 1;
+			}
+			.controls-info-text ul {
+				margin: 0;
+				padding-left: 20px;
+			}
+			.controls-info-text li {
+				margin-bottom: 4px;
+			}
+			.controls-info-text li:last-child {
+				margin-bottom: 0;
+			}
+			.export-button {
+				display: inline-block;
+				padding: 8px 16px;
+				background-color: #ffc107;
+				color: #000;
+				border: 1px solid #ffc107;
+				border-radius: 4px;
+				cursor: pointer;
+				font-weight: 600;
+				text-decoration: none;
+				transition: background-color 0.2s ease;
+				margin-left: 15px;
+				flex-shrink: 0;
+			}
+			.export-button:hover {
+				background-color: #ffca2c;
+				border-color: #ffca2c;
+			}
+			.field-controls-header {
+				display: none;
+			}
+			.field-controls-row {
+				background-color: #fff3cd;
+			}
+			.field-controls-row td {
+				padding: 10px;
+			}
+			.field-controls-row label {
+				display: block;
+				margin-bottom: 5px;
+				cursor: pointer;
+				transition: color 0.2s ease;
+			}
+			.field-controls-row label:hover {
+				color: #0056b3;
+			}
+			.hidden-field {
+				display: none;
+			}
+			/* Subtle alternating row colors */
+			.table tbody tr:not(.field-controls-header):not(.field-controls-row):nth-child(even) {
+				background-color: #f8f9fa;
+			}
+			/* Subtle hover effect on data rows */
+			.table tbody tr:not(.field-controls-header):not(.field-controls-row) {
+				transition: background-color 0.2s ease;
+			}
+			.table tbody tr:not(.field-controls-header):not(.field-controls-row):hover {
+				background-color: #e9ecef;
+			}
+			/* Subtle header styling */
+			.table thead th {
+				background-color: #f8f9fa;
+				border-bottom: 2px solid #dee2e6;
+			}
+			/* Subtle image styling */
+			.table img {
+				border-radius: 4px;
+			}
+			/* Center pictures in their column */
+			.table td:nth-child(3),
+			.table th:nth-child(3) {
+				text-align: center;
+			}
+			/* Subtle table shadow */
+			.table {
+				box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+				width: 100%;
+			}
+			/* Cleaner table borders */
+			.table td, .table th {
+				border-color: #e9ecef;
+			}
+			/* Remove margin-top from comment paragraphs */
+			p.comment {
+				margin-top: 0;
+			}
+			/* Print stylesheet */
+			@media print {
+				body {
+					max-width: 100%;
+					margin: 0;
+					padding: 0;
+				}
+				.no-print {
+					display: none !important;
+				}
+			}
+		</style>
+	</head>
+	<body class="container">
+		<h3>Inventory export ([EXPR:Tool.getCurrentDate()])</h3>
+		<div class="controls-info no-print">
+			<div class="controls-info-text">
+				<ul>
+					<li>Toggle checkboxes below to show/hide fields in the inventory list.</li>
+					<li>Field controls and this message will not appear in exported PDF.</li>
+					<li>Clicking the export button will copy the suggested filename (<code>Inventory_export_YYYY-MM-DD.pdf</code>) to your clipboard for easy saving.</li>
+				</ul>
+			</div>
+			<button class="export-button" onclick="exportToPDF()">Export as PDF</button>
+		</div>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Description</th>
+					<th>Inventory</th>
+					<th>Picture</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="field-controls-row no-print">
+				<td>
+					<label><input type="checkbox" class="field-toggle" data-field="artist" checked> Artist</label>
+					<label><input type="checkbox" class="field-toggle" data-field="title" checked> Title</label>
+					<label><input type="checkbox" class="field-toggle" data-field="size" checked> Size</label>
+					<label><input type="checkbox" class="field-toggle" data-field="technique" checked> Technique</label>
+					<label><input type="checkbox" class="field-toggle" data-field="signed" checked> Signed</label>
+				</td>
+				<td>
+					<label><input type="checkbox" class="field-toggle" data-field="code" checked> Code</label>
+					<label><input type="checkbox" class="field-toggle" data-field="owner" checked> Owner</label>
+					<label><input type="checkbox" class="field-toggle" data-field="localization" checked> Localization</label>
+					<label><input type="checkbox" class="field-toggle" data-field="estimated-value" checked> Estimated Value</label>
+					<label><input type="checkbox" class="field-toggle" data-field="selling-price" checked> Selling Price</label>
+					<label><input type="checkbox" class="field-toggle" data-field="comments" checked> Comments</label>
+				</td>
+				<td></td>
+			</tr>
+			[BEGIN]
+			<tr>
+				<td>
+					<ul style="list-style-type: none; margin: 0; padding: 0;">
+						<li class="artist"><strong>Artist:</strong> [VALUE:artArtFirstname] [VALUE:artArtLastname]</li>
+						<li class="title"><strong>Title:</strong> [VALUE:artPicTitle] </li>
+						<li class="size"><strong>Size:</strong> [VALUE:artPicHeight]x[VALUE:artPicWidth]cm</li>
+						<li class="technique"><strong>Technique:</strong> [VALUE:artTecName]</li>
+						<li class="signed"><strong>Signed:</strong> [VALUE:artPicSigned]</li>
+					</ul>
+				</td>
+				<td>
+					<ul style="list-style-type: none; margin: 0; padding: 0;">
+						<li class="code"><strong>Code:</strong> [VALUE:artPicCode] [EXPR:obj.getField('artPicCodeBis').isEmpty()?"":"("+obj.getFieldValue('artPicCodeBis')+")"]</li>
+						<li class="owner"><strong>Owner:</strong> [VALUE:artOwnName]</li>
+						<li class="localization"><strong>Localization:</strong> [VALUE:artPlcName]</li>
+						<li class="estimated-value"><strong>Estimated Value:</strong> [VALUE:artPicEstimatedPrice][EXPR:obj.getField('artPicEstimatedPrice').isEmpty()?"":" €"]</li>
+						<li class="selling-price"><strong>Selling Price:</strong> [VALUE:artPicPrice][EXPR:obj.getField('artPicPrice').isEmpty()?"":" €"]</li>
+						<li class="comments"><strong>Comments:</strong></li>
+					</ul>
+					<p class="comment">[VALUE:artPicComment]</p>
+				</td>
+				<td>
+					<img src="[EXPR:obj.getField('artPicPicture').getDocument().getThumbnailURL('inline')]"/>
+				</td>
+			</tr>
+			
+			[END]
+			</tbody>
+		</table>
+	</body>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const checkboxes = document.querySelectorAll('.field-toggle');
+			checkboxes.forEach(function(checkbox) {
+				checkbox.addEventListener('change', function() {
+					const fieldClass = this.getAttribute('data-field');
+					const fieldElements = document.querySelectorAll('li.' + fieldClass);
+					fieldElements.forEach(function(element) {
+						if (this.checked) {
+							element.classList.remove('hidden-field');
+						} else {
+							element.classList.add('hidden-field');
+						}
+					}.bind(this));
+				});
+			});
+
+		});
+
+		// Function to export as PDF with suggested filename
+		function exportToPDF() {
+			// Get the date from the title
+			const titleElement = document.querySelector('h3');
+			const titleText = titleElement ? titleElement.textContent : '';
+			
+			// Extract date from title (format: Inventory export (date))
+			const dateMatch = titleText.match(/\(([^)]+)\)/);
+			let suggestedFilename = 'Inventory_export';
+			
+			if (dateMatch && dateMatch[1]) {
+				// Format the date for filename (replace spaces/special chars with underscores)
+				const dateStr = dateMatch[1].replace(/[^a-zA-Z0-9]/g, '_');
+				suggestedFilename = 'Inventory_export_' + dateStr;
+			} else {
+				// Fallback to current date
+				const now = new Date();
+				const dateStr = now.toISOString().split('T')[0];
+				suggestedFilename = 'Inventory_export_' + dateStr;
+			}
+			
+			// Copy filename to clipboard
+			navigator.clipboard.writeText(suggestedFilename).then(function() {
+				// Open print dialog
+				window.print();
+			}).catch(function(err) {
+				// If clipboard API fails, just open print dialog
+				console.error('Failed to copy filename to clipboard:', err);
+				window.print();
+			});
+		}
+	</script>
+</html>

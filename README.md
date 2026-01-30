@@ -46,7 +46,7 @@ sim tomcat-star
 | `artArtLastname`                                             | char(50)                                 | yes*     | yes       |          | -                                                                                |
 | `artArtFirstname`                                            | char(50)                                 | *        | yes       |          | -                                                                                |
 | `artOrigin`                                                  | char(250)                                |          | yes       |          | -                                                                                |
-| `artArtYear`                                                 | int(4)                                   |          | yes       |          | Year of birth                                                                    |
+| `artArtYear`                                                 | char(4)                                  |          | yes       |          | Year of birth                                                                    |
 | `artArtRatingFormula`                                        | text(1000)                               |          | yes       |          | -                                                                                |
 | `artBiography`                                               | text(10000)                              |          | yes       |          | -                                                                                |
 | `artCurriculum`                                              | text(10000)                              |          | yes       |          | -                                                                                |
@@ -258,11 +258,11 @@ Piece of art
 | _Ref. `artPicinvPicId.artPicPicture`_                        | _image_                                  |          |           |          | -                                                                                |
 | _Ref. `artPicinvPicId.artPicPrice`_                          | _float(9, 2)_                            |          |           |          | _Estimated price_                                                                |
 | _Ref. `artPicinvPicId.artPicEstimatedPrice`_                 | _float(100, 2)_                          |          |           |          | -                                                                                |
-| _Ref. `artPicinvPicId.artPicArtistId`_                       | _id_                                     |          |           |          | -                                                                                |
 | `artPicinvInvId` link to **`ArtInvoice`**                    | id                                       | yes*     | yes       |          | -                                                                                |
+| _Ref. `artPicinvPicId.artPicArtistId`_                       | _id_                                     |          |           |          | -                                                                                |
 | _Ref. `artPicArtistId.artArtLastname`_                       | _char(50)_                               |          |           |          | -                                                                                |
-| _Ref. `artPicinvInvId.artInvCode`_                           | _char(100)_                              |          |           |          | -                                                                                |
 | _Ref. `artPicArtistId.artArtFirstname`_                      | _char(50)_                               |          |           |          | -                                                                                |
+| _Ref. `artPicinvInvId.artInvCode`_                           | _char(100)_                              |          |           |          | -                                                                                |
 | `artPicinvPrice`                                             | float(100, 2)                            |          | yes       |          | -                                                                                |
 
 `ArtFair` business object definition

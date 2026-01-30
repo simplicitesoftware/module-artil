@@ -18,7 +18,7 @@ components:
           enum:
           - 404
     ArrayOfArtTag:
-      description: List of Tag
+      description: List of Tags
       type: array
       items:
         $ref: '#/components/schemas/ArtTag'
@@ -87,7 +87,8 @@ components:
           maxLength: 50
         artArtYear:
           description: Year of birth
-          type: integer
+          type: string
+          maxLength: 4
         artArtLastname:
           description: Last name
           type: string
@@ -686,6 +687,47 @@ servers:
 - url: /api
 openapi: 3.0.2
 paths:
+  /rest/ArtPiece/{row_id}/publication:ArtPieceNoPrice:
+    get:
+      summary: Call a custom publication for a ArtPiece business object record or
+        for all records
+      security:
+      - bearerAuth: []
+      operationId: obj-artpiece-publication-artpiecenoprice
+      responses:
+        '200':
+          description: Success in calling the custom publication
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PublicationResult'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error401'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error500'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error404'
+      parameters:
+      - schema:
+          type: string
+        in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        required: true
+      tags:
+      - ArtPiece
   /rest/ArtTag:
     get:
       summary: Search ArtTag business object records or get contextualized metadata
@@ -858,16 +900,16 @@ paths:
         description: Search filter for Piece Technique
         required: false
       - schema:
-          type: number
-        in: query
-        name: artPicinvPicId__artPicHeight
-        description: Search filter for Piece Height
-        required: false
-      - schema:
           type: string
         in: query
         name: artPicinvPicId__artPicTecId__artTecName
         description: Search filter for Piece Technique Name
+        required: false
+      - schema:
+          type: number
+        in: query
+        name: artPicinvPicId__artPicHeight
+        description: Search filter for Piece Height
         required: false
       - schema:
           type: number
@@ -902,14 +944,14 @@ paths:
       - schema:
           type: string
         in: query
-        name: artPicinvPicId__artPicArtistId
-        description: Search filter for Piece Artist
+        name: artPicinvInvId
+        description: Search filter for Invoice
         required: false
       - schema:
           type: string
         in: query
-        name: artPicinvInvId
-        description: Search filter for Invoice
+        name: artPicinvPicId__artPicArtistId
+        description: Search filter for Piece Artist
         required: false
       - schema:
           type: string
@@ -2484,7 +2526,7 @@ paths:
         description: Search filter for Origin
         required: false
       - schema:
-          type: integer
+          type: string
         in: query
         name: artArtYear
         description: Search filter for Year of birth
@@ -2738,47 +2780,6 @@ paths:
         required: false
       tags:
       - ArtTagPiece
-  /rest/ArtPiece/{row_id}/publication:ArtPiecePrintable:
-    get:
-      summary: Call a custom publication for a ArtPiece business object record or
-        for all records
-      security:
-      - bearerAuth: []
-      operationId: obj-artpiece-publication-artpieceprintable
-      responses:
-        '200':
-          description: Success in calling the custom publication
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/PublicationResult'
-        '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error401'
-        '500':
-          description: Internal server error
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error500'
-        '404':
-          description: Not found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error404'
-      parameters:
-      - schema:
-          type: string
-        in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        required: true
-      tags:
-      - ArtPiece
   /rest/ArtTechnique/{row_id}:
     post:
       summary: Create a new ArtTechnique business object record

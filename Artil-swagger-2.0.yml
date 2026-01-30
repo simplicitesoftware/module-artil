@@ -5,6 +5,40 @@
 #             |_| Module: Artil 1.18
 basePath: /api
 paths:
+  /rest/ArtPiece/{row_id}/publication:ArtPieceNoPrice:
+    get:
+      summary: Call a custom publication for a ArtPiece business object record or
+        for all records
+      security:
+      - bearerAuth: []
+      produces:
+      - application/json
+      operationId: obj-artpiece-publication-artpiecenoprice
+      responses:
+        '200':
+          schema:
+            $ref: '#/definitions/PublicationResult'
+          description: Success in calling the custom publication
+        '401':
+          schema:
+            $ref: '#/definitions/Error401'
+          description: Unauthorized
+        '500':
+          schema:
+            $ref: '#/definitions/Error500'
+          description: Internal server error
+        '404':
+          schema:
+            $ref: '#/definitions/Error404'
+          description: Not found
+      parameters:
+      - in: path
+        name: row_id
+        description: Row ID (or empty or _ for all row IDs)
+        type: string
+        required: true
+      tags:
+      - ArtPiece
   /rest/ArtTag:
     get:
       summary: Search ArtTag business object records or get contextualized metadata
@@ -152,14 +186,14 @@ paths:
         type: string
         required: false
       - in: query
-        name: artPicinvPicId__artPicHeight
-        description: Search filter for Piece Height
-        type: number
-        required: false
-      - in: query
         name: artPicinvPicId__artPicTecId__artTecName
         description: Search filter for Piece Technique Name
         type: string
+        required: false
+      - in: query
+        name: artPicinvPicId__artPicHeight
+        description: Search filter for Piece Height
+        type: number
         required: false
       - in: query
         name: artPicinvPicId__artPicWidth
@@ -187,13 +221,13 @@ paths:
         type: number
         required: false
       - in: query
-        name: artPicinvPicId__artPicArtistId
-        description: Search filter for Piece Artist
+        name: artPicinvInvId
+        description: Search filter for Invoice
         type: string
         required: false
       - in: query
-        name: artPicinvInvId
-        description: Search filter for Invoice
+        name: artPicinvPicId__artPicArtistId
+        description: Search filter for Piece Artist
         type: string
         required: false
       - in: query
@@ -1511,7 +1545,7 @@ paths:
       - in: query
         name: artArtYear
         description: Search filter for Year of birth
-        type: integer
+        type: string
         required: false
       - in: query
         name: artArtRatingFormula
@@ -1722,40 +1756,6 @@ paths:
         required: false
       tags:
       - ArtTagPiece
-  /rest/ArtPiece/{row_id}/publication:ArtPiecePrintable:
-    get:
-      summary: Call a custom publication for a ArtPiece business object record or
-        for all records
-      security:
-      - bearerAuth: []
-      produces:
-      - application/json
-      operationId: obj-artpiece-publication-artpieceprintable
-      responses:
-        '200':
-          schema:
-            $ref: '#/definitions/PublicationResult'
-          description: Success in calling the custom publication
-        '401':
-          schema:
-            $ref: '#/definitions/Error401'
-          description: Unauthorized
-        '500':
-          schema:
-            $ref: '#/definitions/Error500'
-          description: Internal server error
-        '404':
-          schema:
-            $ref: '#/definitions/Error404'
-          description: Not found
-      parameters:
-      - in: path
-        name: row_id
-        description: Row ID (or empty or _ for all row IDs)
-        type: string
-        required: true
-      tags:
-      - ArtPiece
   /rest/ArtTechnique/{row_id}:
     post:
       summary: Create a new ArtTechnique business object record
@@ -3449,7 +3449,7 @@ definitions:
         enum:
         - 404
   ArrayOfArtTag:
-    description: List of Tag
+    description: List of Tags
     type: array
     items:
       $ref: '#/definitions/ArtTag'
@@ -3518,7 +3518,8 @@ definitions:
         maxLength: 50
       artArtYear:
         description: Year of birth
-        type: integer
+        type: string
+        maxLength: 4
       artArtLastname:
         description: Last name
         type: string
